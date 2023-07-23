@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Primo" />
+    <!-- HEAD_svelte-du3lun_START -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+        #page {
+            font-family: system-ui, sans-serif;
+            color: var(--color);
+            line-height: 1.6;
+            font-size: 1rem;
+            background: var(--background);
+        }
+
+        .section-container {
+            max-width: var(--max-width, 1000px);
+            margin: 0 auto;
+            padding: 3rem var(--padding, 1rem);
+        }
+
+        .heading {
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .button {
+            color: white;
+            background: var(--color-accent);
+            border-radius: 5px;
+            padding: 8px 20px;
+            transition: var(--transition);
+        }
+
+        .button:hover {
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button.inverted {
+            background: transparent;
+            color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+        }
+    </style><!-- HEAD_svelte-du3lun_END -->
+    <style>
+        .section-container.svelte-1grguq5.svelte-1grguq5 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem
+        }
+
+        .logo.svelte-1grguq5.svelte-1grguq5 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.2
+        }
+
+        .desktop-nav.svelte-1grguq5.svelte-1grguq5 {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%
+        }
+
+        .desktop-nav.svelte-1grguq5 nav.svelte-1grguq5 {
+            display: flex;
+            gap: 2rem
+        }
+
+        .desktop-nav.svelte-1grguq5 nav a.link.svelte-1grguq5 {
+            border-color: transparent;
+            transition: border-color 0.1s;
+            font-size: 0.95rem
+        }
+
+        .desktop-nav.svelte-1grguq5 nav a.link.svelte-1grguq5:hover {
+            border-color: initial
+        }
+
+        @media(min-width: 800px) {
+            .desktop-nav.svelte-1grguq5.svelte-1grguq5 {
+                display: flex
+            }
+        }
+
+        .mobile-nav.svelte-1grguq5.svelte-1grguq5 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            font-weight: 500
+        }
+
+        @media(min-width: 800px) {
+            .mobile-nav.svelte-1grguq5.svelte-1grguq5 {
+                display: none
+            }
+        }
+
+        #popup.svelte-1grguq5.svelte-1grguq5 {
+            font-size: 1.25rem;
+            display: grid;
+            gap: 1rem;
+            position: absolute;
+            text-align: center;
+            background-color: var(--background-color, white);
+            box-shadow: var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));
+            border-radius: var(--border-radius);
+            inset: 0.5rem;
+            bottom: initial;
+            padding: 2rem;
+            z-index: 1
+        }
+
+        #popup.svelte-1grguq5 button#close.svelte-1grguq5 {
+            position: absolute;
+            right: 1rem;
+            top: 1rem
+        }
+
+        .items.svelte-dg30bs.svelte-dg30bs {
+            display: grid;
+            gap: 6rem
+        }
+
+        @media(min-width: 800px) {
+            .items.svelte-dg30bs.svelte-dg30bs {
+                grid-template-columns: 1fr 1fr
+            }
+        }
+
+        .item.svelte-dg30bs.svelte-dg30bs {
+            display: grid;
+            place-content: start
+        }
+
+        .item.svelte-dg30bs img.svelte-dg30bs {
+            width: 100%;
+            margin-bottom: 1.5rem;
+            border-radius: var(--border-radius)
+        }
+
+        .item.svelte-dg30bs .body.svelte-dg30bs {
+            display: grid;
+            place-items: flex-start;
+            line-height: 1.5
+        }
+
+        .item.svelte-dg30bs .body .title.svelte-dg30bs {
+            font-size: 1.75rem;
+            margin-bottom: .5rem
+        }
+
+        footer.svelte-1x6qn6a.svelte-1x6qn6a {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10rem
+        }
+
+        nav.svelte-1x6qn6a.svelte-1x6qn6a {
+            display: grid;
+            place-items: start;
+            gap: 1.5rem;
+            font-size: 1.5rem
+        }
+
+        .primo.svelte-1x6qn6a a.svelte-1x6qn6a {
+            text-decoration: underline
+        }
+
+        .section-container.svelte-1m1m225.svelte-1m1m225 {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem
+        }
+
+        @media(min-width: 600px) {
+            .section-container.svelte-1m1m225.svelte-1m1m225 {
+                flex-direction: row
+            }
+        }
+
+        nav.svelte-1m1m225.svelte-1m1m225 {
+            display: flex;
+            gap: 1rem
+        }
+
+        nav.svelte-1m1m225 .link.svelte-1m1m225 {
+            border-color: transparent
+        }
+
+        nav.svelte-1m1m225 .link.svelte-1m1m225:hover {
+            border-color: initial
+        }
+
+        .social-links.svelte-1m1m225.svelte-1m1m225 {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 1.5rem
+        }
+
+        .social-links.svelte-1m1m225 a.svelte-1m1m225 {
+            color: var(--color-accent, rebeccapurple);
+            transition: var(--transition, 0.1s transform)
+        }
+
+        .social-links.svelte-1m1m225 a.svelte-1m1m225:hover {
+            transform: scale(1.1)
+        }
+    </style>
+</head>
+
+<body id="page">
+
+    <div class="section" id="section-81ef058d">
+        <header class="section-container svelte-1grguq5">
+            <div class="desktop-nav svelte-1grguq5"><a href="/" class="logo svelte-1grguq5">AFA Pi d'en Xandri</a>
+                <nav class="svelte-1grguq5"><a class="link svelte-1grguq5" href="">Home</a><a class="link svelte-1grguq5" href="/about">About</a><a class="link svelte-1grguq5" href="/">Contact</a></nav>
+            </div>
+            <div class="mobile-nav svelte-1grguq5"><a href="/" class="logo svelte-1grguq5">AFA Pi d'en Xandri</a>
+                <button id="open" aria-label="Open mobile navigation"></button>
+            </div>
+        </header>
+    </div>
+    <div class="section" id="section-03b30a1f">
+        <section class="section-container svelte-dg30bs">
+            <div class="items svelte-dg30bs">
+                <div class="item svelte-dg30bs"><img src="https://images.unsplash.com/photo-1686062095898-de61c74f2a2e?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2232&amp;q=80" alt="" class="svelte-dg30bs">
+                    <div class="body svelte-dg30bs">
+                        <h2 class="title heading svelte-dg30bs">Abstract</h2>
+                        <div class="description"><!-- HTML_TAG_START -->Abstract photography invites viewers to interpret and engage with the image in their own unique way.<!-- HTML_TAG_END --></div>
+                    </div>
+                </div>
+                <div class="item svelte-dg30bs"><img src="https://images.unsplash.com/photo-1686062096176-bfd55776c915?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2232&amp;q=80" alt="" class="svelte-dg30bs">
+                    <div class="body svelte-dg30bs">
+                        <h2 class="title heading svelte-dg30bs">Landscape</h2>
+                        <div class="description"><!-- HTML_TAG_START -->Landscape photography showcases the beauty and grandeur of natural environments, capturing expansive vistas and dramatic lighting.<!-- HTML_TAG_END --></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="section" id="section-28f5f2b5">
+        <footer class="section-container svelte-1x6qn6a">
+            <nav class="svelte-1x6qn6a"><a class="link" href="/work">Work</a><a class="link" href="/services">Services</a><a class="link" href="/company">Company</a><a class="link" href="/contact">Contact Us</a></nav>
+            <span class="primo svelte-1x6qn6a">Powered by
+                <a href="https://primo.so" class="primo svelte-1x6qn6a">Primo</a></span>
+        </footer>
+    </div>
+    <div class="section" id="section-4f3a0bc6">
+        <footer class="section-container svelte-1m1m225">
+            <nav class="svelte-1m1m225"><a class="link svelte-1m1m225" href="/">Home</a><a class="link svelte-1m1m225" href="/">About</a></nav>
+            <div class="social-links svelte-1m1m225"><a href="https://twitter.com/afapidenxandri" aria-label="twitter" class="svelte-1m1m225">
+                </a><a href="/" aria-label="qui" class="svelte-1m1m225">
+                </a></div>
+        </footer>
+    </div>
+
+    <script type="module">
+        const path = window.location.pathname === '/' ? '' : window.location.pathname
+        const [{
+            default: App
+        }] = await Promise.all([
+            import(path + '/_module.js')
+        ]).catch(e => console.error(e))
+        new App({
+            target: document.querySelector('body'),
+            hydrate: true,
+        })
+    </script>
+</body>
+
+</html>
