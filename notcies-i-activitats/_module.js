@@ -4572,7 +4572,7 @@ function create_fragment$6(ctx) {
 					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689943678230telon-fondo-producto-pastel-espacio-diseno.jpg",
 					"size": 8776
 				},
-				headline: "Afa Pi d'en Xandri",
+				headline: "Notícies i activitats",
 				logo: {
 					"image": {
 						"alt": "",
@@ -4584,31 +4584,24 @@ function create_fragment$6(ctx) {
 				},
 				site_nav: [
 					{
-						"link": { "url": "/qui-som", "label": "Qui som?" }
-					},
-					{
 						"link": {
-							"url": "/projectes",
-							"label": "Projectes"
+							"url": "/about",
+							"label": "About",
+							"active": false
 						}
 					},
 					{
 						"link": {
-							"url": "/notcies-i-activitats",
-							"label": "Notícies i activitats"
+							"url": "/mission",
+							"label": "Mission",
+							"active": false
 						}
 					},
 					{
-						"link": {
-							"url": "/curs-2023-24",
-							"label": "Curs 2023-24"
-						}
+						"link": { "url": "/team", "label": "Team" }
 					},
 					{
-						"link": {
-							"url": "/documents",
-							"label": "Documents"
-						}
+						"link": { "url": "/blog", "label": "Blog" }
 					}
 				]
 			}

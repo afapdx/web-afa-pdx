@@ -5790,31 +5790,24 @@ function create_fragment$a(ctx) {
 				},
 				site_nav: [
 					{
-						"link": { "url": "/qui-som", "label": "Qui som?" }
-					},
-					{
 						"link": {
-							"url": "/projectes",
-							"label": "Projectes"
+							"url": "/about",
+							"label": "About",
+							"active": false
 						}
 					},
 					{
 						"link": {
-							"url": "/notcies-i-activitats",
-							"label": "Notícies i activitats"
+							"url": "/mission",
+							"label": "Mission",
+							"active": false
 						}
 					},
 					{
-						"link": {
-							"url": "/curs-2023-24",
-							"label": "Curs 2023-24"
-						}
+						"link": { "url": "/team", "label": "Team" }
 					},
 					{
-						"link": {
-							"url": "/documents",
-							"label": "Documents"
-						}
+						"link": { "url": "/blog", "label": "Blog" }
 					}
 				]
 			}
