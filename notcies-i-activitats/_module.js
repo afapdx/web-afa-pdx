@@ -3428,7 +3428,7 @@ function create_fragment$2(ctx) {
 			attr(header, "aria-label", header_aria_label_value = /*background*/ ctx[0].alt);
 			attr(header, "class", "svelte-19bt6nw");
 			attr(div4, "class", "section");
-			attr(div4, "id", "section-d4efac5e");
+			attr(div4, "id", "section-cbc5355b");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div4, anchor);
@@ -3741,7 +3741,7 @@ function create_fragment$3(ctx) {
 			attr(section, "class", "svelte-8kn6x6");
 			toggle_class(section, "image-left", /*variation*/ ctx[4] === "image_left");
 			attr(div3, "class", "section");
-			attr(div3, "id", "section-8a9a9db2");
+			attr(div3, "id", "section-aedb69c5");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div3, anchor);
@@ -4152,7 +4152,7 @@ function create_fragment$4(ctx) {
 			attr(ul1, "class", "cards svelte-irlxbt");
 			attr(section, "class", "section-container svelte-irlxbt");
 			attr(div1, "class", "section");
-			attr(div1, "id", "section-2fb65265");
+			attr(div1, "id", "section-dcf9eeb0");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div1, anchor);
@@ -4332,7 +4332,7 @@ function create_fragment$5(ctx) {
 		h() {
 			attr(div0, "class", "section-container svelte-1h2ifr1");
 			attr(div1, "class", "section");
-			attr(div1, "id", "section-d331fac7");
+			attr(div1, "id", "section-d3f24d08");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div1, anchor);
@@ -4596,7 +4596,7 @@ function create_fragment$6(ctx) {
 			attr(div0, "class", "teasers svelte-1re4jxk");
 			attr(section, "class", "section-container");
 			attr(div1, "class", "section");
-			attr(div1, "id", "section-48fdc72a");
+			attr(div1, "id", "section-aef1d1c3");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div1, anchor);
@@ -4780,7 +4780,7 @@ function create_fragment$7(ctx) {
 			attr(section, "class", "svelte-1ylla05");
 			toggle_class(section, "image-left", /*variation*/ ctx[4] === "image_left");
 			attr(div3, "class", "section");
-			attr(div3, "id", "section-8289c674");
+			attr(div3, "id", "section-fff9b250");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div3, anchor);
@@ -5241,7 +5241,7 @@ function create_fragment$8(ctx) {
 			attr(form, "class", "svelte-15f55d3");
 			attr(section, "class", "section-container svelte-15f55d3");
 			attr(div3, "class", "section");
-			attr(div3, "id", "section-f61584d8");
+			attr(div3, "id", "section-d8b615bd");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div3, anchor);
@@ -5611,7 +5611,7 @@ function create_fragment$9(ctx) {
 			attr(div0, "class", "social-links svelte-i9k4w2");
 			attr(footer, "class", "section-container svelte-i9k4w2");
 			attr(div1, "class", "section");
-			attr(div1, "id", "section-2bb4c666");
+			attr(div1, "id", "section-d0c3c4e7");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div1, anchor);
@@ -5778,7 +5778,7 @@ function create_fragment$a(ctx) {
 					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689934518929primer-dia-escola-2021-14_37_1600x800.jpeg",
 					"size": 196
 				},
-				headline: "AFA Pi d'en Xandri",
+				headline: "Afa Pi d'en Xandri",
 				logo: {
 					"image": {
 						"alt": "",

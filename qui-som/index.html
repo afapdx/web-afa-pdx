@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Primo" />
+    <!-- HEAD_svelte-hh1ju0_START -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+        body {
+            background-color: hsla(30 100% 96% / 1);
+        }
+
+        #page {
+            font-family: 'Space Grotesk', system-ui, sans-serif;
+            color: var(--color);
+            line-height: 1.6;
+            font-size: 1rem;
+            background: var(--background);
+        }
+
+        .section-container {
+            max-width: var(--max-width, 1000px);
+            margin: 0 auto;
+            padding: 3rem var(--padding, 1rem);
+        }
+
+        .heading {
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .button {
+            color: white;
+            background: var(--color-accent);
+            border-radius: 5px;
+            padding: 8px 20px;
+            transition: var(--transition);
+        }
+
+        .button:hover {
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button.inverted {
+            background: transparent;
+            color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+        }
+    </style><!-- HEAD_svelte-hh1ju0_END -->
+    <style>
+        header.svelte-1qt2bex.svelte-1qt2bex {
+            color: var(--color-white, white);
+            position: relative;
+            overflow: hidden;
+            background: var(--color-background)
+        }
+
+        img.svelte-1qt2bex.svelte-1qt2bex {
+            position: absolute;
+            inset: 0;
+            height: 100%;
+            width: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            z-index: 0
+        }
+
+        .heading-group.svelte-1qt2bex.svelte-1qt2bex {
+            background: #12121260;
+            display: grid;
+            place-items: center;
+            padding-top: 12rem;
+            padding-bottom: 12rem;
+            position: relative;
+            gap: 1rem
+        }
+
+        .heading-group.svelte-1qt2bex .heading.svelte-1qt2bex {
+            font-size: clamp(2rem, 10vw, 3.5rem)
+        }
+
+        .heading-group.svelte-1qt2bex .subheading.svelte-1qt2bex {
+            place-self: center;
+            font-size: 1.125rem;
+            line-height: 1.3;
+            color: var(--color-inverted)
+        }
+
+        .buttons.svelte-1qt2bex.svelte-1qt2bex {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem
+        }
+
+        .buttons.svelte-1qt2bex .button.svelte-1qt2bex {
+            background: transparent;
+            color: var(--color-inverted);
+            border: 1.5px solid white
+        }
+
+        .section-container.svelte-1maz2r5 {
+            display: grid;
+            place-items: flex-start;
+            gap: 2rem
+        }
+
+        @media(min-width: 700px) {
+            .section-container.svelte-1maz2r5 {
+                grid-template-columns: 1fr 1fr;
+                justify-content: space-between;
+                gap: 4rem
+            }
+        }
+
+        .heading-group.svelte-1maz2r5 {
+            text-align: left;
+            display: grid;
+            gap: 1rem
+        }
+
+        .content.svelte-1maz2r5 {
+            font-size: 1.125rem;
+            line-height: 1.8
+        }
+    </style>
+</head>
+
+<body id="page">
+
+    <div class="section" id="section-6aaf998a">
+        <header class="svelte-1qt2bex"><img src="https://images.unsplash.com/photo-1473800447596-01729482b8eb?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80" alt="" class="svelte-1qt2bex">
+            <div class="heading-group svelte-1qt2bex">
+                <h1 class="heading svelte-1qt2bex">Your next adventure starts here.</h1>
+                <span class="subheading svelte-1qt2bex">some text to explain the page or just go with the header.</span>
+                <div class="buttons svelte-1qt2bex"><a href="/" class="button svelte-1qt2bex">Start here</a><a href="/" class="button svelte-1qt2bex">Learn More</a></div>
+            </div>
+        </header>
+    </div>
+    <div class="section" id="section-f2e19235">
+        <section class="section-container svelte-1maz2r5">
+            <div class="heading-group svelte-1maz2r5"><span class="superhead">WHAT DRIVES US</span>
+                <h2 class="heading"> We're passionate about building a better meeting workflow</h2>
+            </div>
+            <div class="content svelte-1maz2r5"><!-- HTML_TAG_START -->
+                <p>Our calendar software company was founded with the goal of helping people better manage their time and stay organized. We recognized that many people struggle to keep track of their busy schedules, and we wanted to provide a simple and effective solution.
+                    With our calendar software, we've created an easy-to-use tool that allows users to quickly add and view events, set reminders, and invite others to events. We've also made sure to integrate seamlessly with popular email services, so that users can easily stay connected with their colleagues and friends.</p><!-- HTML_TAG_END -->
+            </div>
+        </section>
+    </div>
+
+    <script type="module">
+        const path = window.location.pathname === '/' ? '' : window.location.pathname
+        const [{
+            default: App
+        }] = await Promise.all([
+            import(path + '/_module.js')
+        ]).catch(e => console.error(e))
+        new App({
+            target: document.querySelector('body'),
+            hydrate: true,
+        })
+    </script>
+</body>
+
+</html>
