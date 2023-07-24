@@ -4363,7 +4363,7 @@ function get_each_context$2(ctx, list, i) {
 	return child_ctx;
 }
 
-// (80:8) {#if teaser.image.url}
+// (81:8) {#if teaser.image.url}
 function create_if_block_1$2(ctx) {
 	let img;
 	let img_src_value;
@@ -4381,7 +4381,7 @@ function create_if_block_1$2(ctx) {
 		h() {
 			if (!src_url_equal(img.src, img_src_value = /*teaser*/ ctx[1].image.url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*teaser*/ ctx[1].image.alt);
-			attr(img, "class", "svelte-1re4jxk");
+			attr(img, "class", "svelte-8ntl99");
 		},
 		m(target, anchor) {
 			insert_hydration(target, img, anchor);
@@ -4401,7 +4401,7 @@ function create_if_block_1$2(ctx) {
 	};
 }
 
-// (86:10) {#if teaser.link.url}
+// (87:10) {#if teaser.link.url}
 function create_if_block$3(ctx) {
 	let a;
 	let t_value = /*teaser*/ ctx[1].link.label + "";
@@ -4422,7 +4422,7 @@ function create_if_block$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-1re4jxk");
+			attr(a, "class", "link svelte-8ntl99");
 			attr(a, "href", a_href_value = /*teaser*/ ctx[1].link.url);
 		},
 		m(target, anchor) {
@@ -4442,7 +4442,7 @@ function create_if_block$3(ctx) {
 	};
 }
 
-// (78:4) {#each teasers as teaser}
+// (79:4) {#each teasers as teaser}
 function create_each_block$2(ctx) {
 	let div2;
 	let t0;
@@ -4496,10 +4496,10 @@ function create_each_block$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "title svelte-1re4jxk");
+			attr(h2, "class", "title svelte-8ntl99");
 			attr(div0, "class", "content");
-			attr(div1, "class", "body svelte-1re4jxk");
-			attr(div2, "class", "teaser svelte-1re4jxk");
+			attr(div1, "class", "body svelte-8ntl99");
+			attr(div2, "class", "teaser svelte-8ntl99");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -4593,7 +4593,7 @@ function create_fragment$6(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "teasers svelte-1re4jxk");
+			attr(div0, "class", "teasers svelte-8ntl99");
 			attr(section, "class", "section-container");
 			attr(div1, "class", "section");
 			attr(div1, "id", "section-48fdc72a");
@@ -4682,7 +4682,7 @@ function create_if_block$4(ctx) {
 		},
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[2].url);
-			attr(a, "class", "button svelte-7ofaz2");
+			attr(a, "class", "button svelte-1fxq9ou");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -4769,15 +4769,15 @@ function create_fragment$7(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h1, "class", "headline svelte-7ofaz2");
-			attr(div0, "class", "subheading svelte-7ofaz2");
-			attr(div1, "class", "body svelte-7ofaz2");
+			attr(h1, "class", "headline svelte-1fxq9ou");
+			attr(div0, "class", "subheading svelte-1fxq9ou");
+			attr(div1, "class", "body svelte-1fxq9ou");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[3].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[3].alt);
-			attr(img, "class", "svelte-7ofaz2");
-			attr(figure, "class", "svelte-7ofaz2");
-			attr(div2, "class", "section-container svelte-7ofaz2");
-			attr(section, "class", "svelte-7ofaz2");
+			attr(img, "class", "svelte-1fxq9ou");
+			attr(figure, "class", "svelte-1fxq9ou");
+			attr(div2, "class", "section-container svelte-1fxq9ou");
+			attr(section, "class", "svelte-1fxq9ou");
 			toggle_class(section, "image-left", /*variation*/ ctx[4] === "image_left");
 			attr(div3, "class", "section");
 			attr(div3, "id", "section-8289c674");
@@ -5887,9 +5887,7 @@ function create_fragment$a(ctx) {
 						},
 						"image": {
 							"alt": "",
-							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689944561349img-0202.jpeg",
-							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689944561349img-0202.jpeg",
-							"size": 523
+							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689944561349img-0202.jpeg"
 						},
 						"title": "Projecte de l'AFA",
 						"content": {
@@ -5920,14 +5918,17 @@ function create_fragment$a(ctx) {
 
 	component_6 = new Component$7({
 			props: {
-				heading: "Schedule Meetings in Minutes with Cali",
+				heading: "Festa de la tardor",
 				subheading: "Get your meetings effortlessly organized with Cali. So you can spend more time on meeting people instead of scheduling meetings.",
-				link: { "url": "/", "label": "Get Started" },
+				link: {
+					"url": "/notcies-i-activitats",
+					"label": "Veure totes les activitats"
+				},
 				image: {
 					"alt": "",
-					"src": "",
-					"url": "",
-					"size": null
+					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213735491cercavila-escoles-19.jpeg",
+					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213735491cercavila-escoles-19.jpeg",
+					"size": 286
 				},
 				variation: "image_left"
 			}
