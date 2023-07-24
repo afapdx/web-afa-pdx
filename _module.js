@@ -5825,8 +5825,8 @@ function create_fragment$a(ctx) {
 				heading: "S'apropa l'inici del curs 2023-24",
 				subheading: "Get your meetings effortlessly organized with Cali. So you can spend more time on meeting people instead of scheduling meetings.",
 				link: {
-					"url": "/notcies-i-activitats",
-					"label": "Veure totes les activitats "
+					"url": "/curs-2023-24",
+					"label": "Veure tota la informació"
 				},
 				image: {
 					"alt": "",
