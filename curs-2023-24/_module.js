@@ -5809,6 +5809,12 @@ function create_fragment$a(ctx) {
 							"url": "/curs-2023-24",
 							"label": "Curs 2023-24"
 						}
+					},
+					{
+						"link": {
+							"label": "Documents",
+							"url": "/documents"
+						}
 					}
 				]
 			}

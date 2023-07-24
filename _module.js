@@ -5809,6 +5809,12 @@ function create_fragment$a(ctx) {
 							"url": "/curs-2023-24",
 							"label": "Curs 2023-24"
 						}
+					},
+					{
+						"link": {
+							"label": "Documents",
+							"url": "/documents"
+						}
 					}
 				]
 			}
@@ -5816,14 +5822,17 @@ function create_fragment$a(ctx) {
 
 	component_2 = new Component$3({
 			props: {
-				heading: "Schedule Meetings in Minutes with Cali",
+				heading: "S'apropa l'inici del curs 2023-24",
 				subheading: "Get your meetings effortlessly organized with Cali. So you can spend more time on meeting people instead of scheduling meetings.",
-				link: { "url": "/", "label": "Get Started" },
+				link: {
+					"url": "/notcies-i-activitats",
+					"label": "Veure totes les activitats "
+				},
 				image: {
 					"alt": "",
-					"src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-					"url": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-					"size": null
+					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210454721primer-dia-escola-2021-25.jpeg",
+					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210454721primer-dia-escola-2021-25.jpeg",
+					"size": 604
 				},
 				variation: "image_right"
 			}
