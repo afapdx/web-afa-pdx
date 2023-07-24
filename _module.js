@@ -5846,7 +5846,7 @@ function create_fragment$a(ctx) {
 				cards: [
 					{
 						"icon": "akar-icons:book",
-						"link": { "url": "/", "label": "Learn More" },
+						"link": { "url": "/qui-som", "label": "Learn More" },
 						"title": "Workflow Automation",
 						"content": {
 							"html": "<p>Everything you need to get started working real real fast.</p>",
@@ -5855,7 +5855,7 @@ function create_fragment$a(ctx) {
 					},
 					{
 						"icon": "akar-icons:book",
-						"link": { "url": "/", "label": "Learn More" },
+						"link": { "url": "/qui-som", "label": "Learn More" },
 						"title": "Double-sided Booking",
 						"content": {
 							"html": "<p>Everything you need to get started working real real fast.</p>",
@@ -5864,7 +5864,7 @@ function create_fragment$a(ctx) {
 					},
 					{
 						"icon": "akar-icons:leaf",
-						"link": { "url": "/", "label": "voluptate" },
+						"link": { "url": "/qui-som", "label": "voluptate" },
 						"title": "Sostenibilitat",
 						"content": {
 							"html": "<p>Everything you need to get started working real real fast.</p>",
