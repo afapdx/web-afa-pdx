@@ -48,7 +48,15 @@
         }
     </style><!-- HEAD_svelte-du3lun_END -->
     <style>
-        .section-container.svelte-1grguq5.svelte-1grguq5 {
+        header.svelte-19bt6nw.svelte-19bt6nw {
+            color: white;
+            background-size: cover;
+            display: grid;
+            gap: 20rem
+        }
+
+        .section-container.svelte-19bt6nw.svelte-19bt6nw {
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -56,41 +64,42 @@
             padding-bottom: 1rem
         }
 
-        .logo.svelte-1grguq5.svelte-1grguq5 {
+        .logo.svelte-19bt6nw.svelte-19bt6nw {
             font-size: 1.5rem;
             font-weight: 600;
             line-height: 1.2
         }
 
-        .desktop-nav.svelte-1grguq5.svelte-1grguq5 {
+        .desktop-nav.svelte-19bt6nw.svelte-19bt6nw {
             display: none;
             align-items: center;
             justify-content: space-between;
             width: 100%
         }
 
-        .desktop-nav.svelte-1grguq5 nav.svelte-1grguq5 {
+        .desktop-nav.svelte-19bt6nw nav.svelte-19bt6nw {
             display: flex;
             gap: 2rem
         }
 
-        .desktop-nav.svelte-1grguq5 nav a.link.svelte-1grguq5 {
+        .desktop-nav.svelte-19bt6nw nav a.link.svelte-19bt6nw {
             border-color: transparent;
             transition: border-color 0.1s;
             font-size: 0.95rem
         }
 
-        .desktop-nav.svelte-1grguq5 nav a.link.svelte-1grguq5:hover {
+        .desktop-nav.svelte-19bt6nw nav a.link.svelte-19bt6nw:hover,
+        .desktop-nav.svelte-19bt6nw nav a.link .active.svelte-19bt6nw {
             border-color: initial
         }
 
         @media(min-width: 800px) {
-            .desktop-nav.svelte-1grguq5.svelte-1grguq5 {
+            .desktop-nav.svelte-19bt6nw.svelte-19bt6nw {
                 display: flex
             }
         }
 
-        .mobile-nav.svelte-1grguq5.svelte-1grguq5 {
+        .mobile-nav.svelte-19bt6nw.svelte-19bt6nw {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -99,12 +108,20 @@
         }
 
         @media(min-width: 800px) {
-            .mobile-nav.svelte-1grguq5.svelte-1grguq5 {
+            .mobile-nav.svelte-19bt6nw.svelte-19bt6nw {
                 display: none
             }
         }
 
-        #popup.svelte-1grguq5.svelte-1grguq5 {
+        .headline.svelte-19bt6nw.svelte-19bt6nw {
+            font-size: clamp(2rem, 10vw, 3.5rem);
+            max-width: 800px;
+            padding-bottom: 2rem;
+            line-height: 1.1
+        }
+
+        #popup.svelte-19bt6nw.svelte-19bt6nw {
+            color: #222;
             font-size: 1.25rem;
             display: grid;
             gap: 1rem;
@@ -119,221 +136,532 @@
             z-index: 1
         }
 
-        #popup.svelte-1grguq5 button#close.svelte-1grguq5 {
+        #popup.svelte-19bt6nw button#close.svelte-19bt6nw {
             position: absolute;
             right: 1rem;
             top: 1rem
         }
 
-        .items.svelte-dg30bs.svelte-dg30bs {
+        section.svelte-tlgs72.svelte-tlgs72 {
+            background: var(--color-brand);
+            overflow: hidden;
+            background-color: #F1F08A
+        }
+
+        section.image-left.svelte-tlgs72 figure.svelte-tlgs72 {
+            grid-column: 1;
+            grid-row: 1
+        }
+
+        section.image-left.svelte-tlgs72 .body.svelte-tlgs72 {
+            grid-column: 2
+        }
+
+        .section-container.svelte-tlgs72.svelte-tlgs72 {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 2rem
+        }
+
+        @media(min-width: 800px) {
+            .section-container.svelte-tlgs72.svelte-tlgs72 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                place-items: center;
+                gap: 6rem;
+                padding-block: 6rem
+            }
+        }
+
+        .body.svelte-tlgs72.svelte-tlgs72 {
+            color: var(--color-inverted);
+            display: grid;
+            place-items: start;
+            padding-top: 2rem
+        }
+
+        .body.svelte-tlgs72 .headline.svelte-tlgs72 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: clamp(2.75rem, 10vw, 3rem);
+            line-height: 1.1;
+            margin-bottom: 1.5rem
+        }
+
+        .body.svelte-tlgs72 .subheading.svelte-tlgs72 {
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 1.5;
+            margin-bottom: 2rem
+        }
+
+        .body.svelte-tlgs72 .button.svelte-tlgs72 {
+            font-weight: 500
+        }
+
+        figure.svelte-tlgs72.svelte-tlgs72 {
+            position: relative
+        }
+
+        figure.svelte-tlgs72 img.svelte-tlgs72 {
+            border-radius: var(--border-radius);
+            z-index: 1;
+            position: relative
+        }
+
+        section.svelte-irlxbt.svelte-irlxbt.svelte-irlxbt {
+            --icon-size: 30px
+        }
+
+        header.svelte-irlxbt.svelte-irlxbt.svelte-irlxbt {
+            margin-bottom: 3rem
+        }
+
+        .heading.svelte-irlxbt.svelte-irlxbt.svelte-irlxbt {
+            text-align: center
+        }
+
+        ul.icon-list.svelte-irlxbt.svelte-irlxbt.svelte-irlxbt {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            -moz-column-gap: 3.5rem;
+            column-gap: 3.5rem;
+            row-gap: 2rem;
+            margin-bottom: 3rem
+        }
+
+        ul.icon-list.svelte-irlxbt li.svelte-irlxbt.svelte-irlxbt {
+            display: flex;
+            gap: 12px;
+            align-items: center
+        }
+
+        ul.icon-list.svelte-irlxbt li.svelte-irlxbt .icon.svelte-irlxbt {
+            color: var(--color-accent);
+            font-size: 1.125rem
+        }
+
+        ul.cards.svelte-irlxbt.svelte-irlxbt.svelte-irlxbt {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            gap: 2rem
+        }
+
+        ul.cards.svelte-irlxbt li.svelte-irlxbt.svelte-irlxbt {
+            display: grid;
+            place-items: start;
+            gap: 1.5rem;
+            border: 1px solid var(--border-color);
+            padding: 2.5rem;
+            border-radius: var(--border-radius)
+        }
+
+        ul.cards.svelte-irlxbt li.svelte-irlxbt .icon.svelte-irlxbt {
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 0.75rem;
+            color: var(--color-accent);
+            font-size: var(--icon-size)
+        }
+
+        ul.cards.svelte-irlxbt li .body.svelte-irlxbt.svelte-irlxbt {
+            display: grid;
+            place-items: start;
+            gap: 1rem
+        }
+
+        ul.cards.svelte-irlxbt li .body .title.svelte-irlxbt.svelte-irlxbt {
+            display: grid;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 1.25rem;
+            line-height: 1.4;
+            font-weight: 600
+        }
+
+        ul.cards.svelte-irlxbt li .body .content.svelte-irlxbt.svelte-irlxbt {
+            font-weight: 400;
+            line-height: 1.6
+        }
+
+        .teasers.svelte-1re4jxk.svelte-1re4jxk {
             display: grid;
             gap: 6rem
         }
 
-        @media(min-width: 800px) {
-            .items.svelte-dg30bs.svelte-dg30bs {
-                grid-template-columns: 1fr 1fr
+        .teaser.svelte-1re4jxk.svelte-1re4jxk {
+            display: grid;
+            gap: 3rem
+        }
+
+        @media(min-width: 1200px) {
+            .teaser.svelte-1re4jxk.svelte-1re4jxk {
+                gap: 6rem
             }
         }
 
-        .item.svelte-dg30bs.svelte-dg30bs {
-            display: grid;
-            place-content: start
-        }
-
-        .item.svelte-dg30bs img.svelte-dg30bs {
+        .teaser.svelte-1re4jxk img.svelte-1re4jxk {
             width: 100%;
-            margin-bottom: 1.5rem;
             border-radius: var(--border-radius)
         }
 
-        .item.svelte-dg30bs .body.svelte-dg30bs {
+        .teaser.svelte-1re4jxk .body.svelte-1re4jxk {
             display: grid;
             place-items: flex-start;
-            line-height: 1.5
+            gap: 1rem;
+            padding: 0;
+            line-height: 1.5;
+            max-width: 450px
         }
 
-        .item.svelte-dg30bs .body .title.svelte-dg30bs {
-            font-size: 1.75rem;
-            margin-bottom: .5rem
+        .teaser.svelte-1re4jxk .body .title.svelte-1re4jxk {
+            font-size: 2rem;
+            font-family: var(--font-heading);
+            font-weight: 500;
+            line-height: 1.1
         }
 
-        .heading.svelte-7tm6a9.svelte-7tm6a9 {
-            text-align: center;
-            margin-bottom: 3rem
+        .teaser.svelte-1re4jxk .body a.link.svelte-1re4jxk {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem
         }
 
-        ul.cards.svelte-7tm6a9.svelte-7tm6a9 {
+        @media(min-width: 800px) {
+            .teaser.svelte-1re4jxk.svelte-1re4jxk {
+                grid-template-columns: 1fr 1fr;
+                place-items: center
+                    /* switch direction for even items */
+            }
+
+            .teaser.svelte-1re4jxk:nth-child(odd) img.svelte-1re4jxk {
+                grid-row: 1;
+                grid-column: 2
+            }
+
+            .teaser.svelte-1re4jxk:nth-child(even) img.svelte-1re4jxk {
+                grid-row: 1;
+                grid-column: 1
+            }
+        }
+
+        .section-container.svelte-1pgbsk1.svelte-1pgbsk1 {
             display: grid;
-            place-items: center;
+            justify-content: center;
+            background-color: grey
+        }
+
+        .card.svelte-1pgbsk1.svelte-1pgbsk1 {
+            padding: 4rem clamp(2rem, 10vw, 7rem);
+            border: 1px solid var(--border-color, #eee);
+            border-radius: var(--border-radius);
+            text-align: center;
+            display: grid
+        }
+
+        .heading.svelte-1pgbsk1.svelte-1pgbsk1 {
+            margin-bottom: 1.5rem
+        }
+
+        .body.svelte-1pgbsk1.svelte-1pgbsk1 {
+            max-width: 700px;
+            margin-bottom: 2.25rem
+        }
+
+        .buttons.svelte-1pgbsk1.svelte-1pgbsk1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem
+        }
+
+        .buttons.svelte-1pgbsk1 .button.svelte-1pgbsk1 {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem
+        }
+
+        .section-container.svelte-15f55d3.svelte-15f55d3 {
+            display: grid;
             gap: 2rem
         }
 
-        ul.cards.svelte-7tm6a9 li.svelte-7tm6a9 {
-            max-width: 400px;
-            padding: 1.5rem;
+        @media(min-width: 800px) {
+            .section-container.svelte-15f55d3.svelte-15f55d3 {
+                grid-template-columns: 3fr 2fr;
+                gap: 14rem
+            }
+        }
+
+        .content.svelte-15f55d3.svelte-15f55d3 {
+            display: grid;
+            place-content: flex-start;
+            gap: 1rem
+        }
+
+        .content.svelte-15f55d3 .body.svelte-15f55d3 {
+            margin-bottom: .5rem
+        }
+
+        .content.svelte-15f55d3 .social-links.svelte-15f55d3 {
+            display: grid;
+            gap: 0.75rem
+        }
+
+        .content.svelte-15f55d3 .social-links a.svelte-15f55d3 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem
+        }
+
+        .content.svelte-15f55d3 .social-links a .icon.svelte-15f55d3 {
+            font-size: 1.75rem;
+            color: var(--color-accent, rebeccapurple);
+            transition: var(--transition, 0.1s transform)
+        }
+
+        .content.svelte-15f55d3 .social-links a:hover .icon.svelte-15f55d3 {
+            transform: scale(1.1)
+        }
+
+        form.svelte-15f55d3.svelte-15f55d3 {
+            display: grid;
+            gap: 1rem;
+            padding: 2rem;
             border: 1px solid var(--border-color, #eee);
             border-radius: var(--border-radius)
         }
 
-        ul.cards.svelte-7tm6a9 li figure.svelte-7tm6a9 {
+        form.svelte-15f55d3 label.svelte-15f55d3 {
             display: grid;
-            place-items: center
+            gap: 0.25rem
         }
 
-        ul.cards.svelte-7tm6a9 li figure img.svelte-7tm6a9 {
-            padding: 2rem;
-            aspect-ratio: 1 / 1;
-            border-radius: 50%;
-            -o-object-fit: cover;
-            object-fit: cover;
-            width: 100%
+        form.svelte-15f55d3 label span.svelte-15f55d3 {
+            font-size: 0.75rem;
+            font-weight: 500
         }
 
-        ul.cards.svelte-7tm6a9 li .info .details.svelte-7tm6a9 {
-            display: grid;
-            gap: .25rem;
-            text-align: center;
-            margin-bottom: 1rem
-        }
-
-        ul.cards.svelte-7tm6a9 li .info .details span.name.svelte-7tm6a9 {
-            font-weight: 600
-        }
-
-        ul.cards.svelte-7tm6a9 li .info .details span.title.svelte-7tm6a9 {
+        form.svelte-15f55d3 label input.svelte-15f55d3,
+        form.svelte-15f55d3 label textarea.svelte-15f55d3 {
             font-size: 1rem;
-            color: #444
+            padding: 0.5rem;
+            outline-color: transparent;
+            transition: var(--transition, 0.1s outline-color);
+            border: 1.5px solid var(--border-color, #eee);
+            border-radius: 4px
         }
 
-        ul.cards.svelte-7tm6a9 li .info .social.svelte-7tm6a9 {
+        form.svelte-15f55d3 label input.svelte-15f55d3:focus,
+        form.svelte-15f55d3 label textarea.svelte-15f55d3:focus {
+            outline-color: var(--color-accent, rebeccapurple)
+        }
+
+        form.svelte-15f55d3 .button.svelte-15f55d3 {
+            margin-top: 1rem
+        }
+
+        .section-container.svelte-i9k4w2.svelte-i9k4w2 {
             display: flex;
-            justify-content: center;
-            gap: 1.25rem;
-            font-size: 1.5rem;
-            color: var(--color-accent, rebeccapurple)
-        }
-
-        ul.cards.svelte-7tm6a9 li .info .social a.svelte-7tm6a9 {
-            transition: var(--transition, 0.1s transform)
-        }
-
-        ul.cards.svelte-7tm6a9 li .info .social a.svelte-7tm6a9:hover {
-            transform: scale(1.1)
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem
         }
 
         @media(min-width: 600px) {
-            ul.cards.svelte-7tm6a9.svelte-7tm6a9 {
-                grid-template-columns: 1fr 1fr
+            .section-container.svelte-i9k4w2.svelte-i9k4w2 {
+                flex-direction: row
             }
         }
 
-        @media(min-width: 1000px) {
-            ul.cards.svelte-7tm6a9.svelte-7tm6a9 {
-                grid-template-columns: 1fr 1fr 1fr
-            }
-        }
-
-        footer.svelte-1x6qn6a.svelte-1x6qn6a {
+        nav.svelte-i9k4w2.svelte-i9k4w2 {
             display: flex;
-            justify-content: space-between;
-            padding-top: 10rem
+            gap: 1rem;
+            font-size: .875rem
         }
 
-        nav.svelte-1x6qn6a.svelte-1x6qn6a {
-            display: grid;
-            place-items: start;
+        nav.svelte-i9k4w2 .link.svelte-i9k4w2 {
+            border-color: transparent
+        }
+
+        nav.svelte-i9k4w2 .link.svelte-i9k4w2:hover {
+            border-color: initial
+        }
+
+        .primo.svelte-i9k4w2.svelte-i9k4w2 {
+            font-weight: 600;
+            font-size: 0.75rem
+        }
+
+        .primo.svelte-i9k4w2 a.svelte-i9k4w2 {
+            text-decoration: underline
+        }
+
+        .social-links.svelte-i9k4w2.svelte-i9k4w2 {
+            display: flex;
             gap: 1.5rem;
             font-size: 1.5rem
         }
 
-        .primo.svelte-1x6qn6a a.svelte-1x6qn6a {
-            text-decoration: underline
+        .social-links.svelte-i9k4w2 a.svelte-i9k4w2 {
+            color: var(--color-accent, rebeccapurple);
+            transition: var(--transition, 0.1s transform)
+        }
+
+        .social-links.svelte-i9k4w2 a.svelte-i9k4w2:hover {
+            transform: scale(1.1)
         }
     </style>
 </head>
 
 <body id="page">
 
-    <div class="section" id="section-81ef058d">
-        <header class="section-container svelte-1grguq5">
-            <div class="desktop-nav svelte-1grguq5"><a href="/" class="logo svelte-1grguq5">AFA Pi d'en Xandri</a>
-                <nav class="svelte-1grguq5"><a class="link svelte-1grguq5" href="">Home</a><a class="link svelte-1grguq5" href="/about">About</a><a class="link svelte-1grguq5" href="/">Contact</a></nav>
+    <div class="section" id="section-d4efac5e">
+        <header style="background-image:url('https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689934518929primer-dia-escola-2021-14_37_1600x800.jpeg')" role="img" aria-label="" class="svelte-19bt6nw">
+            <div class="section-container svelte-19bt6nw">
+                <div class="desktop-nav svelte-19bt6nw"><a href="/" class="logo svelte-19bt6nw">Afa Pi d'en Xandri</a>
+                    <nav class="svelte-19bt6nw"><a class="link svelte-19bt6nw" href="/about">About</a><a class="link svelte-19bt6nw" href="/mission">Mission</a><a class="link svelte-19bt6nw" href="/team">Team</a><a class="link svelte-19bt6nw" href="/blog">Blog</a></nav>
+                </div>
+                <div class="mobile-nav svelte-19bt6nw"><a href="/" class="logo svelte-19bt6nw">Afa Pi d'en Xandri</a>
+                    <button id="open" aria-label="Open mobile navigation"></button>
+                </div>
             </div>
-            <div class="mobile-nav svelte-1grguq5"><a href="/" class="logo svelte-1grguq5">AFA Pi d'en Xandri</a>
-                <button id="open" aria-label="Open mobile navigation"></button>
+            <div class="section-container svelte-19bt6nw">
+                <h1 class="headline svelte-19bt6nw">Afa Pi d'en Xandri</h1>
             </div>
         </header>
     </div>
-    <div class="section" id="section-03b30a1f">
-        <section class="section-container svelte-dg30bs">
-            <div class="items svelte-dg30bs">
-                <div class="item svelte-dg30bs"><img src="https://images.unsplash.com/photo-1686062095898-de61c74f2a2e?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2232&amp;q=80" alt="" class="svelte-dg30bs">
-                    <div class="body svelte-dg30bs">
-                        <h2 class="title heading svelte-dg30bs">La plasha</h2>
-                        <div class="description"><!-- HTML_TAG_START -->Abstract photography invites viewers to interpret and engage with the image in their own unique way.<!-- HTML_TAG_END --></div>
-                    </div>
+    <div class="section" id="section-8a9a9db2">
+        <section class="svelte-tlgs72">
+            <div class="section-container svelte-tlgs72">
+                <div class="body svelte-tlgs72">
+                    <h1 class="headline svelte-tlgs72">Schedule Meetings in Minutes with Cali</h1>
+                    <div class="subheading svelte-tlgs72">Get your meetings effortlessly organized with Cali. So you can spend more time on meeting people instead of scheduling meetings.</div>
+                    <a href="/" class="button svelte-tlgs72">Get Started</a>
                 </div>
-                <div class="item svelte-dg30bs"><img src="https://images.unsplash.com/photo-1686062096176-bfd55776c915?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2232&amp;q=80" alt="" class="svelte-dg30bs">
-                    <div class="body svelte-dg30bs">
-                        <h2 class="title heading svelte-dg30bs">La ihla</h2>
-                        <div class="description"><!-- HTML_TAG_START -->Landscape photography showcases the beauty and grandeur of natural environments, capturing expansive vistas and dramatic lighting.<!-- HTML_TAG_END --></div>
-                    </div>
-                </div>
+                <figure class="svelte-tlgs72"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" alt="" class="svelte-tlgs72"></figure>
             </div>
         </section>
     </div>
-    <div class="section" id="section-0453dcbb">
-        <section class="section-container svelte-7tm6a9">
-            <h2 class="heading svelte-7tm6a9">Aur pipol</h2>
-            <ul class="cards svelte-7tm6a9">
-                <li class="svelte-7tm6a9">
-                    <figure class="svelte-7tm6a9"><img alt="" src="https://images.unsplash.com/photo-1636067344050-5a8cd8e56f6e?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="svelte-7tm6a9">
-                    </figure>
-                    <div class="info">
-                        <div class="details svelte-7tm6a9"><span class="name svelte-7tm6a9">Fistro Pecador</span>
-                            <span class="title svelte-7tm6a9">De la Pradera CEO</span>
+    <div class="section" id="section-2fb65265">
+        <section class="section-container svelte-irlxbt">
+            <header class="heading-group svelte-irlxbt">
+                <h2 class="heading svelte-irlxbt"><!-- HTML_TAG_START -->Comissions<!-- HTML_TAG_END --></h2>
+                <div class="subheading"></div>
+            </header>
+            <ul class="icon-list svelte-irlxbt"></ul>
+            <ul class="cards svelte-irlxbt">
+                <li class="svelte-irlxbt">
+                    <div class="icon svelte-irlxbt"></div>
+                    <div class="body svelte-irlxbt">
+                        <h3 class="title svelte-irlxbt">Workflow Automation</h3>
+                        <div class="content svelte-irlxbt"><!-- HTML_TAG_START -->
+                            <p>Everything you need to get started working real real fast.</p><!-- HTML_TAG_END -->
                         </div>
-                        <div class="social svelte-7tm6a9"><a href="/" aria-label="officia" class="svelte-7tm6a9">
-                            </a><a href="/" aria-label="consequat" class="svelte-7tm6a9">
-                            </a>
-                        </div>
+                        <a href="/" class="link svelte-irlxbt"><span>Learn More</span>
+
+                        </a>
                     </div>
                 </li>
-                <li class="svelte-7tm6a9">
-                    <figure class="svelte-7tm6a9"><img alt="" src="https://images.unsplash.com/photo-1604364721460-0cbc5866219d?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="svelte-7tm6a9">
-                    </figure>
-                    <div class="info">
-                        <div class="details svelte-7tm6a9"><span class="name svelte-7tm6a9">Jaleway Sirigay</span>
-                            <span class="title svelte-7tm6a9">Second Life</span>
+                <li class="svelte-irlxbt">
+                    <div class="icon svelte-irlxbt"></div>
+                    <div class="body svelte-irlxbt">
+                        <h3 class="title svelte-irlxbt">Double-sided Booking</h3>
+                        <div class="content svelte-irlxbt"><!-- HTML_TAG_START -->
+                            <p>Its emporium some loremipsum so you can see what it would look like.</p><!-- HTML_TAG_END -->
                         </div>
-                        <div class="social svelte-7tm6a9"><a href="/" aria-label="esse" class="svelte-7tm6a9">
-                            </a><a href="/" aria-label="quis" class="svelte-7tm6a9">
-                            </a>
-                        </div>
+                        <a href="/" class="link svelte-irlxbt"><span>Learn More</span>
+
+                        </a>
                     </div>
                 </li>
-                <li class="svelte-7tm6a9">
-                    <figure class="svelte-7tm6a9"><img alt="" src="https://images.unsplash.com/photo-1524868313790-96da775e01ad?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80" class="svelte-7tm6a9">
-                    </figure>
-                    <div class="info">
-                        <div class="details svelte-7tm6a9"><span class="name svelte-7tm6a9">Diodenar de Ninumor</span>
-                            <span class="title svelte-7tm6a9">CTO</span>
+                <li class="svelte-irlxbt">
+                    <div class="icon svelte-irlxbt"></div>
+                    <div class="body svelte-irlxbt">
+                        <h3 class="title svelte-irlxbt">Tempor voluptate excepteur</h3>
+                        <div class="content svelte-irlxbt"><!-- HTML_TAG_START -->
+                            <h1 id="thisissomemarkdown">This is some markdown</h1><!-- HTML_TAG_END -->
                         </div>
-                        <div class="social svelte-7tm6a9"><a href="https://linkedin.com" aria-label="Linkedin" class="svelte-7tm6a9">
-                            </a><a href="/" aria-label="Twitter" class="svelte-7tm6a9">
-                            </a>
-                        </div>
+                        <a href="/" class="link svelte-irlxbt"><span>voluptate</span>
+
+                        </a>
                     </div>
                 </li>
             </ul>
         </section>
     </div>
-    <div class="section" id="section-28f5f2b5">
-        <footer class="section-container svelte-1x6qn6a">
-            <nav class="svelte-1x6qn6a"><a class="link" href="/work">Work</a><a class="link" href="/services">Services</a><a class="link" href="/company">Company</a><a class="link" href="/contact">Contact Us</a></nav>
-            <span class="primo svelte-1x6qn6a">Powered by
-                <a href="https://primo.so" class="primo svelte-1x6qn6a">Primo</a></span>
+    <div class="section" id="section-48fdc72a">
+        <section class="section-container">
+            <div class="teasers svelte-1re4jxk">
+                <div class="teaser svelte-1re4jxk"><img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" alt="" class="svelte-1re4jxk">
+                    <div class="body svelte-1re4jxk">
+                        <h2 class="title svelte-1re4jxk">Real-time collaboration</h2>
+                        <div class="content"><!-- HTML_TAG_START -->
+                            <p>Instant updates to your calendar without having to go through a third party app.</p><!-- HTML_TAG_END -->
+                        </div>
+                        <a class="link svelte-1re4jxk" href="/">Read more
+                        </a>
+                    </div>
+                </div>
+                <div class="teaser svelte-1re4jxk"><img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2047&amp;q=80" alt="" class="svelte-1re4jxk">
+                    <div class="body svelte-1re4jxk">
+                        <h2 class="title svelte-1re4jxk">Endless integrations</h2>
+                        <div class="content"><!-- HTML_TAG_START -->
+                            <p>Integrate your google calendar and any other third-party calendar. Everything in one place.</p><!-- HTML_TAG_END -->
+                        </div>
+                        <a class="link svelte-1re4jxk" href="/">Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="section" id="section-fcfc56a9">
+        <section class="section-container svelte-1pgbsk1">
+            <div class="card svelte-1pgbsk1">
+                <h2 class="heading svelte-1pgbsk1">Call to action of somekind.</h2>
+                <div class="body svelte-1pgbsk1"><!-- HTML_TAG_START -->
+                    <p>Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions.</p><!-- HTML_TAG_END -->
+                </div>
+                <div class="buttons svelte-1pgbsk1"><a class="button svelte-1pgbsk1" href="/">
+                        <span>Watch video</span>
+                    </a><a class="button svelte-1pgbsk1" href="/">
+                        <span>Contact Us</span>
+                    </a></div>
+            </div>
+        </section>
+    </div>
+    <div class="section" id="section-f61584d8">
+        <section class="section-container svelte-15f55d3">
+            <div class="content svelte-15f55d3">
+                <h2 class="heading">Bústia de suggeriments</h2>
+                <div class="body svelte-15f55d3"><!-- HTML_TAG_START -->Whether you have questions, feedback, or just want to say hello, we're always ready to hear from you. Please fill out the contact form, and we'll do our best to respond within 24-48 hours.<!-- HTML_TAG_END --></div>
+                <div class="social-links svelte-15f55d3"><a href="/" class="svelte-15f55d3"><span class="icon svelte-15f55d3"></span>
+                        Github
+                    </a><a href="/" class="svelte-15f55d3"><span class="icon svelte-15f55d3"></span>
+                        Facebook
+                    </a></div>
+            </div>
+            <form class="svelte-15f55d3"><label class="svelte-15f55d3"><span class="svelte-15f55d3">Name</span>
+                    <input type="text" placeholder="John Doe" class="svelte-15f55d3">
+                </label><label class="svelte-15f55d3"><span class="svelte-15f55d3">Email</span>
+                    <input type="email" placeholder="johndoe@johndoe.com" class="svelte-15f55d3">
+                </label>
+                <button class="button svelte-15f55d3" type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <div class="section" id="section-2bb4c666">
+        <footer class="section-container svelte-i9k4w2">
+            <nav class="svelte-i9k4w2"><a class="link svelte-i9k4w2" href="https://primosites.vercel.app/theme-minimal">Copyright 2023</a></nav>
+            <span class="primo svelte-i9k4w2"><a href="https://primo.so" class="svelte-i9k4w2">Primo</a> Powered </span>
+            <div class="social-links svelte-i9k4w2"><a href="/" aria-label="Twitter" class="svelte-i9k4w2">
+                </a><a href="/" aria-label="Linkedin" class="svelte-i9k4w2">
+                </a></div>
         </footer>
     </div>
 
