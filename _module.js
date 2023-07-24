@@ -4682,7 +4682,7 @@ function create_if_block$4(ctx) {
 		},
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[2].url);
-			attr(a, "class", "button svelte-1ylla05");
+			attr(a, "class", "button svelte-7ofaz2");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -4769,15 +4769,15 @@ function create_fragment$7(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h1, "class", "headline svelte-1ylla05");
-			attr(div0, "class", "subheading svelte-1ylla05");
-			attr(div1, "class", "body svelte-1ylla05");
+			attr(h1, "class", "headline svelte-7ofaz2");
+			attr(div0, "class", "subheading svelte-7ofaz2");
+			attr(div1, "class", "body svelte-7ofaz2");
 			if (!src_url_equal(img.src, img_src_value = /*image*/ ctx[3].url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*image*/ ctx[3].alt);
-			attr(img, "class", "svelte-1ylla05");
-			attr(figure, "class", "svelte-1ylla05");
-			attr(div2, "class", "section-container svelte-1ylla05");
-			attr(section, "class", "svelte-1ylla05");
+			attr(img, "class", "svelte-7ofaz2");
+			attr(figure, "class", "svelte-7ofaz2");
+			attr(div2, "class", "section-container svelte-7ofaz2");
+			attr(section, "class", "svelte-7ofaz2");
 			toggle_class(section, "image-left", /*variation*/ ctx[4] === "image_left");
 			attr(div3, "class", "section");
 			attr(div3, "id", "section-8289c674");
@@ -5403,7 +5403,7 @@ function get_each_context_1$3(ctx, list, i) {
 	return child_ctx;
 }
 
-// (64:4) {#each nav as { link }}
+// (65:4) {#each nav as { link }}
 function create_each_block_1$3(ctx) {
 	let a;
 	let t_value = /*link*/ ctx[2].label + "";
@@ -5424,7 +5424,7 @@ function create_each_block_1$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-i9k4w2");
+			attr(a, "class", "link svelte-i6nw02");
 			attr(a, "href", a_href_value = /*link*/ ctx[2].url);
 		},
 		m(target, anchor) {
@@ -5444,7 +5444,7 @@ function create_each_block_1$3(ctx) {
 	};
 }
 
-// (70:4) {#each social as { link, icon }}
+// (71:4) {#each social as { link, icon }}
 function create_each_block$4(ctx) {
 	let a;
 	let icon;
@@ -5477,7 +5477,7 @@ function create_each_block$4(ctx) {
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[2].url);
 			attr(a, "aria-label", a_aria_label_value = /*link*/ ctx[2].label);
-			attr(a, "class", "svelte-i9k4w2");
+			attr(a, "class", "svelte-i6nw02");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -5604,12 +5604,12 @@ function create_fragment$9(ctx) {
 			this.h();
 		},
 		h() {
-			attr(nav_1, "class", "svelte-i9k4w2");
+			attr(nav_1, "class", "svelte-i6nw02");
 			attr(a, "href", "https://primo.so");
-			attr(a, "class", "svelte-i9k4w2");
-			attr(span, "class", "primo svelte-i9k4w2");
-			attr(div0, "class", "social-links svelte-i9k4w2");
-			attr(footer, "class", "section-container svelte-i9k4w2");
+			attr(a, "class", "svelte-i6nw02");
+			attr(span, "class", "primo svelte-i6nw02");
+			attr(div0, "class", "social-links svelte-i6nw02");
+			attr(footer, "class", "section-container svelte-i6nw02");
 			attr(div1, "class", "section");
 			attr(div1, "id", "section-2bb4c666");
 		},
@@ -5858,17 +5858,17 @@ function create_fragment$a(ctx) {
 						"link": { "url": "/", "label": "Learn More" },
 						"title": "Double-sided Booking",
 						"content": {
-							"html": "<p>Its emporium some loremipsum so you can see what it would look like.</p>",
-							"markdown": "Its emporium some loremipsum so you can see what it would look like."
+							"html": "<p>Everything you need to get started working real real fast.</p>",
+							"markdown": "Everything you need to get started working real real fast."
 						}
 					},
 					{
-						"icon": "akar-icons:book",
+						"icon": "akar-icons:leaf",
 						"link": { "url": "/", "label": "voluptate" },
-						"title": "Tempor voluptate excepteur",
+						"title": "Sostenibilitat",
 						"content": {
-							"html": "<h1 id=\"thisissomemarkdown\">This is some markdown</h1>",
-							"markdown": "# This is some markdown"
+							"html": "<p>Everything you need to get started working real real fast.</p>",
+							"markdown": "Everything you need to get started working real real fast."
 						}
 					}
 				]
