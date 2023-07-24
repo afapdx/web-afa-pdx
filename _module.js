@@ -5906,10 +5906,27 @@ function create_fragment$a(ctx) {
 							"url": "https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2047&q=80",
 							"size": null
 						},
-						"title": "Projecte de l'Afa",
+						"title": "Projecte de l'AFA",
 						"content": {
 							"html": "<p>Integrate your google calendar and any other third-party calendar. Everything in one place.</p>",
 							"markdown": "Integrate your google calendar and any other third-party calendar. Everything in one place."
+						}
+					},
+					{
+						"link": {
+							"url": "/projectes",
+							"label": "Tots el projectes"
+						},
+						"image": {
+							"alt": "",
+							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689944561349img-0202.jpeg",
+							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689944561349img-0202.jpeg",
+							"size": 523
+						},
+						"title": "Projecte de l'AFA",
+						"content": {
+							"html": "<p>Instant updates to your calendar without having to go through a third party app.</p>",
+							"markdown": "Instant updates to your calendar without having to go through a third party app."
 						}
 					}
 				]
