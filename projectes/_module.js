@@ -4520,7 +4520,7 @@ function create_fragment$5(ctx) {
 					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689943678230telon-fondo-producto-pastel-espacio-diseno.jpg",
 					"size": 8776
 				},
-				headline: "Qui som",
+				headline: "Projectes",
 				logo: {
 					"image": {
 						"alt": "",
