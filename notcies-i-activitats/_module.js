@@ -4402,7 +4402,7 @@ function create_fragment$6(ctx) {
 			}
 		});
 
-	component_3 = new Component$4({ props: { height: "6" } });
+	component_3 = new Component$4({ props: { height: "4" } });
 
 	component_4 = new Component$5({
 			props: {
