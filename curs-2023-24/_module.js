@@ -4155,7 +4155,7 @@ function get_each_context_1$2(ctx, list, i) {
 	return child_ctx;
 }
 
-// (65:4) {#each nav as { link }}
+// (71:4) {#each nav as { link }}
 function create_each_block_1$2(ctx) {
 	let a;
 	let t_value = /*link*/ ctx[2].label + "";
@@ -4176,7 +4176,7 @@ function create_each_block_1$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-19m0f1m");
+			attr(a, "class", "link svelte-mphy7j");
 			attr(a, "href", a_href_value = /*link*/ ctx[2].url);
 		},
 		m(target, anchor) {
@@ -4196,7 +4196,7 @@ function create_each_block_1$2(ctx) {
 	};
 }
 
-// (70:4) {#each social as { link, icon }}
+// (76:4) {#each social as { link, icon }}
 function create_each_block$2(ctx) {
 	let a;
 	let icon;
@@ -4229,7 +4229,7 @@ function create_each_block$2(ctx) {
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[2].url);
 			attr(a, "aria-label", a_aria_label_value = /*link*/ ctx[2].label);
-			attr(a, "class", "svelte-19m0f1m");
+			attr(a, "class", "svelte-mphy7j");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -4267,8 +4267,9 @@ function create_each_block$2(ctx) {
 }
 
 function create_fragment$4(ctx) {
-	let div1;
+	let div2;
 	let footer;
+	let div1;
 	let nav_1;
 	let t;
 	let div0;
@@ -4293,8 +4294,9 @@ function create_fragment$4(ctx) {
 
 	return {
 		c() {
-			div1 = element("div");
+			div2 = element("div");
 			footer = element("footer");
+			div1 = element("div");
 			nav_1 = element("nav");
 
 			for (let i = 0; i < each_blocks_1.length; i += 1) {
@@ -4311,11 +4313,13 @@ function create_fragment$4(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			div1 = claim_element(nodes, "DIV", { class: true, id: true });
-			var div1_nodes = children(div1);
-			footer = claim_element(div1_nodes, "FOOTER", { class: true });
+			div2 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div2_nodes = children(div2);
+			footer = claim_element(div2_nodes, "FOOTER", { class: true });
 			var footer_nodes = children(footer);
-			nav_1 = claim_element(footer_nodes, "NAV", { class: true });
+			div1 = claim_element(footer_nodes, "DIV", { class: true });
+			var div1_nodes = children(div1);
+			nav_1 = claim_element(div1_nodes, "NAV", { class: true });
 			var nav_1_nodes = children(nav_1);
 
 			for (let i = 0; i < each_blocks_1.length; i += 1) {
@@ -4323,8 +4327,8 @@ function create_fragment$4(ctx) {
 			}
 
 			nav_1_nodes.forEach(detach);
-			t = claim_space(footer_nodes);
-			div0 = claim_element(footer_nodes, "DIV", { class: true });
+			t = claim_space(div1_nodes);
+			div0 = claim_element(div1_nodes, "DIV", { class: true });
 			var div0_nodes = children(div0);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -4332,21 +4336,24 @@ function create_fragment$4(ctx) {
 			}
 
 			div0_nodes.forEach(detach);
-			footer_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
+			footer_nodes.forEach(detach);
+			div2_nodes.forEach(detach);
 			this.h();
 		},
 		h() {
-			attr(nav_1, "class", "svelte-19m0f1m");
-			attr(div0, "class", "social-links svelte-19m0f1m");
-			attr(footer, "class", "section-container svelte-19m0f1m");
-			attr(div1, "class", "section");
-			attr(div1, "id", "section-29a733b2");
+			attr(nav_1, "class", "svelte-mphy7j");
+			attr(div0, "class", "social-links svelte-mphy7j");
+			attr(div1, "class", "section-container svelte-mphy7j");
+			attr(footer, "class", "svelte-mphy7j");
+			attr(div2, "class", "section");
+			attr(div2, "id", "section-29a733b2");
 		},
 		m(target, anchor) {
-			insert_hydration(target, div1, anchor);
-			append_hydration(div1, footer);
-			append_hydration(footer, nav_1);
+			insert_hydration(target, div2, anchor);
+			append_hydration(div2, footer);
+			append_hydration(footer, div1);
+			append_hydration(div1, nav_1);
 
 			for (let i = 0; i < each_blocks_1.length; i += 1) {
 				if (each_blocks_1[i]) {
@@ -4354,8 +4361,8 @@ function create_fragment$4(ctx) {
 				}
 			}
 
-			append_hydration(footer, t);
-			append_hydration(footer, div0);
+			append_hydration(div1, t);
+			append_hydration(div1, div0);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
 				if (each_blocks[i]) {
@@ -4435,7 +4442,7 @@ function create_fragment$4(ctx) {
 			current = false;
 		},
 		d(detaching) {
-			if (detaching) detach(div1);
+			if (detaching) detach(div2);
 			destroy_each(each_blocks_1, detaching);
 			destroy_each(each_blocks, detaching);
 		}
