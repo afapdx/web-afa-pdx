@@ -3629,7 +3629,7 @@ function get_each_context$1(ctx, list, i) {
 	return child_ctx;
 }
 
-// (92:8) {#if item.thumbnail.url}
+// (91:8) {#if item.thumbnail.url}
 function create_if_block$2(ctx) {
 	let img;
 	let img_data_key_value;
@@ -3655,7 +3655,7 @@ function create_if_block$2(ctx) {
 			attr(img, "data-key", img_data_key_value = "items[" + /*i*/ ctx[4] + "].thumbnail");
 			if (!src_url_equal(img.src, img_src_value = /*item*/ ctx[2].thumbnail.url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*item*/ ctx[2].thumbnail.alt);
-			attr(img, "class", "svelte-10jylfj");
+			attr(img, "class", "svelte-1eq89no");
 		},
 		m(target, anchor) {
 			insert_hydration(target, img, anchor);
@@ -3675,7 +3675,7 @@ function create_if_block$2(ctx) {
 	};
 }
 
-// (83:4) {#each items as item, i}
+// (82:4) {#each items as item, i}
 function create_each_block$1(ctx) {
 	let li;
 	let div1;
@@ -3736,12 +3736,12 @@ function create_each_block$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "title svelte-10jylfj");
+			attr(a, "class", "title svelte-1eq89no");
 			attr(a, "href", a_href_value = /*item*/ ctx[2].link.url);
-			attr(div0, "class", "description svelte-10jylfj");
-			attr(span, "class", "date svelte-10jylfj");
+			attr(div0, "class", "description svelte-1eq89no");
+			attr(span, "class", "date svelte-1eq89no");
 			attr(div1, "class", "post-info");
-			attr(li, "class", "svelte-10jylfj");
+			attr(li, "class", "svelte-1eq89no");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -3839,9 +3839,9 @@ function create_fragment$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "svelte-10jylfj");
-			attr(ul, "class", "items svelte-10jylfj");
-			attr(section, "class", "section-container svelte-10jylfj");
+			attr(h2, "class", "svelte-1eq89no");
+			attr(ul, "class", "items svelte-1eq89no");
+			attr(section, "class", "section-container svelte-1eq89no");
 			attr(div, "class", "section");
 			attr(div, "id", "section-90de2ed5");
 		},
