@@ -3011,7 +3011,7 @@ function create_each_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-ud9ov");
+			attr(a, "class", "link svelte-1ix7cm5");
 			attr(a, "href", a_href_value = /*link*/ ctx[8].url);
 			toggle_class(a, "active", /*link*/ ctx[8].url === window.location.pathname);
 		},
@@ -3154,9 +3154,9 @@ function create_if_block$1(ctx) {
 		h() {
 			attr(button, "id", "close");
 			attr(button, "aria-label", "Close Navigation");
-			attr(button, "class", "svelte-ud9ov");
+			attr(button, "class", "svelte-1ix7cm5");
 			attr(nav, "id", "popup");
-			attr(nav, "class", "svelte-ud9ov");
+			attr(nav, "class", "svelte-1ix7cm5");
 		},
 		m(target, anchor) {
 			insert_hydration(target, nav, anchor);
@@ -3418,23 +3418,23 @@ function create_fragment$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "header-background svelte-ud9ov");
+			attr(div0, "class", "header-background svelte-1ix7cm5");
 			attr(a0, "href", "/");
-			attr(a0, "class", "logo svelte-ud9ov");
-			attr(nav, "class", "svelte-ud9ov");
-			attr(div1, "class", "desktop-nav svelte-ud9ov");
+			attr(a0, "class", "logo svelte-1ix7cm5");
+			attr(nav, "class", "svelte-1ix7cm5");
+			attr(div1, "class", "desktop-nav svelte-1ix7cm5");
 			attr(a1, "href", "/");
-			attr(a1, "class", "logo svelte-ud9ov");
+			attr(a1, "class", "logo svelte-1ix7cm5");
 			attr(button, "id", "open");
 			attr(button, "aria-label", "Open mobile navigation");
-			attr(div2, "class", "mobile-nav svelte-ud9ov");
-			attr(div3, "class", "section-container svelte-ud9ov");
-			attr(h1, "class", "headline svelte-ud9ov");
-			attr(div4, "class", "section-container svelte-ud9ov");
+			attr(div2, "class", "mobile-nav svelte-1ix7cm5");
+			attr(div3, "class", "section-container svelte-1ix7cm5");
+			attr(h1, "class", "headline svelte-1ix7cm5");
+			attr(div4, "class", "section-container svelte-1ix7cm5");
 			set_style(header, "background-image", "url('" + /*background*/ ctx[0].url + "')");
 			attr(header, "role", "img");
 			attr(header, "aria-label", header_aria_label_value = /*background*/ ctx[0].alt);
-			attr(header, "class", "svelte-ud9ov");
+			attr(header, "class", "svelte-1ix7cm5");
 			attr(div5, "class", "section");
 			attr(div5, "id", "section-f14e5a08");
 		},
