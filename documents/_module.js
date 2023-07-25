@@ -3636,7 +3636,7 @@ function get_each_context_1$1(ctx, list, i) {
 	return child_ctx;
 }
 
-// (94:6) {#each social as { link, icon }}
+// (96:6) {#each social as { link, icon }}
 function create_each_block_1$1(ctx) {
 	let a;
 	let span;
@@ -3673,9 +3673,9 @@ function create_each_block_1$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "icon svelte-15f55d3");
+			attr(span, "class", "icon svelte-12m22f0");
 			attr(a, "href", a_href_value = /*link*/ ctx[8].url);
-			attr(a, "class", "svelte-15f55d3");
+			attr(a, "class", "svelte-12m22f0");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -3712,7 +3712,7 @@ function create_each_block_1$1(ctx) {
 	};
 }
 
-// (111:6) {:else}
+// (113:6) {:else}
 function create_else_block$1(ctx) {
 	let label;
 	let span;
@@ -3751,11 +3751,11 @@ function create_else_block$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "svelte-15f55d3");
+			attr(span, "class", "svelte-12m22f0");
 			attr(input, "type", input_type_value = /*input*/ ctx[5].type || "text");
 			attr(input, "placeholder", input_placeholder_value = /*input*/ ctx[5].placeholder);
-			attr(input, "class", "svelte-15f55d3");
-			attr(label, "class", "svelte-15f55d3");
+			attr(input, "class", "svelte-12m22f0");
+			attr(label, "class", "svelte-12m22f0");
 		},
 		m(target, anchor) {
 			insert_hydration(target, label, anchor);
@@ -3781,7 +3781,7 @@ function create_else_block$1(ctx) {
 	};
 }
 
-// (106:6) {#if input.type === "textarea"}
+// (108:6) {#if input.type === "textarea"}
 function create_if_block$2(ctx) {
 	let label;
 	let span;
@@ -3813,9 +3813,9 @@ function create_if_block$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "svelte-15f55d3");
-			attr(textarea, "class", "svelte-15f55d3");
-			attr(label, "class", "svelte-15f55d3");
+			attr(span, "class", "svelte-12m22f0");
+			attr(textarea, "class", "svelte-12m22f0");
+			attr(label, "class", "svelte-12m22f0");
 		},
 		m(target, anchor) {
 			insert_hydration(target, label, anchor);
@@ -3833,7 +3833,7 @@ function create_if_block$2(ctx) {
 	};
 }
 
-// (105:4) {#each inputs as input, i}
+// (107:4) {#each inputs as input, i}
 function create_each_block$1(ctx) {
 	let if_block_anchor;
 
@@ -3985,13 +3985,13 @@ function create_fragment$3(ctx) {
 		},
 		h() {
 			attr(h2, "class", "heading");
-			attr(div0, "class", "body svelte-15f55d3");
-			attr(div1, "class", "social-links svelte-15f55d3");
-			attr(div2, "class", "content svelte-15f55d3");
-			attr(button, "class", "button svelte-15f55d3");
+			attr(div0, "class", "body svelte-12m22f0");
+			attr(div1, "class", "social-links svelte-12m22f0");
+			attr(div2, "class", "content svelte-12m22f0");
+			attr(button, "class", "button svelte-12m22f0");
 			attr(button, "type", "submit");
-			attr(form, "class", "svelte-15f55d3");
-			attr(section, "class", "section-container svelte-15f55d3");
+			attr(form, "class", "svelte-12m22f0");
+			attr(section, "class", "section-container svelte-12m22f0");
 			attr(div3, "class", "section");
 			attr(div3, "id", "section-b0c8ea64");
 		},
@@ -4176,7 +4176,7 @@ function create_each_block_1$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-i6nw02");
+			attr(a, "class", "link svelte-19m0f1m");
 			attr(a, "href", a_href_value = /*link*/ ctx[2].url);
 		},
 		m(target, anchor) {
@@ -4196,7 +4196,7 @@ function create_each_block_1$2(ctx) {
 	};
 }
 
-// (71:4) {#each social as { link, icon }}
+// (70:4) {#each social as { link, icon }}
 function create_each_block$2(ctx) {
 	let a;
 	let icon;
@@ -4229,7 +4229,7 @@ function create_each_block$2(ctx) {
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[2].url);
 			attr(a, "aria-label", a_aria_label_value = /*link*/ ctx[2].label);
-			attr(a, "class", "svelte-i6nw02");
+			attr(a, "class", "svelte-19m0f1m");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -4270,12 +4270,7 @@ function create_fragment$4(ctx) {
 	let div1;
 	let footer;
 	let nav_1;
-	let t0;
-	let span;
-	let a;
-	let t1;
-	let t2;
-	let t3;
+	let t;
 	let div0;
 	let current;
 	let each_value_1 = /*nav*/ ctx[0];
@@ -4306,12 +4301,7 @@ function create_fragment$4(ctx) {
 				each_blocks_1[i].c();
 			}
 
-			t0 = space();
-			span = element("span");
-			a = element("a");
-			t1 = text("Primo");
-			t2 = text(" Powered");
-			t3 = space();
+			t = space();
 			div0 = element("div");
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -4333,16 +4323,7 @@ function create_fragment$4(ctx) {
 			}
 
 			nav_1_nodes.forEach(detach);
-			t0 = claim_space(footer_nodes);
-			span = claim_element(footer_nodes, "SPAN", { class: true });
-			var span_nodes = children(span);
-			a = claim_element(span_nodes, "A", { href: true, class: true });
-			var a_nodes = children(a);
-			t1 = claim_text(a_nodes, "Primo");
-			a_nodes.forEach(detach);
-			t2 = claim_text(span_nodes, " Powered");
-			span_nodes.forEach(detach);
-			t3 = claim_space(footer_nodes);
+			t = claim_space(footer_nodes);
 			div0 = claim_element(footer_nodes, "DIV", { class: true });
 			var div0_nodes = children(div0);
 
@@ -4356,12 +4337,9 @@ function create_fragment$4(ctx) {
 			this.h();
 		},
 		h() {
-			attr(nav_1, "class", "svelte-i6nw02");
-			attr(a, "href", "https://primo.so");
-			attr(a, "class", "svelte-i6nw02");
-			attr(span, "class", "primo svelte-i6nw02");
-			attr(div0, "class", "social-links svelte-i6nw02");
-			attr(footer, "class", "section-container svelte-i6nw02");
+			attr(nav_1, "class", "svelte-19m0f1m");
+			attr(div0, "class", "social-links svelte-19m0f1m");
+			attr(footer, "class", "section-container svelte-19m0f1m");
 			attr(div1, "class", "section");
 			attr(div1, "id", "section-ac4ae051");
 		},
@@ -4376,12 +4354,7 @@ function create_fragment$4(ctx) {
 				}
 			}
 
-			append_hydration(footer, t0);
-			append_hydration(footer, span);
-			append_hydration(span, a);
-			append_hydration(a, t1);
-			append_hydration(span, t2);
-			append_hydration(footer, t3);
+			append_hydration(footer, t);
 			append_hydration(footer, div0);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -4592,10 +4565,7 @@ function create_fragment$5(ctx) {
 			props: {
 				nav: [
 					{
-						"link": {
-							"url": "https://primosites.vercel.app/theme-minimal",
-							"label": "Copyright 2023"
-						}
+						"link": { "url": "#", "label": "Copyright 2023" }
 					}
 				],
 				social: [
