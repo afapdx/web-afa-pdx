@@ -4749,7 +4749,7 @@ function create_fragment$5(ctx) {
 			attr(div0, "class", "items svelte-dg30bs");
 			attr(section, "class", "section-container svelte-dg30bs");
 			attr(div1, "class", "section");
-			attr(div1, "id", "section-fa6a4534");
+			attr(div1, "id", "section-c5f077ad");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div1, anchor);
@@ -5315,7 +5315,7 @@ function create_fragment$8(ctx) {
 						},
 						"description": {
 							"html": "<p>Necessitem ajuda per folrar els llibres i per fer un seguiment del projecte ja que no hi ha relleu en la comissió. Si hi esteu interessats, contacteu amb <code>info@afapidenxandri.cat</code></p>",
-							"markdown": "Necessitem ajuda per folrar els llibres i per fer un seguiment del projecte ja que no hi ha relleu en la comissió. Si hi esteu interessats, contacteu amb `info@afapidenxandri.cat`"
+							"markdown": "Necessitem ajuda per folrar els llibres i per fer un seguiment del projecte ja que no hi ha relleu en la comissió. Si hi esteu interessats, contacteu amb `info@afapidenxandri.cat`\n\n"
 						}
 					}
 				]
@@ -5335,17 +5335,30 @@ function create_fragment$8(ctx) {
 				},
 				site_nav: [
 					{
-						"link": {
-							"url": "",
-							"label": "Home",
-							"active": false
-						}
+						"link": { "url": "/qui-som", "label": "Qui som" }
 					},
-					{ "link": { "url": "/", "label": "About" } },
 					{
 						"link": {
-							"url": "https://primosites.vercel.app/primo-library",
-							"label": "Contact"
+							"url": "/projectes",
+							"label": "Projectes"
+						}
+					},
+					{
+						"link": {
+							"url": "/notcies-i-activitats",
+							"label": "Notícies i activitats"
+						}
+					},
+					{
+						"link": {
+							"url": "/curs-2023-24",
+							"label": "Curs 2023-24"
+						}
+					},
+					{
+						"link": {
+							"url": "/documents",
+							"label": "Documents"
 						}
 					}
 				]
