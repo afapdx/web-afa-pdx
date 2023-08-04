@@ -5817,7 +5817,7 @@ function create_fragment$b(ctx) {
 				heading: "Comissions",
 				cards: [
 					{
-						"icon": "material-symbols:check-circle-rounded",
+						"icon": "material-symbols:filter-vintage",
 						"title": "Coeducació Calidoscopi",
 						"description": {
 							"html": "<p>Dóna suport a l’escola en l’educació en la pau i en el respecte als altres</p>",
@@ -5825,7 +5825,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"icon": "material-symbols:check-circle-rounded",
+						"icon": "material-symbols:groups",
 						"title": "Delegats",
 						"description": {
 							"html": "<p>Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina. </p>",
@@ -5833,7 +5833,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"icon": "material-symbols:check-circle-rounded",
+						"icon": "material-symbols:school",
 						"title": "Educativa",
 						"description": {
 							"html": "<p>Suport a l’escola en el desenvolupament del projecte educatiu.</p>",
@@ -5841,7 +5841,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"icon": "material-symbols:check-circle-rounded",
+						"icon": "material-symbols:science",
 						"title": "Science & Tech",
 						"description": {
 							"html": "<p>Col·labora amb l’escola per millorar la difusió de la ciència i tecnologia. </p>",
@@ -5849,7 +5849,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"icon": "material-symbols:check-circle-rounded",
+						"icon": "material-symbols:eco",
 						"title": "Sostenibilitat",
 						"description": {
 							"html": "<p>Reducció de l’impacte ambiental i conscienciació de la comunitat escolar.</p>",
