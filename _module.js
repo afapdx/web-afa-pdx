@@ -5818,26 +5818,66 @@ function create_fragment$b(ctx) {
 				cards: [
 					{
 						"icon": "material-symbols:check-circle-rounded",
-						"title": "Real-time Updates",
+						"title": "Coeducació Calidoscopi",
 						"description": {
-							"html": "<p>Stay ahead of the game with real-time updates on flight delays.</p>",
-							"markdown": "Stay ahead of the game with real-time updates on flight delays."
+							"html": "<p>Dóna suport a l’escola en l’educació en la pau i en el respecte als altres</p>",
+							"markdown": "Dóna suport a l’escola en l’educació en la pau i en el respecte als altres"
 						}
 					},
 					{
 						"icon": "material-symbols:check-circle-rounded",
-						"title": "In-app Booking",
+						"title": "Delegats",
 						"description": {
-							"html": "<p>Book your flights, hotels, and experiences directly through our app. </p>",
-							"markdown": "Book your flights, hotels, and experiences directly through our app. "
+							"html": "<p>Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina. </p>",
+							"markdown": "Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina. "
 						}
 					},
 					{
 						"icon": "material-symbols:check-circle-rounded",
-						"title": "24/7 Customer Support",
+						"title": "Educativa",
 						"description": {
-							"html": "<p>We're here for you, no matter where in the world you are. </p>",
-							"markdown": "We're here for you, no matter where in the world you are. "
+							"html": "<p>Suport a l’escola en el desenvolupament del projecte educatiu.</p>",
+							"markdown": "Suport a l’escola en el desenvolupament del projecte educatiu."
+						}
+					},
+					{
+						"icon": "material-symbols:check-circle-rounded",
+						"title": "Science & Tech",
+						"description": {
+							"html": "<p>Col·labora amb l’escola per millorar la difusió de la ciència i tecnologia. </p>",
+							"markdown": "Col·labora amb l’escola per millorar la difusió de la ciència i tecnologia. "
+						}
+					},
+					{
+						"icon": "material-symbols:check-circle-rounded",
+						"title": "Sostenibilitat",
+						"description": {
+							"html": "<p>Reducció de l’impacte ambiental i conscienciació de la comunitat escolar.</p>",
+							"markdown": "Reducció de l’impacte ambiental i conscienciació de la comunitat escolar."
+						}
+					},
+					{
+						"icon": "material-symbols:check-circle-rounded",
+						"title": "Tèxtil",
+						"description": {
+							"html": "<p>Ven material tèxtil d'identificació pels Xandris en sortides escolars.</p>",
+							"markdown": "Ven material tèxtil d'identificació pels Xandris en sortides escolars."
+						}
+					},
+					{
+						"icon": "material-symbols:check-circle-rounded",
+						"title": "Bar",
+						"description": {
+							"html": "<p>Encarregada del bar de la festa final de curs i font principal de finançament de AFA.</p>",
+							"markdown": "Encarregada del bar de la festa final de curs i font principal de finançament de AFA."
+						}
+					},
+					{
+						"icon": "material-symbols:check-circle-rounded",
+						"title": "Comunicació",
+						"description": {
+							"html": "<p>S’ocupa de fer arribar a les famílies de l’Escola tota la informació de l'AFA.</p>",
+							"markdown": "S’ocupa de fer arribar a les famílies de l’Escola tota la informació de l'AFA.\n"
 						}
 					}
 				]
@@ -5866,7 +5906,10 @@ function create_fragment$b(ctx) {
 			props: {
 				heading: "Schedule Meetings in Minutes with Cali",
 				subheading: "Get your meetings effortlessly organized with Cali. So you can spend more time on meeting people instead of scheduling meetings.",
-				link: { "url": "/", "label": "Get Started" },
+				link: {
+					"url": "/",
+					"label": "Veure totes les notícies"
+				},
 				image: {
 					"alt": "",
 					"src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
@@ -5879,7 +5922,7 @@ function create_fragment$b(ctx) {
 
 	component_5 = new Component$6({
 			props: {
-				heading: "Call to action of somekind.",
+				heading: "Projectes de l'AFA",
 				body: {
 					"html": "<p>Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions.</p>",
 					"markdown": "Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions."
@@ -5963,12 +6006,8 @@ function create_fragment$b(ctx) {
 				],
 				social: [
 					{
-						"icon": "mdi:twitter",
-						"link": { "url": "/", "label": "Twitter" }
-					},
-					{
-						"icon": "mdi:linkedin",
-						"link": { "url": "/", "label": "Linkedin" }
+						"icon": "Culpa aliquip occaecat",
+						"link": { "url": "/", "label": "Instagram" }
 					}
 				]
 			}

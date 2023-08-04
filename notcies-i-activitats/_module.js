@@ -4456,12 +4456,8 @@ function create_fragment$6(ctx) {
 				],
 				social: [
 					{
-						"icon": "mdi:twitter",
-						"link": { "url": "/", "label": "Twitter" }
-					},
-					{
-						"icon": "mdi:linkedin",
-						"link": { "url": "/", "label": "Linkedin" }
+						"icon": "Culpa aliquip occaecat",
+						"link": { "url": "/", "label": "Instagram" }
 					}
 				]
 			}
