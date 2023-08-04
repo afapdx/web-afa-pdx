@@ -5857,7 +5857,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"icon": "material-symbols:check-circle-rounded",
+						"icon": "material-symbols:styler",
 						"title": "Tèxtil",
 						"description": {
 							"html": "<p>Ven material tèxtil d'identificació pels Xandris en sortides escolars.</p>",
@@ -5865,7 +5865,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"icon": "material-symbols:check-circle-rounded",
+						"icon": "material-symbols:nightlife",
 						"title": "Bar",
 						"description": {
 							"html": "<p>Encarregada del bar de la festa final de curs i font principal de finançament de AFA.</p>",
@@ -5873,7 +5873,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"icon": "material-symbols:check-circle-rounded",
+						"icon": "material-symbols:campaign",
 						"title": "Comunicació",
 						"description": {
 							"html": "<p>S’ocupa de fer arribar a les famílies de l’Escola tota la informació de l'AFA.</p>",
