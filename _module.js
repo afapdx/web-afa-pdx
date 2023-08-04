@@ -5968,12 +5968,8 @@ function create_fragment$b(ctx) {
 				subheading: "Whether you have questions, feedback, or just want to say hello, we're always ready to hear from you. Please fill out the contact form, and we'll do our best to respond within 24-48 hours.",
 				social: [
 					{
-						"icon": "mdi:github",
-						"link": { "url": "/", "label": "Github" }
-					},
-					{
-						"icon": "mdi:facebook",
-						"link": { "url": "/", "label": "Facebook" }
+						"icon": "mdi:instagram",
+						"link": { "url": "/", "label": "Instagram" }
 					}
 				],
 				inputs: [
@@ -6006,8 +6002,8 @@ function create_fragment$b(ctx) {
 				],
 				social: [
 					{
-						"icon": "Culpa aliquip occaecat",
-						"link": { "url": "/", "label": "Instagram" }
+						"link": { "url": "/", "label": "Instagram" },
+						"icon": "mdi:instagram"
 					}
 				]
 			}
