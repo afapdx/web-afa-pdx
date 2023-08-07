@@ -6115,7 +6115,7 @@ function get_each_context_1$3(ctx, list, i) {
 	return child_ctx;
 }
 
-// (71:4) {#each nav as { link }}
+// (72:4) {#each nav as { link }}
 function create_each_block_1$3(ctx) {
 	let a;
 	let t_value = /*link*/ ctx[2].label + "";
@@ -6136,7 +6136,7 @@ function create_each_block_1$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-mphy7j");
+			attr(a, "class", "link svelte-f5r1cc");
 			attr(a, "href", a_href_value = /*link*/ ctx[2].url);
 		},
 		m(target, anchor) {
@@ -6156,7 +6156,7 @@ function create_each_block_1$3(ctx) {
 	};
 }
 
-// (76:4) {#each social as { link, icon }}
+// (77:4) {#each social as { link, icon }}
 function create_each_block$7(ctx) {
 	let a;
 	let icon;
@@ -6189,7 +6189,7 @@ function create_each_block$7(ctx) {
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[2].url);
 			attr(a, "aria-label", a_aria_label_value = /*link*/ ctx[2].label);
-			attr(a, "class", "svelte-mphy7j");
+			attr(a, "class", "svelte-f5r1cc");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -6302,10 +6302,10 @@ function create_fragment$d(ctx) {
 			this.h();
 		},
 		h() {
-			attr(nav_1, "class", "svelte-mphy7j");
-			attr(div0, "class", "social-links svelte-mphy7j");
-			attr(div1, "class", "section-container svelte-mphy7j");
-			attr(footer, "class", "svelte-mphy7j");
+			attr(nav_1, "class", "svelte-f5r1cc");
+			attr(div0, "class", "social-links svelte-f5r1cc");
+			attr(div1, "class", "section-container svelte-f5r1cc");
+			attr(footer, "class", "svelte-f5r1cc");
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-46899b77");
 		},
@@ -6831,7 +6831,16 @@ function create_fragment$e(ctx) {
 			props: {
 				nav: [
 					{
-						"link": { "url": "#", "label": "Copyright 2023" }
+						"link": {
+							"url": "https://primosites.vercel.app/theme-minimal",
+							"label": "©2023 AFA Escola Pi d'en Xandri"
+						}
+					},
+					{
+						"link": {
+							"url": "/",
+							"label": "C/Santa Teresa, 61 08172 Sant Cugat del Vallès"
+						}
 					}
 				],
 				social: [
