@@ -6522,7 +6522,7 @@ function create_fragment$e(ctx) {
 
 	component_2 = new Component$3({
 			props: {
-				heading: "Qui som",
+				heading: "",
 				subheading: "L’AFA és una associació de mares i pares d’alumnes sense afany de lucre que busca millorar la qualitat del sistema educatiu i les condicions d’escolarització del centre.",
 				buttons: []
 			}
@@ -6536,8 +6536,8 @@ function create_fragment$e(ctx) {
 						"icon": "material-symbols:groups",
 						"title": "Delegats",
 						"description": {
-							"html": "<p>Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina. </p>",
-							"markdown": "Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina. "
+							"html": "<p>Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina.</p>",
+							"markdown": "Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina.\n"
 						}
 					},
 					{
