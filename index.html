@@ -164,39 +164,42 @@
             top: 1rem
         }
 
-        .section-container.svelte-o9z257.svelte-o9z257 {
+        .section-container.svelte-1tp7z49.svelte-1tp7z49 {
             display: grid;
-            justify-content: center
+            place-items: center;
+            text-align: center
         }
 
-        .card.svelte-o9z257.svelte-o9z257 {
-            padding: 4rem clamp(2rem, 10vw, 7rem);
-            border: 1px solid var(--border-color, #eee);
-            border-radius: var(--border-radius);
-            text-align: center;
-            display: grid
-        }
-
-        .heading.svelte-o9z257.svelte-o9z257 {
+        .heading.svelte-1tp7z49.svelte-1tp7z49 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+            max-width: 850px;
             margin-bottom: 1.5rem
         }
 
-        .body.svelte-o9z257.svelte-o9z257 {
-            max-width: 700px;
-            margin-bottom: 2.25rem
+        @media(min-width: 700px) {
+            .heading.svelte-1tp7z49.svelte-1tp7z49 {
+                font-size: 4rem
+            }
         }
 
-        .buttons.svelte-o9z257.svelte-o9z257 {
+        .subheading.svelte-1tp7z49.svelte-1tp7z49 {
+            font-size: 1.25rem;
+            margin-bottom: 2rem
+        }
+
+        .buttons.svelte-1tp7z49.svelte-1tp7z49 {
+            margin-top: 0.5rem;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
             gap: 1rem
         }
 
-        .buttons.svelte-o9z257 .button.svelte-o9z257 {
-            display: flex;
-            align-items: center;
-            gap: 0.25rem
+        .buttons.svelte-1tp7z49 .button.svelte-1tp7z49:not(:only-child):last-child {
+            background: inherit;
+            border: 2px solid var(--color-accent, rebeccapurple);
+            color: var(--color, #222)
         }
 
         .section-container.svelte-13ipoh0.svelte-13ipoh0 {
@@ -235,6 +238,41 @@
         ul.svelte-13ipoh0 li .title .label.svelte-13ipoh0 {
             line-height: 1.1;
             font-weight: 600
+        }
+
+        .section-container.svelte-1rcjg36.svelte-1rcjg36 {
+            display: grid;
+            justify-content: center
+        }
+
+        .card.svelte-1rcjg36.svelte-1rcjg36 {
+            padding: 4rem clamp(2rem, 10vw, 7rem);
+            border: 1px solid var(black);
+            border-radius: var(--border-radius);
+            text-align: center;
+            display: grid
+        }
+
+        .heading.svelte-1rcjg36.svelte-1rcjg36 {
+            margin-bottom: 1.5rem
+        }
+
+        .body.svelte-1rcjg36.svelte-1rcjg36 {
+            max-width: 700px;
+            margin-bottom: 2.25rem
+        }
+
+        .buttons.svelte-1rcjg36.svelte-1rcjg36 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem
+        }
+
+        .buttons.svelte-1rcjg36 .button.svelte-1rcjg36 {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem
         }
 
         section.svelte-1l3gexh.svelte-1l3gexh.svelte-1l3gexh {
@@ -624,16 +662,11 @@
             </div>
         </header>
     </div>
-    <div class="section" id="section-f09afd56">
-        <section class="section-container svelte-o9z257">
-            <div class="card svelte-o9z257">
-                <h2 class="heading svelte-o9z257">Qui som</h2>
-                <div class="body svelte-o9z257"><!-- HTML_TAG_START -->
-                    <p>L’AFA és una associació de mares i pares d’alumnes sense afany de lucre que busca millorar la qualitat del sistema educatiu i les condicions d’escolarització del centre.</p><!-- HTML_TAG_END -->
-                </div>
-                <div class="buttons svelte-o9z257"></div>
-            </div>
-        </section>
+    <div class="section" id="section-50961dfb">
+        <header class="section-container svelte-1tp7z49">
+            <h1 class="heading svelte-1tp7z49">Qui som</h1>
+            <span class="subheading svelte-1tp7z49">L’AFA és una associació de mares i pares d’alumnes sense afany de lucre que busca millorar la qualitat del sistema educatiu i les condicions d’escolarització del centre.</span>
+        </header>
     </div>
     <div class="section" id="section-402b314c">
         <section class="section-container svelte-13ipoh0">
@@ -782,10 +815,25 @@
             </ul>
         </section>
     </div>
+    <div class="section" id="section-fa1e6d6a">
+        <section class="section-container svelte-1rcjg36">
+            <div class="card svelte-1rcjg36">
+                <h2 class="heading svelte-1rcjg36">Vols formar part de l'AFA?</h2>
+                <div class="body svelte-1rcjg36"><!-- HTML_TAG_START -->
+                    <p>Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions.</p><!-- HTML_TAG_END -->
+                </div>
+                <div class="buttons svelte-1rcjg36"><a class="button svelte-1rcjg36" href="/qui-som">
+                        <span>Contacta'ns</span>
+                    </a><a class="button svelte-1rcjg36" href="/qui-som">
+                        <span>Busca la teva comissió</span>
+                    </a></div>
+            </div>
+        </section>
+    </div>
     <div class="section" id="section-08a63993">
         <section class="section-container svelte-1l3gexh">
             <header class="heading-group svelte-1l3gexh">
-                <h2 class="heading svelte-1l3gexh"><!-- HTML_TAG_START -->Projectes de l'AFA<!-- HTML_TAG_END --></h2>
+                <h2 class="heading svelte-1l3gexh"><!-- HTML_TAG_START -->Projectes<!-- HTML_TAG_END --></h2>
                 <div class="subheading"></div>
             </header>
             <ul class="icon-list svelte-1l3gexh"></ul>
