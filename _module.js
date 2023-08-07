@@ -6000,22 +6000,22 @@ function create_fragment$c(ctx) {
 
 	component_2 = new Component$3({
 			props: {
-				heading: "Comissions",
+				heading: "Les comissions",
 				cards: [
-					{
-						"icon": "material-symbols:filter-vintage",
-						"title": "Coeducació Calidoscopi",
-						"description": {
-							"html": "<p>Dóna suport a l’escola en l’educació en la pau i en el respecte als altres</p>",
-							"markdown": "Dóna suport a l’escola en l’educació en la pau i en el respecte als altres"
-						}
-					},
 					{
 						"icon": "material-symbols:groups",
 						"title": "Delegats",
 						"description": {
 							"html": "<p>Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina. </p>",
 							"markdown": "Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina. "
+						}
+					},
+					{
+						"icon": "material-symbols:filter-vintage",
+						"title": "Coeducació Calidoscopi",
+						"description": {
+							"html": "<p>Dóna suport a l’escola en l’educació en la pau i en el respecte als altres.</p>",
+							"markdown": "Dóna suport a l’escola en l’educació en la pau i en el respecte als altres."
 						}
 					},
 					{
@@ -6064,6 +6064,54 @@ function create_fragment$c(ctx) {
 						"description": {
 							"html": "<p>S’ocupa de fer arribar a les famílies de l’Escola tota la informació de l'AFA.</p>",
 							"markdown": "S’ocupa de fer arribar a les famílies de l’Escola tota la informació de l'AFA.\n"
+						}
+					},
+					{
+						"icon": "material-symbols:interactive-space",
+						"title": "Escola de pares",
+						"description": {
+							"html": "<p>Formació en temes psicològics, pedagògics i socials per a les famílies de l’escola.</p>",
+							"markdown": "Formació en temes psicològics, pedagògics i socials per a les famílies de l’escola."
+						}
+					},
+					{
+						"icon": "material-symbols:interactive-space",
+						"title": "Extraescolars",
+						"description": {
+							"html": "<p>Col·laboració amb Paidos en serveis d’extraescolars, acollida, casals i colònies.</p>",
+							"markdown": "Col·laboració amb Paidos en serveis d’extraescolars, acollida, casals i colònies."
+						}
+					},
+					{
+						"icon": "material-symbols:person-celebrate",
+						"title": "Festes",
+						"description": {
+							"html": "<p>Organitza festes durant l’any en col·laboració amb l'escola i és la responsable del Pinyot.</p>",
+							"markdown": "Organitza festes durant l’any en col·laboració amb l'escola i és la responsable del Pinyot."
+						}
+					},
+					{
+						"icon": "material-symbols:tools-power-drill",
+						"title": "Infraestructures",
+						"description": {
+							"html": "<p>Col·labora amb l’Ajuntament per resoldre possibles  problemes d'infrastuctura de l'escola. .</p>",
+							"markdown": "Col·labora amb l’Ajuntament per resoldre possibles  problemes d'infrastuctura de l'escola. ."
+						}
+					},
+					{
+						"icon": "material-symbols:local-library",
+						"title": "Llibres",
+						"description": {
+							"html": "<p>Col·labora amb l’escola en la gestió dels llibres socialitzats  i organitza la venda de llibres.</p>",
+							"markdown": "Col·labora amb l’escola en la gestió dels llibres socialitzats  i organitza la venda de llibres."
+						}
+					},
+					{
+						"icon": "material-symbols:local-dining",
+						"title": "Menjador",
+						"description": {
+							"html": "<p>Col·labora amb Paidos en del servei de menjador i  temps de migdia fent seguiment i control.</p>",
+							"markdown": "Col·labora amb Paidos en del servei de menjador i  temps de migdia fent seguiment i control."
 						}
 					}
 				]
