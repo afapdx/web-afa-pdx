@@ -6210,8 +6210,8 @@ function create_fragment$c(ctx) {
 					},
 					{
 						"link": {
-							"label": "Documents",
-							"url": "/documents"
+							"url": "/documents",
+							"label": "Documents"
 						}
 					}
 				]
@@ -6227,8 +6227,8 @@ function create_fragment$c(ctx) {
 				],
 				social: [
 					{
-						"link": { "url": "/", "label": "Instagram" },
-						"icon": "mdi:instagram"
+						"icon": "mdi:instagram",
+						"link": { "url": "/", "label": "Instagram" }
 					}
 				]
 			}
