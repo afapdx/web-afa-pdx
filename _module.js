@@ -6424,7 +6424,10 @@ function create_fragment$d(ctx) {
 				cards: [
 					{
 						"icon": "",
-						"link": { "url": "/", "label": "Learn More" },
+						"link": {
+							"url": "/projectes",
+							"label": "Learn More"
+						},
 						"title": "Workflow Automation",
 						"content": {
 							"html": "<p>Everything you need to get started working real real fast.</p>",
@@ -6433,7 +6436,10 @@ function create_fragment$d(ctx) {
 					},
 					{
 						"icon": "",
-						"link": { "url": "/", "label": "Learn More" },
+						"link": {
+							"url": "/projectes",
+							"label": "Learn More"
+						},
 						"title": "Ombres al pati",
 						"content": {
 							"html": "<p>Everything you need to get started working real real fast.</p>",
@@ -6442,7 +6448,10 @@ function create_fragment$d(ctx) {
 					},
 					{
 						"icon": "",
-						"link": { "url": "/", "label": "Learn More" },
+						"link": {
+							"url": "/projectes",
+							"label": "Learn More"
+						},
 						"title": "Calendar Integrations",
 						"content": {
 							"html": "<p>Everything you need to get started working real real fast.</p>",
