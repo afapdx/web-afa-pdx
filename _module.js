@@ -6391,11 +6391,8 @@ function create_fragment$d(ctx) {
 
 	component_4 = new Component$5({
 			props: {
-				heading: "Projectes de l'AFA",
-				body: {
-					"html": "<p>L’AFA és una associació de mares i pares d’alumnes sense afany de lucre que busca millorar la qualitat del sistema educatiu i les condicions d’escolarització del centre.</p>",
-					"markdown": "L’AFA és una associació de mares i pares d’alumnes sense afany de lucre que busca millorar la qualitat del sistema educatiu i les condicions d’escolarització del centre.\n\n"
-				},
+				heading: "Projectes de l'AFA\n\n\n",
+				body: { "html": "", "markdown": "" },
 				buttons: []
 			}
 		});
