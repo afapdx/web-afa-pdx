@@ -6718,7 +6718,7 @@ function create_fragment$e(ctx) {
 					{
 						"icon": "Consequat proident lorem",
 						"link": {
-							"url": "/qui-som",
+							"url": "/comissions",
 							"label": "Busca la teva comissió"
 						}
 					}

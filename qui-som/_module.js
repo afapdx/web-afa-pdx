@@ -6122,7 +6122,7 @@ function create_fragment$c(ctx) {
 	component_2 = new Component$3({
 			props: {
 				heading: "",
-				subheading: "L’AMPA és una associació sense afany de lucre formada per les mares i pares d’alumnes que se n’han fet socis i que té per missió contribuir a la millora de la qualitat del sistema educatiu públic i de les condicions d’escolarització dels i les alumnes del centre.",
+				subheading: "L'AFA és una associació sense afany de lucre formada per les mares i pares d’alumnes que se n’han fet socis i que té per missió contribuir a la millora de la qualitat del sistema educatiu públic i de les condicions d’escolarització dels i les alumnes del centre.",
 				buttons: []
 			}
 		});
@@ -6219,7 +6219,7 @@ function create_fragment$c(ctx) {
 					{
 						"icon": "Officia velit elit",
 						"link": {
-							"url": "/",
+							"url": "/comissions",
 							"label": "Busca la teva comissió"
 						}
 					}
