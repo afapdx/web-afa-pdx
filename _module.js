@@ -6806,6 +6806,12 @@ function create_fragment$e(ctx) {
 					},
 					{
 						"link": {
+							"label": "Comissions",
+							"url": "/comissions"
+						}
+					},
+					{
+						"link": {
 							"url": "/projectes",
 							"label": "Projectes de l'AFA",
 							"active": false
