@@ -6656,44 +6656,44 @@ function create_fragment$e(ctx) {
 
 	component_4 = new Component$5({
 			props: {
-				heading: "Projectes de l'AFA",
+				heading: "Properes activitats",
 				subhead: "",
 				icon_list: [],
 				cards: [
 					{
-						"icon": "",
+						"icon": "akar-icons:calendar",
 						"link": {
 							"url": "/projectes",
 							"label": "Learn More"
 						},
-						"title": "Workflow Automation",
+						"title": "Inici de curs",
 						"content": {
-							"html": "<p>Everything you need to get started working real real fast.</p>",
-							"markdown": "Everything you need to get started working real real fast."
+							"html": "<p>Sept 02, 2023 </p>",
+							"markdown": "Sept 02, 2023 "
 						}
 					},
 					{
-						"icon": "",
+						"icon": "akar-icons:calendar",
 						"link": {
 							"url": "/projectes",
-							"label": "Learn More"
+							"label": "Add to calendar"
 						},
 						"title": "Ombres al pati",
 						"content": {
-							"html": "<p>Everything you need to get started working real real fast.</p>",
-							"markdown": "Everything you need to get started working real real fast.\n\n"
+							"html": "<p>Sept 03, 2023 </p>",
+							"markdown": "Sept 03, 2023 \n"
 						}
 					},
 					{
-						"icon": "",
+						"icon": "akar-icons:calendar",
 						"link": {
 							"url": "/projectes",
 							"label": "Learn More"
 						},
 						"title": "Calendar Integrations",
 						"content": {
-							"html": "<p>Everything you need to get started working real real fast.</p>",
-							"markdown": "Everything you need to get started working real real fast.\n"
+							"html": "<p>Sept 04, 2023 </p>",
+							"markdown": "Sept 04, 2023 "
 						}
 					}
 				]
