@@ -4628,7 +4628,7 @@ function get_each_context$4(ctx, list, i) {
 	return child_ctx;
 }
 
-// (50:6) {#each buttons as button}
+// (53:6) {#each buttons as button}
 function create_each_block$4(ctx) {
 	let a;
 	let icon;
@@ -4665,7 +4665,7 @@ function create_each_block$4(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "button svelte-1t66bk1");
+			attr(a, "class", "button svelte-1kypo2b");
 			attr(a, "href", a_href_value = /*button*/ ctx[3].link.url);
 		},
 		m(target, anchor) {
@@ -4774,13 +4774,13 @@ function create_fragment$6(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "heading svelte-1t66bk1");
-			attr(div0, "class", "body svelte-1t66bk1");
-			attr(div1, "class", "buttons svelte-1t66bk1");
-			attr(div2, "class", "card svelte-1t66bk1");
-			attr(section, "class", "section-container svelte-1t66bk1");
+			attr(h2, "class", "heading svelte-1kypo2b");
+			attr(div0, "class", "body svelte-1kypo2b");
+			attr(div1, "class", "buttons svelte-1kypo2b");
+			attr(div2, "class", "card svelte-1kypo2b");
+			attr(section, "class", "section-container svelte-1kypo2b");
 			attr(div3, "class", "section");
-			attr(div3, "id", "section-fa1e6d6a");
+			attr(div3, "id", "section-791281f8");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div3, anchor);
@@ -6702,25 +6702,19 @@ function create_fragment$e(ctx) {
 
 	component_5 = new Component$6({
 			props: {
-				heading: "Vols formar part de l'AFA?",
+				heading: "Call to action of somekind.",
 				body: {
 					"html": "<p>Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions.</p>",
 					"markdown": "Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions."
 				},
 				buttons: [
 					{
-						"icon": "",
-						"link": {
-							"url": "/qui-som",
-							"label": "Contacta'ns"
-						}
+						"icon": "Dolore laborum cillum",
+						"link": { "url": "/", "label": "Watch video" }
 					},
 					{
-						"icon": "Consequat proident lorem",
-						"link": {
-							"url": "/comissions",
-							"label": "Busca la teva comissió"
-						}
+						"icon": "Officia velit elit",
+						"link": { "url": "/", "label": "Contact Us" }
 					}
 				]
 			}
@@ -6826,14 +6820,14 @@ function create_fragment$e(ctx) {
 					},
 					{
 						"link": {
-							"label": "Curs 2023/24",
-							"url": "/curs-2023-24"
+							"url": "/curs-2023-24",
+							"label": "Curs 2023/24"
 						}
 					},
 					{
 						"link": {
-							"label": "Documents",
-							"url": "/documents"
+							"url": "/documents",
+							"label": "Documents"
 						}
 					}
 				]

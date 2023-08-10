@@ -5031,14 +5031,14 @@ function create_fragment$9(ctx) {
 					},
 					{
 						"link": {
-							"label": "Curs 2023/24",
-							"url": "/curs-2023-24"
+							"url": "/curs-2023-24",
+							"label": "Curs 2023/24"
 						}
 					},
 					{
 						"link": {
-							"label": "Documents",
-							"url": "/documents"
+							"url": "/documents",
+							"label": "Documents"
 						}
 					}
 				]
