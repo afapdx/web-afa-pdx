@@ -4183,13 +4183,13 @@ function create_fragment$6(ctx) {
 	component_1 = new Component$2({
 			props: {
 				logo: {
-					"title": "AFA Pi d'en Xandri",
 					"image": {
 						"alt": "",
 						"src": "https://jbbjtodsvhsgjappwopg.supabase.co/storage/v1/object/public/sites/public-library/assets/logoipsum-261 (1).svg",
 						"url": "https://jbbjtodsvhsgjappwopg.supabase.co/storage/v1/object/public/sites/public-library/assets/logoipsum-261 (1).svg",
 						"size": 3
-					}
+					},
+					"title": "AFA Pi d'en Xandri"
 				},
 				site_nav: [
 					{

@@ -4916,8 +4916,8 @@ function create_fragment$9(ctx) {
 					},
 					{
 						"link": {
-							"label": "Comissions",
-							"url": "/comissions"
+							"url": "/comissions",
+							"label": "Comissions"
 						}
 					},
 					{
@@ -5002,6 +5002,7 @@ function create_fragment$9(ctx) {
 	component_6 = new Component$7({
 			props: {
 				footer_links: [
+					{ "link": { "url": "/", "label": "Inici" } },
 					{
 						"link": {
 							"url": "/qui-som",
@@ -5011,15 +5012,15 @@ function create_fragment$9(ctx) {
 					},
 					{
 						"link": {
+							"url": "/comissions",
 							"label": "Comissions",
-							"url": "/comissions"
+							"active": false
 						}
 					},
 					{
 						"link": {
 							"url": "/projectes",
-							"label": "Projectes de l'AFA",
-							"active": false
+							"label": "Projectes"
 						}
 					},
 					{
@@ -5030,14 +5031,14 @@ function create_fragment$9(ctx) {
 					},
 					{
 						"link": {
-							"url": "/curs-2023-24",
-							"label": "Curs 2023/24"
+							"label": "Curs 2023/24",
+							"url": "/curs-2023-24"
 						}
 					},
 					{
 						"link": {
-							"url": "/documents",
-							"label": "Documents"
+							"label": "Documents",
+							"url": "/documents"
 						}
 					}
 				]
