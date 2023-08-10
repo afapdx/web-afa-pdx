@@ -6702,7 +6702,7 @@ function create_fragment$e(ctx) {
 
 	component_5 = new Component$6({
 			props: {
-				heading: "Call to action of somekind.",
+				heading: "Vols formar part de l'AFA?",
 				body: {
 					"html": "<p>Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions.</p>",
 					"markdown": "Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions."
@@ -6710,11 +6710,14 @@ function create_fragment$e(ctx) {
 				buttons: [
 					{
 						"icon": "Dolore laborum cillum",
-						"link": { "url": "/", "label": "Watch video" }
+						"link": { "url": "/", "label": "Contacta'ns" }
 					},
 					{
 						"icon": "Officia velit elit",
-						"link": { "url": "/", "label": "Contact Us" }
+						"link": {
+							"url": "/",
+							"label": "Busca la teva comisssió"
+						}
 					}
 				]
 			}
