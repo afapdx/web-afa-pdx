@@ -4665,7 +4665,7 @@ function create_each_block$4(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "button svelte-1kypo2b");
+			attr(a, "class", "button svelte-1o3ncbl");
 			attr(a, "href", a_href_value = /*button*/ ctx[3].link.url);
 		},
 		m(target, anchor) {
@@ -4774,11 +4774,11 @@ function create_fragment$6(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "heading svelte-1kypo2b");
-			attr(div0, "class", "body svelte-1kypo2b");
-			attr(div1, "class", "buttons svelte-1kypo2b");
-			attr(div2, "class", "card svelte-1kypo2b");
-			attr(section, "class", "section-container svelte-1kypo2b");
+			attr(h2, "class", "heading svelte-1o3ncbl");
+			attr(div0, "class", "body svelte-1o3ncbl");
+			attr(div1, "class", "buttons svelte-1o3ncbl");
+			attr(div2, "class", "card svelte-1o3ncbl");
+			attr(section, "class", "section-container svelte-1o3ncbl");
 			attr(div3, "class", "section");
 			attr(div3, "id", "section-791281f8");
 		},
