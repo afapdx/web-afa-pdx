@@ -6715,7 +6715,7 @@ function create_fragment$e(ctx) {
 					{
 						"icon": "Officia velit elit",
 						"link": {
-							"url": "/",
+							"url": "/comissions",
 							"label": "Busca la teva comisssió"
 						}
 					}
