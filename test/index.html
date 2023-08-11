@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Primo" />
+    <!-- HEAD_svelte-1fyuesl_START -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css">
+    <style>
+        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --verd-fosc: #194027;
+            --verd-clar: #388762;
+            --taronja: #ff7f3f;
+            --lila-fosc: #dac9fa;
+            --lila: #e8e1fd;
+            --verd-fluor: #f3f7a5;
+            --crema: #fff5eb;
+
+            --background: var(--crema);
+
+            --color-accent: var(--verd-fosc);
+        }
+
+        #page {
+            font-family: 'Space Grotesk', system-ui, sans-serif;
+            color: var(--color-accent);
+            line-height: 1.6;
+            font-size: 1rem;
+            background: var(--background);
+        }
+
+        .section-container {
+            max-width: var(--max-width, 1000px);
+            margin: 0 auto;
+            padding: 3rem var(--padding, 1rem);
+        }
+
+        .heading {
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .button {
+            color: var(--crema);
+            padding: 0.5em 1.1em;
+            border-radius: 12px;
+        }
+
+        .button.primary.positive {
+            background-color: var(--color-accent);
+        }
+
+        .button.primary.positive:hover {
+            background-color: var(--verd-clar);
+        }
+
+        .button.secondary.positive,
+        .button.tertiary.positive {
+            color: var(--color-accent);
+        }
+
+        .button.secondary.positive:hover,
+        .button.tertiary.positive:hover {
+            color: var(--verd-clar);
+        }
+
+        .button.secondary.positive {
+            border: 1px solid var(--color-accent);
+        }
+
+        .button.secondary.positive:hover {
+            border-color: var(--verd-clar);
+        }
+
+        .button.primary.negative {
+            background-color: var(--crema) !important;
+            color: var(--color-accent);
+        }
+
+        .button.primary.negative:hover {
+            background-color: var(--lila) !important;
+        }
+
+        .button.secondary.negative:hover,
+        .button.tertiary.negative:hover {
+            color: var(--lila);
+        }
+
+        .button.secondary.negative {
+            border: 1px solid var(--crema);
+        }
+
+        .button.secondary.negative:hover {
+            border-color: var(--lila);
+        }
+    </style><!-- HEAD_svelte-1fyuesl_END -->
+    <style>
+        section.svelte-1kfh7xr.svelte-1kfh7xr {
+            border: 1px solid black
+        }
+
+        section.svelte-1kfh7xr div.svelte-1kfh7xr {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2em
+        }
+
+        .negative.svelte-1kfh7xr.svelte-1kfh7xr {
+            background-color: var(--verd-fosc)
+        }
+    </style>
+</head>
+
+<body id="page">
+
+    <div class="section" id="section-73c1fc04">
+        <section class="svelte-1kfh7xr">
+            <div class="positive svelte-1kfh7xr"><a class="button primary positive" href=".">Primary Positive</a>
+                <a class="button secondary positive" href=".">Secondary Positive</a>
+                <a class="button tertiary positive" href=".">Tertiary Positive</a>
+            </div>
+            <div class="negative svelte-1kfh7xr"><a class="button primary negative svelte-1kfh7xr" href=".">Primary Negative</a>
+                <a class="button secondary negative svelte-1kfh7xr" href=".">Secondary Negative</a>
+                <a class="button tertiary negative svelte-1kfh7xr" href=".">Tertiary Negative</a>
+            </div>
+        </section>
+    </div>
+
+    <script type="module">
+        const path = window.location.pathname === '/' ? '' : window.location.pathname
+        const [{
+            default: App
+        }] = await Promise.all([
+            import(path + '/_module.js')
+        ]).catch(e => console.error(e))
+        new App({
+            target: document.querySelector('body'),
+            hydrate: true,
+        })
+    </script>
+</body>
+
+</html>

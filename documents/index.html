@@ -3,7 +3,7 @@
 
 <head>
     <meta name="generator" content="Primo" />
-    <!-- HEAD_svelte-125gtrt_START -->
+    <!-- HEAD_svelte-1fyuesl_START -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css">
@@ -12,12 +12,22 @@
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
         :root {
-            --background: hsla(30 100% 96% / 1);
+            --verd-fosc: #194027;
+            --verd-clar: #388762;
+            --taronja: #ff7f3f;
+            --lila-fosc: #dac9fa;
+            --lila: #e8e1fd;
+            --verd-fluor: #f3f7a5;
+            --crema: #fff5eb;
+
+            --background: var(--crema);
+
+            --color-accent: var(--verd-fosc);
         }
 
         #page {
             font-family: 'Space Grotesk', system-ui, sans-serif;
-            color: var(--color);
+            color: var(--color-accent);
             line-height: 1.6;
             font-size: 1rem;
             background: var(--background);
@@ -37,23 +47,59 @@
         }
 
         .button {
-            color: white;
-            background: var(--color-accent);
-            border-radius: 5px;
-            padding: 8px 20px;
-            transition: var(--transition);
+            color: var(--crema);
+            padding: 0.5em 1.1em;
+            border-radius: 12px;
         }
 
-        .button:hover {
-            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+        .button.primary.positive {
+            background-color: var(--color-accent);
         }
 
-        .button.inverted {
-            background: transparent;
+        .button.primary.positive:hover {
+            background-color: var(--verd-clar);
+        }
+
+        .button.secondary.positive,
+        .button.tertiary.positive {
             color: var(--color-accent);
-            border: 2px solid var(--color-accent);
         }
-    </style><!-- HEAD_svelte-125gtrt_END -->
+
+        .button.secondary.positive:hover,
+        .button.tertiary.positive:hover {
+            color: var(--verd-clar);
+        }
+
+        .button.secondary.positive {
+            border: 1px solid var(--color-accent);
+        }
+
+        .button.secondary.positive:hover {
+            border-color: var(--verd-clar);
+        }
+
+        .button.primary.negative {
+            background-color: var(--crema) !important;
+            color: var(--color-accent);
+        }
+
+        .button.primary.negative:hover {
+            background-color: var(--lila) !important;
+        }
+
+        .button.secondary.negative:hover,
+        .button.tertiary.negative:hover {
+            color: var(--lila);
+        }
+
+        .button.secondary.negative {
+            border: 1px solid var(--crema);
+        }
+
+        .button.secondary.negative:hover {
+            border-color: var(--lila);
+        }
+    </style><!-- HEAD_svelte-1fyuesl_END -->
     <style>
         header.svelte-z2uhup.svelte-z2uhup {
             color: white;
@@ -164,70 +210,70 @@
             top: 1rem
         }
 
-        .section-container.svelte-12m22f0.svelte-12m22f0 {
+        .section-container.svelte-12jj5ao.svelte-12jj5ao {
             display: grid;
             gap: 2rem
         }
 
         @media(min-width: 800px) {
-            .section-container.svelte-12m22f0.svelte-12m22f0 {
+            .section-container.svelte-12jj5ao.svelte-12jj5ao {
                 grid-template-columns: 3fr 5fr;
                 gap: 14rem
             }
         }
 
-        .content.svelte-12m22f0.svelte-12m22f0 {
+        .content.svelte-12jj5ao.svelte-12jj5ao {
             display: grid;
             place-content: flex-start;
             gap: 1rem
         }
 
-        .content.svelte-12m22f0 .body.svelte-12m22f0 {
+        .content.svelte-12jj5ao .body.svelte-12jj5ao {
             margin-bottom: .5rem
         }
 
-        .content.svelte-12m22f0 .social-links.svelte-12m22f0 {
+        .content.svelte-12jj5ao .social-links.svelte-12jj5ao {
             display: grid;
             gap: 0.75rem
         }
 
-        .content.svelte-12m22f0 .social-links a.svelte-12m22f0 {
+        .content.svelte-12jj5ao .social-links a.svelte-12jj5ao {
             display: flex;
             align-items: center;
             gap: 0.75rem
         }
 
-        .content.svelte-12m22f0 .social-links a .icon.svelte-12m22f0 {
+        .content.svelte-12jj5ao .social-links a .icon.svelte-12jj5ao {
             font-size: 1.75rem;
-            color: var(--color-accent, rebeccapurple);
+            color: var(--color-accent);
             transition: var(--transition, 0.1s transform)
         }
 
-        .content.svelte-12m22f0 .social-links a:hover .icon.svelte-12m22f0 {
+        .content.svelte-12jj5ao .social-links a:hover .icon.svelte-12jj5ao {
             transform: scale(1.1)
         }
 
-        form.svelte-12m22f0.svelte-12m22f0 {
-            background-color: white;
+        form.svelte-12jj5ao.svelte-12jj5ao {
             display: grid;
+            box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
             gap: 1rem;
             padding: 2rem;
             border: 1px solid var(--border-color, #eee);
             border-radius: var(--border-radius)
         }
 
-        form.svelte-12m22f0 label.svelte-12m22f0 {
+        form.svelte-12jj5ao label.svelte-12jj5ao {
             display: grid;
             gap: 0.25rem
         }
 
-        form.svelte-12m22f0 label span.svelte-12m22f0 {
+        form.svelte-12jj5ao label span.svelte-12jj5ao {
             font-size: 0.75rem;
             font-weight: 500
         }
 
-        form.svelte-12m22f0 label input.svelte-12m22f0,
-        form.svelte-12m22f0 label textarea.svelte-12m22f0 {
+        form.svelte-12jj5ao label input.svelte-12jj5ao,
+        form.svelte-12jj5ao label textarea.svelte-12jj5ao {
             font-size: 1rem;
             padding: 0.5rem;
             outline-color: transparent;
@@ -236,41 +282,43 @@
             border-radius: 4px
         }
 
-        form.svelte-12m22f0 label input.svelte-12m22f0:focus,
-        form.svelte-12m22f0 label textarea.svelte-12m22f0:focus {
+        form.svelte-12jj5ao label input.svelte-12jj5ao:focus,
+        form.svelte-12jj5ao label textarea.svelte-12jj5ao:focus {
             outline-color: var(--color-accent, rebeccapurple)
         }
 
-        form.svelte-12m22f0 .button.svelte-12m22f0 {
-            margin-top: 1rem;
-            background-color: black
+        form.svelte-12jj5ao .button.svelte-12jj5ao {
+            margin-top: 1rem
         }
 
-        footer.svelte-o93d4d.svelte-o93d4d {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 10rem;
+        footer.svelte-1wofe1u.svelte-1wofe1u {
             background-color: #FF7F3F;
             color: white
         }
 
-        nav.svelte-o93d4d.svelte-o93d4d {
+        .section-container.svelte-1wofe1u.svelte-1wofe1u {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10rem
+        }
+
+        nav.svelte-1wofe1u.svelte-1wofe1u {
             display: grid;
             place-items: start;
             gap: 1.5rem;
             font-size: 1.5rem
         }
 
-        .primo.svelte-o93d4d a.svelte-o93d4d {
+        .primo.svelte-1wofe1u a.svelte-1wofe1u {
             text-decoration: underline
         }
 
-        footer.svelte-f5r1cc.svelte-f5r1cc {
+        footer.svelte-90rszg.svelte-90rszg {
             background-color: #FF7F3F;
-            COLOR: white
+            color: white
         }
 
-        .section-container.svelte-f5r1cc.svelte-f5r1cc {
+        .section-container.svelte-90rszg.svelte-90rszg {
             display: flex;
             justify-content: space-between;
             flex-direction: column;
@@ -281,37 +329,37 @@
         }
 
         @media(min-width: 600px) {
-            .section-container.svelte-f5r1cc.svelte-f5r1cc {
+            .section-container.svelte-90rszg.svelte-90rszg {
                 flex-direction: row
             }
         }
 
-        nav.svelte-f5r1cc.svelte-f5r1cc {
+        nav.svelte-90rszg.svelte-90rszg {
             display: flex;
             gap: 1rem;
             font-size: .875rem
         }
 
-        nav.svelte-f5r1cc .link.svelte-f5r1cc {
+        nav.svelte-90rszg .link.svelte-90rszg {
             border-color: transparent
         }
 
-        nav.svelte-f5r1cc .link.svelte-f5r1cc:hover {
+        nav.svelte-90rszg .link.svelte-90rszg:hover {
             border-color: initial
         }
 
-        .social-links.svelte-f5r1cc.svelte-f5r1cc {
+        .social-links.svelte-90rszg.svelte-90rszg {
             display: flex;
             gap: 1.5rem;
             font-size: 1.5rem
         }
 
-        .social-links.svelte-f5r1cc a.svelte-f5r1cc {
-            color: var(--color-accent, black);
+        .social-links.svelte-90rszg a.svelte-90rszg {
+            color: var(--verd-fosc);
             transition: var(--transition, 0.1s transform)
         }
 
-        .social-links.svelte-f5r1cc a.svelte-f5r1cc:hover {
+        .social-links.svelte-90rszg a.svelte-90rszg:hover {
             transform: scale(1.1)
         }
     </style>
@@ -327,17 +375,7 @@
                     <nav class="svelte-z2uhup"><a class="link svelte-z2uhup" href="/qui-som">Qui som?</a><a class="link svelte-z2uhup" href="/comissions">Comissions</a><a class="link svelte-z2uhup" href="/projectes">Projectes</a><a class="link svelte-z2uhup" href="/notcies-i-activitats">Notícies i activitats</a><a class="link svelte-z2uhup" href="/curs-2023-24">Curs 2023-24</a><a class="link svelte-z2uhup" href="/documents">Documents</a></nav>
                 </div>
                 <div class="mobile-nav svelte-z2uhup"><a href="/" class="logo svelte-z2uhup">AFA Pi d'en Xandri</a>
-                    <button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="30" height="30" viewBox="0 0 24 24" class="iconify iconify--eva"><!-- HTML_TAG_START -->
-                            <g id="iconifySvelte0">
-                                <g id="iconifySvelte1">
-                                    <g id="iconifySvelte2" fill="currentColor">
-                                        <rect width="18" height="2" x="3" y="11" rx=".95" ry=".95" />
-                                        <rect width="18" height="2" x="3" y="16" rx=".95" ry=".95" />
-                                        <rect width="18" height="2" x="3" y="6" rx=".95" ry=".95" />
-                                    </g>
-                                </g>
-                            </g><!-- HTML_TAG_END -->
-                        </svg></button>
+                    <button id="open" aria-label="Open mobile navigation"></button>
                 </div>
             </div>
             <div class="section-container svelte-z2uhup">
@@ -346,37 +384,37 @@
         </header>
     </div>
     <div class="section" id="section-b0c8ea64">
-        <section class="section-container svelte-12m22f0">
-            <div class="content svelte-12m22f0">
+        <section class="section-container svelte-12jj5ao">
+            <div class="content svelte-12jj5ao">
                 <h2 class="heading">Bústia de suggeriments</h2>
-                <div class="body svelte-12m22f0"><!-- HTML_TAG_START -->Whether you have questions, feedback, or just want to say hello, we're always ready to hear from you. Please fill out the contact form, and we'll do our best to respond within 24-48 hours.<!-- HTML_TAG_END --></div>
-                <div class="social-links svelte-12m22f0"></div>
+                <div class="body svelte-12jj5ao"><!-- HTML_TAG_START -->Whether you have questions, feedback, or just want to say hello, we're always ready to hear from you. Please fill out the contact form, and we'll do our best to respond within 24-48 hours.<!-- HTML_TAG_END --></div>
+                <div class="social-links svelte-12jj5ao"></div>
             </div>
-            <form class="svelte-12m22f0"><label class="svelte-12m22f0"><span class="svelte-12m22f0">Name</span>
-                    <input type="text" placeholder="John Doe" class="svelte-12m22f0">
-                </label><label class="svelte-12m22f0"><span class="svelte-12m22f0">Email</span>
-                    <input type="email" placeholder="johndoe@johndoe.com" class="svelte-12m22f0">
-                </label><label class="svelte-12m22f0"><span class="svelte-12m22f0">El teu missatge</span>
-                    <input type="Sunt officia ad" placeholder="Escriu aquí el teu missatge" class="svelte-12m22f0">
+            <form class="svelte-12jj5ao"><label class="svelte-12jj5ao"><span class="svelte-12jj5ao">Name</span>
+                    <input type="text" placeholder="John Doe" class="svelte-12jj5ao">
+                </label><label class="svelte-12jj5ao"><span class="svelte-12jj5ao">Email</span>
+                    <input type="email" placeholder="johndoe@johndoe.com" class="svelte-12jj5ao">
+                </label><label class="svelte-12jj5ao"><span class="svelte-12jj5ao">El teu missatge</span>
+                    <input type="Sunt officia ad" placeholder="Escriu aquí el teu missatge" class="svelte-12jj5ao">
                 </label>
-                <button class="button svelte-12m22f0" type="submit">Submit</button>
+                <button class="button primary positive svelte-12jj5ao" type="submit">Submit</button>
             </form>
         </section>
     </div>
     <div class="section" id="section-812ecb02">
-        <footer class="section-container svelte-o93d4d">
-            <nav class="svelte-o93d4d"><a class="link" href="/">Inici</a><a class="link" href="/qui-som">Qui som</a><a class="link" href="/comissions">Comissions</a><a class="link" href="/projectes">Projectes</a><a class="link" href="/notcies-i-activitats">Notícies i activitats</a><a class="link" href="/curs-2023-24">Curs 2023/24</a><a class="link" href="/documents">Documents</a></nav>
-            <span class="primo svelte-o93d4d">Powered by
-                <a href="https://primo.so" class="primo svelte-o93d4d">Primo</a></span>
+        <footer class="svelte-1wofe1u">
+            <div class="section-container svelte-1wofe1u">
+                <nav class="svelte-1wofe1u"><a class="link" href="/">Inici</a><a class="link" href="/work">Work</a><a class="link" href="/services">Services</a><a class="link" href="/company">Company</a><a class="link" href="/contact">Contact Us</a></nav>
+                <span class="primo svelte-1wofe1u">Powered by
+                    <a href="https://primo.so" class="primo svelte-1wofe1u">Primo</a></span>
+            </div>
         </footer>
     </div>
     <div class="section" id="section-ac4ae051">
-        <footer class="svelte-f5r1cc">
-            <div class="section-container svelte-f5r1cc">
-                <nav class="svelte-f5r1cc"><a class="link svelte-f5r1cc" href="https://primosites.vercel.app/theme-minimal">©2023 AFA Escola Pi d'en Xandri</a><a class="link svelte-f5r1cc" href="/">C/Santa Teresa, 61 08172 Sant Cugat del Vallès</a></nav>
-                <div class="social-links svelte-f5r1cc"><a href="/" aria-label="Instagram" class="svelte-f5r1cc"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START -->
-                            <path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z" /><!-- HTML_TAG_END -->
-                        </svg>
+        <footer class="svelte-90rszg">
+            <div class="section-container svelte-90rszg">
+                <nav class="svelte-90rszg"><a class="link svelte-90rszg" href="#">Copyright 2023</a></nav>
+                <div class="social-links svelte-90rszg"><a href="/" aria-label="Instagram" class="svelte-90rszg">
                     </a></div>
             </div>
         </footer>

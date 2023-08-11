@@ -1019,17 +1019,17 @@ function create_fragment(ctx) {
 			link0 = element("link");
 			link1 = element("link");
 			style = element("style");
-			t = text("@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\n\n:root {\n  --background: hsla(30 100% 96% / 1);\n}\n\n#page {\n  font-family: 'Space Grotesk', system-ui, sans-serif;\n  color: var(--color);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n}\n\n.button {\n  color: white;\n  background: var(--color-accent);\n  border-radius: 5px;\n  padding: 8px 20px;\n  transition: var(--transition);\n}\n\n.button:hover {\n    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);\n  }\n\n.button.inverted {\n    background: transparent; \n    color: var(--color-accent); \n    border: 2px solid var(--color-accent);\n  }");
+			t = text("@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\n\n:root {\n  --verd-fosc: #194027;\n  --verd-clar:  #388762;\n  --taronja: #ff7f3f;\n  --lila-fosc: #dac9fa;\n  --lila: #e8e1fd;\n  --verd-fluor: #f3f7a5;\n  --crema: #fff5eb;\n  \n  --background: var(--crema);\n\n  --color-accent: var(--verd-fosc);\n}\n\n#page {\n  font-family: 'Space Grotesk', system-ui, sans-serif;\n  color: var(--color-accent);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n}\n\n.button {\n  color: var(--crema);\n  padding: 0.5em 1.1em;\n  border-radius: 12px;\n}\n\n.button.primary.positive {\n    background-color: var(--color-accent);\n  }\n\n.button.primary.positive:hover {\n      background-color: var(--verd-clar);\n    }\n\n.button.secondary.positive, .button.tertiary.positive {\n    color: var(--color-accent);\n  }\n\n.button.secondary.positive:hover, .button.tertiary.positive:hover {\n      color: var(--verd-clar);\n    }\n\n.button.secondary.positive {\n    border: 1px solid var(--color-accent);\n  }\n\n.button.secondary.positive:hover {\n      border-color: var(--verd-clar);\n    }\n\n.button.primary.negative {\n    background-color: var(--crema) !important;\n    color: var(--color-accent);\n  }\n\n.button.primary.negative:hover {\n      background-color: var(--lila) !important;\n    }\n\n.button.secondary.negative:hover, .button.tertiary.negative:hover {\n      color: var(--lila);\n    }\n\n.button.secondary.negative {\n    border: 1px solid var(--crema);\n  }\n\n.button.secondary.negative:hover {\n      border-color: var(--lila);\n    }");
 			this.h();
 		},
 		l(nodes) {
-			const head_nodes = head_selector('svelte-125gtrt', document.head);
+			const head_nodes = head_selector('svelte-1fyuesl', document.head);
 			meta = claim_element(head_nodes, "META", { name: true, content: true });
 			link0 = claim_element(head_nodes, "LINK", { rel: true, type: true, href: true });
 			link1 = claim_element(head_nodes, "LINK", { rel: true, type: true, href: true });
 			style = claim_element(head_nodes, "STYLE", {});
 			var style_nodes = children(style);
-			t = claim_text(style_nodes, "@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\n\n:root {\n  --background: hsla(30 100% 96% / 1);\n}\n\n#page {\n  font-family: 'Space Grotesk', system-ui, sans-serif;\n  color: var(--color);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n}\n\n.button {\n  color: white;\n  background: var(--color-accent);\n  border-radius: 5px;\n  padding: 8px 20px;\n  transition: var(--transition);\n}\n\n.button:hover {\n    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);\n  }\n\n.button.inverted {\n    background: transparent; \n    color: var(--color-accent); \n    border: 2px solid var(--color-accent);\n  }");
+			t = claim_text(style_nodes, "@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\n\n:root {\n  --verd-fosc: #194027;\n  --verd-clar:  #388762;\n  --taronja: #ff7f3f;\n  --lila-fosc: #dac9fa;\n  --lila: #e8e1fd;\n  --verd-fluor: #f3f7a5;\n  --crema: #fff5eb;\n  \n  --background: var(--crema);\n\n  --color-accent: var(--verd-fosc);\n}\n\n#page {\n  font-family: 'Space Grotesk', system-ui, sans-serif;\n  color: var(--color-accent);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n}\n\n.button {\n  color: var(--crema);\n  padding: 0.5em 1.1em;\n  border-radius: 12px;\n}\n\n.button.primary.positive {\n    background-color: var(--color-accent);\n  }\n\n.button.primary.positive:hover {\n      background-color: var(--verd-clar);\n    }\n\n.button.secondary.positive, .button.tertiary.positive {\n    color: var(--color-accent);\n  }\n\n.button.secondary.positive:hover, .button.tertiary.positive:hover {\n      color: var(--verd-clar);\n    }\n\n.button.secondary.positive {\n    border: 1px solid var(--color-accent);\n  }\n\n.button.secondary.positive:hover {\n      border-color: var(--verd-clar);\n    }\n\n.button.primary.negative {\n    background-color: var(--crema) !important;\n    color: var(--color-accent);\n  }\n\n.button.primary.negative:hover {\n      background-color: var(--lila) !important;\n    }\n\n.button.secondary.negative:hover, .button.tertiary.negative:hover {\n      color: var(--lila);\n    }\n\n.button.secondary.negative {\n    border: 1px solid var(--crema);\n  }\n\n.button.secondary.negative:hover {\n      border-color: var(--lila);\n    }");
 			style_nodes.forEach(detach);
 			head_nodes.forEach(detach);
 			this.h();
@@ -3662,7 +3662,7 @@ function get_each_context_1$1(ctx, list, i) {
 	return child_ctx;
 }
 
-// (96:6) {#each social as { link, icon }}
+// (95:6) {#each social as { link, icon }}
 function create_each_block_1$1(ctx) {
 	let a;
 	let span;
@@ -3699,9 +3699,9 @@ function create_each_block_1$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "icon svelte-12m22f0");
+			attr(span, "class", "icon svelte-12jj5ao");
 			attr(a, "href", a_href_value = /*link*/ ctx[8].url);
-			attr(a, "class", "svelte-12m22f0");
+			attr(a, "class", "svelte-12jj5ao");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -3738,7 +3738,7 @@ function create_each_block_1$1(ctx) {
 	};
 }
 
-// (113:6) {:else}
+// (112:6) {:else}
 function create_else_block$1(ctx) {
 	let label;
 	let span;
@@ -3777,11 +3777,11 @@ function create_else_block$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "svelte-12m22f0");
+			attr(span, "class", "svelte-12jj5ao");
 			attr(input, "type", input_type_value = /*input*/ ctx[5].type || "text");
 			attr(input, "placeholder", input_placeholder_value = /*input*/ ctx[5].placeholder);
-			attr(input, "class", "svelte-12m22f0");
-			attr(label, "class", "svelte-12m22f0");
+			attr(input, "class", "svelte-12jj5ao");
+			attr(label, "class", "svelte-12jj5ao");
 		},
 		m(target, anchor) {
 			insert_hydration(target, label, anchor);
@@ -3807,7 +3807,7 @@ function create_else_block$1(ctx) {
 	};
 }
 
-// (108:6) {#if input.type === "textarea"}
+// (107:6) {#if input.type === "textarea"}
 function create_if_block$2(ctx) {
 	let label;
 	let span;
@@ -3839,9 +3839,9 @@ function create_if_block$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "svelte-12m22f0");
-			attr(textarea, "class", "svelte-12m22f0");
-			attr(label, "class", "svelte-12m22f0");
+			attr(span, "class", "svelte-12jj5ao");
+			attr(textarea, "class", "svelte-12jj5ao");
+			attr(label, "class", "svelte-12jj5ao");
 		},
 		m(target, anchor) {
 			insert_hydration(target, label, anchor);
@@ -3859,7 +3859,7 @@ function create_if_block$2(ctx) {
 	};
 }
 
-// (107:4) {#each inputs as input, i}
+// (106:4) {#each inputs as input, i}
 function create_each_block$1(ctx) {
 	let if_block_anchor;
 
@@ -4011,13 +4011,13 @@ function create_fragment$3(ctx) {
 		},
 		h() {
 			attr(h2, "class", "heading");
-			attr(div0, "class", "body svelte-12m22f0");
-			attr(div1, "class", "social-links svelte-12m22f0");
-			attr(div2, "class", "content svelte-12m22f0");
-			attr(button, "class", "button svelte-12m22f0");
+			attr(div0, "class", "body svelte-12jj5ao");
+			attr(div1, "class", "social-links svelte-12jj5ao");
+			attr(div2, "class", "content svelte-12jj5ao");
+			attr(button, "class", "button primary positive svelte-12jj5ao");
 			attr(button, "type", "submit");
-			attr(form, "class", "svelte-12m22f0");
-			attr(section, "class", "section-container svelte-12m22f0");
+			attr(form, "class", "svelte-12jj5ao");
+			attr(section, "class", "section-container svelte-12jj5ao");
 			attr(div3, "class", "section");
 			attr(div3, "id", "section-47c77ee7");
 		},
@@ -4202,7 +4202,7 @@ function create_each_block_1$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-f5r1cc");
+			attr(a, "class", "link svelte-90rszg");
 			attr(a, "href", a_href_value = /*link*/ ctx[2].url);
 		},
 		m(target, anchor) {
@@ -4255,7 +4255,7 @@ function create_each_block$2(ctx) {
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[2].url);
 			attr(a, "aria-label", a_aria_label_value = /*link*/ ctx[2].label);
-			attr(a, "class", "svelte-f5r1cc");
+			attr(a, "class", "svelte-90rszg");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -4368,10 +4368,10 @@ function create_fragment$4(ctx) {
 			this.h();
 		},
 		h() {
-			attr(nav_1, "class", "svelte-f5r1cc");
-			attr(div0, "class", "social-links svelte-f5r1cc");
-			attr(div1, "class", "section-container svelte-f5r1cc");
-			attr(footer, "class", "svelte-f5r1cc");
+			attr(nav_1, "class", "svelte-90rszg");
+			attr(div0, "class", "social-links svelte-90rszg");
+			attr(div1, "class", "section-container svelte-90rszg");
+			attr(footer, "class", "svelte-90rszg");
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-b956986a");
 		},
@@ -4604,16 +4604,7 @@ function create_fragment$5(ctx) {
 			props: {
 				nav: [
 					{
-						"link": {
-							"url": "https://primosites.vercel.app/theme-minimal",
-							"label": "©2023 AFA Escola Pi d'en Xandri"
-						}
-					},
-					{
-						"link": {
-							"url": "/",
-							"label": "C/Santa Teresa, 61 08172 Sant Cugat del Vallès"
-						}
+						"link": { "url": "#", "label": "Copyright 2023" }
 					}
 				],
 				social: [
