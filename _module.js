@@ -6664,7 +6664,7 @@ function create_fragment$e(ctx) {
 						"icon": "akar-icons:calendar",
 						"link": {
 							"url": "/projectes",
-							"label": "Learn More"
+							"label": "Llegeix més"
 						},
 						"title": "Inici de curs",
 						"content": {
@@ -6688,7 +6688,7 @@ function create_fragment$e(ctx) {
 						"icon": "akar-icons:calendar",
 						"link": {
 							"url": "/projectes",
-							"label": "Learn More"
+							"label": "Llegeix més"
 						},
 						"title": "Calendar Integrations",
 						"content": {
