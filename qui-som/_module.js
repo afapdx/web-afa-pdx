@@ -6266,8 +6266,8 @@ function create_fragment$c(ctx) {
 					{ "link": { "url": "/", "label": "Inici" } },
 					{
 						"link": {
-							"url": "/work",
-							"label": "Work",
+							"url": "/qui-som",
+							"label": "Qui som",
 							"active": false
 						}
 					},
