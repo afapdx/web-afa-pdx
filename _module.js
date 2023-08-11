@@ -4159,7 +4159,7 @@ function get_each_context_1$1(ctx, list, i) {
 	return child_ctx;
 }
 
-// (98:4) {#each icon_list as { icon, label }}
+// (102:4) {#each icon_list as { icon, label }}
 function create_each_block_1$1(ctx) {
 	let li;
 	let span0;
@@ -4200,8 +4200,8 @@ function create_each_block_1$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span0, "class", "icon svelte-1yuz8y9");
-			attr(li, "class", "svelte-1yuz8y9");
+			attr(span0, "class", "icon svelte-mj7spd");
+			attr(li, "class", "svelte-mj7spd");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -4235,7 +4235,7 @@ function create_each_block_1$1(ctx) {
 	};
 }
 
-// (108:4) {#each cards as card}
+// (112:4) {#each cards as card}
 function create_each_block$3(ctx) {
 	let li;
 	let div0;
@@ -4308,13 +4308,13 @@ function create_each_block$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "icon svelte-1yuz8y9");
-			attr(h3, "class", "title svelte-1yuz8y9");
-			attr(div1, "class", "content svelte-1yuz8y9");
+			attr(div0, "class", "icon svelte-mj7spd");
+			attr(h3, "class", "title svelte-mj7spd");
+			attr(div1, "class", "content svelte-mj7spd");
 			attr(a, "href", a_href_value = /*card*/ ctx[4].link.url);
-			attr(a, "class", "link svelte-1yuz8y9");
-			attr(div2, "class", "body svelte-1yuz8y9");
-			attr(li, "class", "svelte-1yuz8y9");
+			attr(a, "class", "link svelte-mj7spd");
+			attr(div2, "class", "body svelte-mj7spd");
+			attr(li, "class", "svelte-mj7spd");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -4362,6 +4362,7 @@ function create_each_block$3(ctx) {
 }
 
 function create_fragment$5(ctx) {
+	let div2;
 	let div1;
 	let section;
 	let header;
@@ -4398,6 +4399,7 @@ function create_fragment$5(ctx) {
 
 	return {
 		c() {
+			div2 = element("div");
 			div1 = element("div");
 			section = element("section");
 			header = element("header");
@@ -4422,7 +4424,9 @@ function create_fragment$5(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			div1 = claim_element(nodes, "DIV", { class: true, id: true });
+			div2 = claim_element(nodes, "DIV", { class: true, id: true });
+			var div2_nodes = children(div2);
+			div1 = claim_element(div2_nodes, "DIV", { class: true });
 			var div1_nodes = children(div1);
 			section = claim_element(div1_nodes, "SECTION", { class: true });
 			var section_nodes = children(section);
@@ -4457,20 +4461,23 @@ function create_fragment$5(ctx) {
 			ul1_nodes.forEach(detach);
 			section_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
+			div2_nodes.forEach(detach);
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "heading svelte-1yuz8y9");
+			attr(h2, "class", "heading svelte-mj7spd");
 			attr(div0, "class", "subheading");
-			attr(header, "class", "heading-group svelte-1yuz8y9");
-			attr(ul0, "class", "icon-list svelte-1yuz8y9");
-			attr(ul1, "class", "cards svelte-1yuz8y9");
-			attr(section, "class", "section-container svelte-1yuz8y9");
-			attr(div1, "class", "section");
-			attr(div1, "id", "section-08a63993");
+			attr(header, "class", "heading-group svelte-mj7spd");
+			attr(ul0, "class", "icon-list svelte-mj7spd");
+			attr(ul1, "class", "cards svelte-mj7spd");
+			attr(section, "class", "section-container svelte-mj7spd");
+			attr(div1, "class", "background svelte-mj7spd");
+			attr(div2, "class", "section");
+			attr(div2, "id", "section-08a63993");
 		},
 		m(target, anchor) {
-			insert_hydration(target, div1, anchor);
+			insert_hydration(target, div2, anchor);
+			append_hydration(div2, div1);
 			append_hydration(div1, section);
 			append_hydration(section, header);
 			append_hydration(header, h2);
@@ -4584,7 +4591,7 @@ function create_fragment$5(ctx) {
 			current = false;
 		},
 		d(detaching) {
-			if (detaching) detach(div1);
+			if (detaching) detach(div2);
 			destroy_each(each_blocks_1, detaching);
 			destroy_each(each_blocks, detaching);
 		}
@@ -6663,7 +6670,7 @@ function create_fragment$e(ctx) {
 					{
 						"icon": "akar-icons:calendar",
 						"link": {
-							"url": "/projectes",
+							"url": "/notcies-i-activitats",
 							"label": "Llegeix més"
 						},
 						"title": "Inici de curs",
