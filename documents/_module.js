@@ -4806,16 +4806,34 @@ function create_fragment$6(ctx) {
 					},
 					{
 						"link": {
-							"url": "/services",
-							"label": "Services",
+							"url": "/comissions",
+							"label": "Comissions",
 							"active": false
 						}
 					},
 					{
-						"link": { "url": "/company", "label": "Company" }
+						"link": {
+							"url": "/projectes",
+							"label": "Projectes"
+						}
 					},
 					{
-						"link": { "url": "/contact", "label": "Contact Us" }
+						"link": {
+							"url": "/notcies-i-activitats",
+							"label": "Notícies i activitats"
+						}
+					},
+					{
+						"link": {
+							"label": "Curs 2023/24",
+							"url": "/curs-2023-24"
+						}
+					},
+					{
+						"link": {
+							"label": "Documents",
+							"url": "/documents"
+						}
 					}
 				]
 			}
