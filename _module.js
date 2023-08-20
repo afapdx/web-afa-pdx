@@ -6819,7 +6819,7 @@ function create_fragment$e(ctx) {
 	component_2 = new Component$3({
 			props: {
 				heading: "",
-				subheading: "L’AFA és una associació de mares i pares d’alumnes sense afany de lucre que busca millorar la qualitat del sistema educatiu i les condicions d’escolarització del centre.",
+				subheading: "L’AFA és una associació de mares i pares d’alumnes sense afany de lucre que busca millorar la qualitat del sistema educatiu i les condicions d’escolarització del centre. Fotografia de portada: Bernat Millet",
 				buttons: []
 			}
 		});
