@@ -7017,7 +7017,7 @@ function create_fragment$e(ctx) {
 
 	component_6 = new Component$7({
 			props: {
-				heading: "Mira com sona",
+				heading: "La màgia del Pi en acció!",
 				subhead: "",
 				icon_list: [],
 				cards: [
