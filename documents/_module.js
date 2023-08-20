@@ -4735,12 +4735,6 @@ function create_fragment$6(ctx) {
 					},
 					{
 						"link": {
-							"url": "/comissions",
-							"label": "Comissions"
-						}
-					},
-					{
-						"link": {
 							"url": "/projectes",
 							"label": "Projectes"
 						}
@@ -4825,14 +4819,14 @@ function create_fragment$6(ctx) {
 					},
 					{
 						"link": {
-							"label": "Curs 2023/24",
-							"url": "/curs-2023-24"
+							"url": "/curs-2023-24",
+							"label": "Curs 2023/24"
 						}
 					},
 					{
 						"link": {
-							"label": "Documents",
-							"url": "/documents"
+							"url": "/documents",
+							"label": "Documents"
 						}
 					}
 				]

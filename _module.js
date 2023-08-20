@@ -6770,9 +6770,9 @@ function create_fragment$e(ctx) {
 			props: {
 				background: {
 					"alt": "",
-					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
-					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
-					"size": 811
+					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213799336cercavila-escoles-19-b.jpg",
+					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213799336cercavila-escoles-19-b.jpg",
+					"size": 623
 				},
 				headline: "",
 				logo: {
@@ -6787,12 +6787,6 @@ function create_fragment$e(ctx) {
 				site_nav: [
 					{
 						"link": { "url": "/qui-som", "label": "Qui som?" }
-					},
-					{
-						"link": {
-							"url": "/comissions",
-							"label": "Comissions"
-						}
 					},
 					{
 						"link": {
@@ -7137,14 +7131,14 @@ function create_fragment$e(ctx) {
 					},
 					{
 						"link": {
-							"label": "Curs 2023/24",
-							"url": "/curs-2023-24"
+							"url": "/curs-2023-24",
+							"label": "Curs 2023/24"
 						}
 					},
 					{
 						"link": {
-							"label": "Documents",
-							"url": "/documents"
+							"url": "/documents",
+							"label": "Documents"
 						}
 					}
 				]
