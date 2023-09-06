@@ -6945,6 +6945,14 @@ function create_fragment$e(ctx) {
 							"html": "<p>Col·labora amb Paidos en del servei de menjador i temps de migdia fent seguiment i control.</p>",
 							"markdown": "Col·labora amb Paidos en del servei de menjador i temps de migdia fent seguiment i control.\n\n"
 						}
+					},
+					{
+						"icon": "material-symbols:psychology-alt",
+						"title": "Savi",
+						"description": {
+							"html": "<p>Organitza el Savi, el concurs més divertit pels pares i mares de l’escola</p>",
+							"markdown": "Organitza el Savi, el concurs més divertit pels pares i mares de l’escola\n"
+						}
 					}
 				]
 			}
