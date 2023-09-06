@@ -6839,7 +6839,7 @@ function create_fragment$e(ctx) {
 						"title": "Delegats",
 						"description": {
 							"html": "<p>Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina.</p>",
-							"markdown": "Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina.\n"
+							"markdown": "Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina."
 						}
 					},
 					{
