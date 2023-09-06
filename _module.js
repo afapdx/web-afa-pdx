@@ -6968,7 +6968,7 @@ function create_fragment$e(ctx) {
 							"url": "/projectes",
 							"label": "Add to calendar"
 						},
-						"title": "Ombres al pati",
+						"title": "Nou esdeveniment",
 						"content": {
 							"html": "<p>Sept 03, 2023 </p>",
 							"markdown": "Sept 03, 2023 \n"
@@ -6980,7 +6980,7 @@ function create_fragment$e(ctx) {
 							"url": "/projectes",
 							"label": "Llegeix més"
 						},
-						"title": "Calendar Integrations",
+						"title": "Un altre esdeveniment",
 						"content": {
 							"html": "<p>Sept 04, 2023 </p>",
 							"markdown": "Sept 04, 2023 "
