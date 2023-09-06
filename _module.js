@@ -6953,13 +6953,13 @@ function create_fragment$e(ctx) {
 					{
 						"icon": "akar-icons:calendar",
 						"link": {
-							"url": "/notcies-i-activitats",
+							"url": "https://www.sostenible.cat/acte/setmana-europea-de-la-mobilitat-a-sant-cugat-del-valles",
 							"label": "Llegeix més"
 						},
-						"title": "Inici de curs",
+						"title": "Setmana europea de la mobilitat",
 						"content": {
-							"html": "<p>Sept 02, 2023 </p>",
-							"markdown": "Sept 02, 2023 "
+							"html": "<p>Sept 16-22, 2023</p>",
+							"markdown": "Sept 16-22, 2023\n\n"
 						}
 					},
 					{
