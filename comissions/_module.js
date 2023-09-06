@@ -3803,7 +3803,7 @@ function create_fragment$5(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "section-container svelte-1nxn5fd");
+			attr(div0, "class", "section-container svelte-1w8uu5r");
 			attr(div1, "class", "section");
 			attr(div1, "id", "section-0d6c0727");
 		},
