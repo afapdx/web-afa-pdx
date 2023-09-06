@@ -6141,36 +6141,41 @@ function create_fragment$c(ctx) {
 				heading: "Junta directiva",
 				people: [
 					{
-						"name": "Gustavo Arroyo del Río",
+						"name": "Oriol Salvador",
 						"image": {
 							"alt": "",
-							"src": "https://images.unsplash.com/photo-1636067344050-5a8cd8e56f6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-							"url": "https://images.unsplash.com/photo-1636067344050-5a8cd8e56f6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-							"size": null
+							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/16940115951743a6e9d14-e0d7-47ac-8a1d-e6378432acbe.jpg",
+							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/16940115951743a6e9d14-e0d7-47ac-8a1d-e6378432acbe.jpg",
+							"size": 271
 						},
-						"title": "President",
+						"title": "President de l'AFA",
+						"social_links": [
+							{
+								"icon": "Veniam non pariatur",
+								"link": { "url": "/", "label": "" }
+							}
+						]
+					},
+					{
+						"name": "David Almazor",
+						"image": {
+							"alt": "",
+							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694011561029David%20Almazor.jpg",
+							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694011561029David%20Almazor.jpg",
+							"size": 854
+						},
+						"title": "Secretari de l'AFA",
 						"social_links": []
 					},
 					{
-						"name": "Margarita Florinda",
+						"name": "Albert Figueras",
 						"image": {
 							"alt": "",
-							"src": "https://images.unsplash.com/photo-1604364721460-0cbc5866219d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-							"url": "https://images.unsplash.com/photo-1604364721460-0cbc5866219d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-							"size": null
+							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694011580469IMG_2803.jpg",
+							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694011580469IMG_2803.jpg",
+							"size": 3451
 						},
-						"title": "Vice-secretària",
-						"social_links": []
-					},
-					{
-						"name": "Soledad sin Puertas",
-						"image": {
-							"alt": "",
-							"src": "https://images.unsplash.com/photo-1524868313790-96da775e01ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-							"url": "https://images.unsplash.com/photo-1524868313790-96da775e01ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-							"size": null
-						},
-						"title": "Secretària",
+						"title": "Tresorer de l'AFA",
 						"social_links": []
 					}
 				]
@@ -6216,7 +6221,7 @@ function create_fragment$c(ctx) {
 				heading: "Vols formar part de l'AFA?",
 				body: {
 					"html": "<p>Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions.</p>",
-					"markdown": "Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions."
+					"markdown": "Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions.\n\n"
 				},
 				buttons: [
 					{
