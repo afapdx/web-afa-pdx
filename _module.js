@@ -6790,6 +6790,12 @@ function create_fragment$e(ctx) {
 					},
 					{
 						"link": {
+							"url": "/comissions",
+							"label": "Comissions"
+						}
+					},
+					{
+						"link": {
 							"url": "/projectes",
 							"label": "Projectes"
 						}
