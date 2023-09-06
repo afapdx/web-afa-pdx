@@ -7064,7 +7064,7 @@ function create_fragment$e(ctx) {
 
 	component_8 = new Component$9({
 			props: {
-				heading: "24 de Setembre: festa de la tardor",
+				heading: "El Pi d'en Xandri el primer dia d'escola",
 				subheading: "Get your meetings effortlessly organized with Cali. So you can spend more time on meeting people instead of scheduling meetings.",
 				link: {
 					"url": "/notcies-i-activitats",
@@ -7072,9 +7072,9 @@ function create_fragment$e(ctx) {
 				},
 				image: {
 					"alt": "",
-					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213735491cercavila-escoles-19.jpeg",
-					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213735491cercavila-escoles-19.jpeg",
-					"size": 286
+					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1669786384000IMG_5619.JPG",
+					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1669786384000IMG_5619.JPG",
+					"size": 2008
 				},
 				variation: "image_right"
 			}
