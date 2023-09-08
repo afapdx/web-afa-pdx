@@ -3027,7 +3027,7 @@ function create_each_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-z2uhup");
+			attr(a, "class", "link svelte-1cy24ok");
 			attr(a, "href", a_href_value = /*link*/ ctx[8].url);
 			toggle_class(a, "active", /*link*/ ctx[8].url === window.location.pathname);
 		},
@@ -3170,9 +3170,9 @@ function create_if_block$1(ctx) {
 		h() {
 			attr(button, "id", "close");
 			attr(button, "aria-label", "Close Navigation");
-			attr(button, "class", "svelte-z2uhup");
+			attr(button, "class", "svelte-1cy24ok");
 			attr(nav, "id", "popup");
-			attr(nav, "class", "svelte-z2uhup");
+			attr(nav, "class", "svelte-1cy24ok");
 		},
 		m(target, anchor) {
 			insert_hydration(target, nav, anchor);
@@ -3434,23 +3434,23 @@ function create_fragment$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "header-background svelte-z2uhup");
+			attr(div0, "class", "header-background svelte-1cy24ok");
 			attr(a0, "href", "/");
-			attr(a0, "class", "logo svelte-z2uhup");
-			attr(nav, "class", "svelte-z2uhup");
-			attr(div1, "class", "desktop-nav svelte-z2uhup");
+			attr(a0, "class", "logo svelte-1cy24ok");
+			attr(nav, "class", "svelte-1cy24ok");
+			attr(div1, "class", "desktop-nav svelte-1cy24ok");
 			attr(a1, "href", "/");
-			attr(a1, "class", "logo svelte-z2uhup");
+			attr(a1, "class", "logo svelte-1cy24ok");
 			attr(button, "id", "open");
 			attr(button, "aria-label", "Open mobile navigation");
-			attr(div2, "class", "mobile-nav svelte-z2uhup");
-			attr(div3, "class", "section-container svelte-z2uhup");
-			attr(h1, "class", "headline svelte-z2uhup");
-			attr(div4, "class", "section-container svelte-z2uhup");
+			attr(div2, "class", "mobile-nav svelte-1cy24ok");
+			attr(div3, "class", "section-container svelte-1cy24ok");
+			attr(h1, "class", "headline svelte-1cy24ok");
+			attr(div4, "class", "section-container svelte-1cy24ok");
 			set_style(header, "background-image", "url('" + /*background*/ ctx[0].url + "')");
 			attr(header, "role", "img");
 			attr(header, "aria-label", header_aria_label_value = /*background*/ ctx[0].alt);
-			attr(header, "class", "svelte-z2uhup");
+			attr(header, "class", "svelte-1cy24ok");
 			attr(div5, "class", "section");
 			attr(div5, "id", "section-e9e1e0d7");
 		},
@@ -5171,11 +5171,11 @@ function create_fragment$a(ctx) {
 				logo: {
 					"image": {
 						"alt": "",
-						"src": "",
-						"url": "",
-						"size": null
+						"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
+						"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
+						"size": 811
 					},
-					"title": "Afa Pi d'en Xandri"
+					"title": "AFA Pi d'en Xandri"
 				},
 				site_nav: [
 					{
@@ -5183,14 +5183,20 @@ function create_fragment$a(ctx) {
 					},
 					{
 						"link": {
-							"label": "Comissions",
-							"url": "/comissions"
+							"url": "/comissions",
+							"label": "Comissions"
 						}
 					},
 					{
 						"link": {
 							"url": "/projectes",
 							"label": "Projectes"
+						}
+					},
+					{
+						"link": {
+							"url": "/notcies-i-activitats",
+							"label": "Notícies i activitats"
 						}
 					},
 					{
