@@ -4896,14 +4896,14 @@ function create_fragment$8(ctx) {
 	component_1 = new Component$2({
 			props: {
 				logo: {
-					"size": "15",
+					"title": "AFA Pi d'en Xandri",
 					"image": {
 						"alt": "",
 						"src": "",
 						"url": "",
 						"size": null
 					},
-					"title": "Afa Pi d'en Xandri"
+					"size": "15"
 				},
 				site_nav: [
 					{
