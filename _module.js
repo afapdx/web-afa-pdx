@@ -6979,7 +6979,7 @@ function create_fragment$e(ctx) {
 					{
 						"icon": "akar-icons:calendar",
 						"link": {
-							"url": "/notcies-i-activitats/llibre-biblioteques-aula",
+							"url": "/projectes",
 							"label": "Llegeix més"
 						},
 						"title": "Venda de textil",
