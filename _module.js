@@ -6979,13 +6979,13 @@ function create_fragment$e(ctx) {
 					{
 						"icon": "akar-icons:calendar",
 						"link": {
-							"url": "/projectes",
-							"label": "Add to calendar"
+							"url": "/curs-2023-24",
+							"label": "Llegeix més"
 						},
-						"title": "Nou esdeveniment",
+						"title": "Venda de textil",
 						"content": {
-							"html": "<p>Sept 03, 2023 </p>",
-							"markdown": "Sept 03, 2023 \n"
+							"html": "<p>Sept 22, 2023 </p>",
+							"markdown": "Sept 22, 2023 \n"
 						}
 					},
 					{
