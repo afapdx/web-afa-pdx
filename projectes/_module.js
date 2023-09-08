@@ -3672,7 +3672,7 @@ function create_if_block_1$2(ctx) {
 		h() {
 			if (!src_url_equal(img.src, img_src_value = /*teaser*/ ctx[1].image.url)) attr(img, "src", img_src_value);
 			attr(img, "alt", img_alt_value = /*teaser*/ ctx[1].image.alt);
-			attr(img, "class", "svelte-8ntl99");
+			attr(img, "class", "svelte-1s72vxv");
 		},
 		m(target, anchor) {
 			insert_hydration(target, img, anchor);
@@ -3713,7 +3713,7 @@ function create_if_block$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-8ntl99");
+			attr(a, "class", "link svelte-1s72vxv");
 			attr(a, "href", a_href_value = /*teaser*/ ctx[1].link.url);
 		},
 		m(target, anchor) {
@@ -3787,10 +3787,10 @@ function create_each_block$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "title svelte-8ntl99");
+			attr(h2, "class", "title svelte-1s72vxv");
 			attr(div0, "class", "content");
-			attr(div1, "class", "body svelte-8ntl99");
-			attr(div2, "class", "teaser svelte-8ntl99");
+			attr(div1, "class", "body svelte-1s72vxv");
+			attr(div2, "class", "teaser svelte-1s72vxv");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
@@ -3884,7 +3884,7 @@ function create_fragment$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "teasers svelte-8ntl99");
+			attr(div0, "class", "teasers svelte-1s72vxv");
 			attr(section, "class", "section-container");
 			attr(div1, "class", "section");
 			attr(div1, "id", "section-bbf162a1");
@@ -5400,9 +5400,9 @@ function create_fragment$9(ctx) {
 						"link": { "url": "/", "label": "Learn More" },
 						"image": {
 							"alt": "",
-							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175280865Test.jpg",
-							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175280865Test.jpg",
-							"size": 110
+							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175433948Test.png",
+							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175433948Test.png",
+							"size": 2111
 						},
 						"title": "Ombres als patis",
 						"content": {
