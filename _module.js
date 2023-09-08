@@ -6713,10 +6713,10 @@ function create_fragment$c(ctx) {
 							"url": "/projectes",
 							"label": "Llegeix més"
 						},
-						"title": "Venda de textil",
+						"title": "Venda de textil: FORA STOCKS!",
 						"content": {
-							"html": "<p>Sept 22, 2023 </p>",
-							"markdown": "Sept 22, 2023 \n"
+							"html": "<p>Sept 22, 2023</p>",
+							"markdown": "Sept 22, 2023\n\n"
 						}
 					},
 					{
