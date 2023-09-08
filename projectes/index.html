@@ -216,6 +216,72 @@
             top: 1rem
         }
 
+        .teasers.svelte-8ntl99.svelte-8ntl99 {
+            display: grid;
+            gap: 3rem
+        }
+
+        .teaser.svelte-8ntl99.svelte-8ntl99 {
+            display: grid;
+            gap: 3rem
+        }
+
+        @media(min-width: 1200px) {
+            .teaser.svelte-8ntl99.svelte-8ntl99 {
+                gap: 6rem
+            }
+        }
+
+        .teaser.svelte-8ntl99 img.svelte-8ntl99 {
+            width: 100%;
+            border-radius: var(--border-radius);
+            border-radius: 80px
+        }
+
+        .teaser.svelte-8ntl99 .body.svelte-8ntl99 {
+            display: grid;
+            place-items: flex-start;
+            gap: 1rem;
+            padding: 0;
+            line-height: 1.5;
+            max-width: 450px
+        }
+
+        .teaser.svelte-8ntl99 .body .title.svelte-8ntl99 {
+            font-size: 2rem;
+            font-family: var(--font-heading);
+            font-weight: 500;
+            line-height: 1.1
+        }
+
+        .teaser.svelte-8ntl99 .body a.link.svelte-8ntl99 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem
+        }
+
+        @media(min-width: 800px) {
+            .teaser.svelte-8ntl99.svelte-8ntl99 {
+                grid-template-columns: 1fr 1fr;
+                place-items: center
+                    /* switch direction for even items */
+            }
+
+            .teaser.svelte-8ntl99:nth-child(odd) img.svelte-8ntl99 {
+                grid-row: 1;
+                grid-column: 2
+            }
+
+            .teaser.svelte-8ntl99:nth-child(even) img.svelte-8ntl99 {
+                grid-row: 1;
+                grid-column: 1
+            }
+        }
+
+        .section-container.svelte-1w8uu5r {
+            padding-block: 3rem
+        }
+
         .section-container.svelte-12jj5ao.svelte-12jj5ao {
             display: grid;
             gap: 2rem
@@ -295,68 +361,6 @@
 
         form.svelte-12jj5ao .button.svelte-12jj5ao {
             margin-top: 1rem
-        }
-
-        .teasers.svelte-8ntl99.svelte-8ntl99 {
-            display: grid;
-            gap: 3rem
-        }
-
-        .teaser.svelte-8ntl99.svelte-8ntl99 {
-            display: grid;
-            gap: 3rem
-        }
-
-        @media(min-width: 1200px) {
-            .teaser.svelte-8ntl99.svelte-8ntl99 {
-                gap: 6rem
-            }
-        }
-
-        .teaser.svelte-8ntl99 img.svelte-8ntl99 {
-            width: 100%;
-            border-radius: var(--border-radius);
-            border-radius: 80px
-        }
-
-        .teaser.svelte-8ntl99 .body.svelte-8ntl99 {
-            display: grid;
-            place-items: flex-start;
-            gap: 1rem;
-            padding: 0;
-            line-height: 1.5;
-            max-width: 450px
-        }
-
-        .teaser.svelte-8ntl99 .body .title.svelte-8ntl99 {
-            font-size: 2rem;
-            font-family: var(--font-heading);
-            font-weight: 500;
-            line-height: 1.1
-        }
-
-        .teaser.svelte-8ntl99 .body a.link.svelte-8ntl99 {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem
-        }
-
-        @media(min-width: 800px) {
-            .teaser.svelte-8ntl99.svelte-8ntl99 {
-                grid-template-columns: 1fr 1fr;
-                place-items: center
-                    /* switch direction for even items */
-            }
-
-            .teaser.svelte-8ntl99:nth-child(odd) img.svelte-8ntl99 {
-                grid-row: 1;
-                grid-column: 2
-            }
-
-            .teaser.svelte-8ntl99:nth-child(even) img.svelte-8ntl99 {
-                grid-row: 1;
-                grid-column: 1
-            }
         }
 
         footer.svelte-1wofe1u.svelte-1wofe1u {
@@ -451,24 +455,6 @@
             </div>
         </header>
     </div>
-    <div class="section" id="section-47c77ee7">
-        <section class="section-container svelte-12jj5ao">
-            <div class="content svelte-12jj5ao">
-                <h2 class="heading">Bústia de suggeriments</h2>
-                <div class="body svelte-12jj5ao"><!-- HTML_TAG_START -->Whether you have questions, feedback, or just want to say hello, we're always ready to hear from you. Please fill out the contact form, and we'll do our best to respond within 24-48 hours.<!-- HTML_TAG_END --></div>
-                <div class="social-links svelte-12jj5ao"></div>
-            </div>
-            <form class="svelte-12jj5ao"><label class="svelte-12jj5ao"><span class="svelte-12jj5ao">Name</span>
-                    <input type="text" placeholder="John Doe" class="svelte-12jj5ao">
-                </label><label class="svelte-12jj5ao"><span class="svelte-12jj5ao">Email</span>
-                    <input type="email" placeholder="johndoe@johndoe.com" class="svelte-12jj5ao">
-                </label><label class="svelte-12jj5ao"><span class="svelte-12jj5ao">El teu missatge</span>
-                    <input type="Sunt officia ad" placeholder="Escriu aquí el teu missatge" class="svelte-12jj5ao">
-                </label>
-                <button class="button primary positive svelte-12jj5ao" type="submit">Submit</button>
-            </form>
-        </section>
-    </div>
     <div class="section" id="section-bbf162a1">
         <section class="section-container">
             <div class="teasers svelte-8ntl99">
@@ -493,6 +479,29 @@
                     </div>
                 </div>
             </div>
+        </section>
+    </div>
+    <div class="section" id="section-f1079102">
+        <div class="section-container svelte-1w8uu5r">
+            <hr>
+        </div>
+    </div>
+    <div class="section" id="section-47c77ee7">
+        <section class="section-container svelte-12jj5ao">
+            <div class="content svelte-12jj5ao">
+                <h2 class="heading">Bústia de suggeriments</h2>
+                <div class="body svelte-12jj5ao"><!-- HTML_TAG_START -->Whether you have questions, feedback, or just want to say hello, we're always ready to hear from you. Please fill out the contact form, and we'll do our best to respond within 24-48 hours.<!-- HTML_TAG_END --></div>
+                <div class="social-links svelte-12jj5ao"></div>
+            </div>
+            <form class="svelte-12jj5ao"><label class="svelte-12jj5ao"><span class="svelte-12jj5ao">Name</span>
+                    <input type="text" placeholder="John Doe" class="svelte-12jj5ao">
+                </label><label class="svelte-12jj5ao"><span class="svelte-12jj5ao">Email</span>
+                    <input type="email" placeholder="johndoe@johndoe.com" class="svelte-12jj5ao">
+                </label><label class="svelte-12jj5ao"><span class="svelte-12jj5ao">El teu missatge</span>
+                    <input type="Sunt officia ad" placeholder="Escriu aquí el teu missatge" class="svelte-12jj5ao">
+                </label>
+                <button class="button primary positive svelte-12jj5ao" type="submit">Submit</button>
+            </form>
         </section>
     </div>
     <div class="section" id="section-7fd14dbd">
