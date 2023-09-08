@@ -4896,14 +4896,14 @@ function create_fragment$8(ctx) {
 	component_1 = new Component$2({
 			props: {
 				logo: {
-					"title": "AFA Pi d'en Xandri",
+					"size": "15",
 					"image": {
 						"alt": "",
 						"src": "",
 						"url": "",
 						"size": null
 					},
-					"size": "15"
+					"title": "AFA Pi d'en Xandri"
 				},
 				site_nav: [
 					{
@@ -4911,8 +4911,8 @@ function create_fragment$8(ctx) {
 					},
 					{
 						"link": {
-							"label": "Comissions",
-							"url": "/comissions"
+							"url": "/comissions",
+							"label": "Comissions"
 						}
 					},
 					{
