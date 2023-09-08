@@ -6723,12 +6723,12 @@ function create_fragment$c(ctx) {
 						"icon": "akar-icons:calendar",
 						"link": {
 							"url": "/projectes",
-							"label": "Llegeix més"
+							"label": "Afegeix al teu calendari"
 						},
-						"title": "Un altre esdeveniment",
+						"title": "Assemblea de l'AFA inici de curs",
 						"content": {
-							"html": "<p>Sept 04, 2023 </p>",
-							"markdown": "Sept 04, 2023 "
+							"html": "<p>Sept 25, 2023 </p>",
+							"markdown": "Sept 25, 2023 "
 						}
 					}
 				]
