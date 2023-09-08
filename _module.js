@@ -6979,7 +6979,7 @@ function create_fragment$e(ctx) {
 					{
 						"icon": "akar-icons:calendar",
 						"link": {
-							"url": "/curs-2023-24",
+							"url": "/notcies-i-activitats/llibre-biblioteques-aula",
 							"label": "Llegeix més"
 						},
 						"title": "Venda de textil",
