@@ -4747,12 +4747,6 @@ function create_fragment$6(ctx) {
 					},
 					{
 						"link": {
-							"url": "/notcies-i-activitats",
-							"label": "Notícies i activitats"
-						}
-					},
-					{
-						"link": {
 							"url": "/curs-2023-24",
 							"label": "Curs 2023-24"
 						}
