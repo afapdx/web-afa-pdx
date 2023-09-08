@@ -5386,9 +5386,9 @@ function create_fragment$9(ctx) {
 						"link": { "url": "/", "label": "Read more" },
 						"image": {
 							"alt": "",
-							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213457665cercavila-escoles-40.jpeg",
-							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213457665cercavila-escoles-40.jpeg",
-							"size": 264
+							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175043312FORA%20STOCKS!!%20(2).jpg",
+							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175043312FORA%20STOCKS!!%20(2).jpg",
+							"size": 105
 						},
 						"title": "Venta de tèxtil",
 						"content": {
@@ -5400,9 +5400,9 @@ function create_fragment$9(ctx) {
 						"link": { "url": "/", "label": "Learn More" },
 						"image": {
 							"alt": "",
-							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689944561349img-0202.jpeg",
-							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689944561349img-0202.jpeg",
-							"size": 523
+							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175280865Test.jpg",
+							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175280865Test.jpg",
+							"size": 110
 						},
 						"title": "Ombres als patis",
 						"content": {
