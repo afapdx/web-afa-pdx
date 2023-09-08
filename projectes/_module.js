@@ -3452,7 +3452,7 @@ function create_fragment$2(ctx) {
 			attr(header, "aria-label", header_aria_label_value = /*background*/ ctx[0].alt);
 			attr(header, "class", "svelte-z2uhup");
 			attr(div5, "class", "section");
-			attr(div5, "id", "section-f14e5a08");
+			attr(div5, "id", "section-2ed0b054");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div5, anchor);
@@ -5333,11 +5333,11 @@ function create_fragment$9(ctx) {
 			props: {
 				background: {
 					"alt": "",
-					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694177563022Test%20(4).jpg",
-					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694177563022Test%20(4).jpg",
-					"size": 213
+					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689944561349img-0202.jpeg",
+					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689944561349img-0202.jpeg",
+					"size": 523
 				},
-				headline: "Projectes",
+				headline: "PROJECTES",
 				logo: {
 					"image": {
 						"alt": "",

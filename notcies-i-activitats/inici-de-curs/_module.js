@@ -4911,14 +4911,14 @@ function create_fragment$8(ctx) {
 					},
 					{
 						"link": {
-							"url": "/projectes",
-							"label": "Projectes"
+							"label": "Comissions",
+							"url": "/comissions"
 						}
 					},
 					{
 						"link": {
-							"url": "/notcies-i-activitats",
-							"label": "Notícies i Activitats"
+							"url": "/projectes",
+							"label": "Projectes"
 						}
 					},
 					{
