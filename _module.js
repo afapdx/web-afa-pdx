@@ -6586,7 +6586,7 @@ function create_fragment$c(ctx) {
 						"title": "Educativa",
 						"description": {
 							"html": "<p>Suport a l’escola en el desenvolupament del projecte educatiu.</p>",
-							"markdown": "Suport a l’escola en el desenvolupament del projecte educatiu."
+							"markdown": "Suport a l’escola en el desenvolupament del projecte educatiu.\n\n"
 						}
 					},
 					{
@@ -6638,7 +6638,7 @@ function create_fragment$c(ctx) {
 						}
 					},
 					{
-						"icon": "material-symbols:interactive-space",
+						"icon": "material-symbols:sports-basketball",
 						"title": "Extraescolars",
 						"description": {
 							"html": "<p>Col·laboració amb Paidos en serveis d’extraescolars, acollida, casals i colònies.</p>",
