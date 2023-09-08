@@ -5333,9 +5333,9 @@ function create_fragment$9(ctx) {
 			props: {
 				background: {
 					"alt": "",
-					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689934601083img-0202_37_1600x800.jpeg",
-					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689934601083img-0202_37_1600x800.jpeg",
-					"size": 865
+					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694177563022Test%20(4).jpg",
+					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694177563022Test%20(4).jpg",
+					"size": 213
 				},
 				headline: "Projectes",
 				logo: {
