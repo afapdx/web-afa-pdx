@@ -4128,7 +4128,7 @@ function create_fragment$4(ctx) {
 			attr(div0, "class", "items svelte-1sexf5z");
 			attr(section, "class", "section-container svelte-1sexf5z");
 			attr(div1, "class", "section");
-			attr(div1, "id", "section-aafd734f");
+			attr(div1, "id", "section-0df83ce7");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div1, anchor);
@@ -5636,7 +5636,7 @@ function create_fragment$a(ctx) {
 						"title": "Venta de tèxtil",
 						"content": {
 							"html": "<p>Instant updates to your calendar without having to go through a third party app.</p>",
-							"markdown": "Instant updates to your calendar without having to go through a third party app."
+							"markdown": "Instant updates to your calendar without having to go through a third party app.\n\n"
 						}
 					},
 					{
@@ -5661,26 +5661,29 @@ function create_fragment$a(ctx) {
 			props: {
 				items: [
 					{
-						"link": { "url": "/", "label": "sint" },
+						"link": {
+							"url": "/comissions",
+							"label": "Veure més"
+						},
 						"image": {
 							"alt": "",
 							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175433948Test.png",
 							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175433948Test.png",
 							"size": 2111
 						},
-						"title": "Amet in est",
-						"description": "Fugiat dolore cillum"
+						"title": "Abstract",
+						"description": "Instant updates to your calendar without having to go through a third party app."
 					},
 					{
-						"link": { "url": "/", "label": "incididunt" },
+						"link": { "url": "/", "label": "consequat" },
 						"image": {
 							"alt": "",
 							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175043312FORA%20STOCKS!!%20(2).jpg",
 							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175043312FORA%20STOCKS!!%20(2).jpg",
 							"size": 105
 						},
-						"title": "Velit sint non",
-						"description": "Magna laboris sint"
+						"title": "Landscape",
+						"description": "Landscape photography showcases the beauty and grandeur of natural environments, capturing expansive vistas and dramatic lighting."
 					}
 				]
 			}
