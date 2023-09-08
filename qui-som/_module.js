@@ -6042,6 +6042,12 @@ function create_fragment$b(ctx) {
 					},
 					{
 						"link": {
+							"label": "Comissions",
+							"url": "/comissions"
+						}
+					},
+					{
+						"link": {
 							"url": "/projectes",
 							"label": "Projectes"
 						}
