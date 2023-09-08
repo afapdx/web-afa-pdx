@@ -6740,7 +6740,7 @@ function create_fragment$c(ctx) {
 				heading: "Vols formar part de l'AFA?",
 				body: {
 					"html": "<p>Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions.</p>",
-					"markdown": "Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions."
+					"markdown": "Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions.\n\n"
 				},
 				buttons: [
 					{
