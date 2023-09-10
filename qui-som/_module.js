@@ -3819,7 +3819,7 @@ function create_fragment$3(ctx) {
 			attr(span, "class", "subheading svelte-1tp7z49");
 			attr(header, "class", "section-container svelte-1tp7z49");
 			attr(div, "class", "section");
-			attr(div, "id", "section-742cbf60");
+			attr(div, "id", "section-a033b798");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
@@ -6030,11 +6030,11 @@ function create_fragment$b(ctx) {
 				logo: {
 					"image": {
 						"alt": "",
-						"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
-						"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
-						"size": 811
+						"src": "",
+						"url": "",
+						"size": null
 					},
-					"title": "AFA Pi d'en Xandri"
+					"title": "Afa Pi d'en Xandri"
 				},
 				site_nav: [
 					{
@@ -6042,14 +6042,14 @@ function create_fragment$b(ctx) {
 					},
 					{
 						"link": {
-							"url": "/comissions",
-							"label": "Comissions"
+							"url": "/projectes",
+							"label": "Projectes"
 						}
 					},
 					{
 						"link": {
-							"url": "/projectes",
-							"label": "Projectes"
+							"url": "/notcies-i-activitats",
+							"label": "Notícies i activitats"
 						}
 					},
 					{
@@ -6070,7 +6070,7 @@ function create_fragment$b(ctx) {
 
 	component_2 = new Component$3({
 			props: {
-				heading: "",
+				heading: "QUI SOM?",
 				subheading: "L'AFA és una associació sense afany de lucre formada per les mares i pares d’alumnes que se n’han fet socis i que té per missió contribuir a la millora de la qualitat del sistema educatiu públic i de les condicions d’escolarització dels i les alumnes del centre.",
 				buttons: []
 			}
