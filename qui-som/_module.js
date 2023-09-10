@@ -6042,14 +6042,14 @@ function create_fragment$b(ctx) {
 					},
 					{
 						"link": {
-							"url": "/projectes",
-							"label": "Projectes"
+							"label": "Comissions",
+							"url": "/comissions"
 						}
 					},
 					{
 						"link": {
-							"url": "/notcies-i-activitats",
-							"label": "Notícies i activitats"
+							"url": "/projectes",
+							"label": "Projectes"
 						}
 					},
 					{
