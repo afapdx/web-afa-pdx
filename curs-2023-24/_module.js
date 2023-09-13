@@ -4950,19 +4950,19 @@ function create_fragment$7(ctx) {
 			props: {
 				background: {
 					"alt": "",
-					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689943678230telon-fondo-producto-pastel-espacio-diseno.jpg",
-					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1689943678230telon-fondo-producto-pastel-espacio-diseno.jpg",
-					"size": 8776
+					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
+					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
+					"size": 811
 				},
 				headline: "",
 				logo: {
 					"image": {
 						"alt": "",
-						"src": "",
-						"url": "",
-						"size": null
+						"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
+						"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
+						"size": 811
 					},
-					"title": "Afa Pi d'en Xandri"
+					"title": "AFA Pi d'en Xandri"
 				},
 				site_nav: [
 					{
@@ -4970,8 +4970,8 @@ function create_fragment$7(ctx) {
 					},
 					{
 						"link": {
-							"label": "Comissions",
-							"url": "/comissions"
+							"url": "/comissions",
+							"label": "Comissions"
 						}
 					},
 					{
