@@ -6022,9 +6022,9 @@ function create_fragment$b(ctx) {
 			props: {
 				background: {
 					"alt": "",
-					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213799336cercavila-escoles-19-b.jpg",
-					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213799336cercavila-escoles-19-b.jpg",
-					"size": 623
+					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213388033cercavila-escoles-1.jpeg",
+					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213388033cercavila-escoles-1.jpeg",
+					"size": 200
 				},
 				headline: "",
 				logo: {
