@@ -4990,7 +4990,10 @@ function create_fragment$8(ctx) {
 			props: {
 				nav: [
 					{
-						"link": { "url": "#", "label": "Copyright 2023" }
+						"link": {
+							"url": "#",
+							"label": "Copyright 2023 AFA Escola Pi d'en Xandri"
+						}
 					}
 				],
 				social: [

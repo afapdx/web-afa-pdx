@@ -4600,12 +4600,6 @@ function create_fragment$6(ctx) {
 					},
 					{
 						"link": {
-							"url": "/notcies-i-activitats",
-							"label": "Notícies i activitats"
-						}
-					},
-					{
-						"link": {
 							"url": "/curs-2023-24",
 							"label": "Curs 2023/24"
 						}
@@ -4624,7 +4618,10 @@ function create_fragment$6(ctx) {
 			props: {
 				nav: [
 					{
-						"link": { "url": "#", "label": "Copyright 2023" }
+						"link": {
+							"url": "#",
+							"label": "Copyright 2023 AFA Escola Pi d'en Xandri"
+						}
 					}
 				],
 				social: [
