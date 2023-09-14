@@ -6129,22 +6129,22 @@ function create_fragment$b(ctx) {
 					{
 						"title": "Assemblees",
 						"subtitle": {
-							"html": "<p>Reunions mensuals de Junta obertes a tothom (2on dilluns lectiu de cada mes a les 21h)</p>",
-							"markdown": "Reunions mensuals de Junta obertes a tothom (2on dilluns lectiu de cada mes a les 21h)\n\n"
+							"html": "<p>Reunions mensuals de Junta obertes a tothom (2on dilluns lectiu de cada mes a les 21h)</p>\n<h1 id=\"llegeixmshttpswebafapdxvercelappdocuments\"><a href=\"https://web-afa-pdx.vercel.app/documents\"><strong>Llegeix més</strong></a></h1>",
+							"markdown": "Reunions mensuals de Junta obertes a tothom (2on dilluns lectiu de cada mes a les 21h)\n\n# [**Llegeix més**](<https://web-afa-pdx.vercel.app/documents>)\n\n"
 						}
 					},
 					{
 						"title": "Comissions de treball",
 						"subtitle": {
-							"html": "<p>We figure out your goals and mission and incorporate that into a plan.</p>",
-							"markdown": "We figure out your goals and mission and incorporate that into a plan."
+							"html": "<p>Formades per pares i mares de l'escola per coordinar i realitzar les tasques a l'escola.</p>\n<h1 id=\"llegeixmshttpswebafapdxvercelappcomissions\"><a href=\"https://web-afa-pdx.vercel.app/comissions\"><strong>Llegeix més</strong></a></h1>",
+							"markdown": "Formades per pares i mares de l'escola per coordinar i realitzar les tasques a l'escola.\n# [**Llegeix més**](<https://web-afa-pdx.vercel.app/comissions>)"
 						}
 					},
 					{
 						"title": "Grups de delegats",
 						"subtitle": {
-							"html": "<p>Once we're done, you'll be ready to tackle anything.</p>",
-							"markdown": "Once we're done, you'll be ready to tackle anything."
+							"html": "<p>Mares, pares o tutors voluntaris que serveixen com a enllaç entre les famílies i l'escola, representant al seu curs.</p>\n<h1 id=\"coneixelsdelegatsdaquestcurshttpswebafapdxvercelappdocuments\"><a href=\"https://web-afa-pdx.vercel.app/documents\"><strong>Coneix els delegats d'aquest curs</strong></a></h1>",
+							"markdown": "Mares, pares o tutors voluntaris que serveixen com a enllaç entre les famílies i l'escola, representant al seu curs.\n# [**Coneix els delegats d'aquest curs**](<https://web-afa-pdx.vercel.app/documents>)"
 						}
 					}
 				],
