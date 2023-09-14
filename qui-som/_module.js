@@ -4845,7 +4845,7 @@ function create_fragment$7(ctx) {
 			attr(div2, "class", "card svelte-1xtducc");
 			attr(section, "class", "section-container svelte-1xtducc");
 			attr(div3, "class", "section");
-			attr(div3, "id", "section-f937b0b9");
+			attr(div3, "id", "section-55253fa8");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div3, anchor);
@@ -6160,8 +6160,8 @@ function create_fragment$b(ctx) {
 			props: {
 				heading: "Vols formar part de l'AFA?",
 				body: {
-					"html": "<p>Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions.</p>",
-					"markdown": "Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions.\n\n"
+					"html": "<p>Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. Cadascú pot fer la seva contribució, col·laborant segons la seva disponibilitat i interès.</p>",
+					"markdown": "Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. Cadascú pot fer la seva contribució, col·laborant segons la seva disponibilitat i interès."
 				},
 				buttons: [
 					{
@@ -6172,7 +6172,7 @@ function create_fragment$b(ctx) {
 						"icon": "Officia velit elit",
 						"link": {
 							"url": "/comissions",
-							"label": "Busca la teva comissió"
+							"label": "Busca la teva comisssió"
 						}
 					}
 				]
