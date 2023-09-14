@@ -6739,8 +6739,8 @@ function create_fragment$c(ctx) {
 			props: {
 				heading: "Vols formar part de l'AFA?",
 				body: {
-					"html": "<p>Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions.</p>",
-					"markdown": "Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions.\n\n"
+					"html": "<p>Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. Cadascú pot fer la seva contribució, col·laborant segons la seva disponibilitat i interès.</p>",
+					"markdown": "Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. Cadascú pot fer la seva contribució, col·laborant segons la seva disponibilitat i interès.\n"
 				},
 				buttons: [
 					{

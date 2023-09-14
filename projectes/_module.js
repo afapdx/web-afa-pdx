@@ -4278,7 +4278,7 @@ function create_each_block$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "button svelte-1xtducc");
+			attr(a, "class", "button svelte-1t66bk1");
 			attr(a, "href", a_href_value = /*button*/ ctx[3].link.url);
 		},
 		m(target, anchor) {
@@ -4387,13 +4387,13 @@ function create_fragment$6(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "heading svelte-1xtducc");
-			attr(div0, "class", "body svelte-1xtducc");
-			attr(div1, "class", "buttons svelte-1xtducc");
-			attr(div2, "class", "card svelte-1xtducc");
-			attr(section, "class", "section-container svelte-1xtducc");
+			attr(h2, "class", "heading svelte-1t66bk1");
+			attr(div0, "class", "body svelte-1t66bk1");
+			attr(div1, "class", "buttons svelte-1t66bk1");
+			attr(div2, "class", "card svelte-1t66bk1");
+			attr(section, "class", "section-container svelte-1t66bk1");
 			attr(div3, "class", "section");
-			attr(div3, "id", "section-f7c6c99f");
+			attr(div3, "id", "section-312474ec");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div3, anchor);
@@ -5663,20 +5663,17 @@ function create_fragment$a(ctx) {
 			props: {
 				heading: "Vols formar part de l'AFA?",
 				body: {
-					"html": "<p>Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions.</p>",
-					"markdown": "Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions."
+					"html": "<p>Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. Cadascú pot fer la seva contribució, col·laborant segons la seva disponibilitat i interès.</p>",
+					"markdown": "Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. Cadascú pot fer la seva contribució, col·laborant segons la seva disponibilitat i interès."
 				},
 				buttons: [
 					{
 						"icon": "Dolore laborum cillum",
-						"link": { "url": "/", "label": "Contacta'ns" }
+						"link": { "url": "/", "label": "Watch video" }
 					},
 					{
 						"icon": "Officia velit elit",
-						"link": {
-							"url": "/comissions",
-							"label": "Busca la teva comisssió"
-						}
+						"link": { "url": "/", "label": "Contact Us" }
 					}
 				]
 			}
