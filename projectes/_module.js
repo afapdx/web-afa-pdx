@@ -5627,8 +5627,8 @@ function create_fragment$a(ctx) {
 				teasers: [
 					{
 						"link": {
-							"url": "/",
-							"label": "Descobreix les dates clau"
+							"url": "/projectes/gestio-de-textil",
+							"label": "Descobreix les properes dates"
 						},
 						"image": {
 							"alt": "",
@@ -5644,7 +5644,7 @@ function create_fragment$a(ctx) {
 					},
 					{
 						"link": {
-							"url": "/projectes/gestio-de-textil",
+							"url": "/projectes",
 							"label": "Llegeix més"
 						},
 						"image": {
