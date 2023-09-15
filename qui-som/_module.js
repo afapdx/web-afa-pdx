@@ -6427,23 +6427,31 @@ function create_fragment$c(ctx) {
 				cards: [
 					{
 						"icon": "material-symbols:sentiment-very-satisfied",
-						"title": "Suport a l'escola i col·laboració en Projectes",
+						"title": "Suport a l'escola",
 						"description": {
-							"html": "<p>Ens assegurem que l'escola funcioni adequadament i col·laborem amb projectes i activitats complementàries.</p>",
-							"markdown": "Ens assegurem que l'escola funcioni adequadament i col·laborem amb projectes i activitats complementàries."
+							"html": "<p>Ens assegurem que l'escola funcioni adequadament.</p>",
+							"markdown": "Ens assegurem que l'escola funcioni adequadament."
 						}
 					},
 					{
 						"icon": "material-symbols:sentiment-very-satisfied",
-						"title": "Suport en l'Educació Escolar",
+						"title": "Col·laboració en projectes",
 						"description": {
-							"html": "<p>Brindem suport als membres de l'associació i a la comunitat educativa en qüestions relacionades amb l'educació dels alumnes del centre.</p>",
-							"markdown": "Brindem suport als membres de l'associació i a la comunitat educativa en qüestions relacionades amb l'educació dels alumnes del centre."
+							"html": "<p>Col·laborem amb projectes i activitats complementàries.</p>",
+							"markdown": "Col·laborem amb projectes i activitats complementàries."
 						}
 					},
 					{
 						"icon": "material-symbols:sentiment-very-satisfied",
-						"title": "Col·laboració Amb Autoritats Educatives",
+						"title": "Suport en l'educació escolar",
+						"description": {
+							"html": "<p>Ofereixem suport als membres de l'associació i la comunitat educativa en temes educatius.</p>",
+							"markdown": "Ofereixem suport als membres de l'associació i la comunitat educativa en temes educatius."
+						}
+					},
+					{
+						"icon": "material-symbols:sentiment-very-satisfied",
+						"title": "Col·laboració amb autoritats educatives",
 						"description": {
 							"html": "<p>Col·laborem amb les autoritats municipals educatives.</p>",
 							"markdown": "Col·laborem amb les autoritats municipals educatives."
@@ -6451,7 +6459,7 @@ function create_fragment$c(ctx) {
 					},
 					{
 						"icon": "material-symbols:sentiment-very-satisfied",
-						"title": "Fomentem la participació dels pares i mares.",
+						"title": "Fomentem la participació dels pares i mares",
 						"description": {
 							"html": "<p>Fomentem la participació dels pares i mares.</p>",
 							"markdown": "Fomentem la participació dels pares i mares."
