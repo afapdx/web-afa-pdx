@@ -6435,6 +6435,14 @@ function create_fragment$c(ctx) {
 					},
 					{
 						"icon": "material-symbols:sentiment-very-satisfied",
+						"title": "Fomentem la participació dels pares i mares",
+						"description": {
+							"html": "<p>Fomentem la participació dels pares i mares.</p>",
+							"markdown": "Fomentem la participació dels pares i mares."
+						}
+					},
+					{
+						"icon": "material-symbols:sentiment-very-satisfied",
 						"title": "Suport Integral a la Comunitat Educativa",
 						"description": {
 							"html": "<p>Brindem suport  a membres de l'associació, pares, professors, alumnes i òrgans de govern i participació en qüestions educatives per als alumnes de l'escola.</p>",
@@ -6455,14 +6463,6 @@ function create_fragment$c(ctx) {
 						"description": {
 							"html": "<p>Gestionem activitats extraescolars, acollida matinal, esplai, casals, i supervisem el menjador escolar amb el Consell Escolar per assegurar-ne la qualitat.</p>",
 							"markdown": "Gestionem activitats extraescolars, acollida matinal, esplai, casals, i supervisem el menjador escolar amb el Consell Escolar per assegurar-ne la qualitat.\n"
-						}
-					},
-					{
-						"icon": "material-symbols:sentiment-very-satisfied",
-						"title": "Fomentem la participació dels pares i mares",
-						"description": {
-							"html": "<p>Fomentem la participació dels pares i mares.</p>",
-							"markdown": "Fomentem la participació dels pares i mares."
 						}
 					},
 					{
