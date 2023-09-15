@@ -6710,7 +6710,7 @@ function create_fragment$c(ctx) {
 					{
 						"icon": "akar-icons:calendar",
 						"link": {
-							"url": "/projectes",
+							"url": "/projectes/gestio-de-textil",
 							"label": "Llegeix més"
 						},
 						"title": "Venda de textil: FORA STOCKS!",
