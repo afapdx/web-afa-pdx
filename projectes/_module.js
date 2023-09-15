@@ -5626,31 +5626,34 @@ function create_fragment$a(ctx) {
 			props: {
 				teasers: [
 					{
-						"link": { "url": "/", "label": "Read more" },
+						"link": {
+							"url": "/",
+							"label": "Descobreix les dates clau"
+						},
 						"image": {
 							"alt": "",
 							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175043312FORA%20STOCKS!!%20(2).jpg",
 							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175043312FORA%20STOCKS!!%20(2).jpg",
 							"size": 105
 						},
-						"title": "Venta de tèxtil",
+						"title": "Gestió de Tèxtil",
 						"content": {
-							"html": "<p>Instant updates to your calendar without having to go through a third party app.</p>",
-							"markdown": "Instant updates to your calendar without having to go through a third party app.\n\n"
+							"html": "<p>Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola</p>",
+							"markdown": "Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola\n\n"
 						}
 					},
 					{
-						"link": { "url": "/", "label": "Learn More" },
+						"link": { "url": "/", "label": "Llegeix més" },
 						"image": {
 							"alt": "",
 							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175433948Test.png",
 							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175433948Test.png",
 							"size": 2111
 						},
-						"title": "Ombres als patis",
+						"title": "Millora de les infraestructures de l’escola",
 						"content": {
-							"html": "<p>Integrate your google calendar and any other third-party calendar. Everything in one place.</p>",
-							"markdown": "Integrate your google calendar and any other third-party calendar. Everything in one place."
+							"html": "<p>Finançant-les, detectant les necessitats, fent la gestió amb l’administració corresponent i col·laborant amb el projecte hem millorat les infraestructures de l’escola.</p>",
+							"markdown": "Finançant-les, detectant les necessitats, fent la gestió amb l’administració corresponent i col·laborant amb el projecte hem millorat les infraestructures de l’escola."
 						}
 					}
 				]
