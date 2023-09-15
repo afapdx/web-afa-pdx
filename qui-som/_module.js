@@ -6427,34 +6427,34 @@ function create_fragment$c(ctx) {
 				cards: [
 					{
 						"icon": "material-symbols:sentiment-very-satisfied",
-						"title": "Suport a l'escola",
+						"title": "Suport a l'escola i Col·laboració en projectes",
 						"description": {
-							"html": "<p>Ens assegurem que l'escola funcioni adequadament.</p>",
-							"markdown": "Ens assegurem que l'escola funcioni adequadament."
+							"html": "<p>Ens assegurem que l'escola funcioni adequadament i col·laborem amb projectes i activitats complementàries.</p>",
+							"markdown": "Ens assegurem que l'escola funcioni adequadament i col·laborem amb projectes i activitats complementàries."
 						}
 					},
 					{
 						"icon": "material-symbols:sentiment-very-satisfied",
-						"title": "Col·laboració en projectes",
+						"title": "Suport Integral a la Comunitat Educativa",
 						"description": {
-							"html": "<p>Col·laborem amb projectes i activitats complementàries.</p>",
-							"markdown": "Col·laborem amb projectes i activitats complementàries."
+							"html": "<p>Brindem suport  a membres de l'associació, pares, professors, alumnes i òrgans de govern i participació en qüestions educatives per als alumnes de l'escola.</p>",
+							"markdown": "Brindem suport  a membres de l'associació, pares, professors, alumnes i òrgans de govern i participació en qüestions educatives per als alumnes de l'escola."
 						}
 					},
 					{
 						"icon": "material-symbols:sentiment-very-satisfied",
-						"title": "Suport en l'educació escolar",
+						"title": "Organització d'activitats lúdiques i culturals",
 						"description": {
-							"html": "<p>Ofereixem suport als membres de l'associació i la comunitat educativa en temes educatius.</p>",
-							"markdown": "Ofereixem suport als membres de l'associació i la comunitat educativa en temes educatius."
+							"html": "<p>Organitzem activitats lúdiques i culturals fora de l’horari escolar</p>",
+							"markdown": "Organitzem activitats lúdiques i culturals fora de l’horari escolar"
 						}
 					},
 					{
 						"icon": "material-symbols:sentiment-very-satisfied",
-						"title": "Col·laboració amb autoritats educatives",
+						"title": "Gestió de les activitats extraescolars",
 						"description": {
-							"html": "<p>Col·laborem amb les autoritats municipals educatives.</p>",
-							"markdown": "Col·laborem amb les autoritats municipals educatives."
+							"html": "<p>Gestionem activitats extraescolars, acollida matinal, esplai, casals, i supervisem el menjador escolar amb el Consell Escolar per assegurar-ne la qualitat.</p>",
+							"markdown": "Gestionem activitats extraescolars, acollida matinal, esplai, casals, i supervisem el menjador escolar amb el Consell Escolar per assegurar-ne la qualitat.\n"
 						}
 					},
 					{
@@ -6463,6 +6463,14 @@ function create_fragment$c(ctx) {
 						"description": {
 							"html": "<p>Fomentem la participació dels pares i mares.</p>",
 							"markdown": "Fomentem la participació dels pares i mares."
+						}
+					},
+					{
+						"icon": "material-symbols:sentiment-very-satisfied",
+						"title": "Participació en els òrgans municipals",
+						"description": {
+							"html": "<p>Participem en els òrgans municipals relacionats amb l’ensenyament</p>",
+							"markdown": "Participem en els òrgans municipals relacionats amb l’ensenyament"
 						}
 					}
 				]
