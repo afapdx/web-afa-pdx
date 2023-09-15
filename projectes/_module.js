@@ -5617,7 +5617,7 @@ function create_fragment$a(ctx) {
 	component_2 = new Component$3({
 			props: {
 				heading: "PROJECTES",
-				subheading: "Everything you need to boost your online presence.",
+				subheading: "Tots els projectes de l'AFA sorgeixen de la col·laboració amb l'escola a través de les comissions, impulsats per la il·lusió i la voluntat de proposar i dur a terme.",
 				buttons: []
 			}
 		});
