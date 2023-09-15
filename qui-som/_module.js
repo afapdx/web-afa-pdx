@@ -6427,10 +6427,18 @@ function create_fragment$c(ctx) {
 				cards: [
 					{
 						"icon": "material-symbols:sentiment-very-satisfied",
-						"title": "Suport a l'escola i Col·laboració en projectes",
+						"title": "Suport a l'escola i col·laboració en projectes",
 						"description": {
 							"html": "<p>Ens assegurem que l'escola funcioni adequadament i col·laborem amb projectes i activitats complementàries.</p>",
 							"markdown": "Ens assegurem que l'escola funcioni adequadament i col·laborem amb projectes i activitats complementàries."
+						}
+					},
+					{
+						"icon": "material-symbols:sentiment-very-satisfied",
+						"title": "Suport Integral a la comunitat educativa",
+						"description": {
+							"html": "<p>Brindem suport  a membres de l'associació, pares, professors, alumnes i òrgans de govern i participació en qüestions educatives per als alumnes de l'escola.</p>",
+							"markdown": "Brindem suport  a membres de l'associació, pares, professors, alumnes i òrgans de govern i participació en qüestions educatives per als alumnes de l'escola."
 						}
 					},
 					{
@@ -6443,10 +6451,10 @@ function create_fragment$c(ctx) {
 					},
 					{
 						"icon": "material-symbols:sentiment-very-satisfied",
-						"title": "Suport Integral a la Comunitat Educativa",
+						"title": "Gestió de les activitats extraescolars",
 						"description": {
-							"html": "<p>Brindem suport  a membres de l'associació, pares, professors, alumnes i òrgans de govern i participació en qüestions educatives per als alumnes de l'escola.</p>",
-							"markdown": "Brindem suport  a membres de l'associació, pares, professors, alumnes i òrgans de govern i participació en qüestions educatives per als alumnes de l'escola."
+							"html": "<p>Gestionem activitats extraescolars, acollida matinal, esplai, casals, i supervisem el menjador escolar amb el Consell Escolar per assegurar-ne la qualitat.</p>",
+							"markdown": "Gestionem activitats extraescolars, acollida matinal, esplai, casals, i supervisem el menjador escolar amb el Consell Escolar per assegurar-ne la qualitat.\n"
 						}
 					},
 					{
@@ -6455,14 +6463,6 @@ function create_fragment$c(ctx) {
 						"description": {
 							"html": "<p>Organitzem activitats lúdiques i culturals fora de l’horari escolar</p>",
 							"markdown": "Organitzem activitats lúdiques i culturals fora de l’horari escolar"
-						}
-					},
-					{
-						"icon": "material-symbols:sentiment-very-satisfied",
-						"title": "Gestió de les activitats extraescolars",
-						"description": {
-							"html": "<p>Gestionem activitats extraescolars, acollida matinal, esplai, casals, i supervisem el menjador escolar amb el Consell Escolar per assegurar-ne la qualitat.</p>",
-							"markdown": "Gestionem activitats extraescolars, acollida matinal, esplai, casals, i supervisem el menjador escolar amb el Consell Escolar per assegurar-ne la qualitat.\n"
 						}
 					},
 					{
