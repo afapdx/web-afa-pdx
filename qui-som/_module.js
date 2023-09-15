@@ -6426,27 +6426,35 @@ function create_fragment$c(ctx) {
 				heading: "Què fem?",
 				cards: [
 					{
-						"icon": "material-symbols:check-circle-rounded",
-						"title": "Real-time Updates",
+						"icon": "material-symbols:sentiment-very-satisfied",
+						"title": "Suport a l'escola i col·laboració en Projectes",
 						"description": {
-							"html": "<p>Stay ahead of the game with real-time updates on flight delays.</p>",
-							"markdown": "Stay ahead of the game with real-time updates on flight delays."
+							"html": "<p>Ens assegurem que l'escola funcioni adequadament i col·laborem amb projectes i activitats complementàries.</p>",
+							"markdown": "Ens assegurem que l'escola funcioni adequadament i col·laborem amb projectes i activitats complementàries."
 						}
 					},
 					{
-						"icon": "material-symbols:check-circle-rounded",
-						"title": "In-app Booking",
+						"icon": "material-symbols:sentiment-very-satisfied",
+						"title": "Suport en l'Educació Escolar",
 						"description": {
-							"html": "<p>Book your flights, hotels, and experiences directly through our app. </p>",
-							"markdown": "Book your flights, hotels, and experiences directly through our app. "
+							"html": "<p>Brindem suport als membres de l'associació i a la comunitat educativa en qüestions relacionades amb l'educació dels alumnes del centre.</p>",
+							"markdown": "Brindem suport als membres de l'associació i a la comunitat educativa en qüestions relacionades amb l'educació dels alumnes del centre."
 						}
 					},
 					{
-						"icon": "material-symbols:check-circle-rounded",
-						"title": "24/7 Customer Support",
+						"icon": "material-symbols:sentiment-very-satisfied",
+						"title": "Col·laboració Amb Autoritats Educatives",
 						"description": {
-							"html": "<p>We're here for you, no matter where in the world you are. </p>",
-							"markdown": "We're here for you, no matter where in the world you are. "
+							"html": "<p>Col·laborem amb les autoritats municipals educatives.</p>",
+							"markdown": "Col·laborem amb les autoritats municipals educatives."
+						}
+					},
+					{
+						"icon": "material-symbols:sentiment-very-satisfied",
+						"title": "Fomentem la participació dels pares i mares.",
+						"description": {
+							"html": "<p>Fomentem la participació dels pares i mares.</p>",
+							"markdown": "Fomentem la participació dels pares i mares."
 						}
 					}
 				]
