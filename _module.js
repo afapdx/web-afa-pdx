@@ -6570,7 +6570,7 @@ function create_fragment$c(ctx) {
 						"title": "Delegats",
 						"description": {
 							"html": "<p>Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina.</p>",
-							"markdown": "Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina."
+							"markdown": "Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina.\n\n"
 						}
 					},
 					{
@@ -6682,7 +6682,7 @@ function create_fragment$c(ctx) {
 						"title": "Savi",
 						"description": {
 							"html": "<p>Organitza el Savi, el concurs més divertit pels pares i mares de l’escola</p>",
-							"markdown": "Organitza el Savi, el concurs més divertit pels pares i mares de l’escola\n"
+							"markdown": "Organitza el Savi, el concurs més divertit pels pares i mares de l’escola\n\n"
 						}
 					}
 				]
