@@ -5453,7 +5453,7 @@ function create_fragment$b(ctx) {
 	component_2 = new Component$3({
 			props: {
 				heading: "COMISSIONS",
-				subheading: "Everything you need to boost your online presence.",
+				subheading: "Formades per pares i mares de l'escola per coordinar i realitzar les tasques a l'escola.",
 				buttons: []
 			}
 		});
