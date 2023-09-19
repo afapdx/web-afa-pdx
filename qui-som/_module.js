@@ -4995,7 +4995,7 @@ function create_each_block$5(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "button svelte-1xtducc");
+			attr(a, "class", "button primary positive svelte-1xtducc");
 			attr(a, "href", a_href_value = /*button*/ ctx[3].link.url);
 		},
 		m(target, anchor) {

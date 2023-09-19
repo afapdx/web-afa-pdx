@@ -4278,7 +4278,7 @@ function create_each_block$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "button svelte-1t66bk1");
+			attr(a, "class", "button primary positive svelte-1xtducc");
 			attr(a, "href", a_href_value = /*button*/ ctx[3].link.url);
 		},
 		m(target, anchor) {
@@ -4387,13 +4387,13 @@ function create_fragment$6(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "heading svelte-1t66bk1");
-			attr(div0, "class", "body svelte-1t66bk1");
-			attr(div1, "class", "buttons svelte-1t66bk1");
-			attr(div2, "class", "card svelte-1t66bk1");
-			attr(section, "class", "section-container svelte-1t66bk1");
+			attr(h2, "class", "heading svelte-1xtducc");
+			attr(div0, "class", "body svelte-1xtducc");
+			attr(div1, "class", "buttons svelte-1xtducc");
+			attr(div2, "class", "card svelte-1xtducc");
+			attr(section, "class", "section-container svelte-1xtducc");
 			attr(div3, "class", "section");
-			attr(div3, "id", "section-312474ec");
+			attr(div3, "id", "section-982ce7f2");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div3, anchor);
@@ -5675,11 +5675,14 @@ function create_fragment$a(ctx) {
 				buttons: [
 					{
 						"icon": "Dolore laborum cillum",
-						"link": { "url": "/", "label": "Watch video" }
+						"link": { "url": "/", "label": "Contacta'ns" }
 					},
 					{
 						"icon": "Officia velit elit",
-						"link": { "url": "/", "label": "Contact Us" }
+						"link": {
+							"url": "/comissions",
+							"label": "Busca la teva comisssió"
+						}
 					}
 				]
 			}
