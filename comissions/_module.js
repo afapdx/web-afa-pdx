@@ -5398,9 +5398,9 @@ function create_fragment$b(ctx) {
 			props: {
 				background: {
 					"alt": "",
-					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1695137830331img-0201.jpeg",
-					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1695137830331img-0201.jpeg",
-					"size": 1152
+					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1695139144543img-0201-2.jpg",
+					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1695139144543img-0201-2.jpg",
+					"size": 583
 				},
 				headline: "",
 				logo: {
@@ -5426,6 +5426,12 @@ function create_fragment$b(ctx) {
 						"link": {
 							"url": "/projectes",
 							"label": "Projectes"
+						}
+					},
+					{
+						"link": {
+							"url": "/notcies-i-activitats",
+							"label": "Notícies i activitats"
 						}
 					},
 					{
