@@ -39,6 +39,9 @@ function exclude_internal_props(props) {
             result[k] = props[k];
     return result;
 }
+function null_to_empty(value) {
+    return value == null ? '' : value;
+}
 
 const is_client = typeof window !== 'undefined';
 let now = is_client
@@ -3027,7 +3030,7 @@ function create_each_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-1hv5gtq");
+			attr(a, "class", "link svelte-1c7hkg0");
 			attr(a, "href", a_href_value = /*link*/ ctx[8].url);
 			toggle_class(a, "active", /*link*/ ctx[8].url === window.location.pathname);
 		},
@@ -3170,9 +3173,9 @@ function create_if_block$1(ctx) {
 		h() {
 			attr(button, "id", "close");
 			attr(button, "aria-label", "Close Navigation");
-			attr(button, "class", "svelte-1hv5gtq");
+			attr(button, "class", "svelte-1c7hkg0");
 			attr(nav, "id", "popup");
-			attr(nav, "class", "svelte-1hv5gtq");
+			attr(nav, "class", "svelte-1c7hkg0");
 		},
 		m(target, anchor) {
 			insert_hydration(target, nav, anchor);
@@ -3434,23 +3437,23 @@ function create_fragment$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "header-background svelte-1hv5gtq");
+			attr(div0, "class", "header-background svelte-1c7hkg0");
 			attr(a0, "href", "/");
-			attr(a0, "class", "logo svelte-1hv5gtq");
-			attr(nav, "class", "svelte-1hv5gtq");
-			attr(div1, "class", "desktop-nav svelte-1hv5gtq");
+			attr(a0, "class", "logo svelte-1c7hkg0");
+			attr(nav, "class", "svelte-1c7hkg0");
+			attr(div1, "class", "desktop-nav svelte-1c7hkg0");
 			attr(a1, "href", "/");
-			attr(a1, "class", "logo svelte-1hv5gtq");
+			attr(a1, "class", "logo svelte-1c7hkg0");
 			attr(button, "id", "open");
 			attr(button, "aria-label", "Open mobile navigation");
-			attr(div2, "class", "mobile-nav svelte-1hv5gtq");
-			attr(div3, "class", "section-container svelte-1hv5gtq");
-			attr(h1, "class", "headline svelte-1hv5gtq");
-			attr(div4, "class", "section-container svelte-1hv5gtq");
+			attr(div2, "class", "mobile-nav svelte-1c7hkg0");
+			attr(div3, "class", "section-container svelte-1c7hkg0");
+			attr(h1, "class", "headline svelte-1c7hkg0");
+			attr(div4, "class", "section-container svelte-1c7hkg0");
 			set_style(header, "background-image", "url('" + /*background*/ ctx[0].url + "')");
 			attr(header, "role", "img");
 			attr(header, "aria-label", header_aria_label_value = /*background*/ ctx[0].alt);
-			attr(header, "class", "svelte-1hv5gtq");
+			attr(header, "class", "svelte-1c7hkg0");
 			attr(div5, "class", "section");
 			attr(div5, "id", "section-1c3ac40c");
 		},
@@ -3808,6 +3811,7 @@ function create_each_block$1(ctx) {
 	let t1_value = /*button*/ ctx[3].link.label + "";
 	let t1;
 	let t2;
+	let a_class_value;
 	let a_href_value;
 	let current;
 	icon = new Component$1({ props: { icon: /*button*/ ctx[3].icon } });
@@ -3836,7 +3840,7 @@ function create_each_block$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "button primary positive svelte-1xtducc");
+			attr(a, "class", a_class_value = "" + (null_to_empty("button " + /*button*/ ctx[3].button_type) + " svelte-1xtducc"));
 			attr(a, "href", a_href_value = /*button*/ ctx[3].link.url);
 		},
 		m(target, anchor) {
@@ -3853,6 +3857,10 @@ function create_each_block$1(ctx) {
 			if (dirty & /*buttons*/ 4) icon_changes.icon = /*button*/ ctx[3].icon;
 			icon.$set(icon_changes);
 			if ((!current || dirty & /*buttons*/ 4) && t1_value !== (t1_value = /*button*/ ctx[3].link.label + "")) set_data(t1, t1_value);
+
+			if (!current || dirty & /*buttons*/ 4 && a_class_value !== (a_class_value = "" + (null_to_empty("button " + /*button*/ ctx[3].button_type) + " svelte-1xtducc"))) {
+				attr(a, "class", a_class_value);
+			}
 
 			if (!current || dirty & /*buttons*/ 4 && a_href_value !== (a_href_value = /*button*/ ctx[3].link.url)) {
 				attr(a, "href", a_href_value);
@@ -4627,7 +4635,7 @@ function get_each_context$3(ctx, list, i) {
 	return child_ctx;
 }
 
-// (31:4) {#each footer_links as { link }}
+// (31:6) {#each footer_links as { link }}
 function create_each_block$3(ctx) {
 	let a;
 	let t_value = /*link*/ ctx[1].label + "";
@@ -4673,11 +4681,6 @@ function create_fragment$8(ctx) {
 	let footer;
 	let div0;
 	let nav;
-	let t0;
-	let span;
-	let t1;
-	let a;
-	let t2;
 	let each_value = /*footer_links*/ ctx[0];
 	let each_blocks = [];
 
@@ -4696,11 +4699,6 @@ function create_fragment$8(ctx) {
 				each_blocks[i].c();
 			}
 
-			t0 = space();
-			span = element("span");
-			t1 = text("Powered by\n    ");
-			a = element("a");
-			t2 = text("Primo");
 			this.h();
 		},
 		l(nodes) {
@@ -4718,15 +4716,6 @@ function create_fragment$8(ctx) {
 			}
 
 			nav_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			span = claim_element(div0_nodes, "SPAN", { class: true });
-			var span_nodes = children(span);
-			t1 = claim_text(span_nodes, "Powered by\n    ");
-			a = claim_element(span_nodes, "A", { href: true, class: true });
-			var a_nodes = children(a);
-			t2 = claim_text(a_nodes, "Primo");
-			a_nodes.forEach(detach);
-			span_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			footer_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
@@ -4734,9 +4723,6 @@ function create_fragment$8(ctx) {
 		},
 		h() {
 			attr(nav, "class", "svelte-1wofe1u");
-			attr(a, "href", "https://primo.so");
-			attr(a, "class", "primo svelte-1wofe1u");
-			attr(span, "class", "primo svelte-1wofe1u");
 			attr(div0, "class", "section-container svelte-1wofe1u");
 			attr(footer, "class", "svelte-1wofe1u");
 			attr(div1, "class", "section");
@@ -4753,12 +4739,6 @@ function create_fragment$8(ctx) {
 					each_blocks[i].m(nav, null);
 				}
 			}
-
-			append_hydration(div0, t0);
-			append_hydration(div0, span);
-			append_hydration(span, t1);
-			append_hydration(span, a);
-			append_hydration(a, t2);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*footer_links*/ 1) {
@@ -5176,19 +5156,19 @@ function create_fragment$a(ctx) {
 			props: {
 				background: {
 					"alt": "",
-					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213457665cercavila-escoles-40.jpeg",
-					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213457665cercavila-escoles-40.jpeg",
-					"size": 264
+					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1695146650413Yellow%20Purple%20and%20Green%20Bold%20and%20Quirky%20Best%20Friends%20Day%20Greetings%20Fun%20Presentation.jpg",
+					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1695146650413Yellow%20Purple%20and%20Green%20Bold%20and%20Quirky%20Best%20Friends%20Day%20Greetings%20Fun%20Presentation.jpg",
+					"size": 48
 				},
-				headline: "",
+				headline: "GESTIÓ DE TÈXTIL",
 				logo: {
 					"image": {
 						"alt": "",
-						"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
-						"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
-						"size": 811
+						"src": "",
+						"url": "",
+						"size": null
 					},
-					"title": "AFA Pi d'en Xandri"
+					"title": "Afa Pi d'en Xandri"
 				},
 				site_nav: [
 					{
@@ -5204,12 +5184,6 @@ function create_fragment$a(ctx) {
 						"link": {
 							"url": "/projectes",
 							"label": "Projectes"
-						}
-					},
-					{
-						"link": {
-							"url": "/notcies-i-activitats",
-							"label": "Notícies i activitats"
 						}
 					},
 					{
@@ -5231,8 +5205,8 @@ function create_fragment$a(ctx) {
 	component_2 = new Component$3({
 			props: {
 				content: {
-					"html": "<h1>Gestió tèxtil</h1><p>A la <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://web-afa-pdx.vercel.app/comissions\">comissió tèxtil</a> som responsables de la venda d'aquest material per tal d’oferir un equipament que identifiqui als Xandris allà on vagin, especialment durant les sortides escolars.</p><ul><li><p>Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola (bata amb botons grans, butxaques, gomes als punys; samarreta taronja fàcil d’identificar en les sortides…).</p></li><li><p>A més, ajudem a potenciar el sentiment de pertinença a l’escola</p></li></ul><h2>Pròxima venda</h2><p><mark>22 de Setembre del 2023</mark></p>",
-					"markdown": "# Gestió tèxtil\n\nA la [comissió tèxtil](<https://web-afa-pdx.vercel.app/comissions>) som responsables de la venda d'aquest material per tal d’oferir un equipament que identifiqui als Xandris allà on vagin, especialment durant les sortides escolars.\n\n- Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola (bata amb botons grans, butxaques, gomes als punys; samarreta taronja fàcil d’identificar en les sortides…).\n\n- A més, ajudem a potenciar el sentiment de pertinença a l’escola\n\n\n<!-- -->\n\n## Pròxima venda\n\n<mark>22 de Setembre del 2023</mark>\n\n"
+					"html": "<p>A la <a href=\"https://web-afa-pdx.vercel.app/comissions\">comissió tèxtil</a> som responsables de la venda d'aquest material per tal d’oferir un equipament que identifiqui als Xandris allà on vagin, especialment durant les sortides escolars.</p>\n<ul>\n<li><p>Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola (bata amb botons grans, butxaques, gomes als punys; samarreta taronja fàcil d’identificar en les sortides…).</p></li>\n<li><p>A més, ajudem a potenciar el sentiment de pertinença a l’escola</p></li>\n</ul>\n<!-- -->\n<h2 id=\"prximavenda\">Pròxima venda</h2>\n<p><mark>22 de Setembre del 2023</mark></p>",
+					"markdown": "A la [comissió tèxtil](<https://web-afa-pdx.vercel.app/comissions>) som responsables de la venda d'aquest material per tal d’oferir un equipament que identifiqui als Xandris allà on vagin, especialment durant les sortides escolars.\n\n- Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola (bata amb botons grans, butxaques, gomes als punys; samarreta taronja fàcil d’identificar en les sortides…).\n\n- A més, ajudem a potenciar el sentiment de pertinença a l’escola\n\n\n<!-- -->\n\n## Pròxima venda\n\n<mark>22 de Setembre del 2023</mark>\n\n"
 				}
 			}
 		});
@@ -5305,35 +5279,23 @@ function create_fragment$a(ctx) {
 					{ "link": { "url": "/", "label": "Inici" } },
 					{
 						"link": {
-							"url": "/qui-som",
-							"label": "Qui som",
+							"url": "/work",
+							"label": "Work",
 							"active": false
 						}
 					},
 					{
 						"link": {
-							"url": "/comissions",
-							"label": "Comissions",
+							"url": "/services",
+							"label": "Services",
 							"active": false
 						}
 					},
 					{
-						"link": {
-							"url": "/projectes",
-							"label": "Projectes"
-						}
+						"link": { "url": "/company", "label": "Company" }
 					},
 					{
-						"link": {
-							"url": "/curs-2023-24",
-							"label": "Curs 2023/24"
-						}
-					},
-					{
-						"link": {
-							"url": "/documents",
-							"label": "Documents"
-						}
+						"link": { "url": "/contact", "label": "Contact Us" }
 					}
 				]
 			}

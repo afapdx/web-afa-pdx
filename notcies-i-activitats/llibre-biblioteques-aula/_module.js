@@ -4977,7 +4977,7 @@ function create_fragment$8(ctx) {
 						"placeholder": "johndoe@johndoe.com"
 					},
 					{
-						"type": "Sunt officia ad",
+						"type": "textarea",
 						"label": "El teu missatge",
 						"placeholder": "Escriu aquí el teu missatge"
 					}

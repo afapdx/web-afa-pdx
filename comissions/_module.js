@@ -39,6 +39,9 @@ function exclude_internal_props(props) {
             result[k] = props[k];
     return result;
 }
+function null_to_empty(value) {
+    return value == null ? '' : value;
+}
 
 const is_client = typeof window !== 'undefined';
 let now = is_client
@@ -3027,7 +3030,7 @@ function create_each_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-1hv5gtq");
+			attr(a, "class", "link svelte-1c7hkg0");
 			attr(a, "href", a_href_value = /*link*/ ctx[8].url);
 			toggle_class(a, "active", /*link*/ ctx[8].url === window.location.pathname);
 		},
@@ -3170,9 +3173,9 @@ function create_if_block$1(ctx) {
 		h() {
 			attr(button, "id", "close");
 			attr(button, "aria-label", "Close Navigation");
-			attr(button, "class", "svelte-1hv5gtq");
+			attr(button, "class", "svelte-1c7hkg0");
 			attr(nav, "id", "popup");
-			attr(nav, "class", "svelte-1hv5gtq");
+			attr(nav, "class", "svelte-1c7hkg0");
 		},
 		m(target, anchor) {
 			insert_hydration(target, nav, anchor);
@@ -3434,23 +3437,23 @@ function create_fragment$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "header-background svelte-1hv5gtq");
+			attr(div0, "class", "header-background svelte-1c7hkg0");
 			attr(a0, "href", "/");
-			attr(a0, "class", "logo svelte-1hv5gtq");
-			attr(nav, "class", "svelte-1hv5gtq");
-			attr(div1, "class", "desktop-nav svelte-1hv5gtq");
+			attr(a0, "class", "logo svelte-1c7hkg0");
+			attr(nav, "class", "svelte-1c7hkg0");
+			attr(div1, "class", "desktop-nav svelte-1c7hkg0");
 			attr(a1, "href", "/");
-			attr(a1, "class", "logo svelte-1hv5gtq");
+			attr(a1, "class", "logo svelte-1c7hkg0");
 			attr(button, "id", "open");
 			attr(button, "aria-label", "Open mobile navigation");
-			attr(div2, "class", "mobile-nav svelte-1hv5gtq");
-			attr(div3, "class", "section-container svelte-1hv5gtq");
-			attr(h1, "class", "headline svelte-1hv5gtq");
-			attr(div4, "class", "section-container svelte-1hv5gtq");
+			attr(div2, "class", "mobile-nav svelte-1c7hkg0");
+			attr(div3, "class", "section-container svelte-1c7hkg0");
+			attr(h1, "class", "headline svelte-1c7hkg0");
+			attr(div4, "class", "section-container svelte-1c7hkg0");
 			set_style(header, "background-image", "url('" + /*background*/ ctx[0].url + "')");
 			attr(header, "role", "img");
 			attr(header, "aria-label", header_aria_label_value = /*background*/ ctx[0].alt);
-			attr(header, "class", "svelte-1hv5gtq");
+			attr(header, "class", "svelte-1c7hkg0");
 			attr(div5, "class", "section");
 			attr(div5, "id", "section-e9e1e0d7");
 		},
@@ -4028,6 +4031,7 @@ function create_each_block$2(ctx) {
 	let t1_value = /*button*/ ctx[3].link.label + "";
 	let t1;
 	let t2;
+	let a_class_value;
 	let a_href_value;
 	let current;
 	icon = new Component$1({ props: { icon: /*button*/ ctx[3].icon } });
@@ -4056,7 +4060,7 @@ function create_each_block$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "button primary positive svelte-1xtducc");
+			attr(a, "class", a_class_value = "" + (null_to_empty("button " + /*button*/ ctx[3].button_type) + " svelte-1xtducc"));
 			attr(a, "href", a_href_value = /*button*/ ctx[3].link.url);
 		},
 		m(target, anchor) {
@@ -4073,6 +4077,10 @@ function create_each_block$2(ctx) {
 			if (dirty & /*buttons*/ 4) icon_changes.icon = /*button*/ ctx[3].icon;
 			icon.$set(icon_changes);
 			if ((!current || dirty & /*buttons*/ 4) && t1_value !== (t1_value = /*button*/ ctx[3].link.label + "")) set_data(t1, t1_value);
+
+			if (!current || dirty & /*buttons*/ 4 && a_class_value !== (a_class_value = "" + (null_to_empty("button " + /*button*/ ctx[3].button_type) + " svelte-1xtducc"))) {
+				attr(a, "class", a_class_value);
+			}
 
 			if (!current || dirty & /*buttons*/ 4 && a_href_value !== (a_href_value = /*button*/ ctx[3].link.url)) {
 				attr(a, "href", a_href_value);
@@ -4692,7 +4700,7 @@ function create_fragment$8(ctx) {
 			attr(form, "class", "svelte-vg5h0p");
 			attr(section, "class", "section-container svelte-vg5h0p");
 			attr(div3, "class", "section");
-			attr(div3, "id", "section-0b4248b9");
+			attr(div3, "id", "section-745515b5");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div3, anchor);
@@ -4847,7 +4855,7 @@ function get_each_context$4(ctx, list, i) {
 	return child_ctx;
 }
 
-// (31:4) {#each footer_links as { link }}
+// (31:6) {#each footer_links as { link }}
 function create_each_block$4(ctx) {
 	let a;
 	let t_value = /*link*/ ctx[1].label + "";
@@ -4893,11 +4901,6 @@ function create_fragment$9(ctx) {
 	let footer;
 	let div0;
 	let nav;
-	let t0;
-	let span;
-	let t1;
-	let a;
-	let t2;
 	let each_value = /*footer_links*/ ctx[0];
 	let each_blocks = [];
 
@@ -4916,11 +4919,6 @@ function create_fragment$9(ctx) {
 				each_blocks[i].c();
 			}
 
-			t0 = space();
-			span = element("span");
-			t1 = text("Powered by\n    ");
-			a = element("a");
-			t2 = text("Primo");
 			this.h();
 		},
 		l(nodes) {
@@ -4938,15 +4936,6 @@ function create_fragment$9(ctx) {
 			}
 
 			nav_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			span = claim_element(div0_nodes, "SPAN", { class: true });
-			var span_nodes = children(span);
-			t1 = claim_text(span_nodes, "Powered by\n    ");
-			a = claim_element(span_nodes, "A", { href: true, class: true });
-			var a_nodes = children(a);
-			t2 = claim_text(a_nodes, "Primo");
-			a_nodes.forEach(detach);
-			span_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			footer_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
@@ -4954,9 +4943,6 @@ function create_fragment$9(ctx) {
 		},
 		h() {
 			attr(nav, "class", "svelte-1wofe1u");
-			attr(a, "href", "https://primo.so");
-			attr(a, "class", "primo svelte-1wofe1u");
-			attr(span, "class", "primo svelte-1wofe1u");
 			attr(div0, "class", "section-container svelte-1wofe1u");
 			attr(footer, "class", "svelte-1wofe1u");
 			attr(div1, "class", "section");
@@ -4973,12 +4959,6 @@ function create_fragment$9(ctx) {
 					each_blocks[i].m(nav, null);
 				}
 			}
-
-			append_hydration(div0, t0);
-			append_hydration(div0, span);
-			append_hydration(span, t1);
-			append_hydration(span, a);
-			append_hydration(a, t2);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*footer_links*/ 1) {
@@ -5406,11 +5386,11 @@ function create_fragment$b(ctx) {
 				logo: {
 					"image": {
 						"alt": "",
-						"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
-						"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
-						"size": 811
+						"src": "",
+						"url": "",
+						"size": null
 					},
-					"title": "AFA Pi d'en Xandri"
+					"title": "Afa Pi d'en Xandri"
 				},
 				site_nav: [
 					{
@@ -5426,12 +5406,6 @@ function create_fragment$b(ctx) {
 						"link": {
 							"url": "/projectes",
 							"label": "Projectes"
-						}
-					},
-					{
-						"link": {
-							"url": "/notcies-i-activitats",
-							"label": "Notícies i activitats"
 						}
 					},
 					{
@@ -5501,28 +5475,23 @@ function create_fragment$b(ctx) {
 	component_7 = new Component$8({
 			props: {
 				heading: "Bústia de suggeriments",
-				subheading: "Whether you have questions, feedback, or just want to say hello, we're always ready to hear from you. Please fill out the contact form, and we'll do our best to respond within 24-48 hours.",
-				social: [
-					{
-						"icon": "mdi:instagram",
-						"link": { "url": "/", "label": "Instagram" }
-					}
-				],
+				subheading: "Si tens preguntes, comentaris o només vols saludar, sempre estem amb ganes d'escoltar. Entra les teves dades i farem el possible per contestar-te tan aviat com puguem.",
+				social: [],
 				inputs: [
 					{
 						"type": "text",
 						"label": "Name",
-						"placeholder": "John Doe"
+						"placeholder": "El teu nom"
 					},
 					{
 						"type": "email",
-						"label": "Email",
-						"placeholder": "johndoe@johndoe.com"
+						"label": "Correu electrònic",
+						"placeholder": "correu@electronic.com"
 					},
 					{
-						"type": "",
+						"type": "textarea",
 						"label": "El teu missatge",
-						"placeholder": "El teu missatge"
+						"placeholder": "Escriu aquí el teu missatge"
 					}
 				],
 				submit_label: "Submit"
@@ -5535,35 +5504,23 @@ function create_fragment$b(ctx) {
 					{ "link": { "url": "/", "label": "Inici" } },
 					{
 						"link": {
-							"url": "/qui-som",
-							"label": "Qui som",
+							"url": "/work",
+							"label": "Work",
 							"active": false
 						}
 					},
 					{
 						"link": {
-							"url": "/comissions",
-							"label": "Comissions",
+							"url": "/services",
+							"label": "Services",
 							"active": false
 						}
 					},
 					{
-						"link": {
-							"url": "/projectes",
-							"label": "Projectes"
-						}
+						"link": { "url": "/company", "label": "Company" }
 					},
 					{
-						"link": {
-							"url": "/curs-2023-24",
-							"label": "Curs 2023/24"
-						}
-					},
-					{
-						"link": {
-							"url": "/documents",
-							"label": "Documents"
-						}
+						"link": { "url": "/contact", "label": "Contact Us" }
 					}
 				]
 			}

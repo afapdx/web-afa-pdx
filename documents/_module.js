@@ -3027,7 +3027,7 @@ function create_each_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-1hv5gtq");
+			attr(a, "class", "link svelte-1c7hkg0");
 			attr(a, "href", a_href_value = /*link*/ ctx[8].url);
 			toggle_class(a, "active", /*link*/ ctx[8].url === window.location.pathname);
 		},
@@ -3170,9 +3170,9 @@ function create_if_block$1(ctx) {
 		h() {
 			attr(button, "id", "close");
 			attr(button, "aria-label", "Close Navigation");
-			attr(button, "class", "svelte-1hv5gtq");
+			attr(button, "class", "svelte-1c7hkg0");
 			attr(nav, "id", "popup");
-			attr(nav, "class", "svelte-1hv5gtq");
+			attr(nav, "class", "svelte-1c7hkg0");
 		},
 		m(target, anchor) {
 			insert_hydration(target, nav, anchor);
@@ -3434,23 +3434,23 @@ function create_fragment$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "header-background svelte-1hv5gtq");
+			attr(div0, "class", "header-background svelte-1c7hkg0");
 			attr(a0, "href", "/");
-			attr(a0, "class", "logo svelte-1hv5gtq");
-			attr(nav, "class", "svelte-1hv5gtq");
-			attr(div1, "class", "desktop-nav svelte-1hv5gtq");
+			attr(a0, "class", "logo svelte-1c7hkg0");
+			attr(nav, "class", "svelte-1c7hkg0");
+			attr(div1, "class", "desktop-nav svelte-1c7hkg0");
 			attr(a1, "href", "/");
-			attr(a1, "class", "logo svelte-1hv5gtq");
+			attr(a1, "class", "logo svelte-1c7hkg0");
 			attr(button, "id", "open");
 			attr(button, "aria-label", "Open mobile navigation");
-			attr(div2, "class", "mobile-nav svelte-1hv5gtq");
-			attr(div3, "class", "section-container svelte-1hv5gtq");
-			attr(h1, "class", "headline svelte-1hv5gtq");
-			attr(div4, "class", "section-container svelte-1hv5gtq");
+			attr(div2, "class", "mobile-nav svelte-1c7hkg0");
+			attr(div3, "class", "section-container svelte-1c7hkg0");
+			attr(h1, "class", "headline svelte-1c7hkg0");
+			attr(div4, "class", "section-container svelte-1c7hkg0");
 			set_style(header, "background-image", "url('" + /*background*/ ctx[0].url + "')");
 			attr(header, "role", "img");
 			attr(header, "aria-label", header_aria_label_value = /*background*/ ctx[0].alt);
-			attr(header, "class", "svelte-1hv5gtq");
+			attr(header, "class", "svelte-1c7hkg0");
 			attr(div5, "class", "section");
 			attr(div5, "id", "section-ef5e8676");
 		},
@@ -4302,7 +4302,7 @@ function create_fragment$5(ctx) {
 			attr(form, "class", "svelte-vg5h0p");
 			attr(section, "class", "section-container svelte-vg5h0p");
 			attr(div3, "class", "section");
-			attr(div3, "id", "section-ba9b2ff7");
+			attr(div3, "id", "section-9bb60278");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div3, anchor);
@@ -4457,7 +4457,7 @@ function get_each_context$3(ctx, list, i) {
 	return child_ctx;
 }
 
-// (31:4) {#each footer_links as { link }}
+// (31:6) {#each footer_links as { link }}
 function create_each_block$3(ctx) {
 	let a;
 	let t_value = /*link*/ ctx[1].label + "";
@@ -4503,11 +4503,6 @@ function create_fragment$6(ctx) {
 	let footer;
 	let div0;
 	let nav;
-	let t0;
-	let span;
-	let t1;
-	let a;
-	let t2;
 	let each_value = /*footer_links*/ ctx[0];
 	let each_blocks = [];
 
@@ -4526,11 +4521,6 @@ function create_fragment$6(ctx) {
 				each_blocks[i].c();
 			}
 
-			t0 = space();
-			span = element("span");
-			t1 = text("Powered by\n    ");
-			a = element("a");
-			t2 = text("Primo");
 			this.h();
 		},
 		l(nodes) {
@@ -4548,15 +4538,6 @@ function create_fragment$6(ctx) {
 			}
 
 			nav_nodes.forEach(detach);
-			t0 = claim_space(div0_nodes);
-			span = claim_element(div0_nodes, "SPAN", { class: true });
-			var span_nodes = children(span);
-			t1 = claim_text(span_nodes, "Powered by\n    ");
-			a = claim_element(span_nodes, "A", { href: true, class: true });
-			var a_nodes = children(a);
-			t2 = claim_text(a_nodes, "Primo");
-			a_nodes.forEach(detach);
-			span_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			footer_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
@@ -4564,9 +4545,6 @@ function create_fragment$6(ctx) {
 		},
 		h() {
 			attr(nav, "class", "svelte-1wofe1u");
-			attr(a, "href", "https://primo.so");
-			attr(a, "class", "primo svelte-1wofe1u");
-			attr(span, "class", "primo svelte-1wofe1u");
 			attr(div0, "class", "section-container svelte-1wofe1u");
 			attr(footer, "class", "svelte-1wofe1u");
 			attr(div1, "class", "section");
@@ -4583,12 +4561,6 @@ function create_fragment$6(ctx) {
 					each_blocks[i].m(nav, null);
 				}
 			}
-
-			append_hydration(div0, t0);
-			append_hydration(div0, span);
-			append_hydration(span, t1);
-			append_hydration(span, a);
-			append_hydration(a, t2);
 		},
 		p(ctx, [dirty]) {
 			if (dirty & /*footer_links*/ 1) {
@@ -5010,11 +4982,11 @@ function create_fragment$8(ctx) {
 				logo: {
 					"image": {
 						"alt": "",
-						"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
-						"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
-						"size": 811
+						"src": "",
+						"url": "",
+						"size": null
 					},
-					"title": "AFA Pi d'en Xandri"
+					"title": "Afa Pi d'en Xandri"
 				},
 				site_nav: [
 					{
@@ -5030,12 +5002,6 @@ function create_fragment$8(ctx) {
 						"link": {
 							"url": "/projectes",
 							"label": "Projectes"
-						}
-					},
-					{
-						"link": {
-							"url": "/notcies-i-activitats",
-							"label": "Notícies i activitats"
 						}
 					},
 					{
@@ -5086,7 +5052,7 @@ function create_fragment$8(ctx) {
 						"placeholder": "correu@electronic.com"
 					},
 					{
-						"type": "Text",
+						"type": "textarea",
 						"label": "El teu missatge",
 						"placeholder": "Escriu aquí el teu missatge"
 					}
@@ -5101,35 +5067,23 @@ function create_fragment$8(ctx) {
 					{ "link": { "url": "/", "label": "Inici" } },
 					{
 						"link": {
-							"url": "/qui-som",
-							"label": "Qui som",
+							"url": "/work",
+							"label": "Work",
 							"active": false
 						}
 					},
 					{
 						"link": {
-							"url": "/comissions",
-							"label": "Comissions",
+							"url": "/services",
+							"label": "Services",
 							"active": false
 						}
 					},
 					{
-						"link": {
-							"url": "/projectes",
-							"label": "Projectes"
-						}
+						"link": { "url": "/company", "label": "Company" }
 					},
 					{
-						"link": {
-							"url": "/curs-2023-24",
-							"label": "Curs 2023/24"
-						}
-					},
-					{
-						"link": {
-							"url": "/documents",
-							"label": "Documents"
-						}
+						"link": { "url": "/contact", "label": "Contact Us" }
 					}
 				]
 			}
