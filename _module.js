@@ -5442,7 +5442,7 @@ function get_each_context_1$3(ctx, list, i) {
 	return child_ctx;
 }
 
-// (95:6) {#each social as { link, icon }}
+// (97:6) {#each social as { link, icon }}
 function create_each_block_1$3(ctx) {
 	let a;
 	let span;
@@ -5479,9 +5479,9 @@ function create_each_block_1$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "icon svelte-12jj5ao");
+			attr(span, "class", "icon svelte-vg5h0p");
 			attr(a, "href", a_href_value = /*link*/ ctx[8].url);
-			attr(a, "class", "svelte-12jj5ao");
+			attr(a, "class", "svelte-vg5h0p");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -5518,7 +5518,7 @@ function create_each_block_1$3(ctx) {
 	};
 }
 
-// (112:6) {:else}
+// (114:6) {:else}
 function create_else_block$1(ctx) {
 	let label;
 	let span;
@@ -5557,11 +5557,11 @@ function create_else_block$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "svelte-12jj5ao");
+			attr(span, "class", "svelte-vg5h0p");
 			attr(input, "type", input_type_value = /*input*/ ctx[5].type || "text");
 			attr(input, "placeholder", input_placeholder_value = /*input*/ ctx[5].placeholder);
-			attr(input, "class", "svelte-12jj5ao");
-			attr(label, "class", "svelte-12jj5ao");
+			attr(input, "class", "svelte-vg5h0p");
+			attr(label, "class", "svelte-vg5h0p");
 		},
 		m(target, anchor) {
 			insert_hydration(target, label, anchor);
@@ -5587,7 +5587,7 @@ function create_else_block$1(ctx) {
 	};
 }
 
-// (107:6) {#if input.type === "textarea"}
+// (109:6) {#if input.type === "textarea"}
 function create_if_block$3(ctx) {
 	let label;
 	let span;
@@ -5619,9 +5619,9 @@ function create_if_block$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "svelte-12jj5ao");
-			attr(textarea, "class", "svelte-12jj5ao");
-			attr(label, "class", "svelte-12jj5ao");
+			attr(span, "class", "svelte-vg5h0p");
+			attr(textarea, "class", "svelte-vg5h0p");
+			attr(label, "class", "svelte-vg5h0p");
 		},
 		m(target, anchor) {
 			insert_hydration(target, label, anchor);
@@ -5639,7 +5639,7 @@ function create_if_block$3(ctx) {
 	};
 }
 
-// (106:4) {#each inputs as input, i}
+// (108:4) {#each inputs as input, i}
 function create_each_block$6(ctx) {
 	let if_block_anchor;
 
@@ -5791,13 +5791,13 @@ function create_fragment$9(ctx) {
 		},
 		h() {
 			attr(h2, "class", "heading");
-			attr(div0, "class", "body svelte-12jj5ao");
-			attr(div1, "class", "social-links svelte-12jj5ao");
-			attr(div2, "class", "content svelte-12jj5ao");
-			attr(button, "class", "button primary positive svelte-12jj5ao");
+			attr(div0, "class", "body svelte-vg5h0p");
+			attr(div1, "class", "social-links svelte-vg5h0p");
+			attr(div2, "class", "content svelte-vg5h0p");
+			attr(button, "class", "button primary positive svelte-vg5h0p");
 			attr(button, "type", "submit");
-			attr(form, "class", "svelte-12jj5ao");
-			attr(section, "class", "section-container svelte-12jj5ao");
+			attr(form, "class", "svelte-vg5h0p");
+			attr(section, "class", "section-container svelte-vg5h0p");
 			attr(div3, "class", "section");
 			attr(div3, "id", "section-352791c5");
 		},
