@@ -6806,23 +6806,29 @@ function create_fragment$d(ctx) {
 					{ "link": { "url": "/", "label": "Inici" } },
 					{
 						"link": {
-							"url": "/work",
-							"label": "Work",
+							"url": "/qui-som",
+							"label": "Qui som?",
 							"active": false
 						}
 					},
 					{
 						"link": {
-							"url": "/services",
-							"label": "Services",
+							"url": "/projectes",
+							"label": "Projectes",
 							"active": false
 						}
 					},
 					{
-						"link": { "url": "/company", "label": "Company" }
+						"link": {
+							"url": "/curs-2023-24",
+							"label": "Curs 2023/24"
+						}
 					},
 					{
-						"link": { "url": "/contact", "label": "Contact Us" }
+						"link": {
+							"url": "/documents",
+							"label": "Documents"
+						}
 					}
 				]
 			}
