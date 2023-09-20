@@ -4179,7 +4179,7 @@ function create_fragment$6(ctx) {
 			attr(div2, "class", "card svelte-1xtducc");
 			attr(section, "class", "section-container svelte-1xtducc");
 			attr(div3, "class", "section");
-			attr(div3, "id", "section-a48605c6");
+			attr(div3, "id", "section-694ccc11");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div3, anchor);
@@ -5454,17 +5454,22 @@ function create_fragment$b(ctx) {
 			props: {
 				heading: "Vols formar part de l'AFA?",
 				body: {
-					"html": "<p>Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions.</p>",
-					"markdown": "Follow these steps to get rolling with our service. Watch the video to learn more or reach out if you have any questions."
+					"html": "<p>Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. Cadascú pot fer la seva contribució, col·laborant segons la seva disponibilitat i interès.</p>",
+					"markdown": "Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. Cadascú pot fer la seva contribució, col·laborant segons la seva disponibilitat i interès."
 				},
 				buttons: [
 					{
 						"icon": "Dolore laborum cillum",
-						"link": { "url": "/", "label": "Watch video" }
+						"link": { "url": "/", "label": "Contacta'ns" },
+						"button_type": "secondary positive"
 					},
 					{
 						"icon": "Officia velit elit",
-						"link": { "url": "/", "label": "Contact Us" }
+						"link": {
+							"url": "/comissions",
+							"label": "Busca la teva comisssió"
+						},
+						"button_type": "primary positive"
 					}
 				]
 			}

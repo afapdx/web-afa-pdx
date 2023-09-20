@@ -3959,7 +3959,7 @@ function create_fragment$5(ctx) {
 			attr(div2, "class", "card svelte-1xtducc");
 			attr(section, "class", "section-container svelte-1xtducc");
 			attr(div3, "class", "section");
-			attr(div3, "id", "section-4205f43b");
+			attr(div3, "id", "section-c20fa4a2");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div3, anchor);
@@ -5232,14 +5232,16 @@ function create_fragment$a(ctx) {
 				buttons: [
 					{
 						"icon": "Dolore laborum cillum",
-						"link": { "url": "/", "label": "Contacta'ns" }
+						"link": { "url": "/", "label": "Contacta'ns" },
+						"button_type": "secondary positive"
 					},
 					{
 						"icon": "Officia velit elit",
 						"link": {
 							"url": "/comissions",
 							"label": "Busca la teva comisssió"
-						}
+						},
+						"button_type": "primary positive"
 					}
 				]
 			}
