@@ -1022,17 +1022,17 @@ function create_fragment(ctx) {
 			link0 = element("link");
 			link1 = element("link");
 			style = element("style");
-			t = text("@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\nhr {\n    border-top-width: 4px;\n    border-color: #194027;\n  border-style: dotted;\n}\n:root {\n  --verd-fosc: #194027;\n  --verd-clar:  #388762;\n  --taronja: #ff7f3f;\n  --lila-fosc: #dac9fa;\n  --lila: #e8e1fd;\n  --verd-fluor: #f3f7a5;\n  --crema: #fff5eb;\n  \n  --background: var(--crema);\n\n  --color-accent: var(--verd-fosc);\n}\n\n#page {\n  font-family: 'Space Grotesk', system-ui, sans-serif;\n  color: var(--color-accent);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n}\n\n.button {\n  color: var(--crema);\n  padding: 0.5em 1.1em;\n  border-radius: 12px;\n}\n\n.button.primary.positive {\n    background-color: var(--color-accent);\n  }\n\n.button.primary.positive:hover {\n      background-color: var(--verd-clar);\n    }\n\n.button.secondary.positive, .button.tertiary.positive {\n    color: var(--color-accent);\n  }\n\n.button.secondary.positive:hover, .button.tertiary.positive:hover {\n      color: var(--verd-clar);\n    }\n\n.button.secondary.positive {\n    border: 1px solid var(--color-accent);\n  }\n\n.button.secondary.positive:hover {\n      border-color: var(--verd-clar);\n    }\n\n.button.primary.negative {\n    background-color: var(--crema) !important;\n    color: var(--color-accent);\n  }\n\n.button.primary.negative:hover {\n      background-color: var(--lila) !important;\n    }\n\n.button.secondary.negative:hover, .button.tertiary.negative:hover {\n      color: var(--lila);\n    }\n\n.button.secondary.negative {\n    border: 1px solid var(--crema);\n  }\n\n.button.secondary.negative:hover {\n      border-color: var(--lila);\n    }");
+			t = text("@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');\n\nhr {\n    border-top-width: 4px;\n    border-color: #194027;\n  border-style: dotted;\n}\n:root {\n  --verd-fosc: #194027;\n  --verd-clar:  #388762;\n  --taronja: #ff7f3f;\n  --lila-fosc: #dac9fa;\n  --lila: #e8e1fd;\n  --verd-fluor: #f3f7a5;\n  --crema: #fff5eb;\n  \n  --background: var(--crema);\n\n  --color-accent: var(--verd-fosc);\n}\n\n#page {\n  font-family: 'Space Grotesk', system-ui, sans-serif;\n  color: var(--color-accent);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n  font-family: 'Yeseva One';\n}\n\n.button {\n  color: var(--crema);\n  padding: 0.5em 1.1em;\n  border-radius: 12px;\n}\n\n.button.primary.positive {\n    background-color: var(--color-accent);\n  }\n\n.button.primary.positive:hover {\n      background-color: var(--verd-clar);\n    }\n\n.button.secondary.positive, .button.tertiary.positive {\n    color: var(--color-accent);\n  }\n\n.button.secondary.positive:hover, .button.tertiary.positive:hover {\n      color: var(--verd-clar);\n    }\n\n.button.secondary.positive {\n    border: 1px solid var(--color-accent);\n  }\n\n.button.secondary.positive:hover {\n      border-color: var(--verd-clar);\n    }\n\n.button.primary.negative {\n    background-color: var(--crema) !important;\n    color: var(--color-accent);\n  }\n\n.button.primary.negative:hover {\n      background-color: var(--lila) !important;\n    }\n\n.button.secondary.negative:hover, .button.tertiary.negative:hover {\n      color: var(--lila);\n    }\n\n.button.secondary.negative {\n    border: 1px solid var(--crema);\n  }\n\n.button.secondary.negative:hover {\n      border-color: var(--lila);\n    }");
 			this.h();
 		},
 		l(nodes) {
-			const head_nodes = head_selector('svelte-1vga2bx', document.head);
+			const head_nodes = head_selector('svelte-58rhef', document.head);
 			meta = claim_element(head_nodes, "META", { name: true, content: true });
 			link0 = claim_element(head_nodes, "LINK", { rel: true, type: true, href: true });
 			link1 = claim_element(head_nodes, "LINK", { rel: true, type: true, href: true });
 			style = claim_element(head_nodes, "STYLE", {});
 			var style_nodes = children(style);
-			t = claim_text(style_nodes, "@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\nhr {\n    border-top-width: 4px;\n    border-color: #194027;\n  border-style: dotted;\n}\n:root {\n  --verd-fosc: #194027;\n  --verd-clar:  #388762;\n  --taronja: #ff7f3f;\n  --lila-fosc: #dac9fa;\n  --lila: #e8e1fd;\n  --verd-fluor: #f3f7a5;\n  --crema: #fff5eb;\n  \n  --background: var(--crema);\n\n  --color-accent: var(--verd-fosc);\n}\n\n#page {\n  font-family: 'Space Grotesk', system-ui, sans-serif;\n  color: var(--color-accent);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n}\n\n.button {\n  color: var(--crema);\n  padding: 0.5em 1.1em;\n  border-radius: 12px;\n}\n\n.button.primary.positive {\n    background-color: var(--color-accent);\n  }\n\n.button.primary.positive:hover {\n      background-color: var(--verd-clar);\n    }\n\n.button.secondary.positive, .button.tertiary.positive {\n    color: var(--color-accent);\n  }\n\n.button.secondary.positive:hover, .button.tertiary.positive:hover {\n      color: var(--verd-clar);\n    }\n\n.button.secondary.positive {\n    border: 1px solid var(--color-accent);\n  }\n\n.button.secondary.positive:hover {\n      border-color: var(--verd-clar);\n    }\n\n.button.primary.negative {\n    background-color: var(--crema) !important;\n    color: var(--color-accent);\n  }\n\n.button.primary.negative:hover {\n      background-color: var(--lila) !important;\n    }\n\n.button.secondary.negative:hover, .button.tertiary.negative:hover {\n      color: var(--lila);\n    }\n\n.button.secondary.negative {\n    border: 1px solid var(--crema);\n  }\n\n.button.secondary.negative:hover {\n      border-color: var(--lila);\n    }");
+			t = claim_text(style_nodes, "@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');\n\nhr {\n    border-top-width: 4px;\n    border-color: #194027;\n  border-style: dotted;\n}\n:root {\n  --verd-fosc: #194027;\n  --verd-clar:  #388762;\n  --taronja: #ff7f3f;\n  --lila-fosc: #dac9fa;\n  --lila: #e8e1fd;\n  --verd-fluor: #f3f7a5;\n  --crema: #fff5eb;\n  \n  --background: var(--crema);\n\n  --color-accent: var(--verd-fosc);\n}\n\n#page {\n  font-family: 'Space Grotesk', system-ui, sans-serif;\n  color: var(--color-accent);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n  font-family: 'Yeseva One';\n}\n\n.button {\n  color: var(--crema);\n  padding: 0.5em 1.1em;\n  border-radius: 12px;\n}\n\n.button.primary.positive {\n    background-color: var(--color-accent);\n  }\n\n.button.primary.positive:hover {\n      background-color: var(--verd-clar);\n    }\n\n.button.secondary.positive, .button.tertiary.positive {\n    color: var(--color-accent);\n  }\n\n.button.secondary.positive:hover, .button.tertiary.positive:hover {\n      color: var(--verd-clar);\n    }\n\n.button.secondary.positive {\n    border: 1px solid var(--color-accent);\n  }\n\n.button.secondary.positive:hover {\n      border-color: var(--verd-clar);\n    }\n\n.button.primary.negative {\n    background-color: var(--crema) !important;\n    color: var(--color-accent);\n  }\n\n.button.primary.negative:hover {\n      background-color: var(--lila) !important;\n    }\n\n.button.secondary.negative:hover, .button.tertiary.negative:hover {\n      color: var(--lila);\n    }\n\n.button.secondary.negative {\n    border: 1px solid var(--crema);\n  }\n\n.button.secondary.negative:hover {\n      border-color: var(--lila);\n    }");
 			style_nodes.forEach(detach);
 			head_nodes.forEach(detach);
 			this.h();
@@ -3657,7 +3657,7 @@ function get_each_context$1(ctx, list, i) {
 	return child_ctx;
 }
 
-// (50:4) {#each cards as card}
+// (51:4) {#each cards as card}
 function create_each_block$1(ctx) {
 	let li;
 	let h3;
@@ -3720,10 +3720,10 @@ function create_each_block$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span1, "class", "label svelte-gc3typ");
-			attr(h3, "class", "title svelte-gc3typ");
+			attr(span1, "class", "label svelte-1w4x0lq");
+			attr(h3, "class", "title svelte-1w4x0lq");
 			attr(div, "class", "description");
-			attr(li, "class", "svelte-gc3typ");
+			attr(li, "class", "svelte-1w4x0lq");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -3818,9 +3818,9 @@ function create_fragment$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "heading svelte-gc3typ");
-			attr(ul, "class", "svelte-gc3typ");
-			attr(section, "class", "section-container svelte-gc3typ");
+			attr(h2, "class", "heading svelte-1w4x0lq");
+			attr(ul, "class", "svelte-1w4x0lq");
+			attr(section, "class", "section-container svelte-1w4x0lq");
 			attr(div, "class", "section");
 			attr(div, "id", "section-402b314c");
 		},
@@ -3970,8 +3970,8 @@ function create_each_block_1$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span0, "class", "icon svelte-evuxz0");
-			attr(li, "class", "svelte-evuxz0");
+			attr(span0, "class", "icon svelte-1urllxa");
+			attr(li, "class", "svelte-1urllxa");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -4078,13 +4078,13 @@ function create_each_block$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "icon svelte-evuxz0");
-			attr(h3, "class", "title svelte-evuxz0");
-			attr(div1, "class", "content svelte-evuxz0");
+			attr(div0, "class", "icon svelte-1urllxa");
+			attr(h3, "class", "title svelte-1urllxa");
+			attr(div1, "class", "content svelte-1urllxa");
 			attr(a, "href", a_href_value = /*card*/ ctx[4].link.url);
-			attr(a, "class", "link svelte-evuxz0");
-			attr(div2, "class", "body svelte-evuxz0");
-			attr(li, "class", "svelte-evuxz0");
+			attr(a, "class", "link svelte-1urllxa");
+			attr(div2, "class", "body svelte-1urllxa");
+			attr(li, "class", "svelte-1urllxa");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -4235,13 +4235,13 @@ function create_fragment$4(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "heading svelte-evuxz0");
+			attr(h2, "class", "heading svelte-1urllxa");
 			attr(div0, "class", "subheading");
-			attr(header, "class", "heading-group svelte-evuxz0");
-			attr(ul0, "class", "icon-list svelte-evuxz0");
-			attr(ul1, "class", "cards svelte-evuxz0");
-			attr(section, "class", "section-container svelte-evuxz0");
-			attr(div1, "class", "background svelte-evuxz0");
+			attr(header, "class", "heading-group svelte-1urllxa");
+			attr(ul0, "class", "icon-list svelte-1urllxa");
+			attr(ul1, "class", "cards svelte-1urllxa");
+			attr(section, "class", "section-container svelte-1urllxa");
+			attr(div1, "class", "background svelte-1urllxa");
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-08a63993");
 		},
@@ -4671,94 +4671,11 @@ class Component$5 extends SvelteComponent {
 
 function get_each_context$4(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[4] = list[i];
+	child_ctx[3] = list[i];
 	return child_ctx;
 }
 
-function get_each_context_1$2(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[7] = list[i].icon;
-	child_ctx[8] = list[i].label;
-	return child_ctx;
-}
-
-// (97:4) {#each icon_list as { icon, label }}
-function create_each_block_1$2(ctx) {
-	let li;
-	let span0;
-	let icon;
-	let t0;
-	let span1;
-	let t1_value = /*label*/ ctx[8] + "";
-	let t1;
-	let t2;
-	let current;
-	icon = new Component$1({ props: { icon: /*icon*/ ctx[7] } });
-
-	return {
-		c() {
-			li = element("li");
-			span0 = element("span");
-			create_component(icon.$$.fragment);
-			t0 = space();
-			span1 = element("span");
-			t1 = text(t1_value);
-			t2 = space();
-			this.h();
-		},
-		l(nodes) {
-			li = claim_element(nodes, "LI", { class: true });
-			var li_nodes = children(li);
-			span0 = claim_element(li_nodes, "SPAN", { class: true });
-			var span0_nodes = children(span0);
-			claim_component(icon.$$.fragment, span0_nodes);
-			span0_nodes.forEach(detach);
-			t0 = claim_space(li_nodes);
-			span1 = claim_element(li_nodes, "SPAN", {});
-			var span1_nodes = children(span1);
-			t1 = claim_text(span1_nodes, t1_value);
-			span1_nodes.forEach(detach);
-			t2 = claim_space(li_nodes);
-			li_nodes.forEach(detach);
-			this.h();
-		},
-		h() {
-			attr(span0, "class", "icon svelte-7sz6s1");
-			attr(li, "class", "svelte-7sz6s1");
-		},
-		m(target, anchor) {
-			insert_hydration(target, li, anchor);
-			append_hydration(li, span0);
-			mount_component(icon, span0, null);
-			append_hydration(li, t0);
-			append_hydration(li, span1);
-			append_hydration(span1, t1);
-			append_hydration(li, t2);
-			current = true;
-		},
-		p(ctx, dirty) {
-			const icon_changes = {};
-			if (dirty & /*icon_list*/ 4) icon_changes.icon = /*icon*/ ctx[7];
-			icon.$set(icon_changes);
-			if ((!current || dirty & /*icon_list*/ 4) && t1_value !== (t1_value = /*label*/ ctx[8] + "")) set_data(t1, t1_value);
-		},
-		i(local) {
-			if (current) return;
-			transition_in(icon.$$.fragment, local);
-			current = true;
-		},
-		o(local) {
-			transition_out(icon.$$.fragment, local);
-			current = false;
-		},
-		d(detaching) {
-			if (detaching) detach(li);
-			destroy_component(icon);
-		}
-	};
-}
-
-// (107:4) {#each cards as card}
+// (96:4) {#each cards as card}
 function create_each_block$4(ctx) {
 	let li;
 	let div0;
@@ -4766,20 +4683,20 @@ function create_each_block$4(ctx) {
 	let t0;
 	let div2;
 	let h3;
-	let t1_value = /*card*/ ctx[4].title + "";
+	let t1_value = /*card*/ ctx[3].title + "";
 	let t1;
 	let t2;
 	let div1;
-	let raw_value = /*card*/ ctx[4].content.html + "";
+	let raw_value = /*card*/ ctx[3].content.html + "";
 	let t3;
 	let a;
 	let span;
-	let t4_value = /*card*/ ctx[4].link.label + "";
+	let t4_value = /*card*/ ctx[3].link.label + "";
 	let t4;
 	let a_href_value;
 	let t5;
 	let current;
-	icon = new Component$1({ props: { icon: /*card*/ ctx[4].icon } });
+	icon = new Component$1({ props: { icon: /*card*/ ctx[3].icon } });
 
 	return {
 		c() {
@@ -4831,13 +4748,13 @@ function create_each_block$4(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "icon svelte-7sz6s1");
-			attr(h3, "class", "title svelte-7sz6s1");
-			attr(div1, "class", "content svelte-7sz6s1");
-			attr(a, "href", a_href_value = /*card*/ ctx[4].link.url);
-			attr(a, "class", "link svelte-7sz6s1");
-			attr(div2, "class", "body svelte-7sz6s1");
-			attr(li, "class", "svelte-7sz6s1");
+			attr(div0, "class", "icon svelte-d7fulh");
+			attr(h3, "class", "title svelte-d7fulh");
+			attr(div1, "class", "content svelte-d7fulh");
+			attr(a, "href", a_href_value = /*card*/ ctx[3].link.url);
+			attr(a, "class", "link svelte-d7fulh");
+			attr(div2, "class", "body svelte-d7fulh");
+			attr(li, "class", "svelte-d7fulh");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -4859,12 +4776,12 @@ function create_each_block$4(ctx) {
 		},
 		p(ctx, dirty) {
 			const icon_changes = {};
-			if (dirty & /*cards*/ 8) icon_changes.icon = /*card*/ ctx[4].icon;
+			if (dirty & /*cards*/ 4) icon_changes.icon = /*card*/ ctx[3].icon;
 			icon.$set(icon_changes);
-			if ((!current || dirty & /*cards*/ 8) && t1_value !== (t1_value = /*card*/ ctx[4].title + "")) set_data(t1, t1_value);
-			if ((!current || dirty & /*cards*/ 8) && raw_value !== (raw_value = /*card*/ ctx[4].content.html + "")) div1.innerHTML = raw_value;			if ((!current || dirty & /*cards*/ 8) && t4_value !== (t4_value = /*card*/ ctx[4].link.label + "")) set_data(t4, t4_value);
+			if ((!current || dirty & /*cards*/ 4) && t1_value !== (t1_value = /*card*/ ctx[3].title + "")) set_data(t1, t1_value);
+			if ((!current || dirty & /*cards*/ 4) && raw_value !== (raw_value = /*card*/ ctx[3].content.html + "")) div1.innerHTML = raw_value;			if ((!current || dirty & /*cards*/ 4) && t4_value !== (t4_value = /*card*/ ctx[3].link.label + "")) set_data(t4, t4_value);
 
-			if (!current || dirty & /*cards*/ 8 && a_href_value !== (a_href_value = /*card*/ ctx[4].link.url)) {
+			if (!current || dirty & /*cards*/ 4 && a_href_value !== (a_href_value = /*card*/ ctx[3].link.url)) {
 				attr(a, "href", a_href_value);
 			}
 		},
@@ -4893,29 +4810,16 @@ function create_fragment$6(ctx) {
 	let div0;
 	let t1;
 	let t2;
-	let ul0;
-	let t3;
-	let ul1;
+	let ul;
 	let current;
-	let each_value_1 = /*icon_list*/ ctx[2];
-	let each_blocks_1 = [];
-
-	for (let i = 0; i < each_value_1.length; i += 1) {
-		each_blocks_1[i] = create_each_block_1$2(get_each_context_1$2(ctx, each_value_1, i));
-	}
-
-	const out = i => transition_out(each_blocks_1[i], 1, 1, () => {
-		each_blocks_1[i] = null;
-	});
-
-	let each_value = /*cards*/ ctx[3];
+	let each_value = /*cards*/ ctx[2];
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
 		each_blocks[i] = create_each_block$4(get_each_context$4(ctx, each_value, i));
 	}
 
-	const out_1 = i => transition_out(each_blocks[i], 1, 1, () => {
+	const out = i => transition_out(each_blocks[i], 1, 1, () => {
 		each_blocks[i] = null;
 	});
 
@@ -4929,14 +4833,7 @@ function create_fragment$6(ctx) {
 			div0 = element("div");
 			t1 = text(/*subhead*/ ctx[1]);
 			t2 = space();
-			ul0 = element("ul");
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				each_blocks_1[i].c();
-			}
-
-			t3 = space();
-			ul1 = element("ul");
+			ul = element("ul");
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
 				each_blocks[i].c();
@@ -4961,34 +4858,24 @@ function create_fragment$6(ctx) {
 			div0_nodes.forEach(detach);
 			header_nodes.forEach(detach);
 			t2 = claim_space(section_nodes);
-			ul0 = claim_element(section_nodes, "UL", { class: true });
-			var ul0_nodes = children(ul0);
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				each_blocks_1[i].l(ul0_nodes);
-			}
-
-			ul0_nodes.forEach(detach);
-			t3 = claim_space(section_nodes);
-			ul1 = claim_element(section_nodes, "UL", { class: true });
-			var ul1_nodes = children(ul1);
+			ul = claim_element(section_nodes, "UL", { class: true });
+			var ul_nodes = children(ul);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].l(ul1_nodes);
+				each_blocks[i].l(ul_nodes);
 			}
 
-			ul1_nodes.forEach(detach);
+			ul_nodes.forEach(detach);
 			section_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "heading svelte-7sz6s1");
+			attr(h2, "class", "heading svelte-d7fulh");
 			attr(div0, "class", "subheading");
-			attr(header, "class", "heading-group svelte-7sz6s1");
-			attr(ul0, "class", "icon-list svelte-7sz6s1");
-			attr(ul1, "class", "cards svelte-7sz6s1");
-			attr(section, "class", "section-container svelte-7sz6s1");
+			attr(header, "class", "heading-group svelte-d7fulh");
+			attr(ul, "class", "cards svelte-d7fulh");
+			attr(section, "class", "section-container svelte-d7fulh");
 			attr(div1, "class", "section");
 			attr(div1, "id", "section-248b2650");
 		},
@@ -5002,20 +4889,11 @@ function create_fragment$6(ctx) {
 			append_hydration(header, div0);
 			append_hydration(div0, t1);
 			append_hydration(section, t2);
-			append_hydration(section, ul0);
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				if (each_blocks_1[i]) {
-					each_blocks_1[i].m(ul0, null);
-				}
-			}
-
-			append_hydration(section, t3);
-			append_hydration(section, ul1);
+			append_hydration(section, ul);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
 				if (each_blocks[i]) {
-					each_blocks[i].m(ul1, null);
+					each_blocks[i].m(ul, null);
 				}
 			}
 
@@ -5024,35 +4902,8 @@ function create_fragment$6(ctx) {
 		p(ctx, [dirty]) {
 			if (!current || dirty & /*heading*/ 1) h2.innerHTML = /*heading*/ ctx[0];			if (!current || dirty & /*subhead*/ 2) set_data(t1, /*subhead*/ ctx[1]);
 
-			if (dirty & /*icon_list*/ 4) {
-				each_value_1 = /*icon_list*/ ctx[2];
-				let i;
-
-				for (i = 0; i < each_value_1.length; i += 1) {
-					const child_ctx = get_each_context_1$2(ctx, each_value_1, i);
-
-					if (each_blocks_1[i]) {
-						each_blocks_1[i].p(child_ctx, dirty);
-						transition_in(each_blocks_1[i], 1);
-					} else {
-						each_blocks_1[i] = create_each_block_1$2(child_ctx);
-						each_blocks_1[i].c();
-						transition_in(each_blocks_1[i], 1);
-						each_blocks_1[i].m(ul0, null);
-					}
-				}
-
-				group_outros();
-
-				for (i = each_value_1.length; i < each_blocks_1.length; i += 1) {
-					out(i);
-				}
-
-				check_outros();
-			}
-
-			if (dirty & /*cards*/ 8) {
-				each_value = /*cards*/ ctx[3];
+			if (dirty & /*cards*/ 4) {
+				each_value = /*cards*/ ctx[2];
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
@@ -5065,14 +4916,14 @@ function create_fragment$6(ctx) {
 						each_blocks[i] = create_each_block$4(child_ctx);
 						each_blocks[i].c();
 						transition_in(each_blocks[i], 1);
-						each_blocks[i].m(ul1, null);
+						each_blocks[i].m(ul, null);
 					}
 				}
 
 				group_outros();
 
 				for (i = each_value.length; i < each_blocks.length; i += 1) {
-					out_1(i);
+					out(i);
 				}
 
 				check_outros();
@@ -5081,10 +4932,6 @@ function create_fragment$6(ctx) {
 		i(local) {
 			if (current) return;
 
-			for (let i = 0; i < each_value_1.length; i += 1) {
-				transition_in(each_blocks_1[i]);
-			}
-
 			for (let i = 0; i < each_value.length; i += 1) {
 				transition_in(each_blocks[i]);
 			}
@@ -5092,12 +4939,6 @@ function create_fragment$6(ctx) {
 			current = true;
 		},
 		o(local) {
-			each_blocks_1 = each_blocks_1.filter(Boolean);
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				transition_out(each_blocks_1[i]);
-			}
-
 			each_blocks = each_blocks.filter(Boolean);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -5108,7 +4949,6 @@ function create_fragment$6(ctx) {
 		},
 		d(detaching) {
 			if (detaching) detach(div1);
-			destroy_each(each_blocks_1, detaching);
 			destroy_each(each_blocks, detaching);
 		}
 	};
@@ -5117,29 +4957,21 @@ function create_fragment$6(ctx) {
 function instance$5($$self, $$props, $$invalidate) {
 	let { heading } = $$props;
 	let { subhead } = $$props;
-	let { icon_list } = $$props;
 	let { cards } = $$props;
 
 	$$self.$$set = $$props => {
 		if ('heading' in $$props) $$invalidate(0, heading = $$props.heading);
 		if ('subhead' in $$props) $$invalidate(1, subhead = $$props.subhead);
-		if ('icon_list' in $$props) $$invalidate(2, icon_list = $$props.icon_list);
-		if ('cards' in $$props) $$invalidate(3, cards = $$props.cards);
+		if ('cards' in $$props) $$invalidate(2, cards = $$props.cards);
 	};
 
-	return [heading, subhead, icon_list, cards];
+	return [heading, subhead, cards];
 }
 
 class Component$6 extends SvelteComponent {
 	constructor(options) {
 		super();
-
-		init(this, options, instance$5, create_fragment$6, safe_not_equal, {
-			heading: 0,
-			subhead: 1,
-			icon_list: 2,
-			cards: 3
-		});
+		init(this, options, instance$5, create_fragment$6, safe_not_equal, { heading: 0, subhead: 1, cards: 2 });
 	}
 }
 
@@ -5202,15 +5034,15 @@ function get_each_context$5(ctx, list, i) {
 	return child_ctx;
 }
 
-function get_each_context_1$3(ctx, list, i) {
+function get_each_context_1$2(ctx, list, i) {
 	const child_ctx = ctx.slice();
 	child_ctx[8] = list[i].link;
 	child_ctx[9] = list[i].icon;
 	return child_ctx;
 }
 
-// (97:6) {#each social as { link, icon }}
-function create_each_block_1$3(ctx) {
+// (98:6) {#each social as { link, icon }}
+function create_each_block_1$2(ctx) {
 	let a;
 	let span;
 	let icon;
@@ -5246,9 +5078,9 @@ function create_each_block_1$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "icon svelte-vg5h0p");
+			attr(span, "class", "icon svelte-rbezk5");
 			attr(a, "href", a_href_value = /*link*/ ctx[8].url);
-			attr(a, "class", "svelte-vg5h0p");
+			attr(a, "class", "svelte-rbezk5");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -5285,7 +5117,7 @@ function create_each_block_1$3(ctx) {
 	};
 }
 
-// (114:6) {:else}
+// (115:6) {:else}
 function create_else_block$1(ctx) {
 	let label;
 	let span;
@@ -5324,11 +5156,11 @@ function create_else_block$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "svelte-vg5h0p");
+			attr(span, "class", "svelte-rbezk5");
 			attr(input, "type", input_type_value = /*input*/ ctx[5].type || "text");
 			attr(input, "placeholder", input_placeholder_value = /*input*/ ctx[5].placeholder);
-			attr(input, "class", "svelte-vg5h0p");
-			attr(label, "class", "svelte-vg5h0p");
+			attr(input, "class", "svelte-rbezk5");
+			attr(label, "class", "svelte-rbezk5");
 		},
 		m(target, anchor) {
 			insert_hydration(target, label, anchor);
@@ -5354,7 +5186,7 @@ function create_else_block$1(ctx) {
 	};
 }
 
-// (109:6) {#if input.type === "textarea"}
+// (110:6) {#if input.type === "textarea"}
 function create_if_block$2(ctx) {
 	let label;
 	let span;
@@ -5386,9 +5218,9 @@ function create_if_block$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "svelte-vg5h0p");
-			attr(textarea, "class", "svelte-vg5h0p");
-			attr(label, "class", "svelte-vg5h0p");
+			attr(span, "class", "svelte-rbezk5");
+			attr(textarea, "class", "svelte-rbezk5");
+			attr(label, "class", "svelte-rbezk5");
 		},
 		m(target, anchor) {
 			insert_hydration(target, label, anchor);
@@ -5406,7 +5238,7 @@ function create_if_block$2(ctx) {
 	};
 }
 
-// (108:4) {#each inputs as input, i}
+// (109:4) {#each inputs as input, i}
 function create_each_block$5(ctx) {
 	let if_block_anchor;
 
@@ -5471,7 +5303,7 @@ function create_fragment$8(ctx) {
 	let each_blocks_1 = [];
 
 	for (let i = 0; i < each_value_1.length; i += 1) {
-		each_blocks_1[i] = create_each_block_1$3(get_each_context_1$3(ctx, each_value_1, i));
+		each_blocks_1[i] = create_each_block_1$2(get_each_context_1$2(ctx, each_value_1, i));
 	}
 
 	const out = i => transition_out(each_blocks_1[i], 1, 1, () => {
@@ -5558,13 +5390,13 @@ function create_fragment$8(ctx) {
 		},
 		h() {
 			attr(h2, "class", "heading");
-			attr(div0, "class", "body svelte-vg5h0p");
-			attr(div1, "class", "social-links svelte-vg5h0p");
-			attr(div2, "class", "content svelte-vg5h0p");
-			attr(button, "class", "button primary positive svelte-vg5h0p");
+			attr(div0, "class", "body svelte-rbezk5");
+			attr(div1, "class", "social-links svelte-rbezk5");
+			attr(div2, "class", "content svelte-rbezk5");
+			attr(button, "class", "button primary positive svelte-rbezk5");
 			attr(button, "type", "submit");
-			attr(form, "class", "svelte-vg5h0p");
-			attr(section, "class", "section-container svelte-vg5h0p");
+			attr(form, "class", "svelte-rbezk5");
+			attr(section, "class", "section-container svelte-rbezk5");
 			attr(div3, "class", "section");
 			attr(div3, "id", "section-352791c5");
 		},
@@ -5608,13 +5440,13 @@ function create_fragment$8(ctx) {
 				let i;
 
 				for (i = 0; i < each_value_1.length; i += 1) {
-					const child_ctx = get_each_context_1$3(ctx, each_value_1, i);
+					const child_ctx = get_each_context_1$2(ctx, each_value_1, i);
 
 					if (each_blocks_1[i]) {
 						each_blocks_1[i].p(child_ctx, dirty);
 						transition_in(each_blocks_1[i], 1);
 					} else {
-						each_blocks_1[i] = create_each_block_1$3(child_ctx);
+						each_blocks_1[i] = create_each_block_1$2(child_ctx);
 						each_blocks_1[i].c();
 						transition_in(each_blocks_1[i], 1);
 						each_blocks_1[i].m(div1, null);
@@ -5885,14 +5717,14 @@ function get_each_context$7(ctx, list, i) {
 	return child_ctx;
 }
 
-function get_each_context_1$4(ctx, list, i) {
+function get_each_context_1$3(ctx, list, i) {
 	const child_ctx = ctx.slice();
 	child_ctx[2] = list[i].link;
 	return child_ctx;
 }
 
 // (72:4) {#each nav as { link }}
-function create_each_block_1$4(ctx) {
+function create_each_block_1$3(ctx) {
 	let a;
 	let t_value = /*link*/ ctx[2].label + "";
 	let t;
@@ -6014,7 +5846,7 @@ function create_fragment$a(ctx) {
 	let each_blocks_1 = [];
 
 	for (let i = 0; i < each_value_1.length; i += 1) {
-		each_blocks_1[i] = create_each_block_1$4(get_each_context_1$4(ctx, each_value_1, i));
+		each_blocks_1[i] = create_each_block_1$3(get_each_context_1$3(ctx, each_value_1, i));
 	}
 
 	let each_value = /*social*/ ctx[1];
@@ -6114,12 +5946,12 @@ function create_fragment$a(ctx) {
 				let i;
 
 				for (i = 0; i < each_value_1.length; i += 1) {
-					const child_ctx = get_each_context_1$4(ctx, each_value_1, i);
+					const child_ctx = get_each_context_1$3(ctx, each_value_1, i);
 
 					if (each_blocks_1[i]) {
 						each_blocks_1[i].p(child_ctx, dirty);
 					} else {
-						each_blocks_1[i] = create_each_block_1$4(child_ctx);
+						each_blocks_1[i] = create_each_block_1$3(child_ctx);
 						each_blocks_1[i].c();
 						each_blocks_1[i].m(nav_1, null);
 					}
@@ -6493,7 +6325,6 @@ function create_fragment$b(ctx) {
 			props: {
 				heading: "La màgia del Pi en acció!",
 				subhead: "",
-				icon_list: [],
 				cards: [
 					{
 						"icon": "akar-icons:music",
@@ -6566,8 +6397,8 @@ function create_fragment$b(ctx) {
 					},
 					{
 						"link": {
-							"label": "Comissions",
-							"url": "/comissions"
+							"url": "/comissions",
+							"label": "Comissions"
 						}
 					},
 					{

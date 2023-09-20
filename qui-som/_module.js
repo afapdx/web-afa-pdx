@@ -1022,17 +1022,17 @@ function create_fragment(ctx) {
 			link0 = element("link");
 			link1 = element("link");
 			style = element("style");
-			t = text("@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\nhr {\n    border-top-width: 4px;\n    border-color: #194027;\n  border-style: dotted;\n}\n:root {\n  --verd-fosc: #194027;\n  --verd-clar:  #388762;\n  --taronja: #ff7f3f;\n  --lila-fosc: #dac9fa;\n  --lila: #e8e1fd;\n  --verd-fluor: #f3f7a5;\n  --crema: #fff5eb;\n  \n  --background: var(--crema);\n\n  --color-accent: var(--verd-fosc);\n}\n\n#page {\n  font-family: 'Space Grotesk', system-ui, sans-serif;\n  color: var(--color-accent);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n}\n\n.button {\n  color: var(--crema);\n  padding: 0.5em 1.1em;\n  border-radius: 12px;\n}\n\n.button.primary.positive {\n    background-color: var(--color-accent);\n  }\n\n.button.primary.positive:hover {\n      background-color: var(--verd-clar);\n    }\n\n.button.secondary.positive, .button.tertiary.positive {\n    color: var(--color-accent);\n  }\n\n.button.secondary.positive:hover, .button.tertiary.positive:hover {\n      color: var(--verd-clar);\n    }\n\n.button.secondary.positive {\n    border: 1px solid var(--color-accent);\n  }\n\n.button.secondary.positive:hover {\n      border-color: var(--verd-clar);\n    }\n\n.button.primary.negative {\n    background-color: var(--crema) !important;\n    color: var(--color-accent);\n  }\n\n.button.primary.negative:hover {\n      background-color: var(--lila) !important;\n    }\n\n.button.secondary.negative:hover, .button.tertiary.negative:hover {\n      color: var(--lila);\n    }\n\n.button.secondary.negative {\n    border: 1px solid var(--crema);\n  }\n\n.button.secondary.negative:hover {\n      border-color: var(--lila);\n    }");
+			t = text("@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');\n\nhr {\n    border-top-width: 4px;\n    border-color: #194027;\n  border-style: dotted;\n}\n:root {\n  --verd-fosc: #194027;\n  --verd-clar:  #388762;\n  --taronja: #ff7f3f;\n  --lila-fosc: #dac9fa;\n  --lila: #e8e1fd;\n  --verd-fluor: #f3f7a5;\n  --crema: #fff5eb;\n  \n  --background: var(--crema);\n\n  --color-accent: var(--verd-fosc);\n}\n\n#page {\n  font-family: 'Space Grotesk', system-ui, sans-serif;\n  color: var(--color-accent);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n  font-family: 'Yeseva One';\n}\n\n.button {\n  color: var(--crema);\n  padding: 0.5em 1.1em;\n  border-radius: 12px;\n}\n\n.button.primary.positive {\n    background-color: var(--color-accent);\n  }\n\n.button.primary.positive:hover {\n      background-color: var(--verd-clar);\n    }\n\n.button.secondary.positive, .button.tertiary.positive {\n    color: var(--color-accent);\n  }\n\n.button.secondary.positive:hover, .button.tertiary.positive:hover {\n      color: var(--verd-clar);\n    }\n\n.button.secondary.positive {\n    border: 1px solid var(--color-accent);\n  }\n\n.button.secondary.positive:hover {\n      border-color: var(--verd-clar);\n    }\n\n.button.primary.negative {\n    background-color: var(--crema) !important;\n    color: var(--color-accent);\n  }\n\n.button.primary.negative:hover {\n      background-color: var(--lila) !important;\n    }\n\n.button.secondary.negative:hover, .button.tertiary.negative:hover {\n      color: var(--lila);\n    }\n\n.button.secondary.negative {\n    border: 1px solid var(--crema);\n  }\n\n.button.secondary.negative:hover {\n      border-color: var(--lila);\n    }");
 			this.h();
 		},
 		l(nodes) {
-			const head_nodes = head_selector('svelte-1vga2bx', document.head);
+			const head_nodes = head_selector('svelte-58rhef', document.head);
 			meta = claim_element(head_nodes, "META", { name: true, content: true });
 			link0 = claim_element(head_nodes, "LINK", { rel: true, type: true, href: true });
 			link1 = claim_element(head_nodes, "LINK", { rel: true, type: true, href: true });
 			style = claim_element(head_nodes, "STYLE", {});
 			var style_nodes = children(style);
-			t = claim_text(style_nodes, "@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\nhr {\n    border-top-width: 4px;\n    border-color: #194027;\n  border-style: dotted;\n}\n:root {\n  --verd-fosc: #194027;\n  --verd-clar:  #388762;\n  --taronja: #ff7f3f;\n  --lila-fosc: #dac9fa;\n  --lila: #e8e1fd;\n  --verd-fluor: #f3f7a5;\n  --crema: #fff5eb;\n  \n  --background: var(--crema);\n\n  --color-accent: var(--verd-fosc);\n}\n\n#page {\n  font-family: 'Space Grotesk', system-ui, sans-serif;\n  color: var(--color-accent);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n}\n\n.button {\n  color: var(--crema);\n  padding: 0.5em 1.1em;\n  border-radius: 12px;\n}\n\n.button.primary.positive {\n    background-color: var(--color-accent);\n  }\n\n.button.primary.positive:hover {\n      background-color: var(--verd-clar);\n    }\n\n.button.secondary.positive, .button.tertiary.positive {\n    color: var(--color-accent);\n  }\n\n.button.secondary.positive:hover, .button.tertiary.positive:hover {\n      color: var(--verd-clar);\n    }\n\n.button.secondary.positive {\n    border: 1px solid var(--color-accent);\n  }\n\n.button.secondary.positive:hover {\n      border-color: var(--verd-clar);\n    }\n\n.button.primary.negative {\n    background-color: var(--crema) !important;\n    color: var(--color-accent);\n  }\n\n.button.primary.negative:hover {\n      background-color: var(--lila) !important;\n    }\n\n.button.secondary.negative:hover, .button.tertiary.negative:hover {\n      color: var(--lila);\n    }\n\n.button.secondary.negative {\n    border: 1px solid var(--crema);\n  }\n\n.button.secondary.negative:hover {\n      border-color: var(--lila);\n    }");
+			t = claim_text(style_nodes, "@import url(\"https://unpkg.com/@primo-app/primo@1.3.64/reset.css\");\n@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');\n\nhr {\n    border-top-width: 4px;\n    border-color: #194027;\n  border-style: dotted;\n}\n:root {\n  --verd-fosc: #194027;\n  --verd-clar:  #388762;\n  --taronja: #ff7f3f;\n  --lila-fosc: #dac9fa;\n  --lila: #e8e1fd;\n  --verd-fluor: #f3f7a5;\n  --crema: #fff5eb;\n  \n  --background: var(--crema);\n\n  --color-accent: var(--verd-fosc);\n}\n\n#page {\n  font-family: 'Space Grotesk', system-ui, sans-serif;\n  color: var(--color-accent);\n  line-height: 1.6; \n  font-size: 1rem;\n  background: var(--background);\n}\n\n.section-container {\n  max-width: var(--max-width, 1000px);\n  margin: 0 auto;\n  padding: 3rem var(--padding, 1rem); \n}\n\n.heading {\n  font-size: 3rem;\n  line-height: 1;\n  font-weight: 700;\n  margin: 0;\n  font-family: 'Yeseva One';\n}\n\n.button {\n  color: var(--crema);\n  padding: 0.5em 1.1em;\n  border-radius: 12px;\n}\n\n.button.primary.positive {\n    background-color: var(--color-accent);\n  }\n\n.button.primary.positive:hover {\n      background-color: var(--verd-clar);\n    }\n\n.button.secondary.positive, .button.tertiary.positive {\n    color: var(--color-accent);\n  }\n\n.button.secondary.positive:hover, .button.tertiary.positive:hover {\n      color: var(--verd-clar);\n    }\n\n.button.secondary.positive {\n    border: 1px solid var(--color-accent);\n  }\n\n.button.secondary.positive:hover {\n      border-color: var(--verd-clar);\n    }\n\n.button.primary.negative {\n    background-color: var(--crema) !important;\n    color: var(--color-accent);\n  }\n\n.button.primary.negative:hover {\n      background-color: var(--lila) !important;\n    }\n\n.button.secondary.negative:hover, .button.tertiary.negative:hover {\n      color: var(--lila);\n    }\n\n.button.secondary.negative {\n    border: 1px solid var(--crema);\n  }\n\n.button.secondary.negative:hover {\n      border-color: var(--lila);\n    }");
 			style_nodes.forEach(detach);
 			head_nodes.forEach(detach);
 			this.h();
@@ -4646,7 +4646,7 @@ function get_each_context$4(ctx, list, i) {
 	return child_ctx;
 }
 
-// (50:4) {#each cards as card}
+// (51:4) {#each cards as card}
 function create_each_block$4(ctx) {
 	let li;
 	let h3;
@@ -4709,10 +4709,10 @@ function create_each_block$4(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span1, "class", "label svelte-gc3typ");
-			attr(h3, "class", "title svelte-gc3typ");
+			attr(span1, "class", "label svelte-1w4x0lq");
+			attr(h3, "class", "title svelte-1w4x0lq");
 			attr(div, "class", "description");
-			attr(li, "class", "svelte-gc3typ");
+			attr(li, "class", "svelte-1w4x0lq");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -4807,9 +4807,9 @@ function create_fragment$6(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "heading svelte-gc3typ");
-			attr(ul, "class", "svelte-gc3typ");
-			attr(section, "class", "section-container svelte-gc3typ");
+			attr(h2, "class", "heading svelte-1w4x0lq");
+			attr(ul, "class", "svelte-1w4x0lq");
+			attr(section, "class", "section-container svelte-1w4x0lq");
 			attr(div, "class", "section");
 			attr(div, "id", "section-b27797e1");
 		},
@@ -5232,7 +5232,7 @@ function get_each_context_1$2(ctx, list, i) {
 	return child_ctx;
 }
 
-// (97:6) {#each social as { link, icon }}
+// (98:6) {#each social as { link, icon }}
 function create_each_block_1$2(ctx) {
 	let a;
 	let span;
@@ -5269,9 +5269,9 @@ function create_each_block_1$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "icon svelte-vg5h0p");
+			attr(span, "class", "icon svelte-rbezk5");
 			attr(a, "href", a_href_value = /*link*/ ctx[8].url);
-			attr(a, "class", "svelte-vg5h0p");
+			attr(a, "class", "svelte-rbezk5");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -5308,7 +5308,7 @@ function create_each_block_1$2(ctx) {
 	};
 }
 
-// (114:6) {:else}
+// (115:6) {:else}
 function create_else_block$1(ctx) {
 	let label;
 	let span;
@@ -5347,11 +5347,11 @@ function create_else_block$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "svelte-vg5h0p");
+			attr(span, "class", "svelte-rbezk5");
 			attr(input, "type", input_type_value = /*input*/ ctx[5].type || "text");
 			attr(input, "placeholder", input_placeholder_value = /*input*/ ctx[5].placeholder);
-			attr(input, "class", "svelte-vg5h0p");
-			attr(label, "class", "svelte-vg5h0p");
+			attr(input, "class", "svelte-rbezk5");
+			attr(label, "class", "svelte-rbezk5");
 		},
 		m(target, anchor) {
 			insert_hydration(target, label, anchor);
@@ -5377,7 +5377,7 @@ function create_else_block$1(ctx) {
 	};
 }
 
-// (109:6) {#if input.type === "textarea"}
+// (110:6) {#if input.type === "textarea"}
 function create_if_block$5(ctx) {
 	let label;
 	let span;
@@ -5409,9 +5409,9 @@ function create_if_block$5(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span, "class", "svelte-vg5h0p");
-			attr(textarea, "class", "svelte-vg5h0p");
-			attr(label, "class", "svelte-vg5h0p");
+			attr(span, "class", "svelte-rbezk5");
+			attr(textarea, "class", "svelte-rbezk5");
+			attr(label, "class", "svelte-rbezk5");
 		},
 		m(target, anchor) {
 			insert_hydration(target, label, anchor);
@@ -5429,7 +5429,7 @@ function create_if_block$5(ctx) {
 	};
 }
 
-// (108:4) {#each inputs as input, i}
+// (109:4) {#each inputs as input, i}
 function create_each_block$6(ctx) {
 	let if_block_anchor;
 
@@ -5581,13 +5581,13 @@ function create_fragment$9(ctx) {
 		},
 		h() {
 			attr(h2, "class", "heading");
-			attr(div0, "class", "body svelte-vg5h0p");
-			attr(div1, "class", "social-links svelte-vg5h0p");
-			attr(div2, "class", "content svelte-vg5h0p");
-			attr(button, "class", "button primary positive svelte-vg5h0p");
+			attr(div0, "class", "body svelte-rbezk5");
+			attr(div1, "class", "social-links svelte-rbezk5");
+			attr(div2, "class", "content svelte-rbezk5");
+			attr(button, "class", "button primary positive svelte-rbezk5");
 			attr(button, "type", "submit");
-			attr(form, "class", "svelte-vg5h0p");
-			attr(section, "class", "section-container svelte-vg5h0p");
+			attr(form, "class", "svelte-rbezk5");
+			attr(section, "class", "section-container svelte-rbezk5");
 			attr(div3, "class", "section");
 			attr(div3, "id", "section-7a7ebdda");
 		},
@@ -6523,8 +6523,8 @@ function create_fragment$c(ctx) {
 					},
 					{
 						"link": {
-							"label": "Comissions",
-							"url": "/comissions"
+							"url": "/comissions",
+							"label": "Comissions"
 						}
 					},
 					{
