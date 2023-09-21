@@ -3707,6 +3707,11 @@ function create_each_block$1(ctx) {
 	let div0;
 	let raw_value = /*item*/ ctx[1].description + "";
 	let t3;
+	let a;
+	let t4_value = /*item*/ ctx[1].link.label + "";
+	let t4;
+	let a_href_value;
+	let t5;
 	let if_block = /*item*/ ctx[1].image.url && create_if_block$2(ctx);
 
 	return {
@@ -3720,6 +3725,9 @@ function create_each_block$1(ctx) {
 			t2 = space();
 			div0 = element("div");
 			t3 = space();
+			a = element("a");
+			t4 = text(t4_value);
+			t5 = space();
 			this.h();
 		},
 		l(nodes) {
@@ -3737,14 +3745,21 @@ function create_each_block$1(ctx) {
 			div0 = claim_element(div1_nodes, "DIV", { class: true });
 			var div0_nodes = children(div0);
 			div0_nodes.forEach(detach);
+			t3 = claim_space(div1_nodes);
+			a = claim_element(div1_nodes, "A", { class: true, href: true });
+			var a_nodes = children(a);
+			t4 = claim_text(a_nodes, t4_value);
+			a_nodes.forEach(detach);
 			div1_nodes.forEach(detach);
-			t3 = claim_space(div2_nodes);
+			t5 = claim_space(div2_nodes);
 			div2_nodes.forEach(detach);
 			this.h();
 		},
 		h() {
 			attr(h2, "class", "title heading svelte-1sexf5z");
 			attr(div0, "class", "description");
+			attr(a, "class", "button secondary positive svelte-1xtducc");
+			attr(a, "href", a_href_value = /*item*/ ctx[1].link.url);
 			attr(div1, "class", "body svelte-1sexf5z");
 			attr(div2, "class", "item svelte-1sexf5z");
 		},
@@ -3758,7 +3773,10 @@ function create_each_block$1(ctx) {
 			append_hydration(div1, t2);
 			append_hydration(div1, div0);
 			div0.innerHTML = raw_value;
-			append_hydration(div2, t3);
+			append_hydration(div1, t3);
+			append_hydration(div1, a);
+			append_hydration(a, t4);
+			append_hydration(div2, t5);
 		},
 		p(ctx, dirty) {
 			if (/*item*/ ctx[1].image.url) {
@@ -3775,7 +3793,12 @@ function create_each_block$1(ctx) {
 			}
 
 			if (dirty & /*items*/ 1 && t1_value !== (t1_value = /*item*/ ctx[1].title + "")) set_data(t1, t1_value);
-			if (dirty & /*items*/ 1 && raw_value !== (raw_value = /*item*/ ctx[1].description + "")) div0.innerHTML = raw_value;		},
+			if (dirty & /*items*/ 1 && raw_value !== (raw_value = /*item*/ ctx[1].description + "")) div0.innerHTML = raw_value;			if (dirty & /*items*/ 1 && t4_value !== (t4_value = /*item*/ ctx[1].link.label + "")) set_data(t4, t4_value);
+
+			if (dirty & /*items*/ 1 && a_href_value !== (a_href_value = /*item*/ ctx[1].link.url)) {
+				attr(a, "href", a_href_value);
+			}
+		},
 		d(detaching) {
 			if (detaching) detach(div2);
 			if (if_block) if_block.d();
@@ -5300,6 +5323,10 @@ function create_fragment$9(ctx) {
 			props: {
 				items: [
 					{
+						"": { "url": "", "label": "" },
+						"l": { "url": "", "label": "" },
+						"li": { "url": "", "label": "" },
+						"lin": { "url": "", "label": "" },
 						"link": {
 							"url": "/projectes/gestio-de-textil",
 							"label": "Descobreix les properes dates"
@@ -5311,9 +5338,14 @@ function create_fragment$9(ctx) {
 							"size": 105
 						},
 						"title": "Gestió de Tèxtil",
-						"description": "Finançant-les, detectant les necessitats, fent la gestió amb l’administració corresponent i col·laborant amb el projecte hem millorat les infraestructures de l’escola."
+						"description": "Finançant-les, detectant les necessitats, fent la gestió amb l’administració corresponent i col·laborant amb el projecte hem millorat les infraestructures de l’escola.",
+						"descobreix_les_properes_dates": { "url": "", "label": "" }
 					},
 					{
+						"": { "url": "", "label": "" },
+						"l": { "url": "", "label": "" },
+						"li": { "url": "", "label": "" },
+						"lin": { "url": "", "label": "" },
 						"link": {
 							"url": "/projectes",
 							"label": "Veure més"
@@ -5325,7 +5357,8 @@ function create_fragment$9(ctx) {
 							"size": 2111
 						},
 						"title": "Millora de les infraestructures de l’escola",
-						"description": "Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola"
+						"description": "Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola",
+						"descobreix_les_properes_dates": { "url": "", "label": "" }
 					}
 				]
 			}
