@@ -3657,8 +3657,8 @@ function get_each_context$1(ctx, list, i) {
 	return child_ctx;
 }
 
-// (82:8) {#if teaser.image.url}
-function create_if_block_1$2(ctx) {
+// (48:8) {#if item.image.url}
+function create_if_block$2(ctx) {
 	let img;
 	let img_src_value;
 	let img_alt_value;
@@ -3673,19 +3673,19 @@ function create_if_block_1$2(ctx) {
 			this.h();
 		},
 		h() {
-			if (!src_url_equal(img.src, img_src_value = /*teaser*/ ctx[1].image.url)) attr(img, "src", img_src_value);
-			attr(img, "alt", img_alt_value = /*teaser*/ ctx[1].image.alt);
-			attr(img, "class", "svelte-1s2asns");
+			if (!src_url_equal(img.src, img_src_value = /*item*/ ctx[1].image.url)) attr(img, "src", img_src_value);
+			attr(img, "alt", img_alt_value = /*item*/ ctx[1].image.alt);
+			attr(img, "class", "svelte-1sexf5z");
 		},
 		m(target, anchor) {
 			insert_hydration(target, img, anchor);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*teasers*/ 1 && !src_url_equal(img.src, img_src_value = /*teaser*/ ctx[1].image.url)) {
+			if (dirty & /*items*/ 1 && !src_url_equal(img.src, img_src_value = /*item*/ ctx[1].image.url)) {
 				attr(img, "src", img_src_value);
 			}
 
-			if (dirty & /*teasers*/ 1 && img_alt_value !== (img_alt_value = /*teaser*/ ctx[1].image.alt)) {
+			if (dirty & /*items*/ 1 && img_alt_value !== (img_alt_value = /*item*/ ctx[1].image.alt)) {
 				attr(img, "alt", img_alt_value);
 			}
 		},
@@ -3695,67 +3695,24 @@ function create_if_block_1$2(ctx) {
 	};
 }
 
-// (88:10) {#if teaser.link.url}
-function create_if_block$2(ctx) {
-	let a;
-	let t_value = /*teaser*/ ctx[1].link.label + "";
-	let t;
-	let a_href_value;
-
-	return {
-		c() {
-			a = element("a");
-			t = text(t_value);
-			this.h();
-		},
-		l(nodes) {
-			a = claim_element(nodes, "A", { class: true, href: true });
-			var a_nodes = children(a);
-			t = claim_text(a_nodes, t_value);
-			a_nodes.forEach(detach);
-			this.h();
-		},
-		h() {
-			attr(a, "class", "link svelte-1s2asns");
-			attr(a, "href", a_href_value = /*teaser*/ ctx[1].link.url);
-		},
-		m(target, anchor) {
-			insert_hydration(target, a, anchor);
-			append_hydration(a, t);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*teasers*/ 1 && t_value !== (t_value = /*teaser*/ ctx[1].link.label + "")) set_data(t, t_value);
-
-			if (dirty & /*teasers*/ 1 && a_href_value !== (a_href_value = /*teaser*/ ctx[1].link.url)) {
-				attr(a, "href", a_href_value);
-			}
-		},
-		d(detaching) {
-			if (detaching) detach(a);
-		}
-	};
-}
-
-// (80:4) {#each teasers as teaser}
+// (46:4) {#each items as item}
 function create_each_block$1(ctx) {
 	let div2;
 	let t0;
 	let div1;
 	let h2;
-	let t1_value = /*teaser*/ ctx[1].title + "";
+	let t1_value = /*item*/ ctx[1].title + "";
 	let t1;
 	let t2;
 	let div0;
-	let raw_value = /*teaser*/ ctx[1].content.html + "";
+	let raw_value = /*item*/ ctx[1].description + "";
 	let t3;
-	let t4;
-	let if_block0 = /*teaser*/ ctx[1].image.url && create_if_block_1$2(ctx);
-	let if_block1 = /*teaser*/ ctx[1].link.url && create_if_block$2(ctx);
+	let if_block = /*item*/ ctx[1].image.url && create_if_block$2(ctx);
 
 	return {
 		c() {
 			div2 = element("div");
-			if (if_block0) if_block0.c();
+			if (if_block) if_block.c();
 			t0 = space();
 			div1 = element("div");
 			h2 = element("h2");
@@ -3763,14 +3720,12 @@ function create_each_block$1(ctx) {
 			t2 = space();
 			div0 = element("div");
 			t3 = space();
-			if (if_block1) if_block1.c();
-			t4 = space();
 			this.h();
 		},
 		l(nodes) {
 			div2 = claim_element(nodes, "DIV", { class: true });
 			var div2_nodes = children(div2);
-			if (if_block0) if_block0.l(div2_nodes);
+			if (if_block) if_block.l(div2_nodes);
 			t0 = claim_space(div2_nodes);
 			div1 = claim_element(div2_nodes, "DIV", { class: true });
 			var div1_nodes = children(div1);
@@ -3782,22 +3737,20 @@ function create_each_block$1(ctx) {
 			div0 = claim_element(div1_nodes, "DIV", { class: true });
 			var div0_nodes = children(div0);
 			div0_nodes.forEach(detach);
-			t3 = claim_space(div1_nodes);
-			if (if_block1) if_block1.l(div1_nodes);
 			div1_nodes.forEach(detach);
-			t4 = claim_space(div2_nodes);
+			t3 = claim_space(div2_nodes);
 			div2_nodes.forEach(detach);
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "title svelte-1s2asns");
-			attr(div0, "class", "content");
-			attr(div1, "class", "body svelte-1s2asns");
-			attr(div2, "class", "teaser svelte-1s2asns");
+			attr(h2, "class", "title heading svelte-1sexf5z");
+			attr(div0, "class", "description");
+			attr(div1, "class", "body svelte-1sexf5z");
+			attr(div2, "class", "item svelte-1sexf5z");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div2, anchor);
-			if (if_block0) if_block0.m(div2, null);
+			if (if_block) if_block.m(div2, null);
 			append_hydration(div2, t0);
 			append_hydration(div2, div1);
 			append_hydration(div1, h2);
@@ -3805,43 +3758,27 @@ function create_each_block$1(ctx) {
 			append_hydration(div1, t2);
 			append_hydration(div1, div0);
 			div0.innerHTML = raw_value;
-			append_hydration(div1, t3);
-			if (if_block1) if_block1.m(div1, null);
-			append_hydration(div2, t4);
+			append_hydration(div2, t3);
 		},
 		p(ctx, dirty) {
-			if (/*teaser*/ ctx[1].image.url) {
-				if (if_block0) {
-					if_block0.p(ctx, dirty);
+			if (/*item*/ ctx[1].image.url) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
 				} else {
-					if_block0 = create_if_block_1$2(ctx);
-					if_block0.c();
-					if_block0.m(div2, t0);
+					if_block = create_if_block$2(ctx);
+					if_block.c();
+					if_block.m(div2, t0);
 				}
-			} else if (if_block0) {
-				if_block0.d(1);
-				if_block0 = null;
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
 			}
 
-			if (dirty & /*teasers*/ 1 && t1_value !== (t1_value = /*teaser*/ ctx[1].title + "")) set_data(t1, t1_value);
-			if (dirty & /*teasers*/ 1 && raw_value !== (raw_value = /*teaser*/ ctx[1].content.html + "")) div0.innerHTML = raw_value;
-			if (/*teaser*/ ctx[1].link.url) {
-				if (if_block1) {
-					if_block1.p(ctx, dirty);
-				} else {
-					if_block1 = create_if_block$2(ctx);
-					if_block1.c();
-					if_block1.m(div1, null);
-				}
-			} else if (if_block1) {
-				if_block1.d(1);
-				if_block1 = null;
-			}
-		},
+			if (dirty & /*items*/ 1 && t1_value !== (t1_value = /*item*/ ctx[1].title + "")) set_data(t1, t1_value);
+			if (dirty & /*items*/ 1 && raw_value !== (raw_value = /*item*/ ctx[1].description + "")) div0.innerHTML = raw_value;		},
 		d(detaching) {
 			if (detaching) detach(div2);
-			if (if_block0) if_block0.d();
-			if (if_block1) if_block1.d();
+			if (if_block) if_block.d();
 		}
 	};
 }
@@ -3850,7 +3787,7 @@ function create_fragment$3(ctx) {
 	let div1;
 	let section;
 	let div0;
-	let each_value = /*teasers*/ ctx[0];
+	let each_value = /*items*/ ctx[0];
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
@@ -3887,10 +3824,10 @@ function create_fragment$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "teasers svelte-1s2asns");
-			attr(section, "class", "section-container");
+			attr(div0, "class", "items svelte-1sexf5z");
+			attr(section, "class", "section-container svelte-1sexf5z");
 			attr(div1, "class", "section");
-			attr(div1, "id", "section-bbf162a1");
+			attr(div1, "id", "section-cc647fcf");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div1, anchor);
@@ -3904,8 +3841,8 @@ function create_fragment$3(ctx) {
 			}
 		},
 		p(ctx, [dirty]) {
-			if (dirty & /*teasers*/ 1) {
-				each_value = /*teasers*/ ctx[0];
+			if (dirty & /*items*/ 1) {
+				each_value = /*items*/ ctx[0];
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
@@ -3937,19 +3874,19 @@ function create_fragment$3(ctx) {
 }
 
 function instance$2($$self, $$props, $$invalidate) {
-	let { teasers } = $$props;
+	let { items } = $$props;
 
 	$$self.$$set = $$props => {
-		if ('teasers' in $$props) $$invalidate(0, teasers = $$props.teasers);
+		if ('items' in $$props) $$invalidate(0, items = $$props.items);
 	};
 
-	return [teasers];
+	return [items];
 }
 
 class Component$3 extends SvelteComponent {
 	constructor(options) {
 		super();
-		init(this, options, instance$2, create_fragment$3, safe_not_equal, { teasers: 0 });
+		init(this, options, instance$2, create_fragment$3, safe_not_equal, { items: 0 });
 	}
 }
 
@@ -5361,40 +5298,34 @@ function create_fragment$9(ctx) {
 
 	component_2 = new Component$3({
 			props: {
-				teasers: [
+				items: [
 					{
 						"link": {
 							"url": "/projectes/gestio-de-textil",
 							"label": "Descobreix les properes dates"
 						},
 						"image": {
-							"alt": "",
+							"alt": "Gestió de tèxtil",
 							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175043312FORA%20STOCKS!!%20(2).jpg",
 							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175043312FORA%20STOCKS!!%20(2).jpg",
 							"size": 105
 						},
 						"title": "Gestió de Tèxtil",
-						"content": {
-							"html": "<p>Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola</p>",
-							"markdown": "Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola\n\n"
-						}
+						"description": "Finançant-les, detectant les necessitats, fent la gestió amb l’administració corresponent i col·laborant amb el projecte hem millorat les infraestructures de l’escola."
 					},
 					{
 						"link": {
 							"url": "/projectes",
-							"label": "Llegeix més"
+							"label": "Veure més"
 						},
 						"image": {
-							"alt": "",
+							"alt": "ombres",
 							"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175433948Test.png",
 							"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175433948Test.png",
 							"size": 2111
 						},
 						"title": "Millora de les infraestructures de l’escola",
-						"content": {
-							"html": "<p>Finançant-les, detectant les necessitats, fent la gestió amb l’administració corresponent i col·laborant amb el projecte hem millorat les infraestructures de l’escola.</p>",
-							"markdown": "Finançant-les, detectant les necessitats, fent la gestió amb l’administració corresponent i col·laborant amb el projecte hem millorat les infraestructures de l’escola."
-						}
+						"description": "Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola"
 					}
 				]
 			}
