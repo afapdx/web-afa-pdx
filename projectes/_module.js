@@ -5323,10 +5323,6 @@ function create_fragment$9(ctx) {
 			props: {
 				items: [
 					{
-						"": { "url": "", "label": "" },
-						"l": { "url": "", "label": "" },
-						"li": { "url": "", "label": "" },
-						"lin": { "url": "", "label": "" },
 						"link": {
 							"url": "/projectes/gestio-de-textil",
 							"label": "Descobreix les properes dates"
@@ -5338,14 +5334,9 @@ function create_fragment$9(ctx) {
 							"size": 105
 						},
 						"title": "Gestió de Tèxtil",
-						"description": "Finançant-les, detectant les necessitats, fent la gestió amb l’administració corresponent i col·laborant amb el projecte hem millorat les infraestructures de l’escola.",
-						"descobreix_les_properes_dates": { "url": "", "label": "" }
+						"description": "Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola."
 					},
 					{
-						"": { "url": "", "label": "" },
-						"l": { "url": "", "label": "" },
-						"li": { "url": "", "label": "" },
-						"lin": { "url": "", "label": "" },
 						"link": {
 							"url": "/projectes",
 							"label": "Veure més"
@@ -5357,8 +5348,7 @@ function create_fragment$9(ctx) {
 							"size": 2111
 						},
 						"title": "Millora de les infraestructures de l’escola",
-						"description": "Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola",
-						"descobreix_les_properes_dates": { "url": "", "label": "" }
+						"description": "Fent la gestió amb l’administració corresponent i col·laborant amb el projecte hem millorat les infraestructures de l’escola."
 					}
 				]
 			}

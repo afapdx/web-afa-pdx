@@ -5022,7 +5022,7 @@ function create_fragment$8(ctx) {
 
 	component_2 = new Component$3({
 			props: {
-				heading: "CURS 2023-24",
+				heading: "CURS 2023/24",
 				subheading: "Everything you need to boost your online presence.",
 				buttons: [
 					{
