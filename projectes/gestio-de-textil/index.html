@@ -109,115 +109,108 @@
         }
     </style><!-- HEAD_svelte-58rhef_END -->
     <style>
-        header.svelte-mfg6y2.svelte-mfg6y2 {
-            color: white;
-            background-size: cover;
-            background-position: center;
-            display: grid;
-            gap: 12rem;
-            position: relative;
-            border-radius: 25% 10% 97% 113% / 4% 61% 81%
+        @import url("https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css");
+
+        header.svelte-1cl2syg.svelte-1cl2syg.svelte-1cl2syg {
+            padding-top: .2rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1)
         }
 
-        .header-background.svelte-mfg6y2.svelte-mfg6y2 {
-            position: absolute;
-            top: 0;
-            height: 5.5rem;
-            right: 0;
-            left: 0;
-            background: rgb(0, 0, 0);
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-            z-index: 10
-        }
-
-        .section-container.svelte-mfg6y2.svelte-mfg6y2 {
-            z-index: 20;
-            width: 100%;
+        .section-container.svelte-1cl2syg.svelte-1cl2syg.svelte-1cl2syg {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            padding-top: 1rem;
-            padding-bottom: 1rem
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem
         }
 
-        .logo.svelte-mfg6y2.svelte-mfg6y2 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            line-height: 1.2
-        }
-
-        .desktop-nav.svelte-mfg6y2.svelte-mfg6y2 {
-            display: none;
+        .desktop-nav.svelte-1cl2syg.svelte-1cl2syg.svelte-1cl2syg {
+            display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 1.5rem;
             width: 100%
         }
 
-        .desktop-nav.svelte-mfg6y2 nav.svelte-mfg6y2 {
-            display: flex;
-            gap: 2rem
+        .desktop-nav.svelte-1cl2syg .logo.svelte-1cl2syg.svelte-1cl2syg {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-right: 1.5rem;
+            width: var(--size)
         }
 
-        .desktop-nav.svelte-mfg6y2 nav a.link.svelte-mfg6y2 {
-            border-color: transparent;
-            transition: border-color 0.1s;
-            font-size: 0.95rem
-        }
-
-        .desktop-nav.svelte-mfg6y2 nav a.link.svelte-mfg6y2:hover,
-        .desktop-nav.svelte-mfg6y2 nav a.link .active.svelte-mfg6y2 {
-            border-color: initial
-        }
-
-        @media(min-width: 800px) {
-            .desktop-nav.svelte-mfg6y2.svelte-mfg6y2 {
-                display: flex
-            }
-        }
-
-        .mobile-nav.svelte-mfg6y2.svelte-mfg6y2 {
+        .desktop-nav.svelte-1cl2syg nav.svelte-1cl2syg.svelte-1cl2syg {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            font-weight: 500
+            gap: 1.5rem
         }
 
-        @media(min-width: 800px) {
-            .mobile-nav.svelte-mfg6y2.svelte-mfg6y2 {
-                display: none
-            }
+        .desktop-nav.svelte-1cl2syg nav.svelte-1cl2syg a.svelte-1cl2syg {
+            font-size: 1rem;
+            font-weight: 400;
+            display: none
         }
 
-        .headline.svelte-mfg6y2.svelte-mfg6y2 {
-            font-size: clamp(2rem, 10vw, 3.5rem);
-            max-width: 800px;
-            padding-bottom: 2rem;
-            line-height: 1.1;
-            font-family: 'Yeseva One';
-            color: #194027
+        .desktop-nav.svelte-1cl2syg nav a.nav-item.svelte-1cl2syg.svelte-1cl2syg {
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.1s
         }
 
-        #popup.svelte-mfg6y2.svelte-mfg6y2 {
-            color: #222;
-            font-size: 1.25rem;
-            display: grid;
-            gap: 1rem;
+        .desktop-nav.svelte-1cl2syg nav a.nav-item.svelte-1cl2syg.svelte-1cl2syg:hover {
+            border-color: var(--color-brand)
+        }
+
+        .desktop-nav.svelte-1cl2syg button#open.svelte-1cl2syg.svelte-1cl2syg {
+            font-size: 1.5rem;
+            margin-left: auto
+        }
+
+        nav#mobile-nav.svelte-1cl2syg.svelte-1cl2syg.svelte-1cl2syg {
             position: absolute;
+            flex-direction: column;
             text-align: center;
             background-color: var(--background-color, white);
-            box-shadow: var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));
+            box-shadow: var(--box-shadow);
             border-radius: var(--border-radius);
-            inset: 0.5rem;
-            bottom: initial;
+            left: 0.5rem;
+            top: 0.5rem;
+            right: 0.5rem;
             padding: 2rem;
-            z-index: 1
+            z-index: 2
         }
 
-        #popup.svelte-mfg6y2 button#close.svelte-mfg6y2 {
+        nav#mobile-nav.svelte-1cl2syg a.svelte-1cl2syg.svelte-1cl2syg {
+            display: block
+        }
+
+        nav#mobile-nav.svelte-1cl2syg hr.svelte-1cl2syg.svelte-1cl2syg {
+            width: 100%
+        }
+
+        nav#mobile-nav.svelte-1cl2syg .button.svelte-1cl2syg.svelte-1cl2syg {
+            width: 100%;
+            justify-content: center
+        }
+
+        nav#mobile-nav.svelte-1cl2syg button#close.svelte-1cl2syg.svelte-1cl2syg {
+            display: block;
             position: absolute;
             right: 1rem;
-            top: 1rem
+            top: 1rem;
+            font-size: 1.5rem
+        }
+
+        @media(min-width: 600px) {
+
+            #open.svelte-1cl2syg.svelte-1cl2syg.svelte-1cl2syg,
+            #mobile-nav.svelte-1cl2syg.svelte-1cl2syg.svelte-1cl2syg {
+                display: none
+            }
+
+            .desktop-nav.svelte-1cl2syg nav.svelte-1cl2syg a.svelte-1cl2syg {
+                display: inline-block
+            }
         }
 
         .content.svelte-z64qd0 img {
@@ -473,36 +466,25 @@
 
 <body id="page">
 
-    <div class="section" id="section-1c3ac40c">
-        <header style="background-image:url('https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/16953862160004.jpg')" role="img" aria-label="" class="svelte-mfg6y2">
-            <div class="header-background svelte-mfg6y2"></div>
-            <div class="section-container svelte-mfg6y2">
-                <div class="desktop-nav svelte-mfg6y2"><a href="/" class="logo svelte-mfg6y2">AFA Pi d'en Xandri</a>
-                    <nav class="svelte-mfg6y2"><a class="link svelte-mfg6y2" href="/qui-som">Qui som?</a><a class="link svelte-mfg6y2" href="/comissions">Comissions</a><a class="link svelte-mfg6y2" href="/projectes">Projectes</a><a class="link svelte-mfg6y2" href="/curs-2023-24">Curs 2023-24</a><a class="link svelte-mfg6y2" href="/documents">Documents</a></nav>
+    <div class="section" id="section-a503caca">
+        <header class="svelte-1cl2syg">
+            <div class="section-container svelte-1cl2syg">
+                <div class="desktop-nav svelte-1cl2syg"><a href="/" class="logo svelte-1cl2syg" style="--size: 15rem;"><span>AFA Pi d'en Xandri</span></a>
+                    <nav class="svelte-1cl2syg"><a class="nav-item svelte-1cl2syg" href="/qui-som">Qui som?</a><a class="nav-item svelte-1cl2syg" href="/comissions">Comissions</a><a class="nav-item svelte-1cl2syg" href="/projectes">Projectes</a><a class="nav-item svelte-1cl2syg" href="/curs-2023-24">Curs 2023-24</a><a class="nav-item svelte-1cl2syg" href="/documents">Documents</a>
+
+                        <button id="open" aria-label="Open mobile navigation" class="svelte-1cl2syg"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--ic"><!-- HTML_TAG_START -->
+                                <path fill="currentColor" d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z" /><!-- HTML_TAG_END -->
+                            </svg></button>
+                    </nav>
                 </div>
-                <div class="mobile-nav svelte-mfg6y2"><a href="/" class="logo svelte-mfg6y2">AFA Pi d'en Xandri</a>
-                    <button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="30" height="30" viewBox="0 0 24 24" class="iconify iconify--eva"><!-- HTML_TAG_START -->
-                            <g id="iconifySvelte0">
-                                <g id="iconifySvelte1">
-                                    <g id="iconifySvelte2" fill="currentColor">
-                                        <rect width="18" height="2" x="3" y="11" rx=".95" ry=".95" />
-                                        <rect width="18" height="2" x="3" y="16" rx=".95" ry=".95" />
-                                        <rect width="18" height="2" x="3" y="6" rx=".95" ry=".95" />
-                                    </g>
-                                </g>
-                            </g><!-- HTML_TAG_END -->
-                        </svg></button>
-                </div>
-            </div>
-            <div class="section-container svelte-mfg6y2">
-                <h1 class="headline svelte-mfg6y2">Gestió de tèxtil</h1>
             </div>
         </header>
     </div>
     <div class="section" id="section-c53fbc9e">
         <div class="section">
             <div class="section-container content svelte-z64qd0"><!-- HTML_TAG_START -->
-                <p>A la <a target="_blank" rel="noopener noreferrer nofollow" class="link link" href="https://web-afa-pdx.vercel.app/comissions">comissió tèxtil</a> som responsables de la venda d'aquest material per tal d’oferir un equipament que identifiqui als Xandris allà on vagin, especialment durant les sortides escolars.</p>
+                <h1 id="gestidetxtil">Gestió de tèxtil</h1>
+                <p>A la <a href="https://web-afa-pdx.vercel.app/comissions">comissió tèxtil</a> som responsables de la venda d'aquest material per tal d’oferir un equipament que identifiqui als Xandris allà on vagin, especialment durant les sortides escolars.</p>
                 <ul>
                     <li>
                         <p>Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola (bata amb botons grans, butxaques, gomes als punys; samarreta taronja fàcil d’identificar en les sortides…).</p>
@@ -511,7 +493,8 @@
                         <p>A més, ajudem a potenciar el sentiment de pertinença a l’escola</p>
                     </li>
                 </ul>
-                <h2>Pròxima venda</h2>
+                <!-- -->
+                <h2 id="prximavenda">Pròxima venda</h2>
                 <p><mark>22 de Setembre del 2023</mark></p><!-- HTML_TAG_END -->
             </div>
         </div>
