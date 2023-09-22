@@ -5015,6 +5015,9 @@ function create_fragment$8(ctx) {
 							"url": "/documents",
 							"label": "Documents"
 						}
+					},
+					{
+						"link": { "label": "Notícies", "url": "/notcies" }
 					}
 				]
 			}
