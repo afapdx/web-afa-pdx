@@ -5160,7 +5160,7 @@ function create_fragment$a(ctx) {
 					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/16953714420002.jpg",
 					"size": 85
 				},
-				headline: "\n",
+				headline: "Gestió de tèxtil",
 				logo: {
 					"image": {
 						"alt": "",
