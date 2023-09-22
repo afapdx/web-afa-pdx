@@ -5156,19 +5156,19 @@ function create_fragment$a(ctx) {
 			props: {
 				background: {
 					"alt": "",
-					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1695146650413Yellow%20Purple%20and%20Green%20Bold%20and%20Quirky%20Best%20Friends%20Day%20Greetings%20Fun%20Presentation.jpg",
-					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1695146650413Yellow%20Purple%20and%20Green%20Bold%20and%20Quirky%20Best%20Friends%20Day%20Greetings%20Fun%20Presentation.jpg",
-					"size": 48
+					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/16953714420002.jpg",
+					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/16953714420002.jpg",
+					"size": 85
 				},
-				headline: "GESTIÓ DE TÈXTIL",
+				headline: "\n",
 				logo: {
 					"image": {
 						"alt": "",
-						"src": "",
-						"url": "",
-						"size": null
+						"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
+						"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
+						"size": 811
 					},
-					"title": "Afa Pi d'en Xandri"
+					"title": "AFA Pi d'en Xandri"
 				},
 				site_nav: [
 					{
@@ -5184,6 +5184,12 @@ function create_fragment$a(ctx) {
 						"link": {
 							"url": "/projectes",
 							"label": "Projectes"
+						}
+					},
+					{
+						"link": {
+							"url": "/notcies-i-activitats",
+							"label": "Notícies i activitats"
 						}
 					},
 					{
