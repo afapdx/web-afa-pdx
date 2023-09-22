@@ -5156,9 +5156,9 @@ function create_fragment$a(ctx) {
 			props: {
 				background: {
 					"alt": "",
-					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/16953714420002.jpg",
-					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/16953714420002.jpg",
-					"size": 85
+					"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/16953722620003.jpg",
+					"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/16953722620003.jpg",
+					"size": 91
 				},
 				headline: "Gestió de tèxtil",
 				logo: {
@@ -5211,7 +5211,7 @@ function create_fragment$a(ctx) {
 	component_2 = new Component$3({
 			props: {
 				content: {
-					"html": "<p>A la <a href=\"https://web-afa-pdx.vercel.app/comissions\">comissió tèxtil</a> som responsables de la venda d'aquest material per tal d’oferir un equipament que identifiqui als Xandris allà on vagin, especialment durant les sortides escolars.</p>\n<ul>\n<li><p>Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola (bata amb botons grans, butxaques, gomes als punys; samarreta taronja fàcil d’identificar en les sortides…).</p></li>\n<li><p>A més, ajudem a potenciar el sentiment de pertinença a l’escola</p></li>\n</ul>\n<!-- -->\n<h2 id=\"prximavenda\">Pròxima venda</h2>\n<p><mark>22 de Setembre del 2023</mark></p>",
+					"html": "<p>A la <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://web-afa-pdx.vercel.app/comissions\">comissió tèxtil</a> som responsables de la venda d'aquest material per tal d’oferir un equipament que identifiqui als Xandris allà on vagin, especialment durant les sortides escolars.</p><ul><li><p>Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola (bata amb botons grans, butxaques, gomes als punys; samarreta taronja fàcil d’identificar en les sortides…).</p></li><li><p>A més, ajudem a potenciar el sentiment de pertinença a l’escola</p></li></ul><h2>Pròxima venda</h2><p><mark>22 de Setembre del 2023</mark></p>",
 					"markdown": "A la [comissió tèxtil](<https://web-afa-pdx.vercel.app/comissions>) som responsables de la venda d'aquest material per tal d’oferir un equipament que identifiqui als Xandris allà on vagin, especialment durant les sortides escolars.\n\n- Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola (bata amb botons grans, butxaques, gomes als punys; samarreta taronja fàcil d’identificar en les sortides…).\n\n- A més, ajudem a potenciar el sentiment de pertinença a l’escola\n\n\n<!-- -->\n\n## Pròxima venda\n\n<mark>22 de Setembre del 2023</mark>\n\n"
 				}
 			}
