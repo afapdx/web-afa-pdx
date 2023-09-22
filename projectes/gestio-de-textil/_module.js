@@ -5323,9 +5323,16 @@ function create_fragment$a(ctx) {
 							"url": "/documents",
 							"label": "Documents"
 						}
+					},
+					{
+						"link": { "label": "Notícies", "url": "/notcies" }
 					}
 				],
-				cta: []
+				cta: [
+					{
+						"link": { "label": "Notícies", "url": "/notcies" }
+					}
+				]
 			}
 		});
 
