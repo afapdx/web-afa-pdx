@@ -5089,7 +5089,7 @@ function create_fragment$8(ctx) {
 						}
 					},
 					{
-						"link": { "label": "Notícies", "url": "/notcies" }
+						"link": { "url": "/notcies", "label": "Notícies" }
 					},
 					{
 						"link": {
@@ -5106,12 +5106,22 @@ function create_fragment$8(ctx) {
 				nav: [
 					{
 						"link": {
-							"url": "#",
-							"label": "Copyright 2023 AFA Escola Pi d'en Xandri"
+							"url": "",
+							"label": "Copyright 2024 Escola Pi d'en Xandri"
+						}
+					},
+					{
+						"link": {
+							"label": "C/Santa Teresa, 61 08172 Sant Cugat del Vallès",
+							"url": "https://maps.app.goo.gl/EZEMzpQLcUgFYdj86"
 						}
 					}
 				],
 				social: [
+					{
+						"icon": "mdi:twitter",
+						"link": { "url": "/", "label": "Twitter" }
+					},
 					{
 						"icon": "mdi:instagram",
 						"link": { "url": "/", "label": "Instagram" }
