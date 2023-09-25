@@ -6439,10 +6439,7 @@ function create_fragment$d(ctx) {
 						}
 					},
 					{
-						"link": {
-							"url": "/documents",
-							"label": "Documents"
-						}
+						"link": { "label": "Notícies", "url": "/notcies" }
 					}
 				]
 			}
