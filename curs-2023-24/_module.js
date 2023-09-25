@@ -3143,7 +3143,7 @@ function create_each_block_1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "link svelte-mfg6y2");
+			attr(a, "class", "link svelte-c22ebq");
 			attr(a, "href", a_href_value = /*link*/ ctx[8].url);
 			toggle_class(a, "active", /*link*/ ctx[8].url === window.location.pathname);
 		},
@@ -3286,9 +3286,9 @@ function create_if_block$1(ctx) {
 		h() {
 			attr(button, "id", "close");
 			attr(button, "aria-label", "Close Navigation");
-			attr(button, "class", "svelte-mfg6y2");
+			attr(button, "class", "svelte-c22ebq");
 			attr(nav, "id", "popup");
-			attr(nav, "class", "svelte-mfg6y2");
+			attr(nav, "class", "svelte-c22ebq");
 		},
 		m(target, anchor) {
 			insert_hydration(target, nav, anchor);
@@ -3550,23 +3550,23 @@ function create_fragment$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div0, "class", "header-background svelte-mfg6y2");
+			attr(div0, "class", "header-background svelte-c22ebq");
 			attr(a0, "href", "/");
-			attr(a0, "class", "logo svelte-mfg6y2");
-			attr(nav, "class", "svelte-mfg6y2");
-			attr(div1, "class", "desktop-nav svelte-mfg6y2");
+			attr(a0, "class", "logo svelte-c22ebq");
+			attr(nav, "class", "svelte-c22ebq");
+			attr(div1, "class", "desktop-nav svelte-c22ebq");
 			attr(a1, "href", "/");
-			attr(a1, "class", "logo svelte-mfg6y2");
+			attr(a1, "class", "logo svelte-c22ebq");
 			attr(button, "id", "open");
 			attr(button, "aria-label", "Open mobile navigation");
-			attr(div2, "class", "mobile-nav svelte-mfg6y2");
-			attr(div3, "class", "section-container svelte-mfg6y2");
-			attr(h1, "class", "headline svelte-mfg6y2");
-			attr(div4, "class", "section-container svelte-mfg6y2");
+			attr(div2, "class", "mobile-nav svelte-c22ebq");
+			attr(div3, "class", "section-container svelte-c22ebq");
+			attr(h1, "class", "headline svelte-c22ebq");
+			attr(div4, "class", "section-container svelte-c22ebq");
 			set_style(header, "background-image", "url('" + /*background*/ ctx[0].url + "')");
 			attr(header, "role", "img");
 			attr(header, "aria-label", header_aria_label_value = /*background*/ ctx[0].alt);
-			attr(header, "class", "svelte-mfg6y2");
+			attr(header, "class", "svelte-c22ebq");
 			attr(div5, "class", "section");
 			attr(div5, "id", "section-462fb194");
 		},
@@ -5211,11 +5211,11 @@ function create_fragment$8(ctx) {
 				logo: {
 					"image": {
 						"alt": "",
-						"src": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
-						"url": "https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690210337748primer-dia-escola-2021-14-ok.jpeg",
-						"size": 811
+						"src": "",
+						"url": "",
+						"size": null
 					},
-					"title": "AFA Pi d'en Xandri"
+					"title": "Afa Pi d'en Xandri"
 				},
 				site_nav: [
 					{
@@ -5240,7 +5240,10 @@ function create_fragment$8(ctx) {
 						}
 					},
 					{
-						"link": { "url": "/notcies", "label": "Notícies" }
+						"link": {
+							"url": "/documents",
+							"label": "Documents"
+						}
 					}
 				]
 			}
@@ -5369,12 +5372,15 @@ function create_fragment$8(ctx) {
 				],
 				social: [
 					{
-						"icon": "mdi:twitter",
-						"link": { "url": "/", "label": "Twitter" }
+						"link": {
+							"url": "https://twitter.com/ampapixandri",
+							"label": "Twitter"
+						},
+						"icon": "mdi:twitter"
 					},
 					{
-						"icon": "mdi:instagram",
-						"link": { "url": "/", "label": "Instagram" }
+						"link": { "url": "/", "label": "Instagram" },
+						"icon": "mdi:instagram"
 					}
 				]
 			}

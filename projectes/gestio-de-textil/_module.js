@@ -5462,12 +5462,15 @@ function create_fragment$a(ctx) {
 				],
 				social: [
 					{
-						"icon": "mdi:twitter",
-						"link": { "url": "/", "label": "Twitter" }
+						"link": {
+							"url": "https://twitter.com/ampapixandri",
+							"label": "Twitter"
+						},
+						"icon": "mdi:twitter"
 					},
 					{
-						"icon": "mdi:instagram",
-						"link": { "url": "/", "label": "Instagram" }
+						"link": { "url": "/", "label": "Instagram" },
+						"icon": "mdi:instagram"
 					}
 				]
 			}
