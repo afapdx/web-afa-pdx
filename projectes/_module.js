@@ -5545,12 +5545,6 @@ function create_fragment$a(ctx) {
 						}
 					},
 					{
-						"link": {
-							"url": "/documents",
-							"label": "Documents"
-						}
-					},
-					{
 						"link": { "url": "/notcies", "label": "Notícies" }
 					}
 				]
@@ -5687,6 +5681,9 @@ function create_fragment$a(ctx) {
 							"url": "/curs-2023-24",
 							"label": "Curs 2023/24"
 						}
+					},
+					{
+						"link": { "label": "Notícies", "url": "/notcies" }
 					},
 					{
 						"link": {

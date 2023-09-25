@@ -5504,12 +5504,6 @@ function create_fragment$c(ctx) {
 						}
 					},
 					{
-						"link": {
-							"url": "/documents",
-							"label": "Documents"
-						}
-					},
-					{
 						"link": { "url": "/notcies", "label": "Notícies" }
 					}
 				]
@@ -5528,8 +5522,8 @@ function create_fragment$c(ctx) {
 			props: {
 				id: "bar",
 				content: {
-					"html": "<h2 id=\"bar\">Bar</h2>\n<p>Té com a missió la reducció de l’impacte ambiental de les activitats de l’escola i la conscienciació de la comunitat escolar dels beneficis de la cura del medi ambient. Accions d’aquesta comissió són la proposta i participació en el [<mark>projecte Euronet 50/50 MAX</mark></p>\n<p>](<a href=\"https://www.sostenible.cat/noticia/el-pi-den-xandri-i-el-collserola-de-sant-cugat-estalvien-18000-euros-i-un-24-16\">https://www.sostenible.cat/noticia/el-pi-den-xandri-i-el-collserola-de-sant-cugat-estalvien-18000-euros-i-un-24-16</a>), el manteniment de l’hort a l’estiu, la recollida selectiva de residus durant la festa fi de curs o la recollida solidària de taps.</p>\n<p>Vocal <strong>Gustavo Arroyo del Río</strong><br></p>\n<p><a href=\"mailto:ostenibilitat@ampapidenxandri.cat\">sostenibilitat@ampapidenxandri.cat</a></p>",
-					"markdown": "## Bar\n\nTé com a missió la reducció de l’impacte ambiental de les activitats de l’escola i la conscienciació de la comunitat escolar dels beneficis de la cura del medi ambient. Accions d’aquesta comissió són la proposta i participació en el [<mark>projecte Euronet 50/50 MAX</mark>\n\n](<https://www.sostenible.cat/noticia/el-pi-den-xandri-i-el-collserola-de-sant-cugat-estalvien-18000-euros-i-un-24-16>), el manteniment de l’hort a l’estiu, la recollida selectiva de residus durant la festa fi de curs o la recollida solidària de taps.\n\nVocal **Gustavo Arroyo del Río**<br>\n\n[sostenibilitat@ampapidenxandri.cat](<mailto:ostenibilitat@ampapidenxandri.cat>)\n\n"
+					"html": "<h2 id=\"bar\">Bar</h2>\n<p>És l’encarregada de muntar el bar de la festa final de curs per tal d’oferir begudes i sopar a les famílies que ho desitgin. Representa una de les principals fonts de finançament de l'AFA.</p>\n<p>Vocal <strong>Gustavo Arroyo del Río</strong><br></p>\n<p><a href=\"mailto:ostenibilitat@ampapidenxandri.cat\">bar@ampapidenxandri.cat</a></p>",
+					"markdown": "## Bar\n\nÉs l’encarregada de muntar el bar de la festa final de curs per tal d’oferir begudes i sopar a les famílies que ho desitgin. Representa una de les principals fonts de finançament de l'AFA.\n\nVocal **Gustavo Arroyo del Río**<br>\n\n[bar@ampapidenxandri.cat](<mailto:ostenibilitat@ampapidenxandri.cat>)\n\n"
 				}
 			}
 		});
@@ -5538,8 +5532,8 @@ function create_fragment$c(ctx) {
 			props: {
 				id: "sostenibilitat",
 				content: {
-					"html": "<h2 id=\"sostenibilitat\">Sostenibilitat</h2>\n<p>Té com a missió la reducció de l’impacte ambiental de les activitats de l’escola i la conscienciació de la comunitat escolar dels beneficis de la cura del medi ambient. Accions d’aquesta comissió són la proposta i participació en el [<mark>projecte Euronet 50/50 MAX</mark></p>\n<p>](<a href=\"https://www.sostenible.cat/noticia/el-pi-den-xandri-i-el-collserola-de-sant-cugat-estalvien-18000-euros-i-un-24-16\">https://www.sostenible.cat/noticia/el-pi-den-xandri-i-el-collserola-de-sant-cugat-estalvien-18000-euros-i-un-24-16</a>), el manteniment de l’hort a l’estiu, la recollida selectiva de residus durant la festa fi de curs o la recollida solidària de taps.</p>\n<p>Vocal <strong>Gustavo Arroyo del Río</strong><br></p>\n<p><a href=\"mailto:ostenibilitat@ampapidenxandri.cat\">sostenibilitat@ampapidenxandri.cat</a></p>",
-					"markdown": "## Sostenibilitat\n\nTé com a missió la reducció de l’impacte ambiental de les activitats de l’escola i la conscienciació de la comunitat escolar dels beneficis de la cura del medi ambient. Accions d’aquesta comissió són la proposta i participació en el [<mark>projecte Euronet 50/50 MAX</mark>\n\n](<https://www.sostenible.cat/noticia/el-pi-den-xandri-i-el-collserola-de-sant-cugat-estalvien-18000-euros-i-un-24-16>), el manteniment de l’hort a l’estiu, la recollida selectiva de residus durant la festa fi de curs o la recollida solidària de taps.\n\nVocal **Gustavo Arroyo del Río**<br>\n\n[sostenibilitat@ampapidenxandri.cat](<mailto:ostenibilitat@ampapidenxandri.cat>)\n\n"
+					"html": "<h2>Sostenibilitat</h2><p>Té com a missió la reducció de l’impacte ambiental de les activitats de l’escola i la conscienciació de la comunitat escolar dels beneficis de la cura del medi ambient. Accions d’aquesta comissió són la proposta i participació en el <mark>projecte Euronet 50/50 MAX</mark></p><p>](<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"https://www.sostenible.cat/noticia/el-pi-den-xandri-i-el-collserola-de-sant-cugat-estalvien-18000-euros-i-un-24-16\">https://www.sostenible.cat/noticia/el-pi-den-xandri-i-el-collserola-de-sant-cugat-estalvien-18000-euros-i-un-24-16</a>), el manteniment de l’hort a l’estiu, la recollida selectiva de residus durant la festa fi de curs o la recollida solidària de taps.</p><p>Vocal <strong>Gustavo Arroyo del Río</strong><br></p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link link\" href=\"mailto:ostenibilitat@ampapidenxandri.cat\">sostenibilitat@ampapidenxandri.cat</a></p>",
+					"markdown": "## Sostenibilitat\n\nTé com a missió la reducció de l’impacte ambiental de les activitats de l’escola i la conscienciació de la comunitat escolar dels beneficis de la cura del medi ambient. Accions d’aquesta comissió són la proposta i participació en el <mark>projecte Euronet 50/50 MAX</mark>\n\n\\]\\([https://www.sostenible.cat/noticia/el-pi-den-xandri-i-el-collserola-de-sant-cugat-estalvien-18000-euros-i-un-24-16](<https://www.sostenible.cat/noticia/el-pi-den-xandri-i-el-collserola-de-sant-cugat-estalvien-18000-euros-i-un-24-16>)), el manteniment de l’hort a l’estiu, la recollida selectiva de residus durant la festa fi de curs o la recollida solidària de taps.\n\nVocal **Gustavo Arroyo del Río**<br>\n\n[sostenibilitat@ampapidenxandri.cat](<mailto:ostenibilitat@ampapidenxandri.cat>)\n\n"
 				}
 			}
 		});
@@ -5636,6 +5630,9 @@ function create_fragment$c(ctx) {
 							"url": "/curs-2023-24",
 							"label": "Curs 2023/24"
 						}
+					},
+					{
+						"link": { "label": "Notícies", "url": "/notcies" }
 					},
 					{
 						"link": {

@@ -6125,12 +6125,6 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"link": {
-							"url": "/documents",
-							"label": "Documents"
-						}
-					},
-					{
 						"link": { "url": "/notcies", "label": "Notícies" }
 					}
 				]
@@ -6187,7 +6181,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"id": "",
+						"id": "textil",
 						"icon": "material-symbols:styler",
 						"title": "Tèxtil",
 						"description": {
@@ -6196,7 +6190,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"id": "",
+						"id": "bar",
 						"icon": "material-symbols:nightlife",
 						"title": "Bar",
 						"description": {
@@ -6205,7 +6199,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"id": "",
+						"id": "comunicacio",
 						"icon": "material-symbols:campaign",
 						"title": "Comunicació",
 						"description": {
@@ -6214,7 +6208,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"id": "",
+						"id": "escolapares",
 						"icon": "material-symbols:interactive-space",
 						"title": "Escola de pares",
 						"description": {
@@ -6223,7 +6217,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"id": "",
+						"id": "extraescolars",
 						"icon": "material-symbols:sports-basketball",
 						"title": "Extraescolars",
 						"description": {
@@ -6232,7 +6226,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"id": "",
+						"id": "festes",
 						"icon": "material-symbols:person-celebrate",
 						"title": "Festes",
 						"description": {
@@ -6241,7 +6235,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"id": "",
+						"id": "infraestructures",
 						"icon": "material-symbols:tools-power-drill",
 						"title": "Infraestructures",
 						"description": {
@@ -6250,7 +6244,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"id": "",
+						"id": "llibres",
 						"icon": "material-symbols:local-library",
 						"title": "Llibres",
 						"description": {
@@ -6259,7 +6253,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"id": "",
+						"id": "menjador",
 						"icon": "material-symbols:local-dining",
 						"title": "Menjador",
 						"description": {
@@ -6268,7 +6262,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
-						"id": "",
+						"id": "savi",
 						"icon": "material-symbols:psychology-alt",
 						"title": "Savi",
 						"description": {
@@ -6443,6 +6437,9 @@ function create_fragment$b(ctx) {
 							"url": "/curs-2023-24",
 							"label": "Curs 2023/24"
 						}
+					},
+					{
+						"link": { "label": "Notícies", "url": "/notcies" }
 					},
 					{
 						"link": {
