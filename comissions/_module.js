@@ -5425,7 +5425,7 @@ function create_fragment$b(ctx) {
 	component_2 = new Component$3({
 			props: {
 				heading: "COMISSIONS",
-				subheading: "Formades per pares i mares de l'escola per coordinar i realitzar les tasques a l'escola.",
+				subheading: "Les comissions estan formades per pares i mares de l'escola per coordinar i realitzar les tasques a l'escola.",
 				buttons: []
 			}
 		});
@@ -5433,8 +5433,8 @@ function create_fragment$b(ctx) {
 	component_3 = new Component$4({
 			props: {
 				content: {
-					"html": "<h1 id=\"comissi1\">Comissió 1</h1>\n<p>Overall, our calendar software is the <em>perfect tool</em> for managing your time and staying organized. With its user-friendly interface and powerful search functionality, it's the ideal solution for anyone looking to take control of their schedule and make the most of their time.</p>",
-					"markdown": "# Comissió 1\n\nOverall, our calendar software is the *perfect tool* for managing your time and staying organized. With its user-friendly interface and powerful search functionality, it's the ideal solution for anyone looking to take control of their schedule and make the most of their time."
+					"html": "<h1 id=\"bar\">Bar</h1>\n<p>És l’encarregada de muntar el bar de la festa final de curs per tal d’oferir begudes i sopar a les famílies que ho desitgin. Representa una de les principals fonts de finançament de l'AFA.</p>\n<p><a href=\"mailto: bar@ampapidenxandri.cat\">bar@ampapidenxandri.cat</a></p>",
+					"markdown": "# Bar\n\nÉs l’encarregada de muntar el bar de la festa final de curs per tal d’oferir begudes i sopar a les famílies que ho desitgin. Representa una de les principals fonts de finançament de l'AFA.\n\n[bar@ampapidenxandri.cat](<mailto: bar@ampapidenxandri.cat>)\n\n"
 				}
 			}
 		});
@@ -5442,8 +5442,8 @@ function create_fragment$b(ctx) {
 	component_4 = new Component$5({
 			props: {
 				content: {
-					"html": "<h1 id=\"comissi2\">Comissió 2</h1>\n<p>Overall, our calendar software is the <em>perfect tool</em> for managing your time and staying organized. With its user-friendly interface and powerful search functionality, it's the ideal solution for anyone looking to take control of their schedule and make the most of their time.</p>",
-					"markdown": "# Comissió 2\n\nOverall, our calendar software is the *perfect tool* for managing your time and staying organized. With its user-friendly interface and powerful search functionality, it's the ideal solution for anyone looking to take control of their schedule and make the most of their time."
+					"html": "<h1 id=\"comunicaci\">Comunicació</h1>\n<p>S’ocupa de fer arribar a les famílies de l’Escola tota la informació que la Junta de l'AFA i les seves Comissions consideren oportuna a través d’un butlletí mensual, de la pàgina web i del Twitter. També s’ocupa del manteniment i l’explotació de la informació continguda en l’arxiu de contactes (tot creant les llistes de les reunions de principi de curs). Finalment, també és la responsable del manteniment del servei, que utilitza l’escola, d’avís per SMS en casos d’emergència.</p>\n<p><a href=\"mailto:comunicacio@ampapidenxandri.cat\">comunicacio@ampapidenxandri.cat</a></p>",
+					"markdown": "# Comunicació\n\nS’ocupa de fer arribar a les famílies de l’Escola tota la informació que la Junta de l'AFA i les seves Comissions consideren oportuna a través d’un butlletí mensual, de la pàgina web i del Twitter. També s’ocupa del manteniment i l’explotació de la informació continguda en l’arxiu de contactes (tot creant les llistes de les reunions de principi de curs). Finalment, també és la responsable del manteniment del servei, que utilitza l’escola, d’avís per SMS en casos d’emergència.\n\n[comunicacio@ampapidenxandri.cat](<mailto:comunicacio@ampapidenxandri.cat>)\n"
 				}
 			}
 		});

@@ -6080,6 +6080,24 @@ function create_fragment$a(ctx) {
 				heading: "Coneix les nostres comissions",
 				cards: [
 					{
+						"id": "bar",
+						"icon": "material-symbols:nightlife",
+						"title": "Bar",
+						"description": {
+							"html": "<p>Encarregada del bar de la festa final de curs i font principal de finançament de AFA.</p>",
+							"markdown": "Encarregada del bar de la festa final de curs i font principal de finançament de AFA."
+						}
+					},
+					{
+						"id": "comunicacio",
+						"icon": "material-symbols:campaign",
+						"title": "Comunicació",
+						"description": {
+							"html": "<p>S’ocupa de fer arribar a les famílies de l’Escola tota la informació de l'AFA.</p>",
+							"markdown": "S’ocupa de fer arribar a les famílies de l’Escola tota la informació de l'AFA.\n"
+						}
+					},
+					{
 						"id": "delegats",
 						"icon": "material-symbols:groups",
 						"title": "Delegats",
@@ -6131,24 +6149,6 @@ function create_fragment$a(ctx) {
 						"description": {
 							"html": "<p>Ven material tèxtil d'identificació pels Xandris en sortides escolars.</p>",
 							"markdown": "Ven material tèxtil d'identificació pels Xandris en sortides escolars."
-						}
-					},
-					{
-						"id": "bar",
-						"icon": "material-symbols:nightlife",
-						"title": "Bar",
-						"description": {
-							"html": "<p>Encarregada del bar de la festa final de curs i font principal de finançament de AFA.</p>",
-							"markdown": "Encarregada del bar de la festa final de curs i font principal de finançament de AFA."
-						}
-					},
-					{
-						"id": "comunicacio",
-						"icon": "material-symbols:campaign",
-						"title": "Comunicació",
-						"description": {
-							"html": "<p>S’ocupa de fer arribar a les famílies de l’Escola tota la informació de l'AFA.</p>",
-							"markdown": "S’ocupa de fer arribar a les famílies de l’Escola tota la informació de l'AFA.\n"
 						}
 					},
 					{

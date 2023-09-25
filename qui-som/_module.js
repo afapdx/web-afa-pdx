@@ -6372,7 +6372,7 @@ function create_fragment$c(ctx) {
 							{
 								"icon": "mdi:mail",
 								"link": {
-									"url": "comunicacio@ampapidenxandri.org",
+									"url": "mailto:comunicacio@ampapidenxandri.org",
 									"label": "correu electrònic"
 								}
 							}
