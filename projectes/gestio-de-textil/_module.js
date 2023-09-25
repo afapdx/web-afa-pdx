@@ -3787,7 +3787,7 @@ function create_fragment$3(ctx) {
 	let div2;
 	let div1;
 	let div0;
-	let raw_value = /*content*/ ctx[0].html + "";
+	let raw_value = /*content*/ ctx[1].html + "";
 
 	return {
 		c() {
@@ -3799,7 +3799,7 @@ function create_fragment$3(ctx) {
 		l(nodes) {
 			div2 = claim_element(nodes, "DIV", { class: true, id: true });
 			var div2_nodes = children(div2);
-			div1 = claim_element(div2_nodes, "DIV", { class: true });
+			div1 = claim_element(div2_nodes, "DIV", { class: true, id: true });
 			var div1_nodes = children(div1);
 			div0 = claim_element(div1_nodes, "DIV", { class: true });
 			var div0_nodes = children(div0);
@@ -3811,6 +3811,7 @@ function create_fragment$3(ctx) {
 		h() {
 			attr(div0, "class", "section-container content markdown svelte-z64qd0");
 			attr(div1, "class", "section");
+			attr(div1, "id", /*id*/ ctx[0]);
 			attr(div2, "class", "section");
 			attr(div2, "id", "section-c53fbc9e");
 		},
@@ -3821,7 +3822,11 @@ function create_fragment$3(ctx) {
 			div0.innerHTML = raw_value;
 		},
 		p(ctx, [dirty]) {
-			if (dirty & /*content*/ 1 && raw_value !== (raw_value = /*content*/ ctx[0].html + "")) div0.innerHTML = raw_value;		},
+			if (dirty & /*content*/ 2 && raw_value !== (raw_value = /*content*/ ctx[1].html + "")) div0.innerHTML = raw_value;
+			if (dirty & /*id*/ 1) {
+				attr(div1, "id", /*id*/ ctx[0]);
+			}
+		},
 		i: noop,
 		o: noop,
 		d(detaching) {
@@ -3831,19 +3836,21 @@ function create_fragment$3(ctx) {
 }
 
 function instance$2($$self, $$props, $$invalidate) {
+	let { id } = $$props;
 	let { content } = $$props;
 
 	$$self.$$set = $$props => {
-		if ('content' in $$props) $$invalidate(0, content = $$props.content);
+		if ('id' in $$props) $$invalidate(0, id = $$props.id);
+		if ('content' in $$props) $$invalidate(1, content = $$props.content);
 	};
 
-	return [content];
+	return [id, content];
 }
 
 class Component$3 extends SvelteComponent {
 	constructor(options) {
 		super();
-		init(this, options, instance$2, create_fragment$3, safe_not_equal, { content: 0 });
+		init(this, options, instance$2, create_fragment$3, safe_not_equal, { id: 0, content: 1 });
 	}
 }
 
@@ -5334,6 +5341,7 @@ function create_fragment$a(ctx) {
 
 	component_2 = new Component$3({
 			props: {
+				id: "",
 				content: {
 					"html": "<h1 id=\"gestidetxtil\">Gestió de tèxtil</h1>\n<p>A la <a href=\"https://web-afa-pdx.vercel.app/comissions\">comissió tèxtil</a> som responsables de la venda d'aquest material per tal d’oferir un equipament que identifiqui als Xandris allà on vagin, especialment durant les sortides escolars.</p>\n<ul>\n<li><p>Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola (bata amb botons grans, butxaques, gomes als punys; samarreta taronja fàcil d’identificar en les sortides…).</p></li>\n<li><p>A més, ajudem a potenciar el sentiment de pertinença a l’escola</p></li>\n</ul>\n<!-- -->\n<h2 id=\"prximavenda\">Pròxima venda</h2>\n<p><mark>22 de Setembre del 2023</mark></p>",
 					"markdown": "#Gestió de tèxtil\nA la [comissió tèxtil](<https://web-afa-pdx.vercel.app/comissions>) som responsables de la venda d'aquest material per tal d’oferir un equipament que identifiqui als Xandris allà on vagin, especialment durant les sortides escolars.\n\n- Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola (bata amb botons grans, butxaques, gomes als punys; samarreta taronja fàcil d’identificar en les sortides…).\n\n- A més, ajudem a potenciar el sentiment de pertinença a l’escola\n\n\n<!-- -->\n\n## Pròxima venda\n\n<mark>22 de Setembre del 2023</mark>\n\n"

@@ -3659,6 +3659,7 @@ function get_each_context$1(ctx, list, i) {
 
 // (51:4) {#each cards as card}
 function create_each_block$1(ctx) {
+	let a;
 	let li;
 	let h3;
 	let span0;
@@ -3671,6 +3672,7 @@ function create_each_block$1(ctx) {
 	let div;
 	let raw_value = /*card*/ ctx[2].description.html + "";
 	let t3;
+	let a_href_value;
 	let current;
 
 	icon = new Component$1({
@@ -3684,6 +3686,7 @@ function create_each_block$1(ctx) {
 
 	return {
 		c() {
+			a = element("a");
 			li = element("li");
 			h3 = element("h3");
 			span0 = element("span");
@@ -3697,7 +3700,9 @@ function create_each_block$1(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			li = claim_element(nodes, "LI", { class: true });
+			a = claim_element(nodes, "A", { href: true });
+			var a_nodes = children(a);
+			li = claim_element(a_nodes, "LI", { class: true });
 			var li_nodes = children(li);
 			h3 = claim_element(li_nodes, "H3", { class: true });
 			var h3_nodes = children(h3);
@@ -3715,8 +3720,9 @@ function create_each_block$1(ctx) {
 			div = claim_element(li_nodes, "DIV", { class: true });
 			var div_nodes = children(div);
 			div_nodes.forEach(detach);
-			t3 = claim_space(li_nodes);
 			li_nodes.forEach(detach);
+			t3 = claim_space(a_nodes);
+			a_nodes.forEach(detach);
 			this.h();
 		},
 		h() {
@@ -3724,9 +3730,11 @@ function create_each_block$1(ctx) {
 			attr(h3, "class", "title svelte-1w4x0lq");
 			attr(div, "class", "description");
 			attr(li, "class", "svelte-1w4x0lq");
+			attr(a, "href", a_href_value = `/comissions#${/*card*/ ctx[2].id}`);
 		},
 		m(target, anchor) {
-			insert_hydration(target, li, anchor);
+			insert_hydration(target, a, anchor);
+			append_hydration(a, li);
 			append_hydration(li, h3);
 			append_hydration(h3, span0);
 			mount_component(icon, span0, null);
@@ -3736,7 +3744,7 @@ function create_each_block$1(ctx) {
 			append_hydration(li, t2);
 			append_hydration(li, div);
 			div.innerHTML = raw_value;
-			append_hydration(li, t3);
+			append_hydration(a, t3);
 			current = true;
 		},
 		p(ctx, dirty) {
@@ -3744,7 +3752,11 @@ function create_each_block$1(ctx) {
 			if (dirty & /*cards*/ 2) icon_changes.icon = /*card*/ ctx[2].icon;
 			icon.$set(icon_changes);
 			if ((!current || dirty & /*cards*/ 2) && t1_value !== (t1_value = /*card*/ ctx[2].title + "")) set_data(t1, t1_value);
-			if ((!current || dirty & /*cards*/ 2) && raw_value !== (raw_value = /*card*/ ctx[2].description.html + "")) div.innerHTML = raw_value;		},
+			if ((!current || dirty & /*cards*/ 2) && raw_value !== (raw_value = /*card*/ ctx[2].description.html + "")) div.innerHTML = raw_value;
+			if (!current || dirty & /*cards*/ 2 && a_href_value !== (a_href_value = `/comissions#${/*card*/ ctx[2].id}`)) {
+				attr(a, "href", a_href_value);
+			}
+		},
 		i(local) {
 			if (current) return;
 			transition_in(icon.$$.fragment, local);
@@ -3755,7 +3767,7 @@ function create_each_block$1(ctx) {
 			current = false;
 		},
 		d(detaching) {
-			if (detaching) detach(li);
+			if (detaching) detach(a);
 			destroy_component(icon);
 		}
 	};
@@ -6130,6 +6142,7 @@ function create_fragment$b(ctx) {
 				heading: "Coneix les nostres comissions",
 				cards: [
 					{
+						"id": "delegats",
 						"icon": "material-symbols:groups",
 						"title": "Delegats",
 						"description": {
@@ -6138,6 +6151,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
+						"id": "calidoscopi",
 						"icon": "material-symbols:filter-vintage",
 						"title": "Coeducació Calidoscopi",
 						"description": {
@@ -6146,6 +6160,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
+						"id": "educativa",
 						"icon": "material-symbols:school",
 						"title": "Educativa",
 						"description": {
@@ -6154,6 +6169,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
+						"id": "stem",
 						"icon": "material-symbols:science",
 						"title": "Science & Tech",
 						"description": {
@@ -6162,14 +6178,16 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
+						"id": "sostenibilitat",
 						"icon": "material-symbols:eco",
 						"title": "Sostenibilitat",
 						"description": {
 							"html": "<p>Reducció de l’impacte ambiental i conscienciació de la comunitat escolar.</p>",
-							"markdown": "Reducció de l’impacte ambiental i conscienciació de la comunitat escolar."
+							"markdown": "Reducció de l’impacte ambiental i conscienciació de la comunitat escolar.\n\n"
 						}
 					},
 					{
+						"id": "",
 						"icon": "material-symbols:styler",
 						"title": "Tèxtil",
 						"description": {
@@ -6178,6 +6196,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
+						"id": "",
 						"icon": "material-symbols:nightlife",
 						"title": "Bar",
 						"description": {
@@ -6186,6 +6205,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
+						"id": "",
 						"icon": "material-symbols:campaign",
 						"title": "Comunicació",
 						"description": {
@@ -6194,6 +6214,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
+						"id": "",
 						"icon": "material-symbols:interactive-space",
 						"title": "Escola de pares",
 						"description": {
@@ -6202,6 +6223,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
+						"id": "",
 						"icon": "material-symbols:sports-basketball",
 						"title": "Extraescolars",
 						"description": {
@@ -6210,6 +6232,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
+						"id": "",
 						"icon": "material-symbols:person-celebrate",
 						"title": "Festes",
 						"description": {
@@ -6218,6 +6241,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
+						"id": "",
 						"icon": "material-symbols:tools-power-drill",
 						"title": "Infraestructures",
 						"description": {
@@ -6226,6 +6250,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
+						"id": "",
 						"icon": "material-symbols:local-library",
 						"title": "Llibres",
 						"description": {
@@ -6234,6 +6259,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
+						"id": "",
 						"icon": "material-symbols:local-dining",
 						"title": "Menjador",
 						"description": {
@@ -6242,6 +6268,7 @@ function create_fragment$b(ctx) {
 						}
 					},
 					{
+						"id": "",
 						"icon": "material-symbols:psychology-alt",
 						"title": "Savi",
 						"description": {
