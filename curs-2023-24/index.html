@@ -228,75 +228,57 @@
             top: 1rem
         }
 
-        .section-container.svelte-1tp7z49.svelte-1tp7z49 {
+        .section-container.svelte-1oe3rov.svelte-1oe3rov.svelte-1oe3rov {
             display: grid;
-            place-items: center;
-            text-align: center
+            place-items: center
         }
 
-        .heading.svelte-1tp7z49.svelte-1tp7z49 {
-            font-size: 3rem;
-            font-weight: 700;
-            line-height: 1;
-            max-width: 850px;
+        .heading.svelte-1oe3rov.svelte-1oe3rov.svelte-1oe3rov {
+            text-align: center;
             margin-bottom: 1.5rem
         }
 
-        @media(min-width: 700px) {
-            .heading.svelte-1tp7z49.svelte-1tp7z49 {
-                font-size: 4rem
-            }
-        }
-
-        .subheading.svelte-1tp7z49.svelte-1tp7z49 {
-            font-size: 1.25rem;
-            margin-bottom: 2rem
-        }
-
-        .buttons.svelte-1tp7z49.svelte-1tp7z49 {
-            margin-top: 0.5rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem
-        }
-
-        .buttons.svelte-1tp7z49 .button.svelte-1tp7z49:not(:only-child):last-child {
-            background: inherit;
-            border: 2px solid var(--color-accent, rebeccapurple);
-            color: var(--color, #222)
-        }
-
-        .items.svelte-1sexf5z.svelte-1sexf5z {
-            display: grid;
-            gap: 6rem
-        }
-
-        @media(min-width: 800px) {
-            .items.svelte-1sexf5z.svelte-1sexf5z {
-                grid-template-columns: 1fr 1fr
-            }
-        }
-
-        .item.svelte-1sexf5z.svelte-1sexf5z {
-            display: grid;
-            place-content: start
-        }
-
-        .item.svelte-1sexf5z img.svelte-1sexf5z {
+        .accordion.svelte-1oe3rov.svelte-1oe3rov.svelte-1oe3rov {
             width: 100%;
-            margin-bottom: 1.5rem;
-            border-radius: 60px
+            max-width: 900px
         }
 
-        .item.svelte-1sexf5z .body.svelte-1sexf5z {
-            display: grid;
-            place-items: flex-start;
-            line-height: 1.5
+        .accordion.svelte-1oe3rov .item.svelte-1oe3rov.svelte-1oe3rov {
+            padding: 1.5rem 0
         }
 
-        .item.svelte-1sexf5z .body .title.svelte-1sexf5z {
-            font-size: 1.75rem;
-            margin-bottom: .5rem
+        .accordion.svelte-1oe3rov .item.svelte-1oe3rov.svelte-1oe3rov:not(:last-child) {
+            border-bottom: 1px solid var(--border-color, #eee)
+        }
+
+        .accordion.svelte-1oe3rov .item.active button .icon.svelte-1oe3rov.svelte-1oe3rov {
+            transform: scaleY(-1)
+        }
+
+        .accordion.svelte-1oe3rov .item button.svelte-1oe3rov.svelte-1oe3rov {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%
+        }
+
+        .accordion.svelte-1oe3rov .item button span.svelte-1oe3rov.svelte-1oe3rov {
+            font-size: 1.25rem;
+            font-weight: 600
+        }
+
+        .accordion.svelte-1oe3rov .item button .icon.svelte-1oe3rov.svelte-1oe3rov {
+            font-size: 1.25rem;
+            color: var(--color-accent, rebeccapurple);
+            transition: transform 0.2s
+        }
+
+        .accordion.svelte-1oe3rov .item button.svelte-1oe3rov+.description.svelte-1oe3rov {
+            padding-top: 0.5rem
+        }
+
+        .accordion.svelte-1oe3rov .item .description.svelte-1oe3rov.svelte-1oe3rov {
+            padding-right: 2rem
         }
 
         .section-container.svelte-1w8uu5r {
@@ -483,29 +465,49 @@
             </div>
         </header>
     </div>
-    <div class="section" id="section-9b6a298b">
-        <header class="section-container svelte-1tp7z49">
-            <h1 class="heading svelte-1tp7z49">CURS 2023/24</h1>
-            <span class="subheading svelte-1tp7z49">Everything you need to boost your online presence.</span>
-            <div class="buttons svelte-1tp7z49"><a class="button svelte-1tp7z49" href="/">Learn More</a></div>
-        </header>
-    </div>
-    <div class="section" id="section-bdd96b5b">
-        <section class="section-container svelte-1sexf5z">
-            <div class="items svelte-1sexf5z">
-                <div class="item svelte-1sexf5z"><img src="https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175433948Test.png" alt="ombres" class="svelte-1sexf5z">
-                    <div class="body svelte-1sexf5z">
-                        <h2 class="title heading svelte-1sexf5z">Abstract</h2>
-                        <div class="description"><!-- HTML_TAG_START -->Instant updates to your calendar without having to go through a third party app.<!-- HTML_TAG_END --></div>
-                        <a class="button secondary positive svelte-1xtducc" href="/projectes">Veure més</a>
+    <div class="section" id="section-d8a3cfb9">
+        <section class="section-container svelte-1oe3rov">
+            <h2 class="heading svelte-1oe3rov">CURS 2023/24</h2>
+            <div class="accordion svelte-1oe3rov">
+                <div class="item svelte-1oe3rov active"><button class="svelte-1oe3rov"><span class="svelte-1oe3rov">Benvinguda inici de curs</span>
+                        <span class="icon svelte-1oe3rov"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 256 256" class="iconify iconify--ph"><!-- HTML_TAG_START -->
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z" /><!-- HTML_TAG_END -->
+                            </svg>
+                        </span></button>
+                    <div class="description svelte-1oe3rov"><!-- HTML_TAG_START -->
+                        <p>Dossier inici de curs</p>
+                        <p>Full cessió de dades</p><!-- HTML_TAG_END -->
                     </div>
+                    <noscript>
+                        <div class="description svelte-1oe3rov"><!-- HTML_TAG_START -->
+                            <p>Dossier inici de curs</p>
+                            <p>Full cessió de dades</p><!-- HTML_TAG_END -->
+                        </div>
+                    </noscript>
                 </div>
-                <div class="item svelte-1sexf5z"><img src="https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175043312FORA%20STOCKS!!%20(2).jpg" alt="" class="svelte-1sexf5z">
-                    <div class="body svelte-1sexf5z">
-                        <h2 class="title heading svelte-1sexf5z">Landscape</h2>
-                        <div class="description"><!-- HTML_TAG_START --> Landscape photography showcases the beauty and grandeur of natural environments, capturing expansive vistas and dramatic lighting.<!-- HTML_TAG_END --></div>
-                        <a class="button secondary positive svelte-1xtducc" href="/">consequat</a>
-                    </div>
+                <div class="item svelte-1oe3rov"><button class="svelte-1oe3rov"><span class="svelte-1oe3rov">Quotes i pagaments</span>
+                        <span class="icon svelte-1oe3rov"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 256 256" class="iconify iconify--ph"><!-- HTML_TAG_START -->
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z" /><!-- HTML_TAG_END -->
+                            </svg>
+                        </span></button>
+
+                    <noscript>
+                        <div class="description svelte-1oe3rov"><!-- HTML_TAG_START -->
+                            <p>Quotes i pagaments curs 2023/24</p><!-- HTML_TAG_END -->
+                        </div>
+                    </noscript>
+                </div>
+                <div class="item svelte-1oe3rov"><button class="svelte-1oe3rov"><span class="svelte-1oe3rov">Preus tèxtils</span>
+                        <span class="icon svelte-1oe3rov"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 256 256" class="iconify iconify--ph"><!-- HTML_TAG_START -->
+                                <path fill="currentColor" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z" /><!-- HTML_TAG_END -->
+                            </svg>
+                        </span></button>
+
+                    <noscript>
+                        <div class="description svelte-1oe3rov"><!-- HTML_TAG_START -->
+                            <p>Listat de preus de tèxtil</p><!-- HTML_TAG_END -->
+                        </div>
+                    </noscript>
                 </div>
             </div>
         </section>
