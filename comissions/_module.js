@@ -5537,7 +5537,7 @@ function create_fragment$b(ctx) {
 					{
 						"link": {
 							"url": "/documents",
-							"label": "Documents"
+							"label": "Documents de l'AFA"
 						}
 					}
 				]

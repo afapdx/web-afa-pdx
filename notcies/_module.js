@@ -4672,7 +4672,7 @@ function create_fragment$6(ctx) {
 					{
 						"link": {
 							"url": "/documents",
-							"label": "Documents"
+							"label": "Documents de l'AFA"
 						}
 					}
 				]
