@@ -4867,12 +4867,6 @@ function create_fragment$7(ctx) {
 						}
 					},
 					{
-						"link": {
-							"url": "/documents",
-							"label": "Documents"
-						}
-					},
-					{
 						"link": { "url": "/notcies", "label": "Notícies" }
 					}
 				],

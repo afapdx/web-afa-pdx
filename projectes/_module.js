@@ -3822,7 +3822,7 @@ function create_fragment$3(ctx) {
 			attr(span, "class", "subheading svelte-1tp7z49");
 			attr(header, "class", "section-container svelte-1tp7z49");
 			attr(div, "class", "section");
-			attr(div, "id", "section-c11d0c18");
+			attr(div, "id", "section-1977d602");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
@@ -5557,7 +5557,7 @@ function create_fragment$a(ctx) {
 	component_2 = new Component$3({
 			props: {
 				heading: "PROJECTES",
-				subheading: "Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. ",
+				subheading: "Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció.",
 				buttons: []
 			}
 		});
