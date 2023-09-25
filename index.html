@@ -1,1047 +1,349 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta name="generator" content="Primo" />
-    <!-- HEAD_svelte-8sbkh0_START -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css">
-    <style>
-        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-
-        hr {
-            border-top-width: 4px;
-            border-color: #194027;
-            border-style: dotted;
-        }
-
-        :root {
-            --verd-fosc: #194027;
-            --verd-clar: #388762;
-            --taronja: #ff7f3f;
-            --lila-fosc: #dac9fa;
-            --lila: #e8e1fd;
-            --verd-fluor: #f3f7a5;
-            --crema: #fff5eb;
-
-            --background: var(--crema);
-
-            --color-accent: var(--verd-fosc);
-        }
-
-        #page {
-            font-family: 'Space Grotesk', system-ui, sans-serif;
-            color: var(--color-accent);
-            line-height: 1.6;
-            font-size: 1rem;
-            background: var(--background);
-        }
-
-        .section-container {
-            max-width: var(--max-width, 1000px);
-            margin: 0 auto;
-            padding: 3rem var(--padding, 1rem);
-        }
-
-        .heading {
-            font-size: 3rem;
-            line-height: 1;
-            font-weight: 700;
-            margin: 0;
-            font-family: 'Yeseva One';
-        }
-
-        .markdown h1 {
-            font-family: 'Yeseva One';
-        }
-
-        .markdown h2 {
-            font-family: 'Yeseva One';
-        }
-
-        .button {
-            color: var(--crema);
-            padding: 0.5em 1.1em;
-            border-radius: 12px;
-        }
-
-        .button.primary.positive {
-            background-color: var(--color-accent);
-        }
-
-        .button.primary.positive:hover {
-            background-color: var(--verd-clar);
-        }
-
-        .button.secondary.positive,
-        .button.tertiary.positive {
-            color: var(--color-accent);
-        }
-
-        .button.secondary.positive:hover,
-        .button.tertiary.positive:hover {
-            color: var(--verd-clar);
-        }
-
-        .button.secondary.positive {
-            border: 1px solid var(--color-accent);
-        }
-
-        .button.secondary.positive:hover {
-            border-color: var(--verd-clar);
-        }
-
-        .button.primary.negative {
-            background-color: var(--crema) !important;
-            color: var(--color-accent);
-        }
-
-        .button.primary.negative:hover {
-            background-color: var(--lila) !important;
-        }
-
-        .button.secondary.negative:hover,
-        .button.tertiary.negative:hover {
-            color: var(--lila);
-        }
-
-        .button.secondary.negative {
-            border: 1px solid var(--crema);
-        }
-
-        .button.secondary.negative:hover {
-            border-color: var(--lila);
-        }
-    </style><!-- HEAD_svelte-8sbkh0_END -->
-    <style>
-        header.svelte-ay5z1s.svelte-ay5z1s {
-            color: white;
-            background-size: cover;
-            background-position: center;
-            display: grid;
-            gap: 14rem;
-            position: relative;
-            border-radius: 25% 10% 97% 113% / 4% 61% 81%
-        }
-
-        .header-background.svelte-ay5z1s.svelte-ay5z1s {
-            position: absolute;
-            top: 0;
-            height: 5.5rem;
-            right: 0;
-            left: 0;
-            background: rgb(0, 0, 0);
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-            z-index: 10
-        }
-
-        .section-container.svelte-ay5z1s.svelte-ay5z1s {
-            z-index: 20;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 1rem;
-            padding-bottom: 1rem
-        }
-
-        .logo.svelte-ay5z1s.svelte-ay5z1s {
-            font-size: 1.5rem;
-            font-weight: 600;
-            line-height: 1.2
-        }
-
-        .desktop-nav.svelte-ay5z1s.svelte-ay5z1s {
-            display: none;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%
-        }
-
-        .desktop-nav.svelte-ay5z1s nav.svelte-ay5z1s {
-            display: flex;
-            gap: 2rem
-        }
-
-        .desktop-nav.svelte-ay5z1s nav a.link.svelte-ay5z1s {
-            border-color: transparent;
-            transition: border-color 0.1s;
-            font-size: 0.95rem
-        }
-
-        .desktop-nav.svelte-ay5z1s nav a.link.svelte-ay5z1s:hover,
-        .desktop-nav.svelte-ay5z1s nav a.link .active.svelte-ay5z1s {
-            border-color: initial
-        }
-
-        @media(min-width: 800px) {
-            .desktop-nav.svelte-ay5z1s.svelte-ay5z1s {
-                display: flex
-            }
-        }
-
-        .mobile-nav.svelte-ay5z1s.svelte-ay5z1s {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            font-weight: 500
-        }
-
-        @media(min-width: 800px) {
-            .mobile-nav.svelte-ay5z1s.svelte-ay5z1s {
-                display: none
-            }
-        }
-
-        .headline.svelte-ay5z1s.svelte-ay5z1s {
-            font-size: clamp(2rem, 10vw, 3.5rem);
-            max-width: 800px;
-            padding-bottom: 2rem;
-            line-height: 1.1;
-            font-family: 'Yeseva One';
-            color: #194027
-        }
-
-        #popup.svelte-ay5z1s.svelte-ay5z1s {
-            color: #222;
-            font-size: 1.25rem;
-            display: grid;
-            gap: 1rem;
-            position: absolute;
-            text-align: center;
-            background-color: var(--background-color, white);
-            box-shadow: var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));
-            border-radius: var(--border-radius);
-            inset: 0.5rem;
-            bottom: initial;
-            padding: 2rem;
-            z-index: 1
-        }
-
-        #popup.svelte-ay5z1s button#close.svelte-ay5z1s {
-            position: absolute;
-            right: 1rem;
-            top: 1rem
-        }
-
-        .section-container.svelte-1w4x0lq.svelte-1w4x0lq {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem
-        }
-
-        .heading.svelte-1w4x0lq.svelte-1w4x0lq {
-            text-align: center;
-            margin-bottom: .4em
-        }
-
-        ul.svelte-1w4x0lq.svelte-1w4x0lq {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-            gap: 1.75rem
-        }
-
-        ul.svelte-1w4x0lq li.svelte-1w4x0lq {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            border: 1px solid var(--verd-fosc);
-            border-radius: 16px;
-            padding: 1.5rem
-        }
-
-        ul.svelte-1w4x0lq li .title.svelte-1w4x0lq {
-            display: flex;
-            gap: 0.7rem;
-            font-size: 1.25rem;
-            font-weight: bold;
-            align-items: flex-start
-        }
-
-        ul.svelte-1w4x0lq li .title .label.svelte-1w4x0lq {
-            line-height: 1.1;
-            font-weight: 600
-        }
-
-        .background.svelte-1urllxa.svelte-1urllxa.svelte-1urllxa {
-            background-color: var(--verd-fluor)
-        }
-
-        section.svelte-1urllxa.svelte-1urllxa.svelte-1urllxa {
-            --icon-size: 30px
-        }
-
-        header.svelte-1urllxa.svelte-1urllxa.svelte-1urllxa {
-            margin-bottom: 1rem
-        }
-
-        .heading.svelte-1urllxa.svelte-1urllxa.svelte-1urllxa {
-            text-align: center
-        }
-
-        ul.icon-list.svelte-1urllxa.svelte-1urllxa.svelte-1urllxa {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            -moz-column-gap: 3.5rem;
-            column-gap: 3.5rem;
-            row-gap: 2rem;
-            margin-bottom: 3rem
-        }
-
-        ul.icon-list.svelte-1urllxa li.svelte-1urllxa.svelte-1urllxa {
-            display: flex;
-            gap: 12px;
-            align-items: center
-        }
-
-        ul.icon-list.svelte-1urllxa li.svelte-1urllxa .icon.svelte-1urllxa {
-            color: var(--color-accent);
-            font-size: 1.125rem
-        }
-
-        ul.cards.svelte-1urllxa.svelte-1urllxa.svelte-1urllxa {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-            gap: 2rem
-        }
-
-        ul.cards.svelte-1urllxa li.svelte-1urllxa.svelte-1urllxa {
-            display: grid;
-            place-items: start;
-            gap: 1.5rem;
-            border: 1px solid var(--verd-fosc);
-            padding: 2.5rem;
-            border-radius: 16px
-        }
-
-        ul.cards.svelte-1urllxa li.svelte-1urllxa .icon.svelte-1urllxa {
-            padding: 0.75rem 0;
-            color: var(--verd-fosc);
-            font-size: var(--icon-size)
-        }
-
-        ul.cards.svelte-1urllxa li .body.svelte-1urllxa.svelte-1urllxa {
-            display: grid;
-            place-items: start;
-            gap: 0.7rem
-        }
-
-        ul.cards.svelte-1urllxa li .body .title.svelte-1urllxa.svelte-1urllxa {
-            display: grid;
-            align-items: center;
-            gap: 1.5rem;
-            font-size: 1.25rem;
-            line-height: 1.4;
-            font-weight: 600
-        }
-
-        ul.cards.svelte-1urllxa li .body .content.svelte-1urllxa.svelte-1urllxa {
-            font-weight: 400;
-            line-height: 1.6
-        }
-
-        section.svelte-d7fulh.svelte-d7fulh {
-            --icon-size: 30px
-        }
-
-        header.svelte-d7fulh.svelte-d7fulh {
-            margin-bottom: 1rem
-        }
-
-        .heading.svelte-d7fulh.svelte-d7fulh {
-            text-align: center
-        }
-
-        ul.icon-list li.svelte-d7fulh .icon.svelte-d7fulh {
-            color: var(--color-accent);
-            font-size: 1.125rem
-        }
-
-        ul.cards.svelte-d7fulh.svelte-d7fulh {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-            gap: 2rem
-        }
-
-        ul.cards.svelte-d7fulh li.svelte-d7fulh {
-            display: grid;
-            place-items: start;
-            gap: 1.5rem;
-            border: 1px solid var(--border-color);
-            padding: 2.5rem;
-            border-radius: var(--border-radius)
-        }
-
-        ul.cards.svelte-d7fulh li .icon.svelte-d7fulh {
-            border: 1px solid var(--border-color);
-            border-radius: var(--border-radius);
-            padding: 0.75rem;
-            color: var(--color-accent);
-            font-size: var(--icon-size)
-        }
-
-        ul.cards.svelte-d7fulh li .body.svelte-d7fulh {
-            display: grid;
-            place-items: start;
-            gap: 1rem
-        }
-
-        ul.cards.svelte-d7fulh li .body .title.svelte-d7fulh {
-            display: grid;
-            align-items: center;
-            gap: 1.5rem;
-            font-size: 1.25rem;
-            line-height: 1.4;
-            font-weight: 600
-        }
-
-        ul.cards.svelte-d7fulh li .body .content.svelte-d7fulh {
-            font-weight: 400;
-            line-height: 1.6
-        }
-
-        .section-container.svelte-1w8uu5r {
-            padding-block: 3rem
-        }
-
-        .items.svelte-1sexf5z.svelte-1sexf5z {
-            display: grid;
-            gap: 6rem
-        }
-
-        @media(min-width: 800px) {
-            .items.svelte-1sexf5z.svelte-1sexf5z {
-                grid-template-columns: 1fr 1fr
-            }
-        }
-
-        .item.svelte-1sexf5z.svelte-1sexf5z {
-            display: grid;
-            place-content: start
-        }
-
-        .item.svelte-1sexf5z img.svelte-1sexf5z {
-            width: 100%;
-            margin-bottom: 1.5rem;
-            border-radius: 60px
-        }
-
-        .item.svelte-1sexf5z .body.svelte-1sexf5z {
-            display: grid;
-            place-items: flex-start;
-            line-height: 1.5
-        }
-
-        .item.svelte-1sexf5z .body .title.svelte-1sexf5z {
-            font-size: 1.75rem;
-            margin-bottom: .5rem
-        }
-
-        .section-container.svelte-1xtducc.svelte-1xtducc {
-            display: grid;
-            justify-content: center
-        }
-
-        .card.svelte-1xtducc.svelte-1xtducc {
-            padding: 4rem clamp(2rem, 10vw, 7rem);
-            border: 1px solid var(--verd-fosc);
-            border-radius: 16px;
-            text-align: center;
-            display: grid
-        }
-
-        .heading.svelte-1xtducc.svelte-1xtducc {
-            margin-bottom: 1.5rem
-        }
-
-        .body.svelte-1xtducc.svelte-1xtducc {
-            max-width: 700px;
-            margin-bottom: 2.25rem
-        }
-
-        .buttons.svelte-1xtducc.svelte-1xtducc {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem
-        }
-
-        .buttons.svelte-1xtducc .button.svelte-1xtducc {
-            display: flex;
-            align-items: center;
-            gap: 0.25rem
-        }
-
-        .section-container.svelte-1w8uu5r {
-            padding-block: 3rem
-        }
-
-        .section-container.svelte-rbezk5.svelte-rbezk5 {
-            display: grid;
-            gap: 2rem
-        }
-
-        @media(min-width: 800px) {
-            .section-container.svelte-rbezk5.svelte-rbezk5 {
-                grid-template-columns: 3fr 5fr;
-                gap: 14rem
-            }
-        }
-
-        .content.svelte-rbezk5.svelte-rbezk5 {
-            display: grid;
-            place-content: flex-start;
-            gap: 1rem
-        }
-
-        .content.svelte-rbezk5 .body.svelte-rbezk5 {
-            margin-top: .7rem;
-            margin-bottom: .5rem
-        }
-
-        .content.svelte-rbezk5 .social-links.svelte-rbezk5 {
-            display: grid;
-            gap: 0.75rem
-        }
-
-        .content.svelte-rbezk5 .social-links a.svelte-rbezk5 {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem
-        }
-
-        .content.svelte-rbezk5 .social-links a .icon.svelte-rbezk5 {
-            font-size: 1.75rem;
-            color: var(--color-accent);
-            transition: var(--transition, 0.1s transform)
-        }
-
-        .content.svelte-rbezk5 .social-links a:hover .icon.svelte-rbezk5 {
-            transform: scale(1.1)
-        }
-
-        form.svelte-rbezk5.svelte-rbezk5 {
-            display: grid;
-            box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
-            gap: 1rem;
-            padding: 2rem;
-            background-color: white;
-            border-radius: 16px
-        }
-
-        form.svelte-rbezk5 label.svelte-rbezk5 {
-            display: grid;
-            gap: 0.25rem
-        }
-
-        form.svelte-rbezk5 label span.svelte-rbezk5 {
-            font-size: 0.75rem;
-            font-weight: 500
-        }
-
-        form.svelte-rbezk5 label input.svelte-rbezk5,
-        form.svelte-rbezk5 label textarea.svelte-rbezk5 {
-            font-size: 1rem;
-            padding: 0.5rem;
-            outline-color: transparent;
-            transition: var(--transition, 0.1s outline-color);
-            border: 1.5px solid var(--border-color, #eee);
-            border-radius: 4px
-        }
-
-        form.svelte-rbezk5 label input.svelte-rbezk5:focus,
-        form.svelte-rbezk5 label textarea.svelte-rbezk5:focus {
-            outline-color: var(--color-accent, rebeccapurple)
-        }
-
-        form.svelte-rbezk5 .button.svelte-rbezk5 {
-            margin-top: 1rem
-        }
-
-        footer.svelte-1wofe1u {
-            background-color: #FF7F3F;
-            color: white
-        }
-
-        .section-container.svelte-1wofe1u {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 10rem
-        }
-
-        nav.svelte-1wofe1u {
-            display: grid;
-            place-items: start;
-            gap: 1.5rem;
-            font-size: 1.5rem
-        }
-
-        footer.svelte-90rszg.svelte-90rszg {
-            background-color: #FF7F3F;
-            color: white
-        }
-
-        .section-container.svelte-90rszg.svelte-90rszg {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            padding-top: 1rem;
-            padding-bottom: 1rem
-        }
-
-        @media(min-width: 600px) {
-            .section-container.svelte-90rszg.svelte-90rszg {
-                flex-direction: row
-            }
-        }
-
-        nav.svelte-90rszg.svelte-90rszg {
-            display: flex;
-            gap: 1rem;
-            font-size: .875rem
-        }
-
-        nav.svelte-90rszg .link.svelte-90rszg {
-            border-color: transparent
-        }
-
-        nav.svelte-90rszg .link.svelte-90rszg:hover {
-            border-color: initial
-        }
-
-        .social-links.svelte-90rszg.svelte-90rszg {
-            display: flex;
-            gap: 1.5rem;
-            font-size: 1.5rem
-        }
-
-        .social-links.svelte-90rszg a.svelte-90rszg {
-            color: var(--verd-fosc);
-            transition: var(--transition, 0.1s transform)
-        }
-
-        .social-links.svelte-90rszg a.svelte-90rszg:hover {
-            transform: scale(1.1)
-        }
-    </style>
-</head>
-
-<body id="page">
-
-    <div class="section" id="section-3452f627">
-        <header style="background-image:url('https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213799336cercavila-escoles-19-b.jpg')" role="img" aria-label="" class="svelte-ay5z1s">
-            <div class="header-background svelte-ay5z1s"></div>
-            <div class="section-container svelte-ay5z1s">
-                <div class="desktop-nav svelte-ay5z1s"><a href="/" class="logo svelte-ay5z1s">Afa Pi d'en Xandri</a>
-                    <nav class="svelte-ay5z1s"><a class="link svelte-ay5z1s" href="/qui-som">Qui som?</a><a class="link svelte-ay5z1s" href="/comissions">Comissions</a><a class="link svelte-ay5z1s" href="/projectes">Projectes</a><a class="link svelte-ay5z1s" href="/curs-2023-24">Curs 2023-24</a><a class="link svelte-ay5z1s" href="/notcies">Notícies</a></nav>
-                </div>
-                <div class="mobile-nav svelte-ay5z1s"><a href="/" class="logo svelte-ay5z1s">Afa Pi d'en Xandri</a>
-                    <button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="30" height="30" viewBox="0 0 24 24" class="iconify iconify--eva"><!-- HTML_TAG_START -->
-                            <g id="iconifySvelte0">
-                                <g id="iconifySvelte1">
-                                    <g id="iconifySvelte2" fill="currentColor">
-                                        <rect width="18" height="2" x="3" y="11" rx=".95" ry=".95" />
-                                        <rect width="18" height="2" x="3" y="16" rx=".95" ry=".95" />
-                                        <rect width="18" height="2" x="3" y="6" rx=".95" ry=".95" />
-                                    </g>
-                                </g>
-                            </g><!-- HTML_TAG_END -->
-                        </svg></button>
-                </div>
-            </div>
-            <div class="section-container svelte-ay5z1s">
-                <h1 class="headline svelte-ay5z1s"></h1>
-            </div>
-        </header>
-    </div>
-    <div class="section" id="section-402b314c">
-        <section class="section-container svelte-1w4x0lq">
-            <h2 class="heading svelte-1w4x0lq">Coneix les nostres comissions</h2>
-            <ul class="svelte-1w4x0lq"><a href="/comissions#bar">
-                    <li class="svelte-1w4x0lq">
-                        <h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START -->
-                                    <path fill="currentColor" d="M5 20v-2h2v-4L1 5h14l-6 9v4h2v2H5Zm.9-11h4.2l1.4-2h-7l1.4 2ZM16 20q-1.25 0-2.125-.875T13 17q0-1.25.875-2.125T16 14q.275 0 .525.038T17 14.2V5h5v3h-3v9q0 1.25-.875 2.125T16 20Z" /><!-- HTML_TAG_END -->
-                                </svg></span>
-                            <span class="label svelte-1w4x0lq">Bar</span>
-                        </h3>
-                        <div class="description"><!-- HTML_TAG_START -->
-                            <p>Encarregada del bar de la festa final de curs i font principal de finançament de AFA.</p><!-- HTML_TAG_END -->
-                        </div>
-                    </li>
-                </a><a href="/comissions#comunicacio">
-                    <li class="svelte-1w4x0lq">
-                        <h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START -->
-                                    <path fill="currentColor" d="M18 13v-2h4v2h-4Zm1.2 7L16 17.6l1.2-1.6l3.2 2.4l-1.2 1.6Zm-2-12L16 6.4L19.2 4l1.2 1.6L17.2 8ZM5 19v-4H4q-.825 0-1.413-.588T2 13v-2q0-.825.588-1.413T4 9h4l5-3v12l-5-3H7v4H5Zm9-3.65v-6.7q.675.6 1.088 1.463T15.5 12q0 1.025-.413 1.888T14 15.35Z" /><!-- HTML_TAG_END -->
-                                </svg></span>
-                            <span class="label svelte-1w4x0lq">Comunicació</span>
-                        </h3>
-                        <div class="description"><!-- HTML_TAG_START -->
-                            <p>S’ocupa de fer arribar a les famílies de l’Escola tota la informació de l'AFA.</p><!-- HTML_TAG_END -->
-                        </div>
-                    </li>
-                </a><a href="/comissions#delegats">
-                    <li class="svelte-1w4x0lq">
-                        <h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START -->
-                                    <path fill="currentColor" d="M0 18v-1.575q0-1.075 1.1-1.75T4 14q.325 0 .625.013t.575.062q-.35.525-.525 1.1t-.175 1.2V18H0Zm6 0v-1.625q0-.8.438-1.463t1.237-1.162q.8-.5 1.913-.75T12 12.75q1.325 0 2.438.25t1.912.75q.8.5 1.225 1.163T18 16.375V18H6Zm13.5 0v-1.625q0-.65-.163-1.225t-.487-1.075q.275-.05.563-.062T20 14q1.8 0 2.9.663t1.1 1.762V18h-4.5ZM4 13q-.825 0-1.413-.588T2 11q0-.85.588-1.425T4 9q.85 0 1.425.575T6 11q0 .825-.575 1.413T4 13Zm16 0q-.825 0-1.413-.588T18 11q0-.85.588-1.425T20 9q.85 0 1.425.575T22 11q0 .825-.575 1.413T20 13Zm-8-1q-1.25 0-2.125-.875T9 9q0-1.275.875-2.138T12 6q1.275 0 2.138.863T15 9q0 1.25-.863 2.125T12 12Z" /><!-- HTML_TAG_END -->
-                                </svg></span>
-                            <span class="label svelte-1w4x0lq">Delegats</span>
-                        </h3>
-                        <div class="description"><!-- HTML_TAG_START -->
-                            <p>Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina.</p><!-- HTML_TAG_END -->
-                        </div>
-                    </li>
-                </a><a href="/comissions#calidoscopi">
-                    <li class="svelte-1w4x0lq">
-                        <h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START -->
-                                    <path fill="currentColor" d="M12.05 22q-1.425 0-2.525-.9T8.15 18.8q-1.325.425-2.675-.05T3.4 17.1q-.75-1.2-.55-2.663T4.15 12q-1.05-.95-1.263-2.35t.463-2.6q.675-1.2 2.038-1.737T8.1 5.2q.275-1.4 1.375-2.3T12 2q1.425 0 2.525.9T15.9 5.2q1.4-.425 2.713.075T20.65 7.05q.675 1.25.488 2.613T19.85 12q1.1.975 1.313 2.413T20.7 17.1q-.725 1.275-2.037 1.7t-2.713 0q-.275 1.4-1.375 2.3t-2.525.9ZM12 16q1.65 0 2.825-1.175T16 12q0-1.65-1.175-2.825T12 8q-1.65 0-2.825 1.175T8 12q0 1.65 1.175 2.825T12 16Z" /><!-- HTML_TAG_END -->
-                                </svg></span>
-                            <span class="label svelte-1w4x0lq">Coeducació Calidoscopi</span>
-                        </h3>
-                        <div class="description"><!-- HTML_TAG_START -->
-                            <p>Dóna suport a l’escola en l’educació en la pau i en el respecte als altres.</p><!-- HTML_TAG_END -->
-                        </div>
-                    </li>
-                </a><a href="/comissions#educativa">
-                    <li class="svelte-1w4x0lq">
-                        <h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START -->
-                                    <path fill="currentColor" d="M21 17v-6.9L12 15L1 9l11-6l11 6v8h-2Zm-9 4l-7-3.8v-5l7 3.8l7-3.8v5L12 21Z" /><!-- HTML_TAG_END -->
-                                </svg></span>
-                            <span class="label svelte-1w4x0lq">Educativa</span>
-                        </h3>
-                        <div class="description"><!-- HTML_TAG_START -->
-                            <p>Suport a l’escola en el desenvolupament del projecte educatiu.</p><!-- HTML_TAG_END -->
-                        </div>
-                    </li>
-                </a><a href="/comissions#stem">
-                    <li class="svelte-1w4x0lq">
-                        <h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START -->
-                                    <path fill="currentColor" d="M5 21q-1.275 0-1.813-1.137t.263-2.113L9 11V5H8q-.425 0-.713-.288T7 4q0-.425.288-.713T8 3h8q.425 0 .713.288T17 4q0 .425-.288.713T16 5h-1v6l5.55 6.75q.8.975.263 2.113T19 21H5Z" /><!-- HTML_TAG_END -->
-                                </svg></span>
-                            <span class="label svelte-1w4x0lq">Science &amp; Tech</span>
-                        </h3>
-                        <div class="description"><!-- HTML_TAG_START -->
-                            <p>Col·labora amb l’escola per millorar la difusió de la ciència i tecnologia. </p><!-- HTML_TAG_END -->
-                        </div>
-                    </li>
-                </a><a href="/comissions#sostenibilitat">
-                    <li class="svelte-1w4x0lq">
-                        <h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START -->
-                                    <path fill="currentColor" d="M11.25 22q-.825 0-1.663-.188t-1.712-.537q.3-3.025 1.75-5.65T13.35 11q-2.75 1.4-4.763 3.7t-2.812 5.25q-.1-.075-.188-.162L5.4 19.6q-1.175-1.175-1.788-2.625T3 13.95q0-1.7.675-3.25T5.55 7.95q2.025-2.025 5.25-2.637t9.05-.113q.45 5.975-.15 9.113t-2.6 5.137q-1.225 1.225-2.738 1.888T11.25 22Z" /><!-- HTML_TAG_END -->
-                                </svg></span>
-                            <span class="label svelte-1w4x0lq">Sostenibilitat</span>
-                        </h3>
-                        <div class="description"><!-- HTML_TAG_START -->
-                            <p>Reducció de l’impacte ambiental i conscienciació de la comunitat escolar.</p><!-- HTML_TAG_END -->
-                        </div>
-                    </li>
-                </a><a href="/comissions#textil">
-                    <li class="svelte-1w4x0lq">
-                        <h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START -->
-                                    <path fill="currentColor" d="M7 22v-6H5.4q-1 0-1.7-.7T3 13.6q0-.725.4-1.337t1.05-.913L11 8.45V7.8q-.9-.325-1.45-1.087T9 5q0-1.25.875-2.125T12 2q1.25 0 2.125.875T15 5h-2q0-.425-.288-.713T12 4q-.425 0-.713.288T11 5q0 .425.288.713T12 6t.713.288Q13 6.574 13 7v1.45l6.55 2.9q.65.3 1.05.913T21 13.6q0 1-.7 1.7t-1.7.7H17v6H7Zm-1.6-8H7v-1h10v1h1.6q.175 0 .288-.125T19 13.55q0-.125-.062-.213t-.188-.137l-6.75-3l-6.75 3q-.125.05-.188.138T5 13.55q0 .2.113.325T5.4 14Z" /><!-- HTML_TAG_END -->
-                                </svg></span>
-                            <span class="label svelte-1w4x0lq">Tèxtil</span>
-                        </h3>
-                        <div class="description"><!-- HTML_TAG_START -->
-                            <p>Ven material tèxtil d'identificació pels Xandris en sortides escolars.</p><!-- HTML_TAG_END -->
-                        </div>
-                    </li>
-                </a><a href="/comissions#escolapares">
-                    <li class="svelte-1w4x0lq">
-                        <h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START -->
-                                    <path fill="currentColor" d="m7 8.5l2-2l-2-2l-2 2l2 2Zm5-1q-1.95 0-3.363 1.3T7.025 12H4V3h16v9h-3.025q-.2-1.9-1.613-3.2T12 7.5ZM4 14q-.825 0-1.413-.588T2 12V3q0-.825.588-1.413T4 1h16q.825 0 1.413.588T22 3v9q0 .825-.588 1.413T20 14h-3.225q.15-.5.2-1t0-1H20V3H4v9h3.025q-.05.5 0 1t.2 1H4Zm12.5-7q.625 0 1.063-.438T18 5.5q0-.625-.438-1.063T16.5 4q-.625 0-1.063.438T15 5.5q0 .625.438 1.063T16.5 7ZM5 23v-2.1q0-.875.488-1.625t1.287-1.125q1.225-.575 2.55-.863T12 17q1.35 0 2.675.288t2.55.862q.8.375 1.288 1.125T19 20.9V23H5Zm7-7q-1.45 0-2.475-1.025T8.5 12.5q0-1.45 1.025-2.475T12 9q1.45 0 2.475 1.025T15.5 12.5q0 1.45-1.025 2.475T12 16Z" /><!-- HTML_TAG_END -->
-                                </svg></span>
-                            <span class="label svelte-1w4x0lq">Escola de pares</span>
-                        </h3>
-                        <div class="description"><!-- HTML_TAG_START -->
-                            <p>Formació en temes psicològics, pedagògics i socials per a les famílies de l’escola.</p><!-- HTML_TAG_END -->
-                        </div>
-                    </li>
-                </a><a href="/comissions#extraescolars">
-                    <li class="svelte-1w4x0lq">
-                        <h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START -->
-                                    <path fill="currentColor" d="M2.05 10.975q.125-1.275.525-2.412t1.1-2.138q.875.9 1.463 2.088t.762 2.462H2.05Zm16.05 0q.175-1.275.75-2.45t1.475-2.075q.7.975 1.1 2.125t.525 2.4H18.1ZM3.675 17.55q-.7-.975-1.1-2.113t-.525-2.412H5.9q-.175 1.275-.763 2.45T3.676 17.55Zm16.65 0q-.9-.9-1.475-2.075t-.75-2.45h3.85q-.125 1.25-.525 2.4t-1.1 2.125Zm-12.4-6.575q-.2-1.8-.975-3.325T4.925 4.9q1.2-1.2 2.738-1.925t3.312-.925v8.925h-3.05Zm5.1 0V2.05q1.775.2 3.313.925T19.075 4.9Q17.8 6.1 17.037 7.638t-.962 3.337h-3.05Zm-2.05 10.975q-1.8-.2-3.325-.937t-2.725-1.938q1.275-1.2 2.038-2.725t.962-3.325h3.05v8.925Zm2.05 0v-8.925h3.05q.2 1.8.963 3.338t2.037 2.737q-1.2 1.2-2.738 1.925t-3.312.925Z" /><!-- HTML_TAG_END -->
-                                </svg></span>
-                            <span class="label svelte-1w4x0lq">Extraescolars</span>
-                        </h3>
-                        <div class="description"><!-- HTML_TAG_START -->
-                            <p>Col·laboració amb Paidos en serveis d’extraescolars, acollida, casals i colònies.</p><!-- HTML_TAG_END -->
-                        </div>
-                    </li>
-                </a><a href="/comissions#festes">
-                    <li class="svelte-1w4x0lq">
-                        <h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START -->
-                                    <path fill="currentColor" d="M9 21v-5q-1.55-.125-3.038-.35T3 15l.5-2q2.075.575 4.2.788T12 14q2.15 0 4.275-.213T20.5 13l.5 2q-1.5.425-2.988.65T15 16v5H9Zm3-8q-.85 0-1.425-.575T10 11q0-.825.575-1.413T12 9q.825 0 1.413.588T14 11q0 .85-.588 1.425T12 13Zm-7.5-3q-.65 0-1.075-.425T3 8.5q0-.625.425-1.063T4.5 7q.625 0 1.063.438T6 8.5q0 .65-.438 1.075T4.5 10Zm15 0q-.65 0-1.075-.425T18 8.5q0-.625.425-1.063T19.5 7q.625 0 1.063.438T21 8.5q0 .65-.438 1.075T19.5 10ZM7.25 6.25q-.65 0-1.075-.425T5.75 4.75q0-.625.425-1.063T7.25 3.25q.625 0 1.063.438T8.75 4.75q0 .65-.438 1.075T7.25 6.25Zm9.5 0q-.65 0-1.075-.425T15.25 4.75q0-.625.425-1.063t1.075-.437q.625 0 1.063.438t.437 1.062q0 .65-.438 1.075t-1.062.425ZM12 5q-.65 0-1.075-.425T10.5 3.5q0-.625.425-1.063T12 2q.625 0 1.063.438T13.5 3.5q0 .65-.438 1.075T12 5Z" /><!-- HTML_TAG_END -->
-                                </svg></span>
-                            <span class="label svelte-1w4x0lq">Festes</span>
-                        </h3>
-                        <div class="description"><!-- HTML_TAG_START -->
-                            <p>Organitza festes durant l’any en col·laboració amb l'escola i és la responsable del Pinyot.</p><!-- HTML_TAG_END -->
-                        </div>
-                    </li>
-                </a><a href="/comissions#infraestructures">
-                    <li class="svelte-1w4x0lq">
-                        <h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START -->
-                                    <path fill="currentColor" d="M6.75 10h4.5q.3 0 .525-.225T12 9.25q0-.3-.225-.525T11.25 8.5h-4.5q-.3 0-.525.225T6 9.25q0 .3.225.525T6.75 10Zm0-2.5h4.5q.3 0 .525-.225T12 6.75q0-.3-.225-.525T11.25 6h-4.5q-.3 0-.525.225T6 6.75q0 .3.225.525t.525.225ZM17 11V5h1q.825 0 1.413.588T20 7h2q.425 0 .713.288T23 8q0 .425-.288.713T22 9h-2q0 .825-.588 1.413T18 11h-1Zm-5 4.5H6V13q-1.65 0-2.825-1.175T2 9V7q0-1.65 1.175-2.825T6 3h8q.825 0 1.413.588T16 5v6q0 .825-.588 1.413T14 13h-2v2.5ZM5.5 21q-.625 0-1.063-.438T4 19.5V18q0-.625.438-1.063T5.5 16.5h7q.625 0 1.063.438T14 18v1.5q0 .625-.438 1.063T12.5 21h-7Z" /><!-- HTML_TAG_END -->
-                                </svg></span>
-                            <span class="label svelte-1w4x0lq">Infraestructures</span>
-                        </h3>
-                        <div class="description"><!-- HTML_TAG_START -->
-                            <p>Col·labora amb l’Ajuntament per resoldre possibles problemes d'infrastuctura de l'escola. .</p><!-- HTML_TAG_END -->
-                        </div>
-                    </li>
-                </a><a href="/comissions#llibres">
-                    <li class="svelte-1w4x0lq">
-                        <h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START -->
-                                    <path fill="currentColor" d="M12 22.5q-1.8-1.7-4.125-2.6T3 19V8q2.525 0 4.85.913T12 11.55q1.825-1.725 4.15-2.638T21 8v11q-2.575 0-4.888.9T12 22.5ZM12 9q-1.65 0-2.825-1.175T8 5q0-1.65 1.175-2.825T12 1q1.65 0 2.825 1.175T16 5q0 1.65-1.175 2.825T12 9Z" /><!-- HTML_TAG_END -->
-                                </svg></span>
-                            <span class="label svelte-1w4x0lq">Llibres</span>
-                        </h3>
-                        <div class="description"><!-- HTML_TAG_START -->
-                            <p>Col·labora amb l’escola en la gestió dels llibres socialitzats i organitza la venda de llibres.</p><!-- HTML_TAG_END -->
-                        </div>
-                    </li>
-                </a><a href="/comissions#menjador">
-                    <li class="svelte-1w4x0lq">
-                        <h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START -->
-                                    <path fill="currentColor" d="m4.375 21l-1.4-1.4l10.25-10.25q-.45-1.05-.125-2.375T14.525 4.6q1.325-1.325 2.95-1.55t2.65.8q1.025 1.025.8 2.65t-1.55 2.95q-1.05 1.1-2.375 1.425t-2.375-.125L13.375 12l7.6 7.6l-1.4 1.4l-7.6-7.55l-7.6 7.55Zm2.95-8.55l-3-3q-1.35-1.35-1.35-3.225T4.325 3l6.2 6.25l-3.2 3.2Z" /><!-- HTML_TAG_END -->
-                                </svg></span>
-                            <span class="label svelte-1w4x0lq">Menjador</span>
-                        </h3>
-                        <div class="description"><!-- HTML_TAG_START -->
-                            <p>Col·labora amb Paidos en del servei de menjador i temps de migdia fent seguiment i control.</p><!-- HTML_TAG_END -->
-                        </div>
-                    </li>
-                </a><a href="/comissions#savi">
-                    <li class="svelte-1w4x0lq">
-                        <h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START -->
-                                    <path fill="currentColor" d="M6 22v-4.3q-1.425-1.3-2.212-3.038T3 11q0-3.75 2.625-6.375T12 2q3.125 0 5.538 1.838t3.137 4.787l1.3 5.125q.125.475-.175.863T21 15h-2v3q0 .825-.588 1.413T17 20h-2v2H6Zm6-6q.425 0 .713-.288T13 15q0-.425-.288-.713T12 14q-.425 0-.713.288T11 15q0 .425.288.713T12 16Zm-.75-3.2h1.525q0-.625.163-1.012t.662-.938q.45-.5.875-1.012T14.9 8.5q0-1.05-.812-1.775T12.075 6q-1 0-1.812.575t-1.138 1.5l1.375.575q.175-.55.613-.888t.962-.337q.55 0 .913.3t.362.775q0 .525-.312.938t-.738.837q-.5.525-.775 1.05T11.25 12.8Z" /><!-- HTML_TAG_END -->
-                                </svg></span>
-                            <span class="label svelte-1w4x0lq">Savi</span>
-                        </h3>
-                        <div class="description"><!-- HTML_TAG_START -->
-                            <p>Organitza el Savi, el concurs més divertit pels pares i mares de l’escola</p><!-- HTML_TAG_END -->
-                        </div>
-                    </li>
-                </a></ul>
-        </section>
-    </div>
-    <div class="section" id="section-08a63993">
-        <div class="background svelte-1urllxa">
-            <section class="section-container svelte-1urllxa">
-                <header class="heading-group svelte-1urllxa">
-                    <h2 class="heading svelte-1urllxa"><!-- HTML_TAG_START -->Properes activitats<!-- HTML_TAG_END --></h2>
-                    <div class="subheading"></div>
-                </header>
-                <ul class="icon-list svelte-1urllxa"></ul>
-                <ul class="cards svelte-1urllxa">
-                    <li class="svelte-1urllxa">
-                        <div class="icon svelte-1urllxa"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--akar-icons"><!-- HTML_TAG_START -->
-                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                    <rect width="20" height="18" x="2" y="4" rx="4" />
-                                    <path d="M8 2v4m8-4v4M2 10h20" />
-                                </g><!-- HTML_TAG_END -->
-                            </svg></div>
-                        <div class="body svelte-1urllxa">
-                            <h3 class="title svelte-1urllxa">Setmana europea de la mobilitat</h3>
-                            <div class="content svelte-1urllxa"><!-- HTML_TAG_START -->
-                                <p>Sept 16-22, 2023</p><!-- HTML_TAG_END -->
-                            </div>
-                            <a href="https://www.sostenible.cat/acte/setmana-europea-de-la-mobilitat-a-sant-cugat-del-valles" class="link svelte-1urllxa"><span>Llegeix més</span>
-
-                            </a>
-                        </div>
-                    </li>
-                    <li class="svelte-1urllxa">
-                        <div class="icon svelte-1urllxa"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--akar-icons"><!-- HTML_TAG_START -->
-                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                    <rect width="20" height="18" x="2" y="4" rx="4" />
-                                    <path d="M8 2v4m8-4v4M2 10h20" />
-                                </g><!-- HTML_TAG_END -->
-                            </svg></div>
-                        <div class="body svelte-1urllxa">
-                            <h3 class="title svelte-1urllxa">Venda de textil: FORA STOCKS!</h3>
-                            <div class="content svelte-1urllxa"><!-- HTML_TAG_START -->
-                                <p>Sept 22, 2023</p><!-- HTML_TAG_END -->
-                            </div>
-                            <a href="/projectes/gestio-de-textil" class="link svelte-1urllxa"><span>Llegeix més</span>
-
-                            </a>
-                        </div>
-                    </li>
-                    <li class="svelte-1urllxa">
-                        <div class="icon svelte-1urllxa"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--akar-icons"><!-- HTML_TAG_START -->
-                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                    <rect width="20" height="18" x="2" y="4" rx="4" />
-                                    <path d="M8 2v4m8-4v4M2 10h20" />
-                                </g><!-- HTML_TAG_END -->
-                            </svg></div>
-                        <div class="body svelte-1urllxa">
-                            <h3 class="title svelte-1urllxa">Assemblea de l'AFA inici de curs</h3>
-                            <div class="content svelte-1urllxa"><!-- HTML_TAG_START -->
-                                <p>Sept 25, 2023 </p><!-- HTML_TAG_END -->
-                            </div>
-                            <a href="/projectes" class="link svelte-1urllxa"><span>Afegeix al teu calendari</span>
-
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </div>
-    </div>
-    <div class="section" id="section-248b2650">
-        <section class="section-container svelte-d7fulh">
-            <header class="heading-group svelte-d7fulh">
-                <h2 class="heading svelte-d7fulh"><!-- HTML_TAG_START -->La màgia del Pi en acció!<!-- HTML_TAG_END --></h2>
-                <div class="subheading"></div>
-            </header>
-            <ul class="cards svelte-d7fulh">
-                <li class="svelte-d7fulh">
-                    <div class="icon svelte-d7fulh"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--akar-icons"><!-- HTML_TAG_START -->
-                            <g fill="none" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8 18V5.716a2 2 0 0 1 1.696-1.977l9-1.385A2 2 0 0 1 21 4.331V16" />
-                                <path d="m8 9l13-2" />
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8 18a3 3 0 1 1-6 0c0-1.657 1.343-2 3-2s3 .343 3 2Zm13-2a3 3 0 1 1-6 0c0-1.657 1.343-2 3-2s3 .343 3 2Z" />
-                            </g><!-- HTML_TAG_END -->
-                        </svg></div>
-                    <div class="body svelte-d7fulh">
-                        <h3 class="title svelte-d7fulh">Cançó del Pinyot (Joan-Pau Chaves)</h3>
-                        <div class="content svelte-d7fulh"><!-- HTML_TAG_START -->
-                            <p>el nostre gegantó té una cançó i la balla a ritme de Joan-Pau Chaves</p><!-- HTML_TAG_END -->
-                        </div>
-                        <a href="/curs-2023-24" class="link svelte-d7fulh"><span>Escolta-la!!</span>
-
-                        </a>
-                    </div>
-                </li>
-                <li class="svelte-d7fulh">
-                    <div class="icon svelte-d7fulh"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--akar-icons"><!-- HTML_TAG_START -->
-                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                <rect width="20" height="16" x="2" y="4" rx="4" />
-                                <path d="m15 12l-5-3v6l5-3Z" />
-                            </g><!-- HTML_TAG_END -->
-                        </svg></div>
-                    <div class="body svelte-d7fulh">
-                        <h3 class="title svelte-d7fulh">Lipdub de l’escola de l’any 2012</h3>
-                        <div class="content svelte-d7fulh"><!-- HTML_TAG_START -->
-                            <p>Un homenatge a mestres, escola, pares, monitors i col.laboradors de l'escola.</p><!-- HTML_TAG_END -->
-                        </div>
-                        <a href="/" class="link svelte-d7fulh"><span>Mira-te'l</span>
-
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-    </div>
-    <div class="section" id="section-947c6695">
-        <div class="section-container svelte-1w8uu5r">
-            <hr>
-        </div>
-    </div>
-    <div class="section" id="section-90efc9f5">
-        <section class="section-container svelte-1sexf5z">
-            <div class="items svelte-1sexf5z">
-                <div class="item svelte-1sexf5z"><img src="https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/16953706100001.jpg" alt="" class="svelte-1sexf5z">
-                    <div class="body svelte-1sexf5z">
-                        <h2 class="title heading svelte-1sexf5z">Primer dia d'escola!</h2>
-                        <div class="description"><!-- HTML_TAG_START --> Landscape photography showcases the beauty and grandeur of natural environments, capturing expansive vistas and dramatic lighting.<!-- HTML_TAG_END --></div>
-                        <a class="button secondary positive svelte-1xtducc" href="/">Llegir notícia</a>
-                    </div>
-                </div>
-                <div class="item svelte-1sexf5z"><img src="https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/16953862160001.jpg" alt="ombres" class="svelte-1sexf5z">
-                    <div class="body svelte-1sexf5z">
-                        <h2 class="title heading svelte-1sexf5z">Festa Fi de curs. Gràcies per fer-la possible!</h2>
-                        <div class="description"><!-- HTML_TAG_START -->Instant updates to your calendar without having to go through a third party app.<!-- HTML_TAG_END --></div>
-                        <a class="button secondary positive svelte-1xtducc" href="/notcies/festa-fi-de-curs.-grcies-per-fer-la-possible">Llegir notícia</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="section" id="section-a2b9074c">
-        <section class="section-container svelte-1xtducc">
-            <div class="card svelte-1xtducc">
-                <h2 class="heading svelte-1xtducc">Vols formar part de l'AFA?</h2>
-                <div class="body svelte-1xtducc"><!-- HTML_TAG_START -->
-                    <p>Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. Cadascú pot fer la seva contribució, col·laborant segons la seva disponibilitat i interès.</p><!-- HTML_TAG_END -->
-                </div>
-                <div class="buttons svelte-1xtducc"><a class="button secondary positive svelte-1xtducc" href="/">
-                        <span>Contacta'ns</span>
-                    </a><a class="button primary positive svelte-1xtducc" href="/comissions">
-                        <span>Busca la teva comisssió</span>
-                    </a></div>
-            </div>
-        </section>
-    </div>
-    <div class="section" id="section-3c91ae66">
-        <div class="section-container svelte-1w8uu5r">
-            <hr>
-        </div>
-    </div>
-    <div class="section" id="section-352791c5">
-        <section class="section-container svelte-rbezk5">
-            <div class="content svelte-rbezk5">
-                <h2 class="heading">Bústia de suggeriments</h2>
-                <div class="body svelte-rbezk5"><!-- HTML_TAG_START -->Whether you have questions, feedback, or just want to say hello, we're always ready to hear from you. Please fill out the contact form, and we'll do our best to respond within 24-48 hours.<!-- HTML_TAG_END --></div>
-                <div class="social-links svelte-rbezk5"><a href="/" class="svelte-rbezk5"><span class="icon svelte-rbezk5"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START -->
-                                <path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z" /><!-- HTML_TAG_END -->
-                            </svg></span>
-                        Instagram
-                    </a></div>
-            </div>
-            <form class="svelte-rbezk5"><label class="svelte-rbezk5"><span class="svelte-rbezk5">Name</span>
-                    <input type="text" placeholder="John Doe" class="svelte-rbezk5">
-                </label><label class="svelte-rbezk5"><span class="svelte-rbezk5">Email</span>
-                    <input type="email" placeholder="johndoe@johndoe.com" class="svelte-rbezk5">
-                </label><label class="svelte-rbezk5"><span class="svelte-rbezk5">El teu missatge</span>
-                    <textarea class="svelte-rbezk5"></textarea>
-                </label>
-                <button class="button primary positive svelte-rbezk5" type="submit">Envia</button>
-            </form>
-        </section>
-    </div>
-    <div class="section" id="section-910f8de4">
-        <footer class="svelte-1wofe1u">
-            <div class="section-container svelte-1wofe1u">
-                <nav class="svelte-1wofe1u"><a class="link" href="/">Inici</a><a class="link" href="/qui-som">Qui som?</a><a class="link" href="/comissions">Comissions</a><a class="link" href="/projectes">Projectes</a><a class="link" href="/curs-2023-24">Curs 2023/24</a><a class="link" href="/notcies">Notícies</a><a class="link" href="/documents">Documents de l'AFA</a></nav>
-            </div>
-        </footer>
-    </div>
-    <div class="section" id="section-46899b77">
-        <footer class="svelte-90rszg">
-            <div class="section-container svelte-90rszg">
-                <nav class="svelte-90rszg"><a class="link svelte-90rszg" target="_blank" href="">Copyright 2024 / Escola Pi d'en Xandri</a><a class="link svelte-90rszg" target="_blank" href="https://maps.app.goo.gl/EZEMzpQLcUgFYdj86">C/Santa Teresa, 61 08172 Sant Cugat del Vallès</a></nav>
-                <div class="social-links svelte-90rszg"><a href="https://twitter.com/ampapixandri" target="_blank" aria-label="Twitter" class="svelte-90rszg"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START -->
-                            <path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z" /><!-- HTML_TAG_END -->
-                        </svg>
-                    </a><a href="/" target="_blank" aria-label="Instagram" class="svelte-90rszg"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START -->
-                            <path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z" /><!-- HTML_TAG_END -->
-                        </svg>
-                    </a></div>
-            </div>
-        </footer>
-    </div>
-
-    <script type="module">
-        const path = window.location.pathname === '/' ? '' : window.location.pathname
-        const [{
-            default: App
-        }] = await Promise.all([
-            import(path + '/_module.js')
-        ]).catch(e => console.error(e))
-        new App({
-            target: document.querySelector('body'),
-            hydrate: true,
-        })
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="generator" content="Primo" />
+      <!-- HEAD_svelte-l7kp_START --><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css"><link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css"><style>@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+hr {
+    border-top-width: 4px;
+    border-color: #194027;
+  border-style: dotted;
+}
+:root {
+  --verd-fosc: #194027;
+  --verd-clar:  #388762;
+  --taronja: #ff7f3f;
+  --lila-fosc: #dac9fa;
+  --lila: #e8e1fd;
+  --verd-fluor: #f3f7a5;
+  --crema: #fff5eb;
+  
+  --background: var(--crema);
+
+  --color-accent: var(--verd-fosc);
+}
+
+#page {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  color: var(--color-accent);
+  line-height: 1.6; 
+  font-size: 1rem;
+  background: var(--background);
+}
+
+.section-container {
+  max-width: var(--max-width, 1000px);
+  margin: 0 auto;
+  padding: 3rem var(--padding, 1rem); 
+}
+
+.heading {
+  /* font-size: 3rem; */
+  line-height: 1;
+  font-weight: 700;
+  margin: 0;
+  font-family: 'Yeseva One';
+}
+h3.heading {
+  font-size: 2.2rem;
+}
+
+.markdown h1, .markdown h2, .markdown h3 {
+  font-family: 'Yeseva One';
+}
+
+.button {
+  color: var(--crema);
+  padding: 0.5em 1.1em;
+  border-radius: 12px;
+}
+
+.button.primary.positive {
+    background-color: var(--color-accent);
+  }
+
+.button.primary.positive:hover {
+      background-color: var(--verd-clar);
+    }
+
+.button.secondary.positive, .button.tertiary.positive {
+    color: var(--color-accent);
+  }
+
+.button.secondary.positive:hover, .button.tertiary.positive:hover {
+      color: var(--verd-clar);
+    }
+
+.button.secondary.positive {
+    border: 1px solid var(--color-accent);
+  }
+
+.button.secondary.positive:hover {
+      border-color: var(--verd-clar);
+    }
+
+.button.primary.negative {
+    background-color: var(--crema) !important;
+    color: var(--color-accent);
+  }
+
+.button.primary.negative:hover {
+      background-color: var(--lila) !important;
+    }
+
+.button.secondary.negative:hover, .button.tertiary.negative:hover {
+      color: var(--lila);
+    }
+
+.button.secondary.negative {
+    border: 1px solid var(--crema);
+  }
+
+.button.secondary.negative:hover {
+      border-color: var(--lila);
+    }
+</style><!-- HEAD_svelte-l7kp_END -->
+      <style>header.svelte-ay5z1s.svelte-ay5z1s{color:white;background-size:cover;background-position:center;display:grid;gap:14rem;position:relative;border-radius:25% 10% 97% 113% / 4% 61% 81%
+}.header-background.svelte-ay5z1s.svelte-ay5z1s{position:absolute;top:0;height:5.5rem;right:0;left:0;background:rgb(0,0,0);background:linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 100%);z-index:10}.section-container.svelte-ay5z1s.svelte-ay5z1s{z-index:20;width:100%;display:flex;justify-content:center;align-items:center;padding-top:1rem;padding-bottom:1rem}.logo.svelte-ay5z1s.svelte-ay5z1s{font-size:1.5rem;font-weight:600;line-height:1.2}.desktop-nav.svelte-ay5z1s.svelte-ay5z1s{display:none;align-items:center;justify-content:space-between;width:100%}.desktop-nav.svelte-ay5z1s nav.svelte-ay5z1s{display:flex;gap:2rem}.desktop-nav.svelte-ay5z1s nav a.link.svelte-ay5z1s{border-color:transparent;transition:border-color 0.1s;font-size:0.95rem}.desktop-nav.svelte-ay5z1s nav a.link.svelte-ay5z1s:hover,.desktop-nav.svelte-ay5z1s nav a.link .active.svelte-ay5z1s{border-color:initial}@media(min-width: 800px){.desktop-nav.svelte-ay5z1s.svelte-ay5z1s{display:flex
+}}.mobile-nav.svelte-ay5z1s.svelte-ay5z1s{display:flex;align-items:center;justify-content:space-between;width:100%;font-weight:500}@media(min-width: 800px){.mobile-nav.svelte-ay5z1s.svelte-ay5z1s{display:none
+}}.headline.svelte-ay5z1s.svelte-ay5z1s{font-size:clamp(2rem, 10vw, 3.5rem);max-width:800px;padding-bottom:2rem;line-height:1.1;font-family:'Yeseva One';color:#194027}#popup.svelte-ay5z1s.svelte-ay5z1s{color:#222;font-size:1.25rem;display:grid;gap:1rem;position:absolute;text-align:center;background-color:var(--background-color, white);box-shadow:var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));border-radius:var(--border-radius);inset:0.5rem;bottom:initial;padding:2rem;z-index:1}#popup.svelte-ay5z1s button#close.svelte-ay5z1s{position:absolute;right:1rem;top:1rem}
+.section-container.svelte-1w4x0lq.svelte-1w4x0lq{display:flex;flex-direction:column;gap:2rem}.heading.svelte-1w4x0lq.svelte-1w4x0lq{text-align:center;margin-bottom:.4em}ul.svelte-1w4x0lq.svelte-1w4x0lq{display:grid;grid-template-columns:repeat(auto-fit, minmax(15rem, 1fr));gap:1.75rem}ul.svelte-1w4x0lq li.svelte-1w4x0lq{display:flex;flex-direction:column;gap:1rem;border:1px solid var(--verd-fosc);border-radius:16px;padding:1.5rem}ul.svelte-1w4x0lq li .title.svelte-1w4x0lq{display:flex;gap:0.7rem;font-size:1.25rem;font-weight:bold;align-items:flex-start}ul.svelte-1w4x0lq li .title .label.svelte-1w4x0lq{line-height:1.1;font-weight:600}
+.background.svelte-1urllxa.svelte-1urllxa.svelte-1urllxa{background-color:var(--verd-fluor)}section.svelte-1urllxa.svelte-1urllxa.svelte-1urllxa{--icon-size:30px}header.svelte-1urllxa.svelte-1urllxa.svelte-1urllxa{margin-bottom:1rem}.heading.svelte-1urllxa.svelte-1urllxa.svelte-1urllxa{text-align:center}ul.icon-list.svelte-1urllxa.svelte-1urllxa.svelte-1urllxa{display:flex;flex-wrap:wrap;justify-content:center;-moz-column-gap:3.5rem;column-gap:3.5rem;row-gap:2rem;margin-bottom:3rem}ul.icon-list.svelte-1urllxa li.svelte-1urllxa.svelte-1urllxa{display:flex;gap:12px;align-items:center}ul.icon-list.svelte-1urllxa li.svelte-1urllxa .icon.svelte-1urllxa{color:var(--color-accent);font-size:1.125rem}ul.cards.svelte-1urllxa.svelte-1urllxa.svelte-1urllxa{display:grid;grid-template-columns:repeat(auto-fit, minmax(15rem, 1fr));gap:2rem}ul.cards.svelte-1urllxa li.svelte-1urllxa.svelte-1urllxa{display:grid;place-items:start;gap:1.5rem;border:1px solid var(--verd-fosc);padding:2.5rem;border-radius:16px}ul.cards.svelte-1urllxa li.svelte-1urllxa .icon.svelte-1urllxa{padding:0.75rem 0;color:var(--verd-fosc);font-size:var(--icon-size)}ul.cards.svelte-1urllxa li .body.svelte-1urllxa.svelte-1urllxa{display:grid;place-items:start;gap:0.7rem}ul.cards.svelte-1urllxa li .body .title.svelte-1urllxa.svelte-1urllxa{display:grid;align-items:center;gap:1.5rem;font-size:1.25rem;line-height:1.4;font-weight:600}ul.cards.svelte-1urllxa li .body .content.svelte-1urllxa.svelte-1urllxa{font-weight:400;line-height:1.6}
+section.svelte-d7fulh.svelte-d7fulh{--icon-size:30px}header.svelte-d7fulh.svelte-d7fulh{margin-bottom:1rem}.heading.svelte-d7fulh.svelte-d7fulh{text-align:center}ul.icon-list li.svelte-d7fulh .icon.svelte-d7fulh{color:var(--color-accent);font-size:1.125rem}ul.cards.svelte-d7fulh.svelte-d7fulh{display:grid;grid-template-columns:repeat(auto-fit, minmax(15rem, 1fr));gap:2rem}ul.cards.svelte-d7fulh li.svelte-d7fulh{display:grid;place-items:start;gap:1.5rem;border:1px solid var(--border-color);padding:2.5rem;border-radius:var(--border-radius)}ul.cards.svelte-d7fulh li .icon.svelte-d7fulh{border:1px solid var(--border-color);border-radius:var(--border-radius);padding:0.75rem;color:var(--color-accent);font-size:var(--icon-size)}ul.cards.svelte-d7fulh li .body.svelte-d7fulh{display:grid;place-items:start;gap:1rem}ul.cards.svelte-d7fulh li .body .title.svelte-d7fulh{display:grid;align-items:center;gap:1.5rem;font-size:1.25rem;line-height:1.4;font-weight:600}ul.cards.svelte-d7fulh li .body .content.svelte-d7fulh{font-weight:400;line-height:1.6}
+.section-container.svelte-1w8uu5r{padding-block:3rem}
+.items.svelte-1sexf5z.svelte-1sexf5z{display:grid;gap:6rem}@media(min-width: 800px){.items.svelte-1sexf5z.svelte-1sexf5z{grid-template-columns:1fr 1fr
+}}.item.svelte-1sexf5z.svelte-1sexf5z{display:grid;place-content:start}.item.svelte-1sexf5z img.svelte-1sexf5z{width:100%;margin-bottom:1.5rem;border-radius:60px}.item.svelte-1sexf5z .body.svelte-1sexf5z{display:grid;place-items:flex-start;line-height:1.5}.item.svelte-1sexf5z .body .title.svelte-1sexf5z{font-size:1.75rem;margin-bottom:.5rem}
+.section-container.svelte-1xtducc.svelte-1xtducc{display:grid;justify-content:center}.card.svelte-1xtducc.svelte-1xtducc{padding:4rem clamp(2rem, 10vw, 7rem);border:1px solid var(--verd-fosc);border-radius:16px;text-align:center;display:grid}.heading.svelte-1xtducc.svelte-1xtducc{margin-bottom:1.5rem}.body.svelte-1xtducc.svelte-1xtducc{max-width:700px;margin-bottom:2.25rem}.buttons.svelte-1xtducc.svelte-1xtducc{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem}.buttons.svelte-1xtducc .button.svelte-1xtducc{display:flex;align-items:center;gap:0.25rem}
+.section-container.svelte-1w8uu5r{padding-block:3rem}
+.section-container.svelte-rbezk5.svelte-rbezk5{display:grid;gap:2rem}@media(min-width: 800px){.section-container.svelte-rbezk5.svelte-rbezk5{grid-template-columns:3fr 5fr;gap:14rem
+}}.content.svelte-rbezk5.svelte-rbezk5{display:grid;place-content:flex-start;gap:1rem}.content.svelte-rbezk5 .body.svelte-rbezk5{margin-top:.7rem;margin-bottom:.5rem}.content.svelte-rbezk5 .social-links.svelte-rbezk5{display:grid;gap:0.75rem}.content.svelte-rbezk5 .social-links a.svelte-rbezk5{display:flex;align-items:center;gap:0.75rem}.content.svelte-rbezk5 .social-links a .icon.svelte-rbezk5{font-size:1.75rem;color:var(--color-accent);transition:var(--transition, 0.1s transform)}.content.svelte-rbezk5 .social-links a:hover .icon.svelte-rbezk5{transform:scale(1.1)}form.svelte-rbezk5.svelte-rbezk5{display:grid;box-shadow:0 6px 6px rgba(0, 0, 0, 0.1);gap:1rem;padding:2rem;background-color:white;border-radius:16px}form.svelte-rbezk5 label.svelte-rbezk5{display:grid;gap:0.25rem}form.svelte-rbezk5 label span.svelte-rbezk5{font-size:0.75rem;font-weight:500}form.svelte-rbezk5 label input.svelte-rbezk5,form.svelte-rbezk5 label textarea.svelte-rbezk5{font-size:1rem;padding:0.5rem;outline-color:transparent;transition:var(--transition, 0.1s outline-color);border:1.5px solid var(--border-color, #eee);border-radius:4px}form.svelte-rbezk5 label input.svelte-rbezk5:focus,form.svelte-rbezk5 label textarea.svelte-rbezk5:focus{outline-color:var(--color-accent, rebeccapurple)}form.svelte-rbezk5 .button.svelte-rbezk5{margin-top:1rem}
+footer.svelte-wkoex3{background-color:#FF7F3F;color:white}.section-container.svelte-wkoex3{display:flex;justify-content:space-between}nav.svelte-wkoex3{display:grid;place-items:start;gap:1.5rem;font-size:1.5rem}
+footer.svelte-90rszg.svelte-90rszg{background-color:#FF7F3F;color:white}.section-container.svelte-90rszg.svelte-90rszg{display:flex;justify-content:space-between;flex-direction:column;align-items:center;gap:1rem;padding-top:1rem;padding-bottom:1rem}@media(min-width: 600px){.section-container.svelte-90rszg.svelte-90rszg{flex-direction:row
+}}nav.svelte-90rszg.svelte-90rszg{display:flex;gap:1rem;font-size:.875rem}nav.svelte-90rszg .link.svelte-90rszg{border-color:transparent}nav.svelte-90rszg .link.svelte-90rszg:hover{border-color:initial}.social-links.svelte-90rszg.svelte-90rszg{display:flex;gap:1.5rem;font-size:1.5rem}.social-links.svelte-90rszg a.svelte-90rszg{color:var(--verd-fosc);transition:var(--transition, 0.1s transform)}.social-links.svelte-90rszg a.svelte-90rszg:hover{transform:scale(1.1)}</style>
+    </head>
+    <body id="page">
+       
+<div class="section" id="section-3452f627"><header style="background-image:url('https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213799336cercavila-escoles-19-b.jpg')" role="img" aria-label="" class="svelte-ay5z1s"><div class="header-background svelte-ay5z1s"></div>
+  <div class="section-container svelte-ay5z1s"><div class="desktop-nav svelte-ay5z1s"><a href="/" class="logo svelte-ay5z1s">Afa Pi d'en Xandri</a>
+      <nav class="svelte-ay5z1s"><a class="link svelte-ay5z1s" href="/qui-som">Qui som?</a><a class="link svelte-ay5z1s" href="/comissions">Comissions</a><a class="link svelte-ay5z1s" href="/projectes">Projectes</a><a class="link svelte-ay5z1s" href="/curs-2023-24">Curs 2023-24</a><a class="link svelte-ay5z1s" href="/notcies">Notícies</a></nav></div>
+    <div class="mobile-nav svelte-ay5z1s"><a href="/" class="logo svelte-ay5z1s">Afa Pi d'en Xandri</a>
+      <button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="30" height="30" viewBox="0 0 24 24" class="iconify iconify--eva"><!-- HTML_TAG_START --><g id="iconifySvelte0"><g id="iconifySvelte1"><g id="iconifySvelte2" fill="currentColor"><rect width="18" height="2" x="3" y="11" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="16" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="6" rx=".95" ry=".95"/></g></g></g><!-- HTML_TAG_END --></svg></button>
+      </div></div>
+  <div class="section-container svelte-ay5z1s"><h1 class="headline svelte-ay5z1s"></h1></div></header></div> 
+<div class="section" id="section-402b314c"><section class="section-container svelte-1w4x0lq"><h2 class="heading svelte-1w4x0lq">Coneix les nostres comissions</h2>
+  <ul class="svelte-1w4x0lq"><a href="/comissions#bar"><li class="svelte-1w4x0lq"><h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="M5 20v-2h2v-4L1 5h14l-6 9v4h2v2H5Zm.9-11h4.2l1.4-2h-7l1.4 2ZM16 20q-1.25 0-2.125-.875T13 17q0-1.25.875-2.125T16 14q.275 0 .525.038T17 14.2V5h5v3h-3v9q0 1.25-.875 2.125T16 20Z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-1w4x0lq">Bar</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Encarregada del bar de la festa final de curs i font principal de finançament de AFA.</p><!-- HTML_TAG_END --></div></li>
+      </a><a href="/comissions#comunicacio"><li class="svelte-1w4x0lq"><h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="M18 13v-2h4v2h-4Zm1.2 7L16 17.6l1.2-1.6l3.2 2.4l-1.2 1.6Zm-2-12L16 6.4L19.2 4l1.2 1.6L17.2 8ZM5 19v-4H4q-.825 0-1.413-.588T2 13v-2q0-.825.588-1.413T4 9h4l5-3v12l-5-3H7v4H5Zm9-3.65v-6.7q.675.6 1.088 1.463T15.5 12q0 1.025-.413 1.888T14 15.35Z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-1w4x0lq">Comunicació</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>S’ocupa de fer arribar a les famílies de l’Escola tota la informació de l'AFA.</p><!-- HTML_TAG_END --></div></li>
+      </a><a href="/comissions#delegats"><li class="svelte-1w4x0lq"><h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="M0 18v-1.575q0-1.075 1.1-1.75T4 14q.325 0 .625.013t.575.062q-.35.525-.525 1.1t-.175 1.2V18H0Zm6 0v-1.625q0-.8.438-1.463t1.237-1.162q.8-.5 1.913-.75T12 12.75q1.325 0 2.438.25t1.912.75q.8.5 1.225 1.163T18 16.375V18H6Zm13.5 0v-1.625q0-.65-.163-1.225t-.487-1.075q.275-.05.563-.062T20 14q1.8 0 2.9.663t1.1 1.762V18h-4.5ZM4 13q-.825 0-1.413-.588T2 11q0-.85.588-1.425T4 9q.85 0 1.425.575T6 11q0 .825-.575 1.413T4 13Zm16 0q-.825 0-1.413-.588T18 11q0-.85.588-1.425T20 9q.85 0 1.425.575T22 11q0 .825-.575 1.413T20 13Zm-8-1q-1.25 0-2.125-.875T9 9q0-1.275.875-2.138T12 6q1.275 0 2.138.863T15 9q0 1.25-.863 2.125T12 12Z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-1w4x0lq">Delegats</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina.</p><!-- HTML_TAG_END --></div></li>
+      </a><a href="/comissions#calidoscopi"><li class="svelte-1w4x0lq"><h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="M12.05 22q-1.425 0-2.525-.9T8.15 18.8q-1.325.425-2.675-.05T3.4 17.1q-.75-1.2-.55-2.663T4.15 12q-1.05-.95-1.263-2.35t.463-2.6q.675-1.2 2.038-1.737T8.1 5.2q.275-1.4 1.375-2.3T12 2q1.425 0 2.525.9T15.9 5.2q1.4-.425 2.713.075T20.65 7.05q.675 1.25.488 2.613T19.85 12q1.1.975 1.313 2.413T20.7 17.1q-.725 1.275-2.037 1.7t-2.713 0q-.275 1.4-1.375 2.3t-2.525.9ZM12 16q1.65 0 2.825-1.175T16 12q0-1.65-1.175-2.825T12 8q-1.65 0-2.825 1.175T8 12q0 1.65 1.175 2.825T12 16Z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-1w4x0lq">Coeducació Calidoscopi</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Dóna suport a l’escola en l’educació en la pau i en el respecte als altres.</p><!-- HTML_TAG_END --></div></li>
+      </a><a href="/comissions#educativa"><li class="svelte-1w4x0lq"><h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="M21 17v-6.9L12 15L1 9l11-6l11 6v8h-2Zm-9 4l-7-3.8v-5l7 3.8l7-3.8v5L12 21Z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-1w4x0lq">Educativa</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Suport a l’escola en el desenvolupament del projecte educatiu.</p><!-- HTML_TAG_END --></div></li>
+      </a><a href="/comissions#stem"><li class="svelte-1w4x0lq"><h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="M5 21q-1.275 0-1.813-1.137t.263-2.113L9 11V5H8q-.425 0-.713-.288T7 4q0-.425.288-.713T8 3h8q.425 0 .713.288T17 4q0 .425-.288.713T16 5h-1v6l5.55 6.75q.8.975.263 2.113T19 21H5Z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-1w4x0lq">Science &amp; Tech</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Col·labora amb l’escola per millorar la difusió de la ciència i tecnologia. </p><!-- HTML_TAG_END --></div></li>
+      </a><a href="/comissions#sostenibilitat"><li class="svelte-1w4x0lq"><h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="M11.25 22q-.825 0-1.663-.188t-1.712-.537q.3-3.025 1.75-5.65T13.35 11q-2.75 1.4-4.763 3.7t-2.812 5.25q-.1-.075-.188-.162L5.4 19.6q-1.175-1.175-1.788-2.625T3 13.95q0-1.7.675-3.25T5.55 7.95q2.025-2.025 5.25-2.637t9.05-.113q.45 5.975-.15 9.113t-2.6 5.137q-1.225 1.225-2.738 1.888T11.25 22Z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-1w4x0lq">Sostenibilitat</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Reducció de l’impacte ambiental i conscienciació de la comunitat escolar.</p><!-- HTML_TAG_END --></div></li>
+      </a><a href="/comissions#textil"><li class="svelte-1w4x0lq"><h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="M7 22v-6H5.4q-1 0-1.7-.7T3 13.6q0-.725.4-1.337t1.05-.913L11 8.45V7.8q-.9-.325-1.45-1.087T9 5q0-1.25.875-2.125T12 2q1.25 0 2.125.875T15 5h-2q0-.425-.288-.713T12 4q-.425 0-.713.288T11 5q0 .425.288.713T12 6t.713.288Q13 6.574 13 7v1.45l6.55 2.9q.65.3 1.05.913T21 13.6q0 1-.7 1.7t-1.7.7H17v6H7Zm-1.6-8H7v-1h10v1h1.6q.175 0 .288-.125T19 13.55q0-.125-.062-.213t-.188-.137l-6.75-3l-6.75 3q-.125.05-.188.138T5 13.55q0 .2.113.325T5.4 14Z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-1w4x0lq">Tèxtil</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Ven material tèxtil d'identificació pels Xandris en sortides escolars.</p><!-- HTML_TAG_END --></div></li>
+      </a><a href="/comissions#escolapares"><li class="svelte-1w4x0lq"><h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="m7 8.5l2-2l-2-2l-2 2l2 2Zm5-1q-1.95 0-3.363 1.3T7.025 12H4V3h16v9h-3.025q-.2-1.9-1.613-3.2T12 7.5ZM4 14q-.825 0-1.413-.588T2 12V3q0-.825.588-1.413T4 1h16q.825 0 1.413.588T22 3v9q0 .825-.588 1.413T20 14h-3.225q.15-.5.2-1t0-1H20V3H4v9h3.025q-.05.5 0 1t.2 1H4Zm12.5-7q.625 0 1.063-.438T18 5.5q0-.625-.438-1.063T16.5 4q-.625 0-1.063.438T15 5.5q0 .625.438 1.063T16.5 7ZM5 23v-2.1q0-.875.488-1.625t1.287-1.125q1.225-.575 2.55-.863T12 17q1.35 0 2.675.288t2.55.862q.8.375 1.288 1.125T19 20.9V23H5Zm7-7q-1.45 0-2.475-1.025T8.5 12.5q0-1.45 1.025-2.475T12 9q1.45 0 2.475 1.025T15.5 12.5q0 1.45-1.025 2.475T12 16Z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-1w4x0lq">Escola de pares</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Formació en temes psicològics, pedagògics i socials per a les famílies de l’escola.</p><!-- HTML_TAG_END --></div></li>
+      </a><a href="/comissions#extraescolars"><li class="svelte-1w4x0lq"><h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="M2.05 10.975q.125-1.275.525-2.412t1.1-2.138q.875.9 1.463 2.088t.762 2.462H2.05Zm16.05 0q.175-1.275.75-2.45t1.475-2.075q.7.975 1.1 2.125t.525 2.4H18.1ZM3.675 17.55q-.7-.975-1.1-2.113t-.525-2.412H5.9q-.175 1.275-.763 2.45T3.676 17.55Zm16.65 0q-.9-.9-1.475-2.075t-.75-2.45h3.85q-.125 1.25-.525 2.4t-1.1 2.125Zm-12.4-6.575q-.2-1.8-.975-3.325T4.925 4.9q1.2-1.2 2.738-1.925t3.312-.925v8.925h-3.05Zm5.1 0V2.05q1.775.2 3.313.925T19.075 4.9Q17.8 6.1 17.037 7.638t-.962 3.337h-3.05Zm-2.05 10.975q-1.8-.2-3.325-.937t-2.725-1.938q1.275-1.2 2.038-2.725t.962-3.325h3.05v8.925Zm2.05 0v-8.925h3.05q.2 1.8.963 3.338t2.037 2.737q-1.2 1.2-2.738 1.925t-3.312.925Z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-1w4x0lq">Extraescolars</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Col·laboració amb Paidos en serveis d’extraescolars, acollida, casals i colònies.</p><!-- HTML_TAG_END --></div></li>
+      </a><a href="/comissions#festes"><li class="svelte-1w4x0lq"><h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="M9 21v-5q-1.55-.125-3.038-.35T3 15l.5-2q2.075.575 4.2.788T12 14q2.15 0 4.275-.213T20.5 13l.5 2q-1.5.425-2.988.65T15 16v5H9Zm3-8q-.85 0-1.425-.575T10 11q0-.825.575-1.413T12 9q.825 0 1.413.588T14 11q0 .85-.588 1.425T12 13Zm-7.5-3q-.65 0-1.075-.425T3 8.5q0-.625.425-1.063T4.5 7q.625 0 1.063.438T6 8.5q0 .65-.438 1.075T4.5 10Zm15 0q-.65 0-1.075-.425T18 8.5q0-.625.425-1.063T19.5 7q.625 0 1.063.438T21 8.5q0 .65-.438 1.075T19.5 10ZM7.25 6.25q-.65 0-1.075-.425T5.75 4.75q0-.625.425-1.063T7.25 3.25q.625 0 1.063.438T8.75 4.75q0 .65-.438 1.075T7.25 6.25Zm9.5 0q-.65 0-1.075-.425T15.25 4.75q0-.625.425-1.063t1.075-.437q.625 0 1.063.438t.437 1.062q0 .65-.438 1.075t-1.062.425ZM12 5q-.65 0-1.075-.425T10.5 3.5q0-.625.425-1.063T12 2q.625 0 1.063.438T13.5 3.5q0 .65-.438 1.075T12 5Z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-1w4x0lq">Festes</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Organitza festes durant l’any en col·laboració amb l'escola i és la responsable del Pinyot.</p><!-- HTML_TAG_END --></div></li>
+      </a><a href="/comissions#infraestructures"><li class="svelte-1w4x0lq"><h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="M6.75 10h4.5q.3 0 .525-.225T12 9.25q0-.3-.225-.525T11.25 8.5h-4.5q-.3 0-.525.225T6 9.25q0 .3.225.525T6.75 10Zm0-2.5h4.5q.3 0 .525-.225T12 6.75q0-.3-.225-.525T11.25 6h-4.5q-.3 0-.525.225T6 6.75q0 .3.225.525t.525.225ZM17 11V5h1q.825 0 1.413.588T20 7h2q.425 0 .713.288T23 8q0 .425-.288.713T22 9h-2q0 .825-.588 1.413T18 11h-1Zm-5 4.5H6V13q-1.65 0-2.825-1.175T2 9V7q0-1.65 1.175-2.825T6 3h8q.825 0 1.413.588T16 5v6q0 .825-.588 1.413T14 13h-2v2.5ZM5.5 21q-.625 0-1.063-.438T4 19.5V18q0-.625.438-1.063T5.5 16.5h7q.625 0 1.063.438T14 18v1.5q0 .625-.438 1.063T12.5 21h-7Z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-1w4x0lq">Infraestructures</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Col·labora amb l’Ajuntament per resoldre possibles  problemes d'infrastuctura de l'escola. .</p><!-- HTML_TAG_END --></div></li>
+      </a><a href="/comissions#llibres"><li class="svelte-1w4x0lq"><h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 22.5q-1.8-1.7-4.125-2.6T3 19V8q2.525 0 4.85.913T12 11.55q1.825-1.725 4.15-2.638T21 8v11q-2.575 0-4.888.9T12 22.5ZM12 9q-1.65 0-2.825-1.175T8 5q0-1.65 1.175-2.825T12 1q1.65 0 2.825 1.175T16 5q0 1.65-1.175 2.825T12 9Z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-1w4x0lq">Llibres</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Col·labora amb l’escola en la gestió dels llibres socialitzats  i organitza la venda de llibres.</p><!-- HTML_TAG_END --></div></li>
+      </a><a href="/comissions#menjador"><li class="svelte-1w4x0lq"><h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="m4.375 21l-1.4-1.4l10.25-10.25q-.45-1.05-.125-2.375T14.525 4.6q1.325-1.325 2.95-1.55t2.65.8q1.025 1.025.8 2.65t-1.55 2.95q-1.05 1.1-2.375 1.425t-2.375-.125L13.375 12l7.6 7.6l-1.4 1.4l-7.6-7.55l-7.6 7.55Zm2.95-8.55l-3-3q-1.35-1.35-1.35-3.225T4.325 3l6.2 6.25l-3.2 3.2Z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-1w4x0lq">Menjador</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Col·labora amb Paidos en del servei de menjador i temps de migdia fent seguiment i control.</p><!-- HTML_TAG_END --></div></li>
+      </a><a href="/comissions#savi"><li class="svelte-1w4x0lq"><h3 class="title svelte-1w4x0lq"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="22" height="22" viewBox="0 0 24 24" style="color: var(--taronja)" class="iconify iconify--material-symbols"><!-- HTML_TAG_START --><path fill="currentColor" d="M6 22v-4.3q-1.425-1.3-2.212-3.038T3 11q0-3.75 2.625-6.375T12 2q3.125 0 5.538 1.838t3.137 4.787l1.3 5.125q.125.475-.175.863T21 15h-2v3q0 .825-.588 1.413T17 20h-2v2H6Zm6-6q.425 0 .713-.288T13 15q0-.425-.288-.713T12 14q-.425 0-.713.288T11 15q0 .425.288.713T12 16Zm-.75-3.2h1.525q0-.625.163-1.012t.662-.938q.45-.5.875-1.012T14.9 8.5q0-1.05-.812-1.775T12.075 6q-1 0-1.812.575t-1.138 1.5l1.375.575q.175-.55.613-.888t.962-.337q.55 0 .913.3t.362.775q0 .525-.312.938t-.738.837q-.5.525-.775 1.05T11.25 12.8Z"/><!-- HTML_TAG_END --></svg></span>
+          <span class="label svelte-1w4x0lq">Savi</span></h3>
+        <div class="description"><!-- HTML_TAG_START --><p>Organitza el Savi, el concurs més divertit pels pares i mares de l’escola</p><!-- HTML_TAG_END --></div></li>
+      </a></ul></section></div> 
+<div class="section" id="section-08a63993"><div class="background svelte-1urllxa"><section class="section-container svelte-1urllxa"><header class="heading-group svelte-1urllxa"><h2 class="heading svelte-1urllxa"><!-- HTML_TAG_START -->Properes activitats<!-- HTML_TAG_END --></h2>
+    <div class="subheading"></div></header>
+  <ul class="icon-list svelte-1urllxa"></ul>
+  <ul class="cards svelte-1urllxa"><li class="svelte-1urllxa"><div class="icon svelte-1urllxa"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--akar-icons"><!-- HTML_TAG_START --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="20" height="18" x="2" y="4" rx="4"/><path d="M8 2v4m8-4v4M2 10h20"/></g><!-- HTML_TAG_END --></svg></div>
+        <div class="body svelte-1urllxa"><h3 class="title svelte-1urllxa">Setmana europea de la mobilitat</h3>
+          <div class="content svelte-1urllxa"><!-- HTML_TAG_START --><p>Sept 16-22, 2023</p><!-- HTML_TAG_END --></div>
+          <a href="https://www.sostenible.cat/acte/setmana-europea-de-la-mobilitat-a-sant-cugat-del-valles" class="link svelte-1urllxa"><span>Llegeix més</span>
+        
+          </a></div>
+      </li><li class="svelte-1urllxa"><div class="icon svelte-1urllxa"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--akar-icons"><!-- HTML_TAG_START --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="20" height="18" x="2" y="4" rx="4"/><path d="M8 2v4m8-4v4M2 10h20"/></g><!-- HTML_TAG_END --></svg></div>
+        <div class="body svelte-1urllxa"><h3 class="title svelte-1urllxa">Venda de textil: FORA STOCKS!</h3>
+          <div class="content svelte-1urllxa"><!-- HTML_TAG_START --><p>Sept 22, 2023</p><!-- HTML_TAG_END --></div>
+          <a href="/projectes/gestio-de-textil" class="link svelte-1urllxa"><span>Llegeix més</span>
+        
+          </a></div>
+      </li><li class="svelte-1urllxa"><div class="icon svelte-1urllxa"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--akar-icons"><!-- HTML_TAG_START --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="20" height="18" x="2" y="4" rx="4"/><path d="M8 2v4m8-4v4M2 10h20"/></g><!-- HTML_TAG_END --></svg></div>
+        <div class="body svelte-1urllxa"><h3 class="title svelte-1urllxa">Assemblea de l'AFA inici de curs</h3>
+          <div class="content svelte-1urllxa"><!-- HTML_TAG_START --><p>Sept 25, 2023 </p><!-- HTML_TAG_END --></div>
+          <a href="/projectes" class="link svelte-1urllxa"><span>Afegeix al teu calendari</span>
+        
+          </a></div>
+      </li></ul></section></div></div> 
+<div class="section" id="section-248b2650"><section class="section-container svelte-d7fulh"><header class="heading-group svelte-d7fulh"><h2 class="heading svelte-d7fulh"><!-- HTML_TAG_START -->La màgia del Pi en acció!<!-- HTML_TAG_END --></h2>
+    <div class="subheading"></div></header>
+  <ul class="cards svelte-d7fulh"><li class="svelte-d7fulh"><div class="icon svelte-d7fulh"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--akar-icons"><!-- HTML_TAG_START --><g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 18V5.716a2 2 0 0 1 1.696-1.977l9-1.385A2 2 0 0 1 21 4.331V16"/><path d="m8 9l13-2"/><path stroke-linecap="round" stroke-linejoin="round" d="M8 18a3 3 0 1 1-6 0c0-1.657 1.343-2 3-2s3 .343 3 2Zm13-2a3 3 0 1 1-6 0c0-1.657 1.343-2 3-2s3 .343 3 2Z"/></g><!-- HTML_TAG_END --></svg></div>
+        <div class="body svelte-d7fulh"><h3 class="title svelte-d7fulh">Cançó del Pinyot (Joan-Pau Chaves)</h3>
+          <div class="content svelte-d7fulh"><!-- HTML_TAG_START --><p>el nostre gegantó té una cançó i la balla a ritme de Joan-Pau Chaves</p><!-- HTML_TAG_END --></div>
+          <a href="/curs-2023-24" class="link svelte-d7fulh"><span>Escolta-la!!</span>
+        
+          </a></div>
+      </li><li class="svelte-d7fulh"><div class="icon svelte-d7fulh"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--akar-icons"><!-- HTML_TAG_START --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="4"/><path d="m15 12l-5-3v6l5-3Z"/></g><!-- HTML_TAG_END --></svg></div>
+        <div class="body svelte-d7fulh"><h3 class="title svelte-d7fulh">Lipdub de l’escola de l’any 2012</h3>
+          <div class="content svelte-d7fulh"><!-- HTML_TAG_START --><p>Un homenatge a mestres, escola, pares, monitors i col.laboradors de l'escola.</p><!-- HTML_TAG_END --></div>
+          <a href="/" class="link svelte-d7fulh"><span>Mira-te'l</span>
+        
+          </a></div>
+      </li></ul></section></div> 
+<div class="section" id="section-947c6695"><div class="section-container svelte-1w8uu5r"><hr></div></div> 
+<div class="section" id="section-90efc9f5"><section class="section-container svelte-1sexf5z"><div class="items svelte-1sexf5z"><div class="item svelte-1sexf5z"><img src="https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/16953706100001.jpg" alt="" class="svelte-1sexf5z">
+        <div class="body svelte-1sexf5z"><h2 class="title heading svelte-1sexf5z">Primer dia d'escola!</h2>
+          <div class="description"><!-- HTML_TAG_START --> Landscape photography showcases the beauty and grandeur of natural environments, capturing expansive vistas and dramatic lighting.<!-- HTML_TAG_END --></div>
+                    <a class="button secondary positive svelte-1xtducc" href="/">Llegir notícia</a></div>
+      </div><div class="item svelte-1sexf5z"><img src="https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/16953862160001.jpg" alt="ombres" class="svelte-1sexf5z">
+        <div class="body svelte-1sexf5z"><h2 class="title heading svelte-1sexf5z">Festa Fi de curs. Gràcies per fer-la possible!</h2>
+          <div class="description"><!-- HTML_TAG_START -->Instant updates to your calendar without having to go through a third party app.<!-- HTML_TAG_END --></div>
+                    <a class="button secondary positive svelte-1xtducc" href="/notcies/festa-fi-de-curs.-grcies-per-fer-la-possible">Llegir notícia</a></div>
+      </div></div></section></div> 
+<div class="section" id="section-a2b9074c"><section class="section-container svelte-1xtducc"><div class="card svelte-1xtducc"><h2 class="heading svelte-1xtducc">Vols formar part de l'AFA?</h2>
+    <div class="body svelte-1xtducc"><!-- HTML_TAG_START --><p>Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. Cadascú pot fer la seva contribució, col·laborant segons la seva disponibilitat i interès.</p><!-- HTML_TAG_END --></div>
+    <div class="buttons svelte-1xtducc"><a class="button secondary positive svelte-1xtducc" href="/">
+          <span>Contacta'ns</span>
+        </a><a class="button primary positive svelte-1xtducc" href="/comissions">
+          <span>Busca la teva comisssió</span>
+        </a></div></div></section></div> 
+<div class="section" id="section-3c91ae66"><div class="section-container svelte-1w8uu5r"><hr></div></div> 
+<div class="section" id="section-352791c5"><section class="section-container svelte-rbezk5"><div class="content svelte-rbezk5"><h2 class="heading">Bústia de suggeriments</h2>
+    <div class="body svelte-rbezk5"><!-- HTML_TAG_START -->Whether you have questions, feedback, or just want to say hello, we're always ready to hear from you. Please fill out the contact form, and we'll do our best to respond within 24-48 hours.<!-- HTML_TAG_END --></div>
+    <div class="social-links svelte-rbezk5"><a href="/" class="svelte-rbezk5"><span class="icon svelte-rbezk5"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/><!-- HTML_TAG_END --></svg></span>
+          Instagram
+        </a></div></div>
+  <form class="svelte-rbezk5"><label class="svelte-rbezk5"><span class="svelte-rbezk5">Name</span>
+          <input type="text" placeholder="John Doe" class="svelte-rbezk5">
+        </label><label class="svelte-rbezk5"><span class="svelte-rbezk5">Email</span>
+          <input type="email" placeholder="johndoe@johndoe.com" class="svelte-rbezk5">
+        </label><label class="svelte-rbezk5"><span class="svelte-rbezk5">El teu missatge</span>
+          <textarea class="svelte-rbezk5"></textarea>
+        </label>
+    <button class="button primary positive svelte-rbezk5" type="submit">Envia</button></form></section></div> 
+<div class="section" id="section-910f8de4"><footer class="svelte-wkoex3"><div class="section-container svelte-wkoex3"><nav class="svelte-wkoex3"><a class="link" href="/">Inici</a><a class="link" href="/qui-som">Qui som?</a><a class="link" href="/comissions">Comissions</a><a class="link" href="/projectes">Projectes</a><a class="link" href="/curs-2023-24">Curs 2023/24</a><a class="link" href="/notcies">Notícies</a><a class="link" href="/documents">Documents de l'AFA</a></nav></div></footer></div> 
+<div class="section" id="section-46899b77"><footer class="svelte-90rszg"><div class="section-container svelte-90rszg"><nav class="svelte-90rszg"><a class="link svelte-90rszg" target="_blank" href="">© 2024 – Escola Pi d'en Xandri</a><a class="link svelte-90rszg" target="_blank" href="https://maps.app.goo.gl/EZEMzpQLcUgFYdj86">c/ Santa Teresa, 61 – 08172 Sant Cugat del Vallès</a></nav>
+  <div class="social-links svelte-90rszg"><a href="https://twitter.com/ampapixandri" target="_blank" aria-label="Twitter" class="svelte-90rszg"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"/><!-- HTML_TAG_END --></svg>
+      </a><a href="/" target="_blank" aria-label="Instagram" class="svelte-90rszg"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/><!-- HTML_TAG_END --></svg>
+      </a></div></div></footer></div> 
+
+      <script type="module">
+      import('/_symbols/ae595602-4b55-4a5d-af1d-5794bd4f83de.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-3452f627'),
+              hydrate: true,
+              props: {"background":{"alt":"","src":"https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213799336cercavila-escoles-19-b.jpg","url":"https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1690213799336cercavila-escoles-19-b.jpg","size":623},"headline":"","logo":{"image":{"alt":"","src":"","url":"","size":null},"title":"Afa Pi d'en Xandri"},"site_nav":[{"link":{"url":"/qui-som","label":"Qui som?"}},{"link":{"url":"/comissions","label":"Comissions"}},{"link":{"url":"/projectes","label":"Projectes"}},{"link":{"url":"/curs-2023-24","label":"Curs 2023-24"}},{"link":{"url":"/notcies","label":"Notícies"}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/bc917fd3-228f-47f7-8b06-419bd1d013c1.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-08a63993'),
+              hydrate: true,
+              props: {"heading":"Properes activitats","subhead":"","icon_list":[],"cards":[{"icon":"akar-icons:calendar","link":{"url":"https://www.sostenible.cat/acte/setmana-europea-de-la-mobilitat-a-sant-cugat-del-valles","label":"Llegeix més"},"title":"Setmana europea de la mobilitat","content":{"html":"<p>Sept 16-22, 2023</p>","markdown":"Sept 16-22, 2023\n\n"}},{"icon":"akar-icons:calendar","link":{"url":"/projectes/gestio-de-textil","label":"Llegeix més"},"title":"Venda de textil: FORA STOCKS!","content":{"html":"<p>Sept 22, 2023</p>","markdown":"Sept 22, 2023\n\n"}},{"icon":"akar-icons:calendar","link":{"url":"/projectes","label":"Afegeix al teu calendari"},"title":"Assemblea de l'AFA inici de curs","content":{"html":"<p>Sept 25, 2023 </p>","markdown":"Sept 25, 2023 "}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/984f20dc-9923-4700-819b-18c233390aa7.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-a2b9074c'),
+              hydrate: true,
+              props: {"heading":"Vols formar part de l'AFA?","body":{"html":"<p>Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. Cadascú pot fer la seva contribució, col·laborant segons la seva disponibilitat i interès.</p>","markdown":"Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. Cadascú pot fer la seva contribució, col·laborant segons la seva disponibilitat i interès."},"buttons":[{"icon":"Dolore laborum cillum","link":{"url":"/","label":"Contacta'ns"},"button_type":"secondary positive"},{"icon":"Officia velit elit","link":{"url":"/comissions","label":"Busca la teva comisssió"},"button_type":"primary positive"}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/f960d5c0-ffe3-4dcf-87d8-7c8f35ef8e9a.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-352791c5'),
+              hydrate: true,
+              props: {"heading":"Bústia de suggeriments","subheading":"Whether you have questions, feedback, or just want to say hello, we're always ready to hear from you. Please fill out the contact form, and we'll do our best to respond within 24-48 hours.","social":[{"icon":"mdi:instagram","link":{"url":"/","label":"Instagram"}}],"inputs":[{"type":"text","label":"Name","placeholder":"John Doe"},{"type":"email","label":"Email","placeholder":"johndoe@johndoe.com"},{"type":"textarea","label":"El teu missatge","placeholder":"El teu missatge"}],"submit_label":"Envia"}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/640c143a-1286-4012-9031-a5f7754b60b4.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-248b2650'),
+              hydrate: true,
+              props: {"heading":"La màgia del Pi en acció!","subhead":"","cards":[{"icon":"akar-icons:music","link":{"url":"/curs-2023-24","label":"Escolta-la!!"},"title":"Cançó del Pinyot (Joan-Pau Chaves)","content":{"html":"<p>el nostre gegantó té una cançó i la balla a ritme de Joan-Pau Chaves</p>","markdown":"el nostre gegantó té una cançó i la balla a ritme de Joan-Pau Chaves\n"}},{"icon":"akar-icons:video","link":{"url":"/","label":"Mira-te'l"},"title":"Lipdub de l’escola de l’any 2012","content":{"html":"<p>Un homenatge a mestres, escola, pares, monitors i col.laboradors de l'escola.</p>","markdown":"Un homenatge a mestres, escola, pares, monitors i col.laboradors de l'escola."}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/789a30e9-64a2-4113-9c90-a43cdf411ee3.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-402b314c'),
+              hydrate: true,
+              props: {"heading":"Coneix les nostres comissions","cards":[{"id":"bar","icon":"material-symbols:nightlife","title":"Bar","description":{"html":"<p>Encarregada del bar de la festa final de curs i font principal de finançament de AFA.</p>","markdown":"Encarregada del bar de la festa final de curs i font principal de finançament de AFA."}},{"id":"comunicacio","icon":"material-symbols:campaign","title":"Comunicació","description":{"html":"<p>S’ocupa de fer arribar a les famílies de l’Escola tota la informació de l'AFA.</p>","markdown":"S’ocupa de fer arribar a les famílies de l’Escola tota la informació de l'AFA.\n"}},{"id":"delegats","icon":"material-symbols:groups","title":"Delegats","description":{"html":"<p>Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina.</p>","markdown":"Coordina les accions dels delegats i marca les pautes a seguir amb la seva feina.\n\n"}},{"id":"calidoscopi","icon":"material-symbols:filter-vintage","title":"Coeducació Calidoscopi","description":{"html":"<p>Dóna suport a l’escola en l’educació en la pau i en el respecte als altres.</p>","markdown":"Dóna suport a l’escola en l’educació en la pau i en el respecte als altres."}},{"id":"educativa","icon":"material-symbols:school","title":"Educativa","description":{"html":"<p>Suport a l’escola en el desenvolupament del projecte educatiu.</p>","markdown":"Suport a l’escola en el desenvolupament del projecte educatiu.\n\n"}},{"id":"stem","icon":"material-symbols:science","title":"Science & Tech","description":{"html":"<p>Col·labora amb l’escola per millorar la difusió de la ciència i tecnologia. </p>","markdown":"Col·labora amb l’escola per millorar la difusió de la ciència i tecnologia. "}},{"id":"sostenibilitat","icon":"material-symbols:eco","title":"Sostenibilitat","description":{"html":"<p>Reducció de l’impacte ambiental i conscienciació de la comunitat escolar.</p>","markdown":"Reducció de l’impacte ambiental i conscienciació de la comunitat escolar.\n\n"}},{"id":"textil","icon":"material-symbols:styler","title":"Tèxtil","description":{"html":"<p>Ven material tèxtil d'identificació pels Xandris en sortides escolars.</p>","markdown":"Ven material tèxtil d'identificació pels Xandris en sortides escolars."}},{"id":"escolapares","icon":"material-symbols:interactive-space","title":"Escola de pares","description":{"html":"<p>Formació en temes psicològics, pedagògics i socials per a les famílies de l’escola.</p>","markdown":"Formació en temes psicològics, pedagògics i socials per a les famílies de l’escola."}},{"id":"extraescolars","icon":"material-symbols:sports-basketball","title":"Extraescolars","description":{"html":"<p>Col·laboració amb Paidos en serveis d’extraescolars, acollida, casals i colònies.</p>","markdown":"Col·laboració amb Paidos en serveis d’extraescolars, acollida, casals i colònies."}},{"id":"festes","icon":"material-symbols:person-celebrate","title":"Festes","description":{"html":"<p>Organitza festes durant l’any en col·laboració amb l'escola i és la responsable del Pinyot.</p>","markdown":"Organitza festes durant l’any en col·laboració amb l'escola i és la responsable del Pinyot."}},{"id":"infraestructures","icon":"material-symbols:tools-power-drill","title":"Infraestructures","description":{"html":"<p>Col·labora amb l’Ajuntament per resoldre possibles  problemes d'infrastuctura de l'escola. .</p>","markdown":"Col·labora amb l’Ajuntament per resoldre possibles  problemes d'infrastuctura de l'escola. ."}},{"id":"llibres","icon":"material-symbols:local-library","title":"Llibres","description":{"html":"<p>Col·labora amb l’escola en la gestió dels llibres socialitzats  i organitza la venda de llibres.</p>","markdown":"Col·labora amb l’escola en la gestió dels llibres socialitzats  i organitza la venda de llibres."}},{"id":"menjador","icon":"material-symbols:local-dining","title":"Menjador","description":{"html":"<p>Col·labora amb Paidos en del servei de menjador i temps de migdia fent seguiment i control.</p>","markdown":"Col·labora amb Paidos en del servei de menjador i temps de migdia fent seguiment i control.\n\n"}},{"id":"savi","icon":"material-symbols:psychology-alt","title":"Savi","description":{"html":"<p>Organitza el Savi, el concurs més divertit pels pares i mares de l’escola</p>","markdown":"Organitza el Savi, el concurs més divertit pels pares i mares de l’escola\n\n"}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/8d4fedab-3459-494e-bad3-c0d85bdd3ad6.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-46899b77'),
+              hydrate: true,
+              props: {"nav":[{"link":{"url":"","label":"© 2024 – Escola Pi d'en Xandri"}},{"link":{"url":"https://maps.app.goo.gl/EZEMzpQLcUgFYdj86","label":"c/ Santa Teresa, 61 – 08172 Sant Cugat del Vallès"}}],"social":[{"icon":"mdi:twitter","link":{"url":"https://twitter.com/ampapixandri","label":"Twitter"}},{"icon":"mdi:instagram","link":{"url":"/","label":"Instagram"}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
     </script>
-</body>
-
-</html>
+    </body>
+  </html>
+  

@@ -1,625 +1,228 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta name="generator" content="Primo" />
-    <!-- HEAD_svelte-8sbkh0_START -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css">
-    <style>
-        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-
-        hr {
-            border-top-width: 4px;
-            border-color: #194027;
-            border-style: dotted;
-        }
-
-        :root {
-            --verd-fosc: #194027;
-            --verd-clar: #388762;
-            --taronja: #ff7f3f;
-            --lila-fosc: #dac9fa;
-            --lila: #e8e1fd;
-            --verd-fluor: #f3f7a5;
-            --crema: #fff5eb;
-
-            --background: var(--crema);
-
-            --color-accent: var(--verd-fosc);
-        }
-
-        #page {
-            font-family: 'Space Grotesk', system-ui, sans-serif;
-            color: var(--color-accent);
-            line-height: 1.6;
-            font-size: 1rem;
-            background: var(--background);
-        }
-
-        .section-container {
-            max-width: var(--max-width, 1000px);
-            margin: 0 auto;
-            padding: 3rem var(--padding, 1rem);
-        }
-
-        .heading {
-            font-size: 3rem;
-            line-height: 1;
-            font-weight: 700;
-            margin: 0;
-            font-family: 'Yeseva One';
-        }
-
-        .markdown h1 {
-            font-family: 'Yeseva One';
-        }
-
-        .markdown h2 {
-            font-family: 'Yeseva One';
-        }
-
-        .button {
-            color: var(--crema);
-            padding: 0.5em 1.1em;
-            border-radius: 12px;
-        }
-
-        .button.primary.positive {
-            background-color: var(--color-accent);
-        }
-
-        .button.primary.positive:hover {
-            background-color: var(--verd-clar);
-        }
-
-        .button.secondary.positive,
-        .button.tertiary.positive {
-            color: var(--color-accent);
-        }
-
-        .button.secondary.positive:hover,
-        .button.tertiary.positive:hover {
-            color: var(--verd-clar);
-        }
-
-        .button.secondary.positive {
-            border: 1px solid var(--color-accent);
-        }
-
-        .button.secondary.positive:hover {
-            border-color: var(--verd-clar);
-        }
-
-        .button.primary.negative {
-            background-color: var(--crema) !important;
-            color: var(--color-accent);
-        }
-
-        .button.primary.negative:hover {
-            background-color: var(--lila) !important;
-        }
-
-        .button.secondary.negative:hover,
-        .button.tertiary.negative:hover {
-            color: var(--lila);
-        }
-
-        .button.secondary.negative {
-            border: 1px solid var(--crema);
-        }
-
-        .button.secondary.negative:hover {
-            border-color: var(--lila);
-        }
-    </style><!-- HEAD_svelte-8sbkh0_END -->
-    <style>
-        header.svelte-ay5z1s.svelte-ay5z1s {
-            color: white;
-            background-size: cover;
-            background-position: center;
-            display: grid;
-            gap: 14rem;
-            position: relative;
-            border-radius: 25% 10% 97% 113% / 4% 61% 81%
-        }
-
-        .header-background.svelte-ay5z1s.svelte-ay5z1s {
-            position: absolute;
-            top: 0;
-            height: 5.5rem;
-            right: 0;
-            left: 0;
-            background: rgb(0, 0, 0);
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-            z-index: 10
-        }
-
-        .section-container.svelte-ay5z1s.svelte-ay5z1s {
-            z-index: 20;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 1rem;
-            padding-bottom: 1rem
-        }
-
-        .logo.svelte-ay5z1s.svelte-ay5z1s {
-            font-size: 1.5rem;
-            font-weight: 600;
-            line-height: 1.2
-        }
-
-        .desktop-nav.svelte-ay5z1s.svelte-ay5z1s {
-            display: none;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%
-        }
-
-        .desktop-nav.svelte-ay5z1s nav.svelte-ay5z1s {
-            display: flex;
-            gap: 2rem
-        }
-
-        .desktop-nav.svelte-ay5z1s nav a.link.svelte-ay5z1s {
-            border-color: transparent;
-            transition: border-color 0.1s;
-            font-size: 0.95rem
-        }
-
-        .desktop-nav.svelte-ay5z1s nav a.link.svelte-ay5z1s:hover,
-        .desktop-nav.svelte-ay5z1s nav a.link .active.svelte-ay5z1s {
-            border-color: initial
-        }
-
-        @media(min-width: 800px) {
-            .desktop-nav.svelte-ay5z1s.svelte-ay5z1s {
-                display: flex
-            }
-        }
-
-        .mobile-nav.svelte-ay5z1s.svelte-ay5z1s {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            font-weight: 500
-        }
-
-        @media(min-width: 800px) {
-            .mobile-nav.svelte-ay5z1s.svelte-ay5z1s {
-                display: none
-            }
-        }
-
-        .headline.svelte-ay5z1s.svelte-ay5z1s {
-            font-size: clamp(2rem, 10vw, 3.5rem);
-            max-width: 800px;
-            padding-bottom: 2rem;
-            line-height: 1.1;
-            font-family: 'Yeseva One';
-            color: #194027
-        }
-
-        #popup.svelte-ay5z1s.svelte-ay5z1s {
-            color: #222;
-            font-size: 1.25rem;
-            display: grid;
-            gap: 1rem;
-            position: absolute;
-            text-align: center;
-            background-color: var(--background-color, white);
-            box-shadow: var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));
-            border-radius: var(--border-radius);
-            inset: 0.5rem;
-            bottom: initial;
-            padding: 2rem;
-            z-index: 1
-        }
-
-        #popup.svelte-ay5z1s button#close.svelte-ay5z1s {
-            position: absolute;
-            right: 1rem;
-            top: 1rem
-        }
-
-        .section-container.svelte-1tp7z49.svelte-1tp7z49 {
-            display: grid;
-            place-items: center;
-            text-align: center
-        }
-
-        .heading.svelte-1tp7z49.svelte-1tp7z49 {
-            font-size: 3rem;
-            font-weight: 700;
-            line-height: 1;
-            max-width: 850px;
-            margin-bottom: 1.5rem
-        }
-
-        @media(min-width: 700px) {
-            .heading.svelte-1tp7z49.svelte-1tp7z49 {
-                font-size: 4rem
-            }
-        }
-
-        .subheading.svelte-1tp7z49.svelte-1tp7z49 {
-            font-size: 1.25rem;
-            margin-bottom: 2rem
-        }
-
-        .buttons.svelte-1tp7z49.svelte-1tp7z49 {
-            margin-top: 0.5rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem
-        }
-
-        .buttons.svelte-1tp7z49 .button.svelte-1tp7z49:not(:only-child):last-child {
-            background: inherit;
-            border: 2px solid var(--color-accent, rebeccapurple);
-            color: var(--color, #222)
-        }
-
-        .items.svelte-1sexf5z.svelte-1sexf5z {
-            display: grid;
-            gap: 6rem
-        }
-
-        @media(min-width: 800px) {
-            .items.svelte-1sexf5z.svelte-1sexf5z {
-                grid-template-columns: 1fr 1fr
-            }
-        }
-
-        .item.svelte-1sexf5z.svelte-1sexf5z {
-            display: grid;
-            place-content: start
-        }
-
-        .item.svelte-1sexf5z img.svelte-1sexf5z {
-            width: 100%;
-            margin-bottom: 1.5rem;
-            border-radius: 60px
-        }
-
-        .item.svelte-1sexf5z .body.svelte-1sexf5z {
-            display: grid;
-            place-items: flex-start;
-            line-height: 1.5
-        }
-
-        .item.svelte-1sexf5z .body .title.svelte-1sexf5z {
-            font-size: 1.75rem;
-            margin-bottom: .5rem
-        }
-
-        .section-container.svelte-1xtducc.svelte-1xtducc {
-            display: grid;
-            justify-content: center
-        }
-
-        .card.svelte-1xtducc.svelte-1xtducc {
-            padding: 4rem clamp(2rem, 10vw, 7rem);
-            border: 1px solid var(--verd-fosc);
-            border-radius: 16px;
-            text-align: center;
-            display: grid
-        }
-
-        .heading.svelte-1xtducc.svelte-1xtducc {
-            margin-bottom: 1.5rem
-        }
-
-        .body.svelte-1xtducc.svelte-1xtducc {
-            max-width: 700px;
-            margin-bottom: 2.25rem
-        }
-
-        .buttons.svelte-1xtducc.svelte-1xtducc {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem
-        }
-
-        .buttons.svelte-1xtducc .button.svelte-1xtducc {
-            display: flex;
-            align-items: center;
-            gap: 0.25rem
-        }
-
-        .section-container.svelte-1w8uu5r {
-            padding-block: 3rem
-        }
-
-        .section-container.svelte-rbezk5.svelte-rbezk5 {
-            display: grid;
-            gap: 2rem
-        }
-
-        @media(min-width: 800px) {
-            .section-container.svelte-rbezk5.svelte-rbezk5 {
-                grid-template-columns: 3fr 5fr;
-                gap: 14rem
-            }
-        }
-
-        .content.svelte-rbezk5.svelte-rbezk5 {
-            display: grid;
-            place-content: flex-start;
-            gap: 1rem
-        }
-
-        .content.svelte-rbezk5 .body.svelte-rbezk5 {
-            margin-top: .7rem;
-            margin-bottom: .5rem
-        }
-
-        .content.svelte-rbezk5 .social-links.svelte-rbezk5 {
-            display: grid;
-            gap: 0.75rem
-        }
-
-        .content.svelte-rbezk5 .social-links a.svelte-rbezk5 {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem
-        }
-
-        .content.svelte-rbezk5 .social-links a .icon.svelte-rbezk5 {
-            font-size: 1.75rem;
-            color: var(--color-accent);
-            transition: var(--transition, 0.1s transform)
-        }
-
-        .content.svelte-rbezk5 .social-links a:hover .icon.svelte-rbezk5 {
-            transform: scale(1.1)
-        }
-
-        form.svelte-rbezk5.svelte-rbezk5 {
-            display: grid;
-            box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
-            gap: 1rem;
-            padding: 2rem;
-            background-color: white;
-            border-radius: 16px
-        }
-
-        form.svelte-rbezk5 label.svelte-rbezk5 {
-            display: grid;
-            gap: 0.25rem
-        }
-
-        form.svelte-rbezk5 label span.svelte-rbezk5 {
-            font-size: 0.75rem;
-            font-weight: 500
-        }
-
-        form.svelte-rbezk5 label input.svelte-rbezk5,
-        form.svelte-rbezk5 label textarea.svelte-rbezk5 {
-            font-size: 1rem;
-            padding: 0.5rem;
-            outline-color: transparent;
-            transition: var(--transition, 0.1s outline-color);
-            border: 1.5px solid var(--border-color, #eee);
-            border-radius: 4px
-        }
-
-        form.svelte-rbezk5 label input.svelte-rbezk5:focus,
-        form.svelte-rbezk5 label textarea.svelte-rbezk5:focus {
-            outline-color: var(--color-accent, rebeccapurple)
-        }
-
-        form.svelte-rbezk5 .button.svelte-rbezk5 {
-            margin-top: 1rem
-        }
-
-        footer.svelte-1wofe1u {
-            background-color: #FF7F3F;
-            color: white
-        }
-
-        .section-container.svelte-1wofe1u {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 10rem
-        }
-
-        nav.svelte-1wofe1u {
-            display: grid;
-            place-items: start;
-            gap: 1.5rem;
-            font-size: 1.5rem
-        }
-
-        footer.svelte-90rszg.svelte-90rszg {
-            background-color: #FF7F3F;
-            color: white
-        }
-
-        .section-container.svelte-90rszg.svelte-90rszg {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            padding-top: 1rem;
-            padding-bottom: 1rem
-        }
-
-        @media(min-width: 600px) {
-            .section-container.svelte-90rszg.svelte-90rszg {
-                flex-direction: row
-            }
-        }
-
-        nav.svelte-90rszg.svelte-90rszg {
-            display: flex;
-            gap: 1rem;
-            font-size: .875rem
-        }
-
-        nav.svelte-90rszg .link.svelte-90rszg {
-            border-color: transparent
-        }
-
-        nav.svelte-90rszg .link.svelte-90rszg:hover {
-            border-color: initial
-        }
-
-        .social-links.svelte-90rszg.svelte-90rszg {
-            display: flex;
-            gap: 1.5rem;
-            font-size: 1.5rem
-        }
-
-        .social-links.svelte-90rszg a.svelte-90rszg {
-            color: var(--verd-fosc);
-            transition: var(--transition, 0.1s transform)
-        }
-
-        .social-links.svelte-90rszg a.svelte-90rszg:hover {
-            transform: scale(1.1)
-        }
-    </style>
-</head>
-
-<body id="page">
-
-    <div class="section" id="section-5f73228c">
-        <header style="background-image:url('https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694177563022Test%20(4).jpg')" role="img" aria-label="" class="svelte-ay5z1s">
-            <div class="header-background svelte-ay5z1s"></div>
-            <div class="section-container svelte-ay5z1s">
-                <div class="desktop-nav svelte-ay5z1s"><a href="/" class="logo svelte-ay5z1s">Afa Pi d'en Xandri</a>
-                    <nav class="svelte-ay5z1s"><a class="link svelte-ay5z1s" href="/qui-som">Qui som?</a><a class="link svelte-ay5z1s" href="/comissions">Comissions</a><a class="link svelte-ay5z1s" href="/projectes">Projectes</a><a class="link svelte-ay5z1s" href="/curs-2023-24">Curs 2023-24</a><a class="link svelte-ay5z1s" href="/notcies">Notícies</a></nav>
-                </div>
-                <div class="mobile-nav svelte-ay5z1s"><a href="/" class="logo svelte-ay5z1s">Afa Pi d'en Xandri</a>
-                    <button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="30" height="30" viewBox="0 0 24 24" class="iconify iconify--eva"><!-- HTML_TAG_START -->
-                            <g id="iconifySvelte0">
-                                <g id="iconifySvelte1">
-                                    <g id="iconifySvelte2" fill="currentColor">
-                                        <rect width="18" height="2" x="3" y="11" rx=".95" ry=".95" />
-                                        <rect width="18" height="2" x="3" y="16" rx=".95" ry=".95" />
-                                        <rect width="18" height="2" x="3" y="6" rx=".95" ry=".95" />
-                                    </g>
-                                </g>
-                            </g><!-- HTML_TAG_END -->
-                        </svg></button>
-                </div>
-            </div>
-            <div class="section-container svelte-ay5z1s">
-                <h1 class="headline svelte-ay5z1s"></h1>
-            </div>
-        </header>
-    </div>
-    <div class="section" id="section-1977d602">
-        <header class="section-container svelte-1tp7z49">
-            <h1 class="heading svelte-1tp7z49">PROJECTES</h1>
-            <span class="subheading svelte-1tp7z49">Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció.</span>
-        </header>
-    </div>
-    <div class="section" id="section-cc647fcf">
-        <section class="section-container svelte-1sexf5z">
-            <div class="items svelte-1sexf5z">
-                <div class="item svelte-1sexf5z"><img src="https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175043312FORA%20STOCKS!!%20(2).jpg" alt="Gestió de tèxtil" class="svelte-1sexf5z">
-                    <div class="body svelte-1sexf5z">
-                        <h2 class="title heading svelte-1sexf5z">Gestió de Tèxtil</h2>
-                        <div class="description"><!-- HTML_TAG_START -->Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola.<!-- HTML_TAG_END --></div>
-                        <a class="button secondary positive svelte-1xtducc" href="/projectes/gestio-de-textil">Descobreix les properes dates</a>
-                    </div>
-                </div>
-                <div class="item svelte-1sexf5z"><img src="https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175433948Test.png" alt="ombres" class="svelte-1sexf5z">
-                    <div class="body svelte-1sexf5z">
-                        <h2 class="title heading svelte-1sexf5z">Millora de les infraestructures de l’escola</h2>
-                        <div class="description"><!-- HTML_TAG_START -->Fent la gestió amb l’administració corresponent i col·laborant amb el projecte hem millorat les infraestructures de l’escola.<!-- HTML_TAG_END --></div>
-                        <a class="button secondary positive svelte-1xtducc" href="/projectes">Veure més</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="section" id="section-982ce7f2">
-        <section class="section-container svelte-1xtducc">
-            <div class="card svelte-1xtducc">
-                <h2 class="heading svelte-1xtducc">Vols formar part de l'AFA?</h2>
-                <div class="body svelte-1xtducc"><!-- HTML_TAG_START -->
-                    <p>Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. Cadascú pot fer la seva contribució, col·laborant segons la seva disponibilitat i interès.</p><!-- HTML_TAG_END -->
-                </div>
-                <div class="buttons svelte-1xtducc"><a class="button secondary positive svelte-1xtducc" href="/">
-                        <span>Contacta'ns</span>
-                    </a><a class="button primary positive svelte-1xtducc" href="/comissions">
-                        <span>Busca la teva comisssió</span>
-                    </a></div>
-            </div>
-        </section>
-    </div>
-    <div class="section" id="section-a9892aa3">
-        <div class="section-container svelte-1w8uu5r">
-            <hr>
-        </div>
-    </div>
-    <div class="section" id="section-2ea0f85f">
-        <section class="section-container svelte-rbezk5">
-            <div class="content svelte-rbezk5">
-                <h2 class="heading">Bústia de suggeriments</h2>
-                <div class="body svelte-rbezk5"><!-- HTML_TAG_START -->Whether you have questions, feedback, or just want to say hello, we're always ready to hear from you. Please fill out the contact form, and we'll do our best to respond within 24-48 hours.<!-- HTML_TAG_END --></div>
-                <div class="social-links svelte-rbezk5"><a href="/" class="svelte-rbezk5"><span class="icon svelte-rbezk5"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START -->
-                                <path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z" /><!-- HTML_TAG_END -->
-                            </svg></span>
-                        Instagram
-                    </a></div>
-            </div>
-            <form class="svelte-rbezk5"><label class="svelte-rbezk5"><span class="svelte-rbezk5">Name</span>
-                    <input type="text" placeholder="El teu nom" class="svelte-rbezk5">
-                </label><label class="svelte-rbezk5"><span class="svelte-rbezk5">Correu electrònic</span>
-                    <input type="email" placeholder="correu@electronic.com" class="svelte-rbezk5">
-                </label><label class="svelte-rbezk5"><span class="svelte-rbezk5">El teu missatge</span>
-                    <textarea class="svelte-rbezk5"></textarea>
-                </label>
-                <button class="button primary positive svelte-rbezk5" type="submit">Submit</button>
-            </form>
-        </section>
-    </div>
-    <div class="section" id="section-7fd14dbd">
-        <footer class="svelte-1wofe1u">
-            <div class="section-container svelte-1wofe1u">
-                <nav class="svelte-1wofe1u"><a class="link" href="/">Inici</a><a class="link" href="/qui-som">Qui som?</a><a class="link" href="/comissions">Comissions</a><a class="link" href="/projectes">Projectes</a><a class="link" href="/curs-2023-24">Curs 2023/24</a><a class="link" href="/notcies">Notícies</a><a class="link" href="/documents">Documents de l'AFA</a></nav>
-            </div>
-        </footer>
-    </div>
-    <div class="section" id="section-b956986a">
-        <footer class="svelte-90rszg">
-            <div class="section-container svelte-90rszg">
-                <nav class="svelte-90rszg"><a class="link svelte-90rszg" target="_blank" href="">Copyright 2024 / Escola Pi d'en Xandri</a><a class="link svelte-90rszg" target="_blank" href="https://maps.app.goo.gl/EZEMzpQLcUgFYdj86">C/Santa Teresa, 61 08172 Sant Cugat del Vallès</a></nav>
-                <div class="social-links svelte-90rszg"><a href="https://twitter.com/ampapixandri" target="_blank" aria-label="Twitter" class="svelte-90rszg"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START -->
-                            <path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z" /><!-- HTML_TAG_END -->
-                        </svg>
-                    </a><a href="/" target="_blank" aria-label="Instagram" class="svelte-90rszg"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START -->
-                            <path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z" /><!-- HTML_TAG_END -->
-                        </svg>
-                    </a></div>
-            </div>
-        </footer>
-    </div>
-
-    <script type="module">
-        const path = window.location.pathname === '/' ? '' : window.location.pathname
-        const [{
-            default: App
-        }] = await Promise.all([
-            import(path + '/_module.js')
-        ]).catch(e => console.error(e))
-        new App({
-            target: document.querySelector('body'),
-            hydrate: true,
-        })
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="generator" content="Primo" />
+      <!-- HEAD_svelte-l7kp_START --><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css"><link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css"><style>@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+hr {
+    border-top-width: 4px;
+    border-color: #194027;
+  border-style: dotted;
+}
+:root {
+  --verd-fosc: #194027;
+  --verd-clar:  #388762;
+  --taronja: #ff7f3f;
+  --lila-fosc: #dac9fa;
+  --lila: #e8e1fd;
+  --verd-fluor: #f3f7a5;
+  --crema: #fff5eb;
+  
+  --background: var(--crema);
+
+  --color-accent: var(--verd-fosc);
+}
+
+#page {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  color: var(--color-accent);
+  line-height: 1.6; 
+  font-size: 1rem;
+  background: var(--background);
+}
+
+.section-container {
+  max-width: var(--max-width, 1000px);
+  margin: 0 auto;
+  padding: 3rem var(--padding, 1rem); 
+}
+
+.heading {
+  /* font-size: 3rem; */
+  line-height: 1;
+  font-weight: 700;
+  margin: 0;
+  font-family: 'Yeseva One';
+}
+h3.heading {
+  font-size: 2.2rem;
+}
+
+.markdown h1, .markdown h2, .markdown h3 {
+  font-family: 'Yeseva One';
+}
+
+.button {
+  color: var(--crema);
+  padding: 0.5em 1.1em;
+  border-radius: 12px;
+}
+
+.button.primary.positive {
+    background-color: var(--color-accent);
+  }
+
+.button.primary.positive:hover {
+      background-color: var(--verd-clar);
+    }
+
+.button.secondary.positive, .button.tertiary.positive {
+    color: var(--color-accent);
+  }
+
+.button.secondary.positive:hover, .button.tertiary.positive:hover {
+      color: var(--verd-clar);
+    }
+
+.button.secondary.positive {
+    border: 1px solid var(--color-accent);
+  }
+
+.button.secondary.positive:hover {
+      border-color: var(--verd-clar);
+    }
+
+.button.primary.negative {
+    background-color: var(--crema) !important;
+    color: var(--color-accent);
+  }
+
+.button.primary.negative:hover {
+      background-color: var(--lila) !important;
+    }
+
+.button.secondary.negative:hover, .button.tertiary.negative:hover {
+      color: var(--lila);
+    }
+
+.button.secondary.negative {
+    border: 1px solid var(--crema);
+  }
+
+.button.secondary.negative:hover {
+      border-color: var(--lila);
+    }
+</style><!-- HEAD_svelte-l7kp_END -->
+      <style>header.svelte-ay5z1s.svelte-ay5z1s{color:white;background-size:cover;background-position:center;display:grid;gap:14rem;position:relative;border-radius:25% 10% 97% 113% / 4% 61% 81%
+}.header-background.svelte-ay5z1s.svelte-ay5z1s{position:absolute;top:0;height:5.5rem;right:0;left:0;background:rgb(0,0,0);background:linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 100%);z-index:10}.section-container.svelte-ay5z1s.svelte-ay5z1s{z-index:20;width:100%;display:flex;justify-content:center;align-items:center;padding-top:1rem;padding-bottom:1rem}.logo.svelte-ay5z1s.svelte-ay5z1s{font-size:1.5rem;font-weight:600;line-height:1.2}.desktop-nav.svelte-ay5z1s.svelte-ay5z1s{display:none;align-items:center;justify-content:space-between;width:100%}.desktop-nav.svelte-ay5z1s nav.svelte-ay5z1s{display:flex;gap:2rem}.desktop-nav.svelte-ay5z1s nav a.link.svelte-ay5z1s{border-color:transparent;transition:border-color 0.1s;font-size:0.95rem}.desktop-nav.svelte-ay5z1s nav a.link.svelte-ay5z1s:hover,.desktop-nav.svelte-ay5z1s nav a.link .active.svelte-ay5z1s{border-color:initial}@media(min-width: 800px){.desktop-nav.svelte-ay5z1s.svelte-ay5z1s{display:flex
+}}.mobile-nav.svelte-ay5z1s.svelte-ay5z1s{display:flex;align-items:center;justify-content:space-between;width:100%;font-weight:500}@media(min-width: 800px){.mobile-nav.svelte-ay5z1s.svelte-ay5z1s{display:none
+}}.headline.svelte-ay5z1s.svelte-ay5z1s{font-size:clamp(2rem, 10vw, 3.5rem);max-width:800px;padding-bottom:2rem;line-height:1.1;font-family:'Yeseva One';color:#194027}#popup.svelte-ay5z1s.svelte-ay5z1s{color:#222;font-size:1.25rem;display:grid;gap:1rem;position:absolute;text-align:center;background-color:var(--background-color, white);box-shadow:var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));border-radius:var(--border-radius);inset:0.5rem;bottom:initial;padding:2rem;z-index:1}#popup.svelte-ay5z1s button#close.svelte-ay5z1s{position:absolute;right:1rem;top:1rem}
+.section-container.svelte-1tp7z49.svelte-1tp7z49{display:grid;place-items:center;text-align:center}.heading.svelte-1tp7z49.svelte-1tp7z49{font-size:3rem;font-weight:700;line-height:1;max-width:850px;margin-bottom:1.5rem}@media(min-width: 700px){.heading.svelte-1tp7z49.svelte-1tp7z49{font-size:4rem
+}}.subheading.svelte-1tp7z49.svelte-1tp7z49{font-size:1.25rem;margin-bottom:2rem}.buttons.svelte-1tp7z49.svelte-1tp7z49{margin-top:0.5rem;display:flex;flex-wrap:wrap;gap:1rem}.buttons.svelte-1tp7z49 .button.svelte-1tp7z49:not(:only-child):last-child{background:inherit;border:2px solid var(--color-accent, rebeccapurple);color:var(--color, #222)}
+.items.svelte-164vv3t.svelte-164vv3t{display:grid;gap:6rem}@media(min-width: 800px){.items.svelte-164vv3t.svelte-164vv3t{grid-template-columns:1fr 1fr
+}}.item.svelte-164vv3t.svelte-164vv3t{display:grid;place-content:start}.item.svelte-164vv3t img.svelte-164vv3t{width:100%;margin-bottom:1.5rem;border-radius:60px}.item.svelte-164vv3t .body.svelte-164vv3t{display:grid;place-items:flex-start;line-height:1.5}.item.svelte-164vv3t .body .title.svelte-164vv3t{font-size:1.75rem;margin-bottom:.5rem}.item.svelte-164vv3t .body .description.svelte-164vv3t{margin-bottom:0.8em}
+.section-container.svelte-1xtducc.svelte-1xtducc{display:grid;justify-content:center}.card.svelte-1xtducc.svelte-1xtducc{padding:4rem clamp(2rem, 10vw, 7rem);border:1px solid var(--verd-fosc);border-radius:16px;text-align:center;display:grid}.heading.svelte-1xtducc.svelte-1xtducc{margin-bottom:1.5rem}.body.svelte-1xtducc.svelte-1xtducc{max-width:700px;margin-bottom:2.25rem}.buttons.svelte-1xtducc.svelte-1xtducc{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem}.buttons.svelte-1xtducc .button.svelte-1xtducc{display:flex;align-items:center;gap:0.25rem}
+.section-container.svelte-1w8uu5r{padding-block:3rem}
+.section-container.svelte-rbezk5.svelte-rbezk5{display:grid;gap:2rem}@media(min-width: 800px){.section-container.svelte-rbezk5.svelte-rbezk5{grid-template-columns:3fr 5fr;gap:14rem
+}}.content.svelte-rbezk5.svelte-rbezk5{display:grid;place-content:flex-start;gap:1rem}.content.svelte-rbezk5 .body.svelte-rbezk5{margin-top:.7rem;margin-bottom:.5rem}.content.svelte-rbezk5 .social-links.svelte-rbezk5{display:grid;gap:0.75rem}.content.svelte-rbezk5 .social-links a.svelte-rbezk5{display:flex;align-items:center;gap:0.75rem}.content.svelte-rbezk5 .social-links a .icon.svelte-rbezk5{font-size:1.75rem;color:var(--color-accent);transition:var(--transition, 0.1s transform)}.content.svelte-rbezk5 .social-links a:hover .icon.svelte-rbezk5{transform:scale(1.1)}form.svelte-rbezk5.svelte-rbezk5{display:grid;box-shadow:0 6px 6px rgba(0, 0, 0, 0.1);gap:1rem;padding:2rem;background-color:white;border-radius:16px}form.svelte-rbezk5 label.svelte-rbezk5{display:grid;gap:0.25rem}form.svelte-rbezk5 label span.svelte-rbezk5{font-size:0.75rem;font-weight:500}form.svelte-rbezk5 label input.svelte-rbezk5,form.svelte-rbezk5 label textarea.svelte-rbezk5{font-size:1rem;padding:0.5rem;outline-color:transparent;transition:var(--transition, 0.1s outline-color);border:1.5px solid var(--border-color, #eee);border-radius:4px}form.svelte-rbezk5 label input.svelte-rbezk5:focus,form.svelte-rbezk5 label textarea.svelte-rbezk5:focus{outline-color:var(--color-accent, rebeccapurple)}form.svelte-rbezk5 .button.svelte-rbezk5{margin-top:1rem}
+footer.svelte-wkoex3{background-color:#FF7F3F;color:white}.section-container.svelte-wkoex3{display:flex;justify-content:space-between}nav.svelte-wkoex3{display:grid;place-items:start;gap:1.5rem;font-size:1.5rem}
+footer.svelte-90rszg.svelte-90rszg{background-color:#FF7F3F;color:white}.section-container.svelte-90rszg.svelte-90rszg{display:flex;justify-content:space-between;flex-direction:column;align-items:center;gap:1rem;padding-top:1rem;padding-bottom:1rem}@media(min-width: 600px){.section-container.svelte-90rszg.svelte-90rszg{flex-direction:row
+}}nav.svelte-90rszg.svelte-90rszg{display:flex;gap:1rem;font-size:.875rem}nav.svelte-90rszg .link.svelte-90rszg{border-color:transparent}nav.svelte-90rszg .link.svelte-90rszg:hover{border-color:initial}.social-links.svelte-90rszg.svelte-90rszg{display:flex;gap:1.5rem;font-size:1.5rem}.social-links.svelte-90rszg a.svelte-90rszg{color:var(--verd-fosc);transition:var(--transition, 0.1s transform)}.social-links.svelte-90rszg a.svelte-90rszg:hover{transform:scale(1.1)}</style>
+    </head>
+    <body id="page">
+       
+<div class="section" id="section-5f73228c"><header style="background-image:url('https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694177563022Test%20(4).jpg')" role="img" aria-label="" class="svelte-ay5z1s"><div class="header-background svelte-ay5z1s"></div>
+  <div class="section-container svelte-ay5z1s"><div class="desktop-nav svelte-ay5z1s"><a href="/" class="logo svelte-ay5z1s">Afa Pi d'en Xandri</a>
+      <nav class="svelte-ay5z1s"><a class="link svelte-ay5z1s" href="/qui-som">Qui som?</a><a class="link svelte-ay5z1s" href="/comissions">Comissions</a><a class="link svelte-ay5z1s" href="/projectes">Projectes</a><a class="link svelte-ay5z1s" href="/curs-2023-24">Curs 2023-24</a><a class="link svelte-ay5z1s" href="/notcies">Notícies</a></nav></div>
+    <div class="mobile-nav svelte-ay5z1s"><a href="/" class="logo svelte-ay5z1s">Afa Pi d'en Xandri</a>
+      <button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="30" height="30" viewBox="0 0 24 24" class="iconify iconify--eva"><!-- HTML_TAG_START --><g id="iconifySvelte0"><g id="iconifySvelte1"><g id="iconifySvelte2" fill="currentColor"><rect width="18" height="2" x="3" y="11" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="16" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="6" rx=".95" ry=".95"/></g></g></g><!-- HTML_TAG_END --></svg></button>
+      </div></div>
+  <div class="section-container svelte-ay5z1s"><h1 class="headline svelte-ay5z1s"></h1></div></header></div> 
+<div class="section" id="section-c33336c9"><header class="section-container svelte-1tp7z49"><h1 class="heading svelte-1tp7z49">Projectes</h1>
+  <span class="subheading svelte-1tp7z49">Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció.</span>
+  </header></div> 
+<div class="section" id="section-cc647fcf"><section class="section-container svelte-164vv3t"><div class="items svelte-164vv3t"><div class="item svelte-164vv3t"><img src="https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175043312FORA%20STOCKS!!%20(2).jpg" alt="Gestió de tèxtil" class="svelte-164vv3t">
+        <div class="body svelte-164vv3t"><h2 class="title heading svelte-164vv3t">Gestió de Tèxtil</h2>
+          <div class="description svelte-164vv3t"><!-- HTML_TAG_START -->Posem a disposició de les famílies una sèrie de productes tèxtils que segueixen els requisits de l’escola.<!-- HTML_TAG_END --></div>
+          <a class="button secondary positive svelte-1xtducc" href="/projectes/gestio-de-textil">Descobreix les properes dates
+          </a></div>
+      </div><div class="item svelte-164vv3t"><img src="https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694175433948Test.png" alt="ombres" class="svelte-164vv3t">
+        <div class="body svelte-164vv3t"><h2 class="title heading svelte-164vv3t">Millora de les infraestructures de l’escola</h2>
+          <div class="description svelte-164vv3t"><!-- HTML_TAG_START -->Fent la gestió amb l’administració corresponent i col·laborant amb el projecte hem millorat les infraestructures de l’escola.<!-- HTML_TAG_END --></div>
+          <a class="button secondary positive svelte-1xtducc" href="/projectes">Veure més
+          </a></div>
+      </div></div></section></div> 
+<div class="section" id="section-982ce7f2"><section class="section-container svelte-1xtducc"><div class="card svelte-1xtducc"><h2 class="heading svelte-1xtducc">Vols formar part de l'AFA?</h2>
+    <div class="body svelte-1xtducc"><!-- HTML_TAG_START --><p>Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. Cadascú pot fer la seva contribució, col·laborant segons la seva disponibilitat i interès.</p><!-- HTML_TAG_END --></div>
+    <div class="buttons svelte-1xtducc"><a class="button secondary positive svelte-1xtducc" href="/">
+          <span>Contacta'ns</span>
+        </a><a class="button primary positive svelte-1xtducc" href="/comissions">
+          <span>Busca la teva comisssió</span>
+        </a></div></div></section></div> 
+<div class="section" id="section-a9892aa3"><div class="section-container svelte-1w8uu5r"><hr></div></div> 
+<div class="section" id="section-2ea0f85f"><section class="section-container svelte-rbezk5"><div class="content svelte-rbezk5"><h2 class="heading">Bústia de suggeriments</h2>
+    <div class="body svelte-rbezk5"><!-- HTML_TAG_START -->Whether you have questions, feedback, or just want to say hello, we're always ready to hear from you. Please fill out the contact form, and we'll do our best to respond within 24-48 hours.<!-- HTML_TAG_END --></div>
+    <div class="social-links svelte-rbezk5"><a href="/" class="svelte-rbezk5"><span class="icon svelte-rbezk5"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/><!-- HTML_TAG_END --></svg></span>
+          Instagram
+        </a></div></div>
+  <form class="svelte-rbezk5"><label class="svelte-rbezk5"><span class="svelte-rbezk5">Name</span>
+          <input type="text" placeholder="El teu nom" class="svelte-rbezk5">
+        </label><label class="svelte-rbezk5"><span class="svelte-rbezk5">Correu electrònic</span>
+          <input type="email" placeholder="correu@electronic.com" class="svelte-rbezk5">
+        </label><label class="svelte-rbezk5"><span class="svelte-rbezk5">El teu missatge</span>
+          <textarea class="svelte-rbezk5"></textarea>
+        </label>
+    <button class="button primary positive svelte-rbezk5" type="submit">Submit</button></form></section></div> 
+<div class="section" id="section-7fd14dbd"><footer class="svelte-wkoex3"><div class="section-container svelte-wkoex3"><nav class="svelte-wkoex3"><a class="link" href="/">Inici</a><a class="link" href="/qui-som">Qui som?</a><a class="link" href="/comissions">Comissions</a><a class="link" href="/projectes">Projectes</a><a class="link" href="/curs-2023-24">Curs 2023/24</a><a class="link" href="/notcies">Notícies</a><a class="link" href="/documents">Documents de l'AFA</a></nav></div></footer></div> 
+<div class="section" id="section-b956986a"><footer class="svelte-90rszg"><div class="section-container svelte-90rszg"><nav class="svelte-90rszg"><a class="link svelte-90rszg" target="_blank" href="">© 2024 – Escola Pi d'en Xandri</a><a class="link svelte-90rszg" target="_blank" href="https://maps.app.goo.gl/EZEMzpQLcUgFYdj86">c/ Santa Teresa, 61 – 08172 Sant Cugat del Vallès</a></nav>
+  <div class="social-links svelte-90rszg"><a href="https://twitter.com/ampapixandri" target="_blank" aria-label="Twitter" class="svelte-90rszg"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"/><!-- HTML_TAG_END --></svg>
+      </a><a href="/" target="_blank" aria-label="Instagram" class="svelte-90rszg"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/><!-- HTML_TAG_END --></svg>
+      </a></div></div></footer></div> 
+
+      <script type="module">
+      import('/_symbols/ae595602-4b55-4a5d-af1d-5794bd4f83de.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-5f73228c'),
+              hydrate: true,
+              props: {"background":{"alt":"","src":"https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694177563022Test%20(4).jpg","url":"https://jomjtsrkhfmfxfsrnsdc.supabase.co/storage/v1/object/public/images/96af8c14-edea-46c2-9147-dd18617b64b0/1694177563022Test%20(4).jpg","size":213},"headline":"","logo":{"image":{"alt":"","src":"","url":"","size":null},"title":"Afa Pi d'en Xandri"},"site_nav":[{"link":{"url":"/qui-som","label":"Qui som?"}},{"link":{"url":"/comissions","label":"Comissions"}},{"link":{"url":"/projectes","label":"Projectes"}},{"link":{"url":"/curs-2023-24","label":"Curs 2023-24"}},{"link":{"url":"/notcies","label":"Notícies"}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/984f20dc-9923-4700-819b-18c233390aa7.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-982ce7f2'),
+              hydrate: true,
+              props: {"heading":"Vols formar part de l'AFA?","body":{"html":"<p>Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. Cadascú pot fer la seva contribució, col·laborant segons la seva disponibilitat i interès.</p>","markdown":"Hi ha molts projectes per fer i us encoratgem a col·laborar en les comissions de l'AFA que us cridin l'atenció. Cadascú pot fer la seva contribució, col·laborant segons la seva disponibilitat i interès."},"buttons":[{"icon":"Dolore laborum cillum","link":{"url":"/","label":"Contacta'ns"},"button_type":"secondary positive"},{"icon":"Officia velit elit","link":{"url":"/comissions","label":"Busca la teva comisssió"},"button_type":"primary positive"}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/f960d5c0-ffe3-4dcf-87d8-7c8f35ef8e9a.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-2ea0f85f'),
+              hydrate: true,
+              props: {"heading":"Bústia de suggeriments","subheading":"Whether you have questions, feedback, or just want to say hello, we're always ready to hear from you. Please fill out the contact form, and we'll do our best to respond within 24-48 hours.","social":[{"icon":"mdi:instagram","link":{"url":"/","label":"Instagram"}}],"inputs":[{"type":"text","label":"Name","placeholder":"El teu nom"},{"type":"email","label":"Correu electrònic","placeholder":"correu@electronic.com"},{"type":"textarea","label":"El teu missatge","placeholder":"Escriu aquí el teu missatge"}],"submit_label":"Submit"}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/8d4fedab-3459-494e-bad3-c0d85bdd3ad6.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-b956986a'),
+              hydrate: true,
+              props: {"nav":[{"link":{"url":"","label":"© 2024 – Escola Pi d'en Xandri"}},{"link":{"url":"https://maps.app.goo.gl/EZEMzpQLcUgFYdj86","label":"c/ Santa Teresa, 61 – 08172 Sant Cugat del Vallès"}}],"social":[{"icon":"mdi:twitter","link":{"url":"https://twitter.com/ampapixandri","label":"Twitter"}},{"icon":"mdi:instagram","link":{"url":"/","label":"Instagram"}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
     </script>
-</body>
-
-</html>
+    </body>
+  </html>
+  
