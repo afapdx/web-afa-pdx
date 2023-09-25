@@ -4498,7 +4498,7 @@ function create_each_block_1$1(ctx) {
 			this.h();
 		},
 		l(nodes) {
-			a = claim_element(nodes, "A", { class: true, href: true });
+			a = claim_element(nodes, "A", { class: true, target: true, href: true });
 			var a_nodes = children(a);
 			t = claim_text(a_nodes, t_value);
 			a_nodes.forEach(detach);
@@ -4506,6 +4506,7 @@ function create_each_block_1$1(ctx) {
 		},
 		h() {
 			attr(a, "class", "link svelte-90rszg");
+			attr(a, "target", "_blank");
 			attr(a, "href", a_href_value = /*link*/ ctx[2].url);
 		},
 		m(target, anchor) {
@@ -4545,6 +4546,7 @@ function create_each_block$4(ctx) {
 		l(nodes) {
 			a = claim_element(nodes, "A", {
 				href: true,
+				target: true,
 				"aria-label": true,
 				class: true
 			});
@@ -4557,6 +4559,7 @@ function create_each_block$4(ctx) {
 		},
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[2].url);
+			attr(a, "target", "_blank");
 			attr(a, "aria-label", a_aria_label_value = /*link*/ ctx[2].label);
 			attr(a, "class", "svelte-90rszg");
 		},
@@ -4986,13 +4989,13 @@ function create_fragment$7(ctx) {
 					{
 						"link": {
 							"url": "",
-							"label": "Copyright 2024 Escola Pi d'en Xandri"
+							"label": "Copyright 2024 / Escola Pi d'en Xandri"
 						}
 					},
 					{
 						"link": {
-							"label": "C/Santa Teresa, 61 08172 Sant Cugat del Vallès",
-							"url": "https://maps.app.goo.gl/EZEMzpQLcUgFYdj86"
+							"url": "https://maps.app.goo.gl/EZEMzpQLcUgFYdj86",
+							"label": "C/Santa Teresa, 61 08172 Sant Cugat del Vallès"
 						}
 					}
 				],
