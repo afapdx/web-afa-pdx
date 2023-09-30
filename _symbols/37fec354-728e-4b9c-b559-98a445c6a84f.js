@@ -1,4 +1,4 @@
-// Persones de l'AFA - Updated September 25, 2023
+// Persones de l'AFA - Updated September 30, 2023
 function noop() { }
 function assign(tar, src) {
     // @ts-ignore

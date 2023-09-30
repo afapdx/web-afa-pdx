@@ -1,4 +1,4 @@
-// Cap de la home - Updated September 25, 2023
+// Cap de la home - Updated September 30, 2023
 function noop() { }
 const identity = x => x;
 function assign(tar, src) {

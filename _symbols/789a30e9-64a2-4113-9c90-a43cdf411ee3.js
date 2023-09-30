@@ -1,4 +1,4 @@
-// Llistes destacades - Updated September 25, 2023
+// Llistes destacades - Updated September 30, 2023
 function noop() { }
 function assign(tar, src) {
     // @ts-ignore
