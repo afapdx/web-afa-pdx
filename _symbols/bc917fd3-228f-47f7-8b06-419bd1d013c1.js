@@ -1,4 +1,4 @@
-// Properes activitats Cards - Updated September 30, 2023
+// Properes activitats Cards - Updated October 5, 2023
 function noop() { }
 function assign(tar, src) {
     // @ts-ignore

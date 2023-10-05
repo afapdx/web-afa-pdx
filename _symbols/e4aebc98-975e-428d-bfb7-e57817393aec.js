@@ -1,4 +1,4 @@
-// Navegació sense foto - Updated September 30, 2023
+// Navegació sense foto - Updated October 5, 2023
 function noop() { }
 const identity = x => x;
 function assign(tar, src) {
