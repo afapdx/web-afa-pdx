@@ -1,4 +1,4 @@
-// Grups Whatsapp - Updated October 19, 2023
+// Grups Whatsapp - Updated October 20, 2023
 function noop() { }
 function assign(tar, src) {
     // @ts-ignore
